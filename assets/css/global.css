@@ -51,9 +51,7 @@ font-size: 35px!important;
 }
 
 
-.navitem {
-	
-}
+
 
 main {
 	margin-top: 50px!important;
@@ -90,9 +88,12 @@ nav, footer {
 }
 
 .mainpadding {
-margin-bottom: 100px!important;
+margin-bottom: 200px!important;
 }
 
+main {
+	margin-bottom: 100px!important;
+}
 
 html {
 	height: 100%!important;

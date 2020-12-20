@@ -18,6 +18,22 @@ width: 40px!important;
 margin-left: -4px!important;}
 
 
+.navitemtext {
+margin-top: -40px!important;}
+.navlogo {
+margin-top: -40px;}
+.navitem {
+	margin-top: -20px!important;
+	
+}
+
+@media only screen and (max-width: 600px) {
+
+.uk-navbar-toggle {
+margin-top: -20px;}
+
+}
+
 </style>
 
 	<div class=”main-container”>
@@ -25,19 +41,19 @@ margin-left: -4px!important;}
 
 			<nav class="uk-navbar-container " uk-navbar>
 				<div class="uk-navbar-left">
-						<a class="uk-navbar-item uk-logo navitem" href="/"><img class="navlogo" style = "width:25px;" 								src="{{site.baseurl}}/media/sitewide/ftd.svg" /> </a>
-
+						
+					<a class="uk-navbar-item uk-logo " href="/"><img class="navlogo" style = "width:20px;" 								src="{{site.baseurl}}/media/sitewide/ftd.svg" /> </a>
 
 					<ul class="uk-navbar-nav uk-visible@s">
 
 
-						<li class=""><a class="navitem" href="/">Home</a></li>
-						<li class=""><a class="navitem" href="{{site.baseurl}}/about">About</a></li>
+						<li class=""><a class=" navitemtext" href="/">Home</a></li>
+						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/about">About</a></li>
 
-						<li class=""><a class="navitem" href="{{site.baseurl}}/team">Team</a></li>
+						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/team">Team</a></li>
 
-						<li class=""><a class="navitem" href="{{site.baseurl}}/explore">Explore</a></li>
-						<li class=""><a class="navitem" href="{{site.baseurl}}/contact">Contact</a></li>
+						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/explore">Explore</a></li>
+						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/contact">Contact</a></li>
 
 					</ul>
 				</div>
