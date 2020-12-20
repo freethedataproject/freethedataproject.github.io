@@ -90,12 +90,9 @@ nav, footer {
 }
 
 .mainpadding {
-margin-bottom: 200px!important;
+margin-bottom: 100px!important;
 }
 
-main {
-	margin-bottom: 100px!important;
-}
 
 html {
 	height: 100%!important;
