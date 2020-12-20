@@ -42,7 +42,7 @@ font-style:italic!important;
   float: left;
   shape-outside: url("/media/team/ania1.png");
   shape-image-threshold: 0.9;
-	max-width:300px!important;
+	max-width:300px;
   shape-margin: 2%;
 
 
@@ -54,7 +54,7 @@ font-style:italic!important;
   float: left;
   shape-outside: url(" /media/team/sarah1.png");
   shape-image-threshold: 0.9;
-	max-width:300px!important;
+	max-width:300px;
   shape-margin: 2%;
 
 }
@@ -63,7 +63,7 @@ font-style:italic!important;
   float: left;
   shape-outside: url("/media/team/leni1.png");
   shape-image-threshold: 0.9;
-	max-height:350px!important;
+	max-height:350px;
   shape-margin: 2%;
 
 }
@@ -72,7 +72,7 @@ font-style:italic!important;
   float: left;
   shape-outside: url("/media/team/jasmina1.png");
   shape-image-threshold: 0.9;
-	max-width:350px!important;
+	max-width:350px;
   shape-margin: 2%;
 
 }
@@ -81,11 +81,20 @@ font-style:italic!important;
   float: left;
   shape-outside: url("/media/team/frida1.png");
   shape-image-threshold: 0.9;
-	max-width:300px!important;
+	max-width:300px;
   shape-margin: 2%;
 
 }
 
 
+
+
+@media only screen and (max-width: 600px) {
+  .photofrida, .photoania, .photosarah, .photoleni, .photojasmina {
+    max-width:250px!important;
+	max-height:300px!important;
+   
+  }
+}
 
 
