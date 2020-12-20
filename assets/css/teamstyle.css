@@ -9,33 +9,18 @@ margin-top: 60px!important;
 bottom:0!important;
 }
 
-.teamname, .teamrole, .teamfocus {
+.teamname, .teamrole{
 margin:0;
 
 }
 
 
-.teamfocus {
+.teamrole {
 padding-bottom:25px;
 }
 
-.teamname {
-font-size: 2rem!important;
-font-weight:800!important;
-
-}
 
 
-.teamrole {
-font-size: 1rem!important;
-font-weight: 600!important;
-}
-
-
-.teamfocus {
-font-size: .8rem!important;
-font-style:italic!important;
-}
 
 
 .photoania{
@@ -95,6 +80,47 @@ font-style:italic!important;
 	max-height:300px!important;
    
   }
+
+
+.teamname {
+font-size: 2rem!important;
+font-weight:800!important;
+
 }
+
+.teamrole {
+font-size: 1rem!important;
+font-weight: 600!important;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 601px) {
+  .photofrida, .photoania, .photosarah, .photoleni, .photojasmina {
+    max-width:250px!important;
+	max-height:300px!important;
+   
+  }
+
+
+
+
+.teamname {
+font-size: 2.4rem!important;
+font-weight:700!important;
+
+}
+
+.teamrole {
+font-size: 1.3rem!important;
+font-weight: 600!important;
+}
+
+}
+
+
 
 
