@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "Team"
-permalink: "team/"
+permalink: "/team.html"
 
 ---
 
 
 
-	<link rel="stylesheet" href="/assets/css/teamstyle.css" />
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/teamstyle.css" />
 
 
 <div uk-grid class = "uk-grid-divider uk-child-width-1@s uk-child-width-1-2@m uk-child-width-1-2@l">
@@ -15,55 +15,55 @@ permalink: "team/"
 
 
 	<div class = "gridsection">
-		<p class = "teamname anianame">{{team['ania'].full_name}}</p>
-		<p class = "teamrole">{{team['ania'].role}}</p>
-		<p class = "teamfocus">{{team['ania'].focus}}</p>
+		<p class = "teamname anianame">{{site.data.team['ania'].full_name}}</p>
+		<p class = "teamrole">{{site.data.team['ania'].role}}</p>
+		<p class = "teamfocus">{{site.data.team['ania'].focus}}</p>
 
-		<img class="photoania" src="{{team['ania'].image_path}}"/>
+		<img class="photoania" src="{{site.data.team['ania'].image_path}}"/>
 		<div>
 		<!-- Add as many paragraphs as you want -->
-		<p class = "teamtext">{{team['ania'].bio}}</p>
+		<p class = "teamtext">{{site.data.team['ania'].bio}}</p>
 		</div>
 
 	</div>
 
 
 	<div class = "gridsection">
-		<p class = "teamname sarahname">{{team['sarah'].full_name}}</p>
-		<p class = "teamrole">{{team['sarah'].role}}</p>
-		<p class = "teamfocus">{{team['sarah'].focus}}</p>
+		<p class = "teamname sarahname">{{site.data.team['sarah'].full_name}}</p>
+		<p class = "teamrole">{{site.data.team['sarah'].role}}</p>
+		<p class = "teamfocus">{{site.data.team['sarah'].focus}}</p>
 
-		<img class="photosarah" src="{{team['sarah'].image_path}}"/>
+		<img class="photosarah" src="{{site.data.team['sarah'].image_path}}"/>
 		<div>
 		<!-- Add as many paragraphs as you want -->
-		<p class = "teamtext">{{team['sarah'].bio}}</p>
+		<p class = "teamtext">{{site.data.team['sarah'].bio}}</p>
 		</div>
 
 	</div>
 
 
 	<div class = "gridsection">
-		<p class = "teamname leniname">{{team['leni'].full_name}}</p>
-		<p class = "teamrole">{{team['leni'].role}}</p>
-		<p class = "teamfocus">{{team['leni'].focus}}</p>
+		<p class = "teamname leniname">{{site.data.team['leni'].full_name}}</p>
+		<p class = "teamrole">{{site.data.team['leni'].role}}</p>
+		<p class = "teamfocus">{{site.data.team['leni'].focus}}</p>
 
-		<img class="photoleni" src="{{team['leni'].image_path}}"/>
+		<img class="photoleni" src="{{site.data.team['leni'].image_path}}"/>
 		<div>
 		<!-- Add as many paragraphs as you want -->
-		<p class = "teamtext">{{team['leni'].bio}}</p>
+		<p class = "teamtext">{{site.data.team['leni'].bio}}</p>
 		</div>
 
 	</div>
 
 	<div class = "gridsection">
-		<p class = "teamname jasminaname">{{team['jasmina'].full_name}}</p>
-		<p class = "teamrole">{{team['jasmina'].role}}</p>
-		<p class = "teamfocus">{{team['jasmina'].focus}}</p>
+		<p class = "teamname jasminaname">{{site.data.team['jasmina'].full_name}}</p>
+		<p class = "teamrole">{{site.data.team['jasmina'].role}}</p>
+		<p class = "teamfocus">{{site.data.team['jasmina'].focus}}</p>
 
-		<img class="photojasmina" src="{{team['jasmina'].image_path}}"/>
+		<img class="photojasmina" src="{{site.data.team['jasmina'].image_path}}"/>
 		<div>
 		<!-- Add as many paragraphs as you want -->
-		<p class = "teamtext">{{team['jasmina'].bio}}</p>
+		<p class = "teamtext">{{site.data.team['jasmina'].bio}}</p>
 		</div>
 
 	</div>
@@ -71,13 +71,13 @@ permalink: "team/"
 
 	<div class = "gridsection">
 
-		<img class="photofrida" src="{{team['frida'].image_path}}"/>
+		<img class="photofrida" src="{{site.data.team['frida'].image_path}}"/>
 		<div>
 		<!-- Add as many paragraphs as you want -->
-		<p class = "teamname fridaname">{{team['frida'].full_name}}</p>
-		<p class = "teamrole">{{team['frida'].role}}</p>
-		<p class = "teamfocus">{{team['frida'].focus}}</p>
-		<p class = "teamtext">{{team['frida'].bio}}</p>
+		<p class = "teamname fridaname">{{site.data.team['frida'].full_name}}</p>
+		<p class = "teamrole">{{site.data.team['frida'].role}}</p>
+		<p class = "teamfocus">{{site.data.team['frida'].focus}}</p>
+		<p class = "teamtext">{{site.data.team['frida'].bio}}</p>
 		</div>
 
 	</div>

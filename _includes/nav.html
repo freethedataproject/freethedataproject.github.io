@@ -6,15 +6,16 @@
 			<nav class="uk-navbar-container " uk-navbar>
 				<div class="uk-navbar-left">
 					<ul class="uk-navbar-nav">
-						<li><a class="uk-navbar-item uk-logo navitem" href="/"><img class="" src = "{{ '/media/sitewide/logo.svg' | url }}" style = "height:20px; width:auto;"/> </a>
+						<li><a class="uk-navbar-item uk-logo navitem" href="/"><img class="" 								src="{{site.baseurl}}/media/sitewide/logo.svg" />
+ </a>
 						</li>
-						<li class=""><a class="navitem" href="{{ '/' | url }}">Home</a></li>
-						<li class=""><a class="navitem" href="{{ '/about' | url }}">About</a></li>
+						<li class=""><a class="navitem" href="{{site.baseurl}}">Home</a></li>
+						<li class=""><a class="navitem" href="{{site.baseurl}}/about">About</a></li>
 
-						<li class=""><a class="navitem" href="{{ '/team' | url }}">Team</a></li>
+						<li class=""><a class="navitem" href="{{site.baseurl}}/team">Team</a></li>
 
-						<li class=""><a class="navitem" href="{{ '/explore' | url }}">Explore</a></li>
-						<li class=""><a class="navitem" href="{{ '/contact' | url }}">Contact</a></li>
+						<li class=""><a class="navitem" href="{{site.baseurl}}/explore">Explore</a></li>
+						<li class=""><a class="navitem" href="{{site.baseurl}}/contact">Contact</a></li>
 
 					</ul>
 				</div>
@@ -39,7 +40,7 @@
 						<li>
 							<a class="navitem"> <img role="button" class="frida" id="demo1"
 									onclick="myFunction1()"
-									src="{{ '/media/sitewide/logo.svg' | url }}" />
+									src="{{site.baseurl}}/media/sitewide/logo.svg" />
 							</a>
 					</ul>
 				</div>

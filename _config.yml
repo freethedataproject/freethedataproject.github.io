@@ -4,7 +4,6 @@ description: 'A project.'
 logo: 'assets/images/logo.svg'
 favicon: 'assets/images/logo.svg'
 baseurl: ""
-url: ""
 
 include: ["_content"]
 permalink: /:title/
@@ -13,12 +12,7 @@ permalink: /:title/
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
 
-
-# Paginate
-paginate: 10
 
 # Exclude from processing.
 
