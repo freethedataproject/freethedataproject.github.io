@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+:root {
+	--frida: #E86166;
+	--accentColor: #fe4040;
+	--offwhite: #f8f8f8;
+	--bgcolor: #ffffff;
+	--aW: #eadbcb;
+	--aP: #f4bab4;
+	--aY: #efb73c;
+	--aR: #eb6d5a;
+	--aB: #418db7;
+	--aBD: #233943;
+	--aD: #3a3a3a;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .articletitle {
+	color: var(--aD)!important;
+}
+
+h1 {
+
+font-weight:800!important;
+font-size: 35px!important;
+
+}
+
+
+.navitem {
+	margin-top: -20px!important;
+	
+}
+
+main {
+	margin-top: 50px!important;
+padding-bottom:100px!important;
+margin-bottom:40px!important;
+}
+
+nav, footer {
+	background-color: var(--bgcolor)!important;
+	color: var(--aD)!important;
+}
+
+
+
+
+.uk-navbar-container {
+	height: 40px!important;
+}
+
+/* frida data cat <3 */
+
+.frida {
+	width: 24px !important;
+}
+
+/* fonts */
+
+.opensans {
+	font-family: 'Open Sans', sans-serif!important;
+}
+
+h1, h2, h3, h4, h5, h6, nav, footer, a, button, .articletitle {
+	color: var(--aD);
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400!important;
+	color: var(--aD);
+	font-size: 14px!important;
+}
+
+/* GETTING THE GODDAMN FOOTER TO DO IT'S ONE GODDAMN JOB */
+
+* {
+	box-sizing: border-box!important;
+}
+
+*:before, *:after {
+	box-sizing: inherit!important;
+}
+
+.mainpadding {
+margin-bottom: 200px!important;
+}
+
+main {
+	margin-bottom: 100px!important;
+}
+
+html {
+	height: 100%!important;
+	box-sizing: border-box!important;
+}
+
+body {
+	position: relative!important;
+	min-height: 100%!important;
+}
+
+.main-container {
+	min-height: 100vh!important;
+	/* will cover the 100% of viewport */
+	overflow: hidden!important;
+	display: block!important;
+	position: relative!important;
+}
+
+#page-footer {
+	position: absolute!important;
+	bottom: 0!important;
+	width: 100%!important;
+	padding: 0px!important;
+}
+

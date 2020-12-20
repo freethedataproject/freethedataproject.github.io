@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include head.html %}
+</head>
+
+<header>
+
+	{% include nav.html %}
+</header>
+
+<body>
+<main>
+<div class = "uk-container mainpadding">
+
+
+	{{content}}
+
+</div>
+</main>
+	<div class="footerdiv">
+		<footer id="page-footer" class=" " uk-sticky>
+			{% include footer.html %}
+		</footer>
+
+	</div>
+		{% include scripts.html %}
+
+		<script>
+
+		function myFunction() {
+			document.getElementById("demo")
+			confetti.speed = 0;
+			confetti.start(400, 30, 50);
+		}
+	</script>
+
+
+		<script>
+			function myFunction1() {
+				document.getElementById("demo1")
+				confetti.speed = 0;
+				confetti.start(400, 30, 50);
+			}
+		</script>
+
+
+
+</body>
+
+
+</html>
