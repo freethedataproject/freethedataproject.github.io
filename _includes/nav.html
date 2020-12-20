@@ -34,6 +34,9 @@ margin-top: -20px;}
 
 }
 
+.uk-button-default {
+border: none!important;}
+
 </style>
 
 	<div class=”main-container”>
@@ -52,7 +55,21 @@ margin-top: -20px;}
 
 						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/team">Team</a></li>
 
-						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/explore">Explore</a></li>
+						<button class="uk-button uk-button-default navitemtext" type="button">Explore</button>
+						<div class = "dropdownitem" uk-dropdown="delay-show: 0; delay-hide: 200">
+						<ul class="uk-nav uk-dropdown-nav">
+						<li class=""><a class=" " href="{{site.baseurl}}/articles">Articles</a></li>
+						<li class=""><a class=" " href="{{site.baseurl}}/tutorials">Tutorials</a></li>
+
+							<li class="uk-nav-divider"></li>
+						<li class=""><a class=" " href="{{site.baseurl}}/resources">Resources</a></li>
+
+						<li class=""><a class=" " href="{{site.baseurl}}/datajustice101">Data Justice 101</a></li>
+						</ul>
+						</div>
+
+
+
 						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/contact">Contact</a></li>
 
 					</ul>

@@ -12,7 +12,7 @@ bottom:0!important;
 
 .teamname, .teamrole, .socialz	{
 margin:0;
-text-align:right;
+text-align:left;
 
 }
 
@@ -22,10 +22,7 @@ padding-bottom:25px;
 }
 
 
-.teamtext {
-  text-align: justify;
-  text-justify: inter-word;
-}
+
 
 
 
@@ -33,7 +30,7 @@ padding-bottom:25px;
   float: left;
   shape-outside: url("/media/team/ania1.png");
   shape-image-threshold: 0.9;
-	max-width:300px;
+	max-height: 100%;
   shape-margin: 2%;
 
 
@@ -45,7 +42,7 @@ padding-bottom:25px;
   float: left;
   shape-outside: url(" /media/team/sarah1.png");
   shape-image-threshold: 0.9;
-	max-width:300px;
+	max-height: 100%;
   shape-margin: 2%;
 
 }
@@ -54,7 +51,7 @@ padding-bottom:25px;
   float: left;
   shape-outside: url("/media/team/leni1.png");
   shape-image-threshold: 0.9;
-	max-height:350px;
+	max-height: 100%;
   shape-margin: 2%;
 
 }
@@ -63,7 +60,7 @@ padding-bottom:25px;
   float: left;
   shape-outside: url("/media/team/jasmina1.png");
   shape-image-threshold: 0.9;
-	max-width:350px;
+	max-height: 100%;
   shape-margin: 2%;
 
 }
@@ -72,7 +69,7 @@ padding-bottom:25px;
   float: left;
   shape-outside: url("/media/team/frida1.png");
   shape-image-threshold: 0.9;
-	max-width:300px;
+	max-height: 100%;
   shape-margin: 2%;
 
 }
@@ -82,8 +79,10 @@ padding-bottom:25px;
 
 @media only screen and (max-width: 600px) {
   .photofrida, .photoania, .photosarah, .photoleni, .photojasmina {
-    max-width:250px!important;
-	max-height:300px!important;
+    max-width:250px;
+	max-height:300px;
+  float: right!important;
+
    
   }
 
@@ -91,12 +90,15 @@ padding-bottom:25px;
 .teamname {
 font-size: 2rem!important;
 font-weight:800!important;
+  text-align: left;
 
 }
 
 .teamrole {
 font-size: 1rem!important;
 font-weight: 600!important;
+  text-align: left;
+
 }
 
 }
@@ -105,14 +107,11 @@ font-weight: 600!important;
 
 
 @media only screen and (min-width: 601px) {
-  .photofrida, .photoania, .photosarah, .photoleni, .photojasmina {
-    max-width:250px!important;
-	max-height:300px!important;
-   
-  }
 
-
-
+.teamtext {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .teamname {
 font-size: 2.7rem!important;
