@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<style>
+
+.uk-container {
+max-width:1000px!important;
+}
+
+.article_cover_image {
+max-height: 500px!important;}
+
+.article_subtitle, .article_title {
+margin: 0;}
+
+.article_title {
+font-size: 3.2rem!important;}
+
+.article_subtitle {
+font-size: 1rem!important;
+font-weight:600!important;}
+</style>
+
+<div class = "uk-container ">
+
+
+                        <p class="article_meta">Written by {{page.author}} on {{page.date}}. Posted in <a href="#">{{page.category}}</a></p>
+
+                        <h1 class="article_title">
+                           {{page.title}}
+                        </h1>
+
+
+
+                        <h3 class="article_subtitle">
+                            {{page.subtitle}}
+                        </h3>
+
+<div class = "article_cover_image">
+
+<img class = "article_cover_image" src = "{{site.baseurl}}/{{page.image_path}}" alt = "{{page.image_alt}}"/>
+</div>
+<p class = "image_caption">{{page.image_caption}}</p>
+
+
+
+                    <div class="">
+
+
+
+
+				{{content}}
+                    </div>
+
+
+
+           
+
+                </div>
+
+           
+
+                </div>
