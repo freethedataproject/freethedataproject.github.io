@@ -53,9 +53,8 @@ font-size: 35px!important;
 
 
 main {
-	margin-top: 50px!important;
+margin-top: 50px!important;
 padding-bottom:100px!important;
-margin-bottom:40px!important;
 }
 
 nav, footer {
@@ -86,9 +85,6 @@ nav, footer {
 	box-sizing: inherit!important;
 }
 
-.mainpadding {
-margin-bottom: 200px!important;
-}
 
 main {
 	margin-bottom: 100px!important;
