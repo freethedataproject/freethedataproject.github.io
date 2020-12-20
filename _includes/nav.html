@@ -1,14 +1,35 @@
+<style>
+.mobilenav {
+font-size:22px!important;
+padding-top:10px!important;
+padding-bottom:10px!important;
+font-weight:700!important;
 
+}
+
+.mobilenavicon {
+padding-top:17px!important;
+padding-bottom:17px!important;
+
+}
+
+.fridamobile {
+width: 40px!important;
+margin-left: -4px!important;}
+
+
+</style>
 
 	<div class=”main-container”>
 		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
 
 			<nav class="uk-navbar-container " uk-navbar>
 				<div class="uk-navbar-left">
-					<ul class="uk-navbar-nav">
-						<li><a class="uk-navbar-item uk-logo navitem" href="/"><img class="navlogo" style = "width:25px;" 								src="{{site.baseurl}}/media/sitewide/ftd.svg" /> 
- </a>
-						</li>
+						<a class="uk-navbar-item uk-logo navitem" href="/"><img class="navlogo" style = "width:25px;" 								src="{{site.baseurl}}/media/sitewide/ftd.svg" /> 
+
+					<ul class="uk-navbar-nav uk-visible@s">
+
+
 						<li class=""><a class="navitem" href="/">Home</a></li>
 						<li class=""><a class="navitem" href="{{site.baseurl}}/about">About</a></li>
 
@@ -19,8 +40,8 @@
 
 					</ul>
 				</div>
-				<div class="uk-navbar-right">
-					<ul class="uk-navbar-nav ">
+				<div class="uk-navbar-right ">
+					<ul class="uk-navbar-nav  uk-visible@s">
 						<li class="">
 							<a class="navitem" href="https://twitter.com/freethedata_" target="blank_"><i
 									class="fab fa-twitter"></i></a>
@@ -41,12 +62,71 @@
 							<a class="navitem"> <img role="button" class="frida" id="demo1"
 									onclick="myFunction1()"
 									src="{{site.baseurl}}/media/sitewide/logo.svg" />
-							</a>
+							</a></li>
 					</ul>
+            <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+
 				</div>
 		</div>
 		</nav>
 	</div>
 
 	</div>
+
+
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav">
+						<li class="mobilenav"><a class="navitem" href="/">Home</a></li>
+						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/about">About</a></li>
+
+						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/team">Team</a></li>
+
+						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/explore">Explore</a></li>
+						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/contact">Contact</a></li>
+	<li class="">
+							<a class="mobilenavicon" href="https://twitter.com/freethedata_" target="blank_"><i
+									class="fab fa-lg fa-twitter"></i></a>
+						</li>
+						<li>
+							<a class="mobilenavicon" href="https://instagram.com/freethedataproject"
+								target="blank_"><i class="fab fa-lg fa-instagram"></i></a>
+						</li>
+						<li>
+							<a class="mobilenavicon" href="https://github.com/freethedataproject"
+								target="blank_"><i class="fab fa-lg fa-github"></i></a>
+						</li>
+						<li>
+							<a class="mobilenavicon" href="mailto:freethedataproject@gmail.com"
+								target="blank_"><i class="fas fa-lg fa-at"></i></a>
+						</li>
+						<li>
+							<a class="mobilenavicon"> <img role="button" class="fridamobile" id="demo1"
+									onclick="myFunction1()"
+									src="{{site.baseurl}}/media/sitewide/logo.svg" />
+							</a></li>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
