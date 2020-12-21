@@ -3,6 +3,9 @@ position: relative;
 margin-bottom:50px;
 }
 
+p {
+font-size: 14px!important;}
+
 
 .photoania, .photosarah, .photoleni, .photojasmina, .photofrida {
 bottom:0!important;
@@ -17,9 +20,6 @@ text-align:left;
 }
 
 
-.teamrole {
-padding-bottom:25px;
-}
 
 
 
@@ -28,7 +28,7 @@ padding-bottom:25px;
 
 .photoania{
   float: left;
-  shape-outside: url("/media/team/ania1.png");
+  shape-outside: url("/media/team/ania.png");
   shape-image-threshold: 0.9;
 	max-height: 100%;
   shape-margin: 2%;
@@ -40,7 +40,7 @@ padding-bottom:25px;
 
 .photosarah{
   float: left;
-  shape-outside: url(" /media/team/sarah1.png");
+  shape-outside: url(" /media/team/sarah.png");
   shape-image-threshold: 0.9;
 	max-height: 100%;
   shape-margin: 2%;
@@ -49,7 +49,7 @@ padding-bottom:25px;
 
 .photoleni{
   float: left;
-  shape-outside: url("/media/team/leni1.png");
+  shape-outside: url("/media/team/leni.png");
   shape-image-threshold: 0.9;
 	max-height: 100%;
   shape-margin: 2%;
@@ -58,7 +58,7 @@ padding-bottom:25px;
 
 .photojasmina{
   float: left;
-  shape-outside: url("/media/team/jasmina1.png");
+  shape-outside: url("/media/team/jasmina.png");
   shape-image-threshold: 0.9;
 	max-height: 100%;
   shape-margin: 2%;
@@ -67,7 +67,7 @@ padding-bottom:25px;
 
 .photofrida{
   float: left;
-  shape-outside: url("/media/team/frida1.png");
+  shape-outside: url("/media/team/frida.png");
   shape-image-threshold: 0.9;
 	max-height: 100%;
   shape-margin: 2%;
@@ -81,7 +81,6 @@ padding-bottom:25px;
   .photofrida, .photoania, .photosarah, .photoleni, .photojasmina {
     max-width:250px;
 	max-height:300px;
-  float: right!important;
 
    
   }
@@ -99,6 +98,18 @@ font-size: 1rem!important;
 font-weight: 600!important;
   text-align: left;
 
+}
+
+.teamroleless {
+margin-top:90px!important;
+padding:0!important;
+margin-bottom:-10px!important;
+}
+
+.teamrolemore {
+margin-top:80px!important;
+padding:0!important;
+margin-bottom:-20px!important;
 }
 
 }
@@ -122,6 +133,18 @@ font-weight:700!important;
 .teamrole {
 font-size: 1.1rem!important;
 font-weight: 600!important;
+}
+
+.teamroleless {
+margin-top:150px!important;
+padding:0!important;
+margin-bottom:-10px!important;
+}
+
+.teamrolemore {
+margin-top:130px!important;
+padding:0!important;
+margin-bottom:-20px!important;
 }
 
 }

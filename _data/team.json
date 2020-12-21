@@ -1,8 +1,8 @@
 {
   "ania": {
     "full_name": "Ania Korsunska",
-    "image_path": "../media/team/ania1.png",
-    "role": "Project Lead & Researcher & Writer",
+    "image_path": "../media/team/ania.png",
+    "role": "Co-Founder & Researcher",
     "focus": "infographics & organization",
     "website": "",
     "twitter": "",
@@ -10,8 +10,8 @@
   },
   "sarah": {
     "full_name": "Sarah Bolden",
-    "image_path": "../media/team/sarah1.png",
-    "role": "Project Lead & Researcher & Writer",
+    "image_path": "../media/team/sarah.png",
+    "role": "Co-Founder & Researcher",
     "focus": "web design & tutorials",
     "website": "",
     "twitter": "",
@@ -19,7 +19,7 @@
   },
   "leni": {
     "full_name": "Leni Krsova",
-    "image_path": "../media/team/leni1.png",
+    "image_path": "../media/team/leni.png",
     "role": "Researcher & Writer",
     "focus": "social media & pop culture",
     "website": "",
@@ -28,7 +28,7 @@
   },
   "jasmina": {
     "full_name": "Jasmina Tacheva",
-    "image_path": "../media/team/jasmina1.png",
+    "image_path": "../media/team/jasmina.png",
     "role": "Researcher & Writer",
     "focus": "fighting the power & being awesome",
     "website": "",
@@ -37,7 +37,7 @@
   },
   "frida": {
     "full_name": "Frida",
-    "image_path": "../media/team/frida1.png",
+    "image_path": "../media/team/frida.png",
     "role": "Data Cat",
     "focus": "bug squashing & napping",
     "website": "",
