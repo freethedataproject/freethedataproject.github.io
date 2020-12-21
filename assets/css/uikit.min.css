@@ -25,12 +25,12 @@ a  {
 
 
 button, .uk-nav, .uk-button-text, .uk-button, .navitemtext, .navicon, .navitem, .uk-dropdown-nav, .uk-dropdown, .notred {
-color: #999!important;
+color: #3a3a3a!important;
 }
 
 
 button:hover, .uk-nav:hover, .uk-button-text:hover, .uk-button:hover, .navitemtext:hover, .navicon:hover, .navitem:hover, .uk-dropdown-nav:hover, .uk-dropdown:hover, .notred:hover {
-color: #666!important;
+color: var(--aR)!important;
 }
 
 
