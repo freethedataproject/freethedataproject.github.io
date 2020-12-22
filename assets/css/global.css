@@ -21,33 +21,42 @@
 
 /* fonts */
 .accentfont {
-font-family: cubano, sans-serif;
+font-family: cubano-sharp, sans-serif;
 font-weight: 400;
-font-style: normal;}
+font-style: normal;
+}
 
 .space, .headingfont {
-font-family: basic-sans, sans-serif;
+	font-family: 'Inter', sans-serif;
 font-weight: 700;
 font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, nav, footer, a, button, .articletitle {
+h1, h2, h3, h4, h5, h6, .articletitle {
 	color: var(--aD);
-font-family: basic-sans, sans-serif;
-
+	font-family: 'Inter', sans-serif;
 font-weight: 700;
-
 font-style: normal;
 
 
 
+
 }
+
+
+nav, footer, a, button {
+	font-family: 'Inter', sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
 
 p {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	color: var(--aD);
-	font-size: .95rem;
+	font-size: 1rem;
+	line-height:1.7;
 }
 
 
