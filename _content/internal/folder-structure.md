@@ -4,7 +4,7 @@ title: "Folder structure."
 permalink: "/internal/folder-structure"
 ---
 
-<button class = "uk-button uk-button-default" type = "button"><a href = "freethedataproject.com/internal">Return to the Official Internal Information Hub™</a></button>
+<button class = "uk-button uk-button-primary" type = "button"><a style = "color:#ffffff!important;" href = "freethedataproject.com/internal">← Return to the Official Internal Information Hub™ </a></button>
 
 The <a href = "https://github.com/freethedataproject/freethedataproject.github.io" target = "_blank">main page of our Github repository</a> is called the **root** directory. Here's what's in the root directory as of 22 December 2020: 
 
