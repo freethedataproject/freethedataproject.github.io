@@ -65,7 +65,7 @@ b, strong {
 }
 
 em {
-	color: #f0506e
+	color: var(--aD);
 }
 
 ins {
