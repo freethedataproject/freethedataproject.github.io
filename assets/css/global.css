@@ -12,7 +12,7 @@
 	--aW: #eadbcb;
 	--aP: #f4bab4;
 	--aY: #efb73c;
-	--aR: #eb6d5a;
+	--aR: #999;
 	--aB: #418db7;
 	--aBD: #233943;
 	--aD: #3a3a3a;
@@ -44,10 +44,11 @@ font-style: normal;
 }
 
 
-nav, footer, a, button {
+nav, footer, a, button, .navicon, .mobilenavicon {
 	font-family: 'Inter', sans-serif;
-font-weight: 500;
+font-weight: 400;
 font-style: normal;
+color: #999!important;
 }
 
 
@@ -55,7 +56,7 @@ p {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	color: var(--aD);
-	font-size: 1rem;
+	font-size: .97rem;
 	line-height:1.7;
 }
 
@@ -71,6 +72,10 @@ font-size: 35px!important;
 
 }
 
+a:hover,  .navitem:hover, .navitemtext:hover, .notred:hover, .navicon:hover, .mobilenavicon:hover {
+color: #3a3a3a!important;
+text-decoration:none!important;}
+
 
 
 main {
@@ -78,9 +83,9 @@ margin-top: 50px!important;
 padding-bottom:100px!important;
 }
 
-nav, footer {
+nav, footer, .navitemtext, .notred, .mobilenavicon,  .navitem {
 	background-color: var(--bgcolor)!important;
-	color: var(--aD)!important;
+	color: #999!important;
 }
 
 
