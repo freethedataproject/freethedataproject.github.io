@@ -5,87 +5,130 @@ permalink: "/team.html"
 ---
 
 
-<style>
-	.mycontainer {
 
-		max-width: 70vw !important;
+
+
+<style>
+	.biog {
+		margin-top: 170px !important;
+text-align: left;
 	}
 
+.photoania, .photosarah, .photoleni, .photojasmina, .photofrida {
+padding:0!important; margin:0!important;}
 </style>
+
+
+
+
+
+
+
+
+
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/teamstyle.css" />
 
 
-<div class="mycontainer uk-align-center">
-
-	<div uk-grid class="uk-grid-divider uk-child-width-1@s uk-child-width-1-2@m uk-child-width-1-2@l">
 
 
 
-		<div class="gridsection">
 
-			<img class="photoania" src="{{site.data.team['ania'].image_path}}" />
-			<div>
-				<!-- Add as many paragraphs as you want -->
-			<p class="teamrole teamrolemore space ">{{site.data.team['ania'].role}}</p>
-				<p class="teamtext">{{site.data.team['ania'].bio}}</p>
-			</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row px-5">
+
+
+
+	<div class="col p-5 ">
+
+		<img class="photoania" src="{{site.data.team['ania'].image_path}}" />
+		<div class="biog">
+			<p class="teamrole  ">{{site.data.team['ania'].role}}</p>
+
+			<p class="teamtext">{{site.data.team['ania'].bio}}</p>
+		</div>
+
+	</div>
+
+
+	<div class="col p-5">
+		<img class="photosarah" src="{{site.data.team['sarah'].image_path}}" />
+		<div class="biog">
+			<p class="teamrole  ">{{site.data.team['sarah'].role}}</p>
+
+			<p class="teamtext">{{site.data.team['sarah'].bio}}</p>
 		</div>
 
 
-		<div class="gridsection">
-			<img class="photosarah" src="{{site.data.team['sarah'].image_path}}" />
-			<div>
-				<!-- Add as many paragraphs as you want -->
-			<p class="teamrole teamroleless space ">{{site.data.team['sarah'].role}}</p>
-				<p class="teamtext">{{site.data.team['sarah'].bio}}</p>
-			</div>
+
+
+	</div>
 
 
 
 
+</div>
+
+
+
+<div class="row px-5">
+
+
+	<div class="col p-5">
+
+
+
+		<img class="photoleni" src="{{site.data.team['leni'].image_path}}" />
+		<div class="biog">
+			<!-- Add as many paragraphs as you want -->
+			<p class="teamrole  ">{{site.data.team['leni'].role}}</p>
+
+			<p class="teamtext">{{site.data.team['leni'].bio}}</p>
 		</div>
 
+	</div>
 
-		<div class="gridsection">
+	<div class="col p-5">
 
+		<img class="photojasmina" src="{{site.data.team['jasmina'].image_path}}" />
+		<div class="biog">
+			<p class="teamrole  ">{{site.data.team['jasmina'].role}}</p>
 
-			<img class="photoleni" src="{{site.data.team['leni'].image_path}}" />
-			<div>
-				<!-- Add as many paragraphs as you want -->
-			<p class="teamrole teamroleless space ">{{site.data.team['leni'].role}}</p>
-				<p class="teamtext">{{site.data.team['leni'].bio}}</p>
-			</div>
-
+			<p class="teamtext">{{site.data.team['jasmina'].bio}}</p>
 		</div>
 
-		<div class="gridsection">
+	</div>
 
-			<img class="photojasmina" src="{{site.data.team['jasmina'].image_path}}" />
-			<div>
-				<!-- Add as many paragraphs as you want -->
-			<p class="teamrole teamrolemore space ">{{site.data.team['jasmina'].role}}</p>
-				<p class="teamtext">{{site.data.team['jasmina'].bio}}</p>
-			</div>
 
+
+</div>
+
+<div class="row px-5">
+
+
+
+	<div class="col p-5">
+
+		<img class="photofrida" src="{{site.data.team['frida'].image_path}}" />
+		<div class="biog">
+			<p class="teamrole  ">{{site.data.team['frida'].role}}</p>
+			<p class="teamtext">{{site.data.team['frida'].bio}}</p>
 		</div>
 
+	</div>
 
-		<div class="gridsection">
-
-			<img class="photofrida" src="{{site.data.team['frida'].image_path}}" />
-			<div>
-				<!-- Add as many paragraphs as you want -->
-				<p class="teamrole teamrolemore space ">{{site.data.team['frida'].role}}</p>
-				<p class="teamtext">{{site.data.team['frida'].bio}}</p>
-			</div>
-
-		</div>
-
-		<div class="gridsection">
-
-		</div>
-
+	<div class="col p-5">
 
 	</div>
 

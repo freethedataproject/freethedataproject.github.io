@@ -2,14 +2,104 @@
 layout: default
 title: "Home"
 ---
+	<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>
+	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/js/chartjs/chart.min.css">
 
-<div class = "uk-container uk-align-center">
+
+<!-- FULL-WIDTH HERO -->
+
+<style>
+
+.construction-heading {
+	font-size: 3rem!important;
+}
+
+.constructiontext {
+	margin-left: 50px!important;
+	padding: 30px;
+
+}
+.construction {font-size: 20px!important;}
+
+.heroimg {padding-left:300px!important; padding-right:300px!important;}
+</style>
+
+<div class = "heroimg shadow-flat  d-flex justify-content-center ">
+<div class = "container constructiontext">
+<h1 class = 'constructiontext construction-heading cubano ml-5'>This site is under construction</h1>
+<p class = "constructiontext construction ml-5">Expect some placeholder content and/or unfinished sections as we get settled in. We hope to be fully live ASAP.
+</p>
+<br>
+</div>
+<img class = "img-fluid d-flex justify-content-center" src = "{{site.baseurl}}/media/sitewide/construction.svg" style = "max-height: 50vh!important;"/>
+</div>
+</div> 
 
 
+	<br/>
+	<br/>  
 
-<div class=" uk-alert-danger uk-text-center uk-align-center uk-text-large" role="alert">
-  <strong>This site is under construction! Expect some broken links and lorem ipsum as we get settled in. We hope to be fully live ASAP. </strong> </div>
 
-<img class = "uk-align-center" src="{{site.baseurl}}/media/sitewide/construction.svg" uk-svg>
+<div class = "d-flex flex-wrap container justify-content-center">
+<div class="container maxwidth">
+	<h5 class="cubano ">section title</h5>
+
+	<hr> 
+<br> <br>
+</div> 
+
+<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['word_freq'].section_heading}}</h2>
+			{% include homepage/wordcloud.html %}
 
 </div>
+
+
+<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['about'].section_heading}}</h2>
+			<p>{{site.data.homepage_modules['about'].section_description}} Lorem ipsum more words I'm just trying to fill out this section to show what a text box looks like with a call to action button underneath it. </p>
+
+			<btn class = "btn btn-sm btn-accent">Learn more about us →</btn>
+
+</div>
+
+<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['topics'].section_heading}}</h2>
+			<p>{{site.data.homepage_modules['topics'].section_description}}</p>
+			{% include homepage/topics.html %}
+
+</div>
+
+
+<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['team'].section_heading}}</h2>
+			{% include homepage/team.html %}
+
+</div>
+
+
+<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['reading_time'].section_heading}}</h2>
+			{% include homepage/readingtime.html %}
+
+</div>
+
+<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['trending_posts'].section_heading}}</h2>
+			{% include homepage/trending_posts.html %}
+
+</div>
+
+<div class = "container newsletter p-5 justify-content-center     animate__animated animate_slideInDown shadow-flat">
+			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['newsletter'].section_heading}}</h2>
+			{% include homepage/newsletter.html %}
+
+</div>
+
+</div>
+
+
+
+
+</div>
+

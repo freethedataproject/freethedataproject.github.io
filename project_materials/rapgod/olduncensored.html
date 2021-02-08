@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+      <head>
+
+
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <meta
+            http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- UI KIT -->
+		<link
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+		<link
+		href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+		<!-- JAVA & VIZ -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js" ></script>
+		<!-- STYLE SHEETS -->
+		<link rel="stylesheet" href="./style/uncensored.css"/>
+		<link rel="stylesheet" href="./style/global.css"/><body>
+
+			
+</head>
+
+<body>
+
+<div id="navbar-template"></div>
+<script src="./templates/navbarTemplate.js"></script>
+
+
+
+<div id = "json">
+
+
+</div>
+	
+<script>
+	
+
+$(function() {
+
+$.each(songs, function(key, value) {
+  $('#json').append('<div class="block waffle rape kill ' + songs[key].album + " " + songs[key].year + " " + songs[key].rape +  '"></div>')
+
+  
+});
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class = "vizSection slurs">
+
+	<div class="card">
+		<div class="card-body">
+		  <h5 class="card-title">Panel title</h5>
+		  
+		  <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+
+		    
+		  <canvas id="myChart" width="400" height="200"></canvas>
+		  <script src="./js/barchart.js"></script>
+	</div>
+	    </div>
+		 
+	    
+</div>
+
+<div class = "vizSection byAlbum">
+	<div class="card">
+		<div class="card-body">
+		  <h5 class="card-title">Panel title</h5>
+		  <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+	<canvas id="myChart1"></canvas>
+	
+</div>
+</div>
+</div>
+
+
+
+<div class = "vizSection byAlbum">
+	<div class="card ">
+		<div class="card-body ">
+
+		  <h5 class="card-title">Panel title</h5>
+		  <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+		  
+		 
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+<script src="./data/albums.js"></script>
+<script src="./data/songs.js"></script>
+<script src="./test.js"></script>
+
+</div>
+    </div>
+    
+
+
+
+
+	<div id="footer-template"></div>
+
+	<script src="./templates/footerTemplate.js"></script>
+	<script src="./js/script.js"></script></body></html>
+
+
+</body>
+</html>

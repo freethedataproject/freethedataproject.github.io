@@ -1,0 +1,302 @@
+/*
+=========================================================
+* SOURCES / REFERENCES
+=========================================================
+* Neumorphism elements modified from: https://themesberg.com/product/ui-kits/neumorphism-ui
+=========================================================
+/*!
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+	--dark: #3a3a3a;
+	--medium: #999;
+	--light: #fff;
+	--offwhite: #f2f2f2;
+	--shadow_dark: rgba(55, 84, 170, .29);
+	--shadow_light: #fff;
+	--frida: #E86166;
+	--frida-md: #ad1f20;
+	--frida-dark: #841d1c;
+
+	--topic1: rgb(83, 69, 130);
+	--topic2: rgb(56, 122, 196);
+	--topic3: rgb(55, 191, 167);
+	--topic4: rgb(69, 248, 194);
+
+	--tint1: rgba(27, 83, 114, 0.7);
+	--tint2: rgba(27, 83, 114, 0.7);
+	--tint3: rgba(27, 83, 114, 0.7);
+	--tint4: rgba(27, 83, 114, 0.7);
+
+
+	--boris: #45f8c2;
+	--boris-md: #07c78d;
+	--boris-dark: #03563e;
+
+	--accentmain: #E86166;
+	--accentlight: #bde2df;
+	--cubano: 'cubano-sharp', sans-serif;
+	--inter: 'Inter', sans-serif;
+	--accentfont: 'cubano-sharp', sans-serif;
+	--headings: 'Inter', sans-serif;
+}
+
+/**
+ * = GENERAL
+ */
+
+body {
+	background-color: var(--offwhite) !important;
+}
+
+/**
+ * = SHADOWS (NEUMORPHISM)
+ */
+
+[class*="shadow"] {
+	transition: all 0.2s ease;
+}
+
+.shadow-soft {
+	border: none!important;
+	box-shadow: 3px 3px 10px var(--shadow_dark), -3px -3px 12px var(--shadow_light) !important;
+}
+
+
+.shadow-flat {
+	border-radius: 0px !important;
+	background: #fafafa !important;
+	box-shadow: 3px 3px 10px var(--shadow_dark), -3px -3px 12px var(--shadow_light) !important;
+}
+
+.shadow-pressed {
+	border-radius: 0px !important;
+	background: #fafafa !important;
+	box-shadow: inset 5px 5px 4px #e1e1e1, inset -5px -5px 4px #ffffff !important;
+}
+
+/**
+ * = fonts
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--headings);
+	color: var(--dark);
+}
+
+a {
+	color: var(--frida-md)!important;
+
+}
+
+a:hover {
+
+	background-color: #45f8c2!important;
+	color: var(--dark)!important;
+	transition: .1s ease!important;
+}
+
+html {
+	font-family: "Inter", sans-serif;
+}
+
+p, .card-text, .btn {
+	font-family: "Inter", sans-serif;
+	font-size: 13px;
+	color: var(--dark);
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	color: var(--dark);
+}
+
+.fs1 {
+	font-size: 1.5rem !important;
+}
+
+.fs2 {
+	font-size: 2.5rem !important;
+}
+
+.fs3 {
+	font-size: 3.5rem !important;
+}
+
+.f-medium, .f-regular {
+	font-weight: 400 !important;
+}
+
+.f-semibold {
+	font-weight: 500 !important;
+}
+
+.f-bold {
+	font-weight: 700 !important;
+}
+
+.f-black {
+	font-weight: 800 !important;
+}
+
+.heading-font {
+	font-family: var(--headings) !important;
+}
+
+.cubano {
+	font-family: var(--cubano) !important;
+}
+/**
+ * = BUTTONS
+ */
+
+.btn, .icon {
+	border: none!important;
+}
+
+.btn-accent {
+	background-color: var(--accentlight) !important;
+	color: var(--dark) !important;
+}
+
+
+.btn-topic {
+
+	font-size: 14px!important;
+	font-family: var(--inter)!important;
+	padding-left: 8px!important;
+	padding-right: 8px!important; 
+	padding-top: 6px!important; 
+	padding-bottom: 6px!important; 
+
+}
+
+
+
+/**
+ * = TOPICS AND TINTS
+ */
+
+
+
+.badge {
+
+	font-size: 10px!important;
+	font-weight:500!important;
+	font-family: var(--inter)!important;
+	padding-left: 6px!important;
+	padding-right: 6px!important;
+	padding-top: 4px!important;
+	padding-bottom: 4px!important;
+	margin-bottom: 7px!important;
+}
+
+
+
+.topic1-bg {
+	background-color: var(--topic1)!important;
+	color: var(--dark) !important;
+
+}
+
+
+.topic0-bg {
+	border: 1px solid var(--dark)!important;
+	color: var(--dark) !important;
+
+}
+
+.topic1-bg {
+	border: 1px solid var(--dark)!important;
+	background-color: var(--boris) !important;
+	color: var(--dark) !important;
+
+
+}
+
+
+/**
+ * = MEDIA RULES
+ */
+
+
+
+@media only screen and (max-width: 600px) {
+	.grid_item {
+		width: 200px !important;
+		height: 150px !important;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.grid_item {
+		width: 400px !important;
+		height: 300px !important;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.grid_item {
+		width: 400px !important;
+		height: 300px !important;
+	}
+}
+
+/**
+ * = PAGE_SPECIFIC : INDEX/HOME/LANDING
+ */
+
+.heroimg {
+	margin-top: 30px;
+	background-color: var(--accentlight) !important;
+	width: 100%important;
+	min-height: 250px!important;
+}
+
+.newsletter {
+	max-width: 1260px!important;
+	background-color: #d3ebe9!important;
+}
+
+.grid_item {
+	padding: 50px!important;
+	background-color: #f6f6f6!important;
+}
+
+.teamname {
+	text-align: center;
+	font-family: var(--inter);
+}
+
+.grid_title {
+
+	font-family: var(--headings);
+	font-weight: 700;
+	margin-bottom:20px!important;
+	font-size: 1.4em;
+	color: var(--dark)!important;
+}
+
+
+/**
+ * = NAVIGATION
+ */
+
+.nav_color {
+
+	color: var(--dark) !important;
+
+}
+
+.nav_text {
+	font-family: var(--headings);
+	font-weight: 600;
+}
+
+.nav_color:hover {
+
+	color: var(--dark) !important;
+}

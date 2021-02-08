@@ -1,170 +1,58 @@
-<style>
-.mobilenav {
-font-size:22px!important;
-padding-top:10px!important;
-padding-bottom:10px!important;
-font-weight:700!important;
+<nav class="navbar navbar-expand-sm  justify-content-center ">
+  <div class="container">
 
-}
+    <div class="collapse  navbar-collapse" id="">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		<li class="nav-item">
+			<a class="nav-link nav_color nav_text" href="/about">About</a>
+		</li>
 
-.mobilenavicon {
-padding-top:17px!important;
-padding-bottom:17px!important;
+		<li class="nav-item">
+			<a class="nav-link nav_color nav_text" href="{{site.baseurl}}/articles">Articles</a>
+		</li>
+      </ul>
 
-}
-
-.fridamobile {
-width: 40px!important;
-margin-left: -4px!important;}
-
-
-.navitemtext {
-margin-top: -40px!important;}
-.navlogo {
-margin-top: -40px;}
+      <div class="navbar-nav  me-auto">
+			<a class="navbar-brand " href="{{site.baseurl}}"><img src="{{site.baseurl}}/media/sitewide/ftd.svg" width="80" height="auto" class="d-inline-block align-top" alt="Free the Data"></a>
+     	</div>
 
 
-.navicon {
-margin-top: -20px;
-}
-
-@media only screen and (max-width: 600px) {
-
-.uk-navbar-toggle {
-margin-top: -20px;}
-
-}
-
-.notred {
-
-font-weight: 400!important;
-}
-
-.uk-button-default {
-border: none!important;}
-
-</style>
-
-	<div class=”main-container”>
-		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-
-			<nav class="uk-navbar-container " uk-navbar>
-				<div class="uk-navbar-left">
-						
-					<a class="uk-navbar-item uk-logo " href="/"><img class="navlogo" style = "width:50px;" 								src="{{site.baseurl}}/media/sitewide/ftd.svg" /> </a>
-
-					<ul class="uk-navbar-nav uk-visible@s">
-
-
-						<li class=""><a class=" navitemtext" href="/">Home</a></li>
-						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/about">About</a></li>
-
-						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/team">Team</a></li>
-
-						<button style = "padding-top:3px!important;" class="uk-button uk-button-default navitemtext" type="button">Explore</button>
-						<div class = "dropdownitem" uk-dropdown="delay-show: 0; delay-hide: 200" >
-						<ul class="uk-nav uk-dropdown-nav">
-						<li class=""><a class=" notred" href="{{site.baseurl}}/articles">Articles</a></li>
-						<li class=""><a class="notred " href="{{site.baseurl}}/tutorials">Tutorials</a></li>
-
-							<li class="uk-nav-divider"></li>
-						<li class=""><a class="notred " href="{{site.baseurl}}/resources">Resources</a></li>
-
-						<li class=""><a class=" notred" href="{{site.baseurl}}/datajustice101">Data Justice 101</a></li>
-						</ul>
-						</div>
-
-
-
-						<li class=""><a class=" navitemtext" href="{{site.baseurl}}/contact">Contact</a></li>
-
-					</ul>
-				</div>
-				<div class="uk-navbar-right ">
-					<ul class="uk-navbar-nav  uk-visible@s">
-						<li class="">
-							<a class="navicon" href="https://twitter.com/freethedata_" target="blank_"><span uk-icon="twitter"></span></a>
+      <ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="https://twitter.com/freethedata_" target="blank_">
+								<i class="fab fa-twitter nav_color"></i>
+							</a>
 						</li>
-						<li>
-							<a class="navicon" href="https://instagram.com/freethedataproject"
-								target="blank_"><span uk-icon="instagram"></span></a>
-						</li>
-						<li>
-							<a class="navicon" href="https://github.com/freethedataproject"
-								target="blank_"><span uk-icon="github"></span></a>
-						</li>
-						<li>
-							<a class="navicon" href="mailto:freethedataproject@gmail.com"
-								target="blank_"><span uk-icon="mail"></span></a>
-						</li>
-						<li>
-							<a class="navicon"> <img role="button" class="frida" id="demo1"
-									onclick="myFunction1()"
-									src="{{site.baseurl}}/media/sitewide/logo.svg" />
-							</a></li>
-					</ul>
-            <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
 
-				</div>
+						<li class="nav-item">
+							<a class="nav-link" href="https://instagram.com/freethedataproject"
+								target="blank_">
+								<i class="fab fa-instagram nav_color"></i>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/freethedataproject"
+								target="blank_">
+								<i class="fab fa-github nav_color"></i>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="mailto:freethedataproject@gmail.com"
+								target="blank_">
+								<i class="far fa-envelope nav_color"></i>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link"> <img role="button" class="frida" id="demo1" onclick="myFunction1()" style = "width:27px; margin-top: -5px; height:auto;" src="{{site.baseurl}}/media/sitewide/logo.svg" />
+							</a>
+						</li>
+
+			</ul>
 		</div>
-		</nav>
-	</div>
-
-	</div>
-
-
-
-<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar">
-        <ul class="uk-nav">
-						<li class="mobilenav"><a class="navitem" href="/">Home</a></li>
-						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/about">About</a></li>
-
-						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/team">Team</a></li>
-
-						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/explore">Explore</a></li>
-						<li class="mobilenav"><a class="navitem" href="{{site.baseurl}}/contact">Contact</a></li>
-						<li class="">
-							<a class="mobilenavicon" href="https://twitter.com/freethedata_" target="blank_"><span uk-icon="twitter"></span></a>
-						</li>
-						<li>
-							<a class="mobilenavicon" href="https://instagram.com/freethedataproject"
-								target="blank_"><span uk-icon="instagram"></span></a>
-						</li>
-						<li>
-							<a class="mobilenavicon" href="https://github.com/freethedataproject"
-								target="blank_"><span uk-icon="github"></span></a>
-						</li>
-						<li>
-							<a class="mobilenavicon" href="mailto:freethedataproject@gmail.com"
-								target="blank_"><span uk-icon="mail"></span></a>
-						</li>
-						<li>
-							<a class="mobilenavicon"> <img role="button" class="fridamobile" id="demo1"
-									onclick="myFunction1()"
-									src="{{site.baseurl}}/media/sitewide/logo.svg" />
-							</a></li>
-
-        </ul>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		</div>
+</nav>
 
 
