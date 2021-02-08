@@ -148,17 +148,39 @@ margin: 10px!important;
 
 .GRIDITEM {
 
-min-width: 300px!important;
-max-width: 400px!important;
+max-width: 300px!important;
 
 margin: 10px!important;
 }
 }
 
 
+.article_title a {
+
+color: var(--dark)!important;
+text-decoration: none!important;
+
+}
 
 
 
+
+  .GRIDITEM {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  .GRIDITEM:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(0%);
+    -ms-filter:     grayscale(0%);
+    -o-filter:      grayscale(0%);
+  }
 
 
 
