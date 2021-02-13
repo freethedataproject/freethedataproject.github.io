@@ -9,7 +9,6 @@ permalink: "/example-post-2"
 date: 1 February 2021
 image_path: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80'
 image_alt: 'Alt text for the image goes here.'
-image_caption: 'Photograph: [author] / [source].'
 ---
 
 # This is a level-1 heading.

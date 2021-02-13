@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "How do I collect data?"
+title: "Here's a title."
 subtitle: "Here's a subtitle, AKA a brief & catchy sentence or two that go below the title."
 author: Free the Data
-category: [category3]
-tags: [data101, tag2, tag3]
-permalink: "/example-post-2"
-date: 1 February 2021
-image_path: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80'
+category: [category2]
+tags: [bitesized, tag2, tag3]
+permalink: "/example-post-5"
+date: 4 February 2021
+image_path: 'https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
 image_alt: 'Alt text for the image goes here.'
-image_caption: 'Photograph: [author] / [source].'
 ---
 
 # This is a level-1 heading.
