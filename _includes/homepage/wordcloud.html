@@ -1,22 +1,19 @@
-<canvas id="polar-chart" width="800" height="450"></canvas>
+<canvas id="polar-chart" width="" height=""></canvas>
 
 <script>
 new Chart(document.getElementById("polar-chart"), {
     type: 'polarArea',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
       datasets: [
         {
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
+          backgroundColor: ["#00a5a7", "#007c7d","#005254","#00292a","#002221"],
+          data: [2478,5267,1738,4201,5500]
         }
       ]
     },
     options: {
       title: {
-        display: true,
-        text: 'Predicted world population (millions) in 2050'
+        display: true
       }
     }
 });

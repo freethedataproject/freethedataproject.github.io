@@ -34,57 +34,83 @@
 
 </style>
 
+<nav>
+  <div class="nav nav-tabs pt-3" id="nav-tab" role="tablist">
+    <i class="nav-link active fas fa-newspaper" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="i" role="tab" aria-controls="nav-home" aria-selected="true"></i>
+    <i class="nav-link fas fa-newspaper" id="nav-ania-tab" data-bs-toggle="tab" data-bs-target="#nav-ania" type="i" role="tab" aria-controls="nav-ania" aria-selected="false"></i>
+    <i class="nav-link fas fa-newspaper" id="nav-sarah-tab" data-bs-toggle="tab" data-bs-target="#nav-sarah" type="i" role="tab" aria-controls="nav-sarah" aria-selected="false"></i>
+    <i class="nav-link fas fa-newspaper" id="nav-leni-tab" data-bs-toggle="tab" data-bs-target="#nav-leni" type="i" role="tab" aria-controls="nav-leni" aria-selected="false"></i>
+    <i class="nav-link fas fa-newspaper" id="nav-jasmina-tab" data-bs-toggle="tab" data-bs-target="#nav-jasmina" type="i" role="tab" aria-controls="nav-jasmina" aria-selected="false"></i>
+    <i class="nav-link fas fa-newspaper" id="nav-frida-tab" data-bs-toggle="tab" data-bs-target="#nav-frida" type="i" role="tab" aria-controls="nav-frida" aria-selected="false"></i>
 
-<div class="row">
 
-	<div class="col">
-			<p class="teamname">Ania</p>
-
-
-<img type="button  icondiv blobicon" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class = "blobicon" src = "{{site.baseurl}}/media/home/blob_derpy.png">
-
-<div class="collapse" id="collapseExample">
-<p>
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-</p>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+<p>Click one of the tabs above to learn more about our team. </p>
+</div>
+  <div class="tab-pane fade" id="nav-ania" role="tabpanel" aria-labelledby="nav-ania-tab">
+<h5>Ania Korsunska</h5>
+<p>{{site.data.team['ania'].role}}</p>
+<a href = "#">Profile →</a>
+<h6>Recent posts</h6>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
 
 </div>
 
+  <div class="tab-pane fade" id="nav-sarah" role="tabpanel" aria-labelledby="nav-sarah-tab">
+<h5>Sarah Bolden</h5>
+<p>{{site.data.team['sarah'].role}}</p>
+<a href = "#">Profile →</a>
+<h6>Recent posts</h6>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+
+</div>
+  <div class="tab-pane fade" id="nav-leni" role="tabpanel" aria-labelledby="nav-leni-tab">
+<h5>Leni Krsova</h5>
+<p>{{site.data.team['leni'].role}}</p>
+<a href = "#">Profile →</a>
+<h6>Recent posts</h6>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+
+</div>
+  <div class="tab-pane fade" id="nav-jasmina" role="tabpanel" aria-labelledby="nav-jasmina-tab">
+<h5>Jasmina Tacheva</h5>
+<p>{{site.data.team['jasmina'].role}}</p>
+<a href = "#">Profile →</a>
+<h6>Recent posts</h6>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+
+</div>
+  <div class="tab-pane fade" id="nav-frida" role="tabpanel" aria-labelledby="nav-frida-tab">
+<h5>Frida Datacat</h5>
+<p>{{site.data.team['frida'].role}}</p>
+<a href = "#">Profile →</a>
+<h6>Recent posts</h6>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
 
 </div>
 
-
-
-	<div class="col">
-			<p class="teamname">Sarah</p>
-
-		<div class="icon icondiv"><img class="img-fluid blobicon"
-				src="{{site.baseurl}}/media/home/blob-cool-sad.png">
-		</div>
-	</div>
-
-	<div class="col">
-			<p class="teamname">Leni</p>
-
-		<div class="icon icondiv"><img class="img-fluid blobicon" src="{{site.baseurl}}/media/home/blob_angel.png">
-		</div>
-	</div>
-
-	<div class="col">
-			<p class="teamname">Jasmina</p>
-
-		<div class="icon icondiv"><img class="img-fluid blobicon" src="{{site.baseurl}}/media/home/blob_aww.png">
-		</div>
-	</div>
-
-
-	<div class="col">
-			<p class="teamname">Frida</p>
-
-		<div class="icon icondiv"><img class="img-fluid blobicon" src="{{site.baseurl}}/media/home/meow_meow.png">
-		</div>
-	</div>
-
-
-
 </div>
+

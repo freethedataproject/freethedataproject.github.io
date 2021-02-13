@@ -1,0 +1,77 @@
+<img class="photojasmina" src="{{site.data.team['jasmina'].image_path}}" />
+
+<div class="biog">
+    <h1 class="cubano">
+        {{site.data.team['jasmina'].first_name}}
+    </h1>
+
+    <h6 class="biogtext biog1">
+        {{site.data.team['jasmina'].role}}
+    </h6>
+
+    <h6 class="biogtext biog2">
+        {{site.data.team['jasmina'].focus}}
+    </h6>
+
+    <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-sm btn-team" data-toggle="modal" data-target="#modal-target-jasmina">
+		Biography
+	</button>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modal-target-jasmina" tabindex="-1" role="dialog" aria-labelledby="modal-target-jasminaTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="cubano modal-title" id="exampleModalLongTitle">
+                        {{site.data.team['jasmina'].full_name}}
+                    </h1>
+<br>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="biogtext biog1 " id="exampleModalLongTitle">
+                        {{site.data.team['jasmina'].role}}
+                    </h6>
+                    <h6 class="biogtext biog2 " id="exampleModalLongTitle">
+                        {{site.data.team['jasmina'].focus}}
+                    </h6>
+<br>
+
+                    <img class="photojasmina modal-img" src="{{site.data.team['jasmina'].image_path}}" />
+
+                    <div class="biog">
+                        <p class="modal-biog ">
+                            {{site.data.team['jasmina'].bio}}
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a class="nav-link" href="{{site.data.team['jasmina'].website}}" target="blank_">
+                            <i class="fas fa-link"></i>
+                        </a>
+
+			<a class="nav-link" href="{{site.data.team['jasmina'].email}}" target="blank_">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+			<a class="nav-link" href="{{site.data.team['jasmina'].twitter}}" target="blank_">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+
+			<a class="nav-link" href="{{site.data.team['jasmina'].scholar}}" target="blank_">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+
+
+                        <button type="button" class="close btn btn-sm btn-modal" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">Close</span>
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

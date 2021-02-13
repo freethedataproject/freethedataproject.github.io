@@ -5,13 +5,15 @@ logo: 'assets/images/logo.svg'
 favicon: 'assets/images/logo.svg'
 baseurl: ""
 
-include: ["_content"]
+include: ["_posts"]
 permalink: /:title/
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+
 
 
 # Exclude from processing.

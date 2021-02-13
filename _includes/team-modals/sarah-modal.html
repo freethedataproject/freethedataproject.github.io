@@ -1,0 +1,77 @@
+<img class="photosarah" src="{{site.data.team['sarah'].image_path}}" />
+
+<div class="biog">
+    <h1 class="cubano">
+        {{site.data.team['sarah'].first_name}}
+    </h1>
+
+    <h6 class="biogtext biog1">
+        {{site.data.team['sarah'].role}}
+    </h6>
+
+    <h6 class="biogtext biog2">
+        {{site.data.team['sarah'].focus}}
+    </h6>
+
+    <!-- Button trigger modal -->
+
+    <button type="button" class="btn btn-sm btn-team" data-toggle="modal" data-target="#modal-target-sarah">
+		Biography
+	</button>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modal-target-sarah" tabindex="-1" role="dialog" aria-labelledby="modal-target-sarahTitle" aria-hidden="true">
+        <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="cubano modal-title" id="exampleModalLongTitle">
+                        {{site.data.team['sarah'].full_name}}
+                    </h1>
+<br>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="biogtext biog1 " id="exampleModalLongTitle">
+                        {{site.data.team['sarah'].role}}
+                    </h6>
+                    <h6 class="biogtext biog2 " id="exampleModalLongTitle">
+                        {{site.data.team['sarah'].focus}}
+                    </h6>
+<br>
+
+                    <img class="photosarah modal-img" src="{{site.data.team['sarah'].image_path}}" />
+
+                    <div class="biog">
+                        <p class="modal-biog ">
+                            {{site.data.team['sarah'].bio}}
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a class="nav-link" href="{{site.data.team['sarah'].website}}" target="blank_">
+                            <i class="fas fa-link"></i>
+                        </a>
+
+			<a class="nav-link" href="{{site.data.team['sarah'].email}}" target="blank_">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+			<a class="nav-link" href="{{site.data.team['sarah'].twitter}}" target="blank_">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+
+			<a class="nav-link" href="{{site.data.team['sarah'].scholar}}" target="blank_">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+
+
+                        <button type="button" class="close btn btn-sm btn-modal" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">Close</span>
+						</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

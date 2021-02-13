@@ -1,0 +1,47 @@
+	<h5 class="cubano pt-3 section-heading">featured</h5>
+
+	<hr>
+	{% for post in site.tags.featured %}
+
+	<style>
+
+		.featured-bg {
+			background-image: url("{{post.image_path}}")!important;
+			background-size: cover!important;
+		}
+
+	</style>
+
+	<div class="container featured-bg p-5  border-primary  rounded ">
+		<div class = " rounded bg-light p-3  w-75">
+			{% for cat in post.category %}
+			<span class=""><a class = "badge  z-depth-0 card-badge mb-3" href="{{site.baseurl}}/{{cat}}">{{cat}}</a></span>
+			{% endfor %}
+
+			<h1 class="featured-title cubano ">
+				<a href = {{site.baseurl}}{{post.permalink}}>{{post.title}}</a>
+			</h1>
+
+			<p class="featured-lead my-3">
+				{{post.subtitle}}
+			</p>
+
+
+			<small class="featured-meta">
+				
+
+				<a
+				href="#"
+				class="featured-meta"
+				>{{post.author}}</a> &nbsp; | &nbsp;
+
+				{{post.date}}
+			</small>
+		</div>
+
+
+	</div>
+	{% endfor %}
+
+
+</div>

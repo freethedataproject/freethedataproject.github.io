@@ -1,0 +1,78 @@
+.grid-title {
+	font-family: var(--Inter) !important;
+	font-size: 1rem !important;
+	font-weight: 700 !important;
+	color: var(--t5)!important;
+	text-transform: uppercase !important;
+}
+
+.construction-heading {
+	font-size: 3rem!important;
+}
+
+.constructiontext {
+	padding: 30px;
+	background-color: var(--offwhite)!important;
+}
+
+.construction {
+	font-size: 20px!important;
+}
+
+.grid-cards {
+	max-width: 70vw!important;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+}
+
+.grid-card {
+	padding: 1rem;
+	height: auto;
+}
+
+.heroimg {
+	margin-top: 30px;
+	width: 100%important;
+	min-height: 250px!important;
+}
+
+.teamname {
+	text-align: center;
+	font-family: var(--Inter);
+}
+
+.grid_title {
+	font-family: var(--headings);
+	font-weight: 700;
+	margin-bottom: 20px!important;
+	font-size: 1.4em;
+	color: var(--dark)!important;
+}
+
+@media (min-width: 600px) {
+	.grid-cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (min-width: 900px) {
+	.grid-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1300px) {
+	.grid-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.grid-standout {
+	color: var(--offwhite)!important;
+	background-color: #005254!important;
+}
+
+.grid-standout p, .grid-standout a, .grid-standout .btn, .grid-standout h2 {
+	color: var(--offwhite)!important;
+}

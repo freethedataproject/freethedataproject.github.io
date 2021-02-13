@@ -2,103 +2,121 @@
 layout: default
 title: "Home"
 ---
-	<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>
-	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/js/chartjs/chart.min.css">
-
 
 <!-- FULL-WIDTH HERO -->
 
-<style>
+<div>
+	<div
+		class="p-5"
+		style="background-image: url({{site.baseurl}}/media/home/hero.svg); width:100%; height: auto; background-size: cover; margin-top: -50px!important;"
+	>
+		<div class="container bg-light p-5 accentfont">
+			<h1 class="cubano ml-5">
+				This site is under construction
+			</h1>
 
-.construction-heading {
-	font-size: 3rem!important;
-}
-
-.constructiontext {
-	margin-left: 50px!important;
-	padding: 30px;
-
-}
-.construction {font-size: 20px!important;}
-
-.heroimg {padding-left:300px!important; padding-right:300px!important;}
-</style>
-
-<div class = "heroimg shadow-flat  d-flex justify-content-center ">
-<div class = "container constructiontext">
-<h1 class = 'constructiontext construction-heading cubano ml-5'>This site is under construction</h1>
-<p class = "constructiontext construction ml-5">Expect some placeholder content and/or unfinished sections as we get settled in. We hope to be fully live ASAP.
-</p>
-<br>
+			<p class="ml-5">
+				Expect some placeholder content and/or unfinished sections as we get settled in. We hope to be fully live ASAP.
+			</p>
+		</div>
+	</div>
 </div>
-<img class = "img-fluid d-flex justify-content-center" src = "{{site.baseurl}}/media/sitewide/construction.svg" style = "max-height: 50vh!important;"/>
-</div>
-</div> 
 
 
-	<br/>
-	<br/>  
+<div class="container">
+
+	<br>
+	<br>
+
+	<h5 class="cubano">section title</h5>
+
+	<hr>
+	<br>
+	<br>
 
 
-<div class = "d-flex flex-wrap container justify-content-center">
-<div class="container maxwidth">
-	<h5 class="cubano ">section title</h5>
+<div class="row row-cols-1  row-cols-lg-3 row-cols-md-2 g-5">
+  <div class="col">
+		<div class="card h-100 shadow-1 ">
 
-	<hr> 
-<br> <br>
-</div> 
-
-<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['word_freq'].section_heading}}</h2>
+<div class = "card-body">
+			<h2 class="card-title ">
+				{{site.data.homepage_modules['word_freq'].section_heading}}
+			</h2>
 			{% include homepage/wordcloud.html %}
+		</div>
+</div>
+</div>
+  <div class="col">
+
+
+		<div class="card h-100 shadow-1 ">
+
+			<div class = "card-body">
+			<h2 class="card-title ">
+				{{site.data.homepage_modules['about'].section_heading}}
+			</h2>
+
+			<p>
+				{{site.data.homepage_modules['about'].section_description}} Lorem ipsum more words I'm just trying to fill out this section to show what a text box looks like with a call to action button underneath it.
+			</p>
+
+			<btn class="btn btn-sm ">Learn more about us →</btn>
+		</div>
+		</div>
 
 </div>
+  <div class="col">
+		<div class="card h-100 shadow-1 ">
+			<div class = "card-body">
+			<h2 class="card-title ">
+				{{site.data.homepage_modules['topics'].section_heading}}
+			</h2>
 
+			<p>
+				{{site.data.homepage_modules['topics'].section_description}}
+			</p>
 
-<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['about'].section_heading}}</h2>
-			<p>{{site.data.homepage_modules['about'].section_description}} Lorem ipsum more words I'm just trying to fill out this section to show what a text box looks like with a call to action button underneath it. </p>
-
-			<btn class = "btn btn-sm btn-accent">Learn more about us →</btn>
-
-</div>
-
-<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['topics'].section_heading}}</h2>
-			<p>{{site.data.homepage_modules['topics'].section_description}}</p>
 			{% include homepage/topics.html %}
+		</div></div></div>
 
-</div>
+  <div class="col">
 
+		<div class="card h-100 shadow-1 ">
+			<div class = "card-body">
 
-<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['team'].section_heading}}</h2>
+			<h2 class="card-title ">
+				{{site.data.homepage_modules['team'].section_heading}}
+			</h2>
+
 			{% include homepage/team.html %}
+		</div></div></div>
 
-</div>
+  <div class="col">
+		<div class="card h-100 shadow-1 ">
+			<div class = "card-body">
+			<h2 class="card-title ">
+				{{site.data.homepage_modules['about'].section_heading}}
+			</h2>
 
+			<p>
+				{{site.data.homepage_modules['about'].section_description}} Lorem ipsum more words I'm just trying to fill out this section to show what a text box looks like with a call to action button underneath it.
+			</p>
 
-<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['reading_time'].section_heading}}</h2>
-			{% include homepage/readingtime.html %}
+		</div></div></div>
 
-</div>
+  <div class="col">
 
-<div class = "  grid_item p-2   animate__animated animate_slideInDown p-3  m-3 shadow-pressed">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['trending_posts'].section_heading}}</h2>
+		<div class="card h-100 shadow-1 ">
+			<div class = "card-body">
+			<h2 class="card-title ">
+				{{site.data.homepage_modules['trending_posts'].section_heading}}
+			</h2>
+
 			{% include homepage/trending_posts.html %}
+		</div></div></div>
 
 </div>
-
-<div class = "container newsletter p-5 justify-content-center     animate__animated animate_slideInDown shadow-flat">
-			<h2 class = "heading-font mb-3 grid_title">{{site.data.homepage_modules['newsletter'].section_heading}}</h2>
-			{% include homepage/newsletter.html %}
-
-</div>
-
-</div>
-
-
 
 
 </div>

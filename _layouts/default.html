@@ -13,18 +13,28 @@
 	<!-- FAVICON -->
 	<link href="{{site.baseurl}}/media/sitewide/logo.svg" rel="shortcut icon" type="image/svg+xml">
 
-	<!-- FONT-AWESOME (ICONS) CDN -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-
-	<!-- neumorphism rules (CSS framework) & bootstrap customization  -->
-	<link type="text/css" href="{{site.baseurl}}/assets/css/neumorphism_mini.css" rel="stylesheet">
+	<!-- neumorphism rules (CSS framework) & bootstrap customization  	<link type="text/css" href="{{site.baseurl}}/assets/css/neumorphism_mini.css" rel="stylesheet">
+-->
 
 
-	<!-- BOOTSTRAP (BASE CSS FRAMEWORK) CDN -->	
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>
+	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/js/chartjs/chart.min.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href=" {{ site.baseurl }}/assets/mdb/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/mdb/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+
+
 
 	<!-- ADOBE FONT IMPORT -->
 	<link rel="stylesheet" href="https://use.typekit.net/xrn3fzv.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme.css">
 
 </head>
 
@@ -34,7 +44,7 @@
 			{% include nav.html %}
 
 			<main>
-				<div class = "maincontent" style = "margin-bottom:100px!important;">
+				<div class = "maincontent" style = "margin-bottom:100px!important; margin-top:100px!important;">
 					<!-- THIS IS WHERE SITE CONTENT WILL GO -->			
 					{{content}}
 				</div>
@@ -63,5 +73,10 @@
 	</body>
 
 	{% include footer.html %}
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
 
 </html>

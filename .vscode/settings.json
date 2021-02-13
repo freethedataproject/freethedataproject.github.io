@@ -1,0 +1,15 @@
+{
+	"files.exclude": {
+		".gitignore": true,
+		"404.html": true,
+		"CNAME": true,
+		"_config.yml": true,
+		"Gemfile.lock": true,
+		"Gemfile": true,
+		"README.md": true,
+		".vscode": true,
+		".jekyll-cache": true,
+		"_site": true
+	},
+	"workspace.isHidden": false
+}

@@ -1,52 +1,99 @@
-
-
-
-
-.photoania{
-  float: left;
-  shape-outside: url("/media/team/ania.png");
-  shape-image-threshold: 0.9;
-	max-height: 100%;
-  shape-margin: 2%;
-
-
+@media only screen and (min-width: 1000px) {
+	.photoania, .photosarah, .photoleni, .photojasmina, .photofrida, .modal-img {
+		padding: 0!important;
+		margin: 0!important;
+		max-width: 800px;
+	}
+	.photoania {
+		float: left;
+		shape-outside: url("/media/team/ania.png");
+		shape-image-threshold: 0.9;
+		shape-margin: 2%;
+	}
+	.photosarah {
+		float: left;
+		shape-outside: url(" /media/team/sarah.png");
+		shape-image-threshold: 0.9;
+		shape-margin: 2%;
+	}
+	.photoleni {
+		float: left;
+		shape-outside: url("/media/team/leni.png");
+		shape-image-threshold: 0.9;
+		shape-margin: 2%;
+	}
+	.photojasmina {
+		float: left;
+		shape-outside: url("/media/team/jasmina.png");
+		shape-image-threshold: 0.9;
+		max-height: 100%;
+		shape-margin: 2%;
+	}
+	.photofrida {
+		float: left;
+		shape-outside: url("/media/team/frida.png");
+		shape-image-threshold: 0.9;
+		shape-margin: 2%;
+	}
 }
 
-
-
-.photosarah{
-  float: left;
-  shape-outside: url(" /media/team/sarah.png");
-  shape-image-threshold: 0.9;
-	max-height: 100%;
-  shape-margin: 2%;
-
+.modal-biog {
+	margin-left: 10px!important;
 }
 
-.photoleni{
-  float: left;
-  shape-outside: url("/media/team/leni.png");
-  shape-image-threshold: 0.9;
-	max-height: 100%;
-  shape-margin: 2%;
-
+@media only screen and (max-width: 600px) {
+	.photoania, .photosarah, .photoleni, .photojasmina, .photofrida, .modal-img {
+		padding: 0;
+		margin: 0;
+		max-width: 250px;
+	}
+	.modal-img {
+		padding-bottom: 20px!important;
+	}
 }
 
-.photojasmina{
-  float: left;
-  shape-outside: url("/media/team/jasmina.png");
-  shape-image-threshold: 0.9;
-	max-height: 100%;
-  shape-margin: 2%;
-
+@media only screen and (min-width: 601px) {
+	.photoania, .photosarah, .photoleni, .photojasmina, .photofrida, .modal-img {
+		padding: 0;
+		margin: 0;
+		max-width: 400px;
+	}
+	.modal-img {
+		padding-bottom: 20px!important;
+	}
 }
 
-.photofrida{
-  float: left;
-  shape-outside: url("/media/team/frida.png");
-  shape-image-threshold: 0.9;
-	max-height: 100%;
-  shape-margin: 2%;
-
+@media only screen and (min-width: 901px) {
+	.photoania, .photosarah, .photoleni, .photojasmina, .photofrida, .modal-img {
+		padding: 0;
+		margin: 0!important;
+		max-width: 500px;
+	}
+	.modal-img {
+		padding-bottom: 20px!important;
+	}
 }
 
+.biogtext {
+	font-family: var(--Inter)!important;
+}
+
+.modal-content {
+	padding-left: 50px!important;
+	padding-right: 50px!important;
+	font-family: var(--Inter)!important;
+}
+
+.biog1 {
+	font-size: 1.2rem!important;
+	font-weight: 700!important;
+}
+
+.biog2 {
+	font-size: .8rem!important;
+	font-weight: 300!important;
+}
+
+.teamrole, .teamtext {
+	color: var(--dark) !important;
+}

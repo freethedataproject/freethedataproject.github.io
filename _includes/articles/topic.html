@@ -1,0 +1,62 @@
+
+
+
+
+
+
+<div class="button-group filter-button-group">
+		<a class="button active" data-filter="*">All</a>
+		{% for category in site.categories %}
+			<a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
+		{% endfor %}
+
+</div>
+
+<div class="  mygrid  container ">
+	{% for post in site.posts %}
+
+     <div class="element-item card  {{ post.category }}   view overlay   z-depth-0 border-primary  " style = "">
+    		<img style = " " class = "img-fluid " src = "{{post.image_path}}" alt = "{{post.image_alt}}"/ >
+    		            <div class="mask cloudy-knoxville-gradient ">
+        <div class = "card-body h-100 ">
+        <h2>
+          <a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+        <p class = "card-text small mx-5 clearfix d-none d-md-block">
+          {{ post.subtitle }}
+        </p>
+
+             	<div class = "card-footer text-muted small">
+        <span class="post-meta text-muted small">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% for cat in post.category %}
+        <span class="" style = ""><a class = "badge  text-muted small z-depth-0  " href="{{site.baseurl}}/{{cat}}">{{cat}}</a></span>
+        {% endfor %}
+    	</div>
+
+    </div>
+</div></div>
+
+    {% endfor %}
+</div>
+
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script>
+	// init Isotope
+	var $mygrid = $('.mygrid').isotope({
+	  // options
+	});
+	// filter items on button click
+	$('.filter-button-group').on( 'click', 'a', function() {
+	  var filterValue = $(this).attr('data-filter');
+	  $mygrid.isotope({ filter: filterValue });
+	});
+	$('.button-group a.button').on('click', function(){
+		$('.button-group a.button').removeClass('active');
+		$(this).addClass('active');
+	});
+</script>
+
+
+
