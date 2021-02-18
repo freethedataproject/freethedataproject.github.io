@@ -2,13 +2,15 @@
 layout: post
 title: "Here's a title."
 subtitle: "Here's a subtitle, AKA a brief & catchy sentence or two that go below the title."
-author: Free the Data
+author: frida
 category: [category1]
 tags: [article, tag2, featured]
 permalink: "/example-post-6"
 date: 5 February 2021
 image_path: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
 image_alt: 'Alt text for the image goes here.'
+icon_ref: fa-graduation-cap
+
 ---
 
 # This is a level-1 heading.
@@ -59,27 +61,27 @@ new Chart(document.getElementById("line-chart"), {
   type: 'line',
   data: {
     labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-    datasets: [{ 
+    datasets: [{
         data: [86,114,106,106,107,111,133,221,783,2478],
         label: "Africa",
         borderColor: "rgb(5, 148, 194)",
         fill: false
-      }, { 
+      }, {
         data: [282,350,411,502,635,809,947,1402,3700,5267],
         label: "Asia",
         borderColor: "rgb(5, 148, 194)",
         fill: false
-      }, { 
+      }, {
         data: [168,170,178,190,203,276,408,547,675,734],
         label: "Europe",
         borderColor: "rgb(5, 148, 194)",
         fill: false
-      }, { 
+      }, {
         data: [40,20,10,16,24,38,74,167,508,784],
         label: "Latin America",
         borderColor: "rgb(5, 148, 194)",
         fill: false
-      }, { 
+      }, {
         data: [6,3,2,2,7,26,82,172,312,433],
         label: "North America",
         borderColor: "rgb(5, 148, 194)",
@@ -101,9 +103,9 @@ new Chart(document.getElementById("line-chart"), {
 
 
 
-As a first step in this direction, the role of women, and especially women of color, in uncovering the gross violations of ethics (and sometimes the law) perpetrated by Big Tech ought to be acknowledged and firmly and decisively incorporated into the ethos, practice and training of coders and data scientists everywhere. 
+As a first step in this direction, the role of women, and especially women of color, in uncovering the gross violations of ethics (and sometimes the law) perpetrated by Big Tech ought to be acknowledged and firmly and decisively incorporated into the ethos, practice and training of coders and data scientists everywhere.
 
-From Barbara Smith’s Combahee River Collective and Donna Haraway’s “informatics of domination,” through Shoshana Zuboff’s “instrumentarian power” and Zeynep Tufekci’s “marketplace of ideas,” to micha cárdenas’ “android goddess,” Virginia Eubanks’ “digital poorhouse,” Cathy O’Neil’s “weapons of math destruction,” and Simone Browne’s “dark matters,” women in the last few decades have worked tirelessly to give us the vocabulary and critical tools to identify, describe, denounce, and resist what Ewa Plonowska Ziarek calls “the new forms of oppression” advances in technology, and Big Tech in particular, ostensibly unwittingly create. 
+From Barbara Smith’s Combahee River Collective and Donna Haraway’s “informatics of domination,” through Shoshana Zuboff’s “instrumentarian power” and Zeynep Tufekci’s “marketplace of ideas,” to micha cárdenas’ “android goddess,” Virginia Eubanks’ “digital poorhouse,” Cathy O’Neil’s “weapons of math destruction,” and Simone Browne’s “dark matters,” women in the last few decades have worked tirelessly to give us the vocabulary and critical tools to identify, describe, denounce, and resist what Ewa Plonowska Ziarek calls “the new forms of oppression” advances in technology, and Big Tech in particular, ostensibly unwittingly create.
 <img class = "" style = "max-height: 40vh;" src = "{{site.baseurl}}/media/sitewide/svg/cyborg-9.svg" >
 
 Women in academia have also spearheaded labs and thinktanks such as the AI Now Institute to critically examine the social implications of big science. Such liberatory projects have been undertaken by non-academic activists and grassroot organizations as well. Social movements such as #SayHerName and #BlackLivesMatter – both spearheaded by Black women who had had enough – effectively changed the racial justice discourse in the U.S. and around the world, and helped galvanize the racial reckoning following the murder of George Floyd. And let’s not forget the courageous women-whistleblowers! Just this past week, former Facebook data scientist Sophie Zhang posted a detailed memo replete with examples of how political leaders in Azerbaijan, Bolivia, Honduras and Ukraine use fake Facebook accounts to artificially boost social media engagement and sway public opinion, sparking oftentimes deadly protests and wholesale regime changes.
@@ -111,7 +113,7 @@ Women in academia have also spearheaded labs and thinktanks such as the AI Now I
 ##### This is a level-5 heading.
 
 Only by striking down the rigid vertical structures of patriarchy’s hegemony over science and knowledge, and replacing them with the intersubjective relational model of data justice these exceptional women have helped create inspired by their own analyses and the ideas of women, people of color, and enlightened men before them, can we hope to avoid the disruption Big Tech is about to cause; disruption commensurate with the devastation predicted by global warming activists.
-    
+
 
 <canvas id="bubble-chart" class = "post-viz" width="800" height="450"></canvas>
 <script>
@@ -164,13 +166,13 @@ new Chart(document.getElementById("bubble-chart"), {
         display: true,
         text: 'Predicted world population (millions) in 2050'
       }, scales: {
-        yAxes: [{ 
+        yAxes: [{
           scaleLabel: {
             display: true,
             labelString: "Happiness"
           }
         }],
-        xAxes: [{ 
+        xAxes: [{
           scaleLabel: {
             display: true,
             labelString: "GDP (PPP)"
@@ -183,5 +185,3 @@ new Chart(document.getElementById("bubble-chart"), {
 ###### This is a level-6 heading.
 
 Only by striking down the rigid vertical structures of patriarchy’s hegemony over science and knowledge, and replacing them with the intersubjective relational model of data justice these exceptional women have helped create inspired by their own analyses and the ideas of women, people of color, and enlightened men before them, can we hope to avoid the disruption Big Tech is about to cause; disruption commensurate with the devastation predicted by global warming activists.
-    
- 

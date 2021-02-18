@@ -1,0 +1,36 @@
+<div class="col mb-4 item all {{ post.category }} item-content ">
+  <div class="card p-2 shadowdrop  h-100  mb-4 ftd-card card-default rounded-lg ">
+                    <!--Card image-->
+                    <div class="view zoom" style = "height: 10rem!important;">
+                      <img class="card-img-top" src="{{post.image_path}}"
+                        alt="{{post.image_alt}}" style = "height: 10rem!important; object-fit: cover!important;">
+
+                      <a href="#!">
+                        <div class="mask rgba-stylish-strong flex-left p-3">                     <i class = "posticon fas {{post.icon_ref}} mb-3 "></i> <h4><a class=" text-white " href="{{site.baseurl}}{{post.permalink}}" target="_blank">{{post.title}}</a><h4>
+
+
+                      </a>    </div>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body pb-0  ">
+
+                      <!--Title-->
+                      <!--Text-->
+                      <p class="m-0 py-0 small">{{post.subtitle}}</p>
+
+
+
+              </div>
+              <div class=" card-footer ">
+                <small class="text-muted small">
+                  <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp; | {{post.date | date: "%d %b %y"}}
+                  | &nbsp;
+                  {% for cat in post.category %}
+                  <a class="" href="{{site.baseurl}}/{{cat}}">{{cat}}</a>
+                  {% endfor %}
+                </small>
+              </div>
+
+            </div>
+          </div>

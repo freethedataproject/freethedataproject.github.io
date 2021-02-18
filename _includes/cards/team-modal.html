@@ -1,0 +1,149 @@
+<!-- BUTTON -->
+<div class="view overlay">
+	<img
+		src="{{site.baseurl}}/media/team/{{author.headshot_path}}"
+		class="img-fluid rounded-circle z-depth-1"
+		style = "max-width: 300px!important; height: auto;"
+	>
+	<div
+		class="mask flex-center rgba-white-strong rounded-circle z-depth-1"
+		type="button"
+		data-toggle="modal"
+		data-target="#modal-target{{author.firstname}}idk"
+	>
+		<h1
+			class="cubano"
+			style="color: #{{author.color}} !important;"
+		>{{author.firstname}}</h1>
+	</div>
+</div>
+
+<!-- MODAL -->
+
+<div
+	class="modal fade"
+	id="modal-target{{author.firstname}}idk"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="modal-target{{author.firstname}}idkTitle"
+	aria-hidden="true"
+>
+	<div
+		class="modal-dialog modal-lg modal-dialog-centered"
+		role="document"
+	>
+		<!-- Modal CONTENT -->
+
+		<div class="modal-content">
+
+			<!-- Modal HEADER-->
+			<div class="modal-header">
+				<h1
+					class="cubano modal-title"
+					id="exampleModalLongTitle"
+				>{{author.fullname}}</h1>
+
+				<button
+					type="button"
+					class="close btn btn-sm btn-modal"
+					data-dismiss="modal"
+					aria-label="Close"
+				>
+					<span aria-hidden="true">Close</span>
+				</button>
+			</div>
+
+			<!-- Modal BODY-->
+			<div class="modal-body pt-3">
+				<!-- sub-headings -->
+				<h6
+					class="biogtext biog1"
+					id=""
+				>{{author.role}}</h6>
+
+				<h6
+					class="biogtext biog2"
+					id=""
+				>
+					{{author.focus}}
+
+					<br>
+					<br>
+				</h6>
+				<!-- image-->
+				<img
+					class="photo{{author.firstname}} modal-img"
+					src="{{site.baseurl}}/media/team/{{author.image_path}}"
+				>
+				<!-- floating-text-->
+				<div class="biog">
+					<p class="modal-biog small">{{author.bio}}</p>
+
+					<br>
+					<hr>
+				</div>
+
+				<div class="small-news modal-recent pt-5">
+					<h5 class="cubano">
+						Recent posts by {{author.firstname}}
+					</h5>
+
+					<!-- Small news -->
+
+					<div class="row mt-3">
+
+			
+
+						{% for post in site.posts %}
+															{% if post.author ==  {{author.firstname | downcase}} %}
+
+
+								{% include cards/card-default.html %}
+									{% endif %}
+
+									{% endfor %}
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Modal-->
+			<div class="modal-footer">
+				<div class="d-flex flex-row">
+					<a
+						class="nav-link"
+						href="{{author.website}}"
+						target="blank_"
+					>
+						<i class="fas fa-link"></i>
+					</a>
+
+					<a
+						class="nav-link"
+						href="{{author.email}}"
+						target="blank_"
+					>
+						<i class="fas fa-envelope"></i>
+					</a>
+
+					<a
+						class="nav-link"
+						href="{{author.twitter}}"
+						target="blank_"
+					>
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+
+				<button
+					type="button"
+					class="close btn btn-sm btn-modal"
+					data-dismiss="modal"
+					aria-label="Close"
+				>
+					<span aria-hidden="true">Close</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

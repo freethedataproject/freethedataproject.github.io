@@ -3,121 +3,232 @@ layout: default
 title: "Home"
 ---
 
-<!-- FULL-WIDTH HERO -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<div>
-	<div
-		class="p-5"
-		style="background-image: url({{site.baseurl}}/media/home/hero.svg); width:100%; height: auto; background-size: cover; margin-top: -50px!important;"
-	>
-		<div class="container bg-light p-5 accentfont">
-			<h1 class="cubano ml-5">
-				This site is under construction
-			</h1>
+<link type="text/css" href="{{site.baseurl}}/assets/css/homepage.css" rel="stylesheet">
+</link>
 
-			<p class="ml-5">
-				Expect some placeholder content and/or unfinished sections as we get settled in. We hope to be fully live ASAP.
-			</p>
+<style>
+@media only screen and (max-width: 800px) {
+  .card-image-div {
+	padding-top:290px!important;
+	padding-bottom:100px!important;
+
+  }
+.margintop {
+	margin-top:20px!important;
+
+}
+
+}
+
+@media only screen and (min-width: 801px) and (max-width:950px) {
+  .card-image-div {
+	padding-top:450px!important;
+  }
+.margintop {
+	margin-top:20px!important;
+}
+}
+
+
+
+#navz {
+  background: #00292b;
+  margin: 0;
+
+  padding: 15px;
+  list-style: none;
+}
+
+#navz a {
+  display: block;
+  padding: 10px 10px;
+}
+
+.card-image-div {
+  margin:auto;
+border-bottom:5px solid!important;
+  position:relative; /*sets up for children to be abs pos*/
+
+}
+
+.card-image-anchored {
+  position:absolute;
+  bottom:0;
+}
+
+body {
+
+	background-color: #fefefe !important;
+}
+
+
+</style>
+
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/teamstyle.css"></link>
+
+
+<div class = "view " style = "background-color: #eeeeee!important; margin-top: -100px!important;" >
+	<img class = "img-fluid" src = "{{site.baseurl}}/media/sitewide/hero.svg" style = "margin-bottom:-3px!important; width:100%; max-height: 100vh; object-fit: cover;" >
 		</div>
-	</div>
-</div>
 
 
-<div class="container">
+<div class = "pt-5 pb-5"></div>
 
-	<br>
-	<br>
+<div class = "">
+<div class = "container  ">
+	<h1 class="cubano  pt-5 pb-2   ">THE MISSION</h1>
+        <p class="" style = "font-size: 1.2rem!important; line-height: 35px!important;">
+            Free the Data joins a growing movement that calls on academics, journalists, scientists, and anyone else interested in data justice to challenge what it means to work with data. Our goal is to to tell stories that use data in compelling, interactive, and visual ways, while breaking stereotypes about who can do data analysis and what proper research topics look like. Collectively, the content that we showcase reflects the diversity of our interests and our shared commitment to driving data in more ethical, engaging, and empowering directions.
+        </p>
 
-	<h5 class="cubano">section title</h5>
 
+</div></div>
+
+<div class = "pt-5 pb-5"></div>
+
+
+
+
+
+<div class = " p-5 m-5 " style = "background-color: #c4eeef !important;" >
+	<div class = "container">
+<h1 class="cubano ">THE TEAM</h1>
+	<p class = "">Click on an image to view a team member's profile. </p>
 	<hr>
-	<br>
-	<br>
-
-
-<div class="row row-cols-1  row-cols-lg-3 row-cols-md-2 g-5">
-  <div class="col">
-		<div class="card h-100 shadow-1 ">
-
-<div class = "card-body">
-			<h2 class="card-title ">
-				{{site.data.homepage_modules['word_freq'].section_heading}}
-			</h2>
-			{% include homepage/wordcloud.html %}
-		</div>
 </div>
-</div>
-  <div class="col">
+<div class = "pb-5"></div>
 
-
-		<div class="card h-100 shadow-1 ">
-
-			<div class = "card-body">
-			<h2 class="card-title ">
-				{{site.data.homepage_modules['about'].section_heading}}
-			</h2>
-
-			<p>
-				{{site.data.homepage_modules['about'].section_description}} Lorem ipsum more words I'm just trying to fill out this section to show what a text box looks like with a call to action button underneath it.
-			</p>
-
-			<btn class="btn btn-sm ">Learn more about us →</btn>
-		</div>
-		</div>
-
-</div>
-  <div class="col">
-		<div class="card h-100 shadow-1 ">
-			<div class = "card-body">
-			<h2 class="card-title ">
-				{{site.data.homepage_modules['topics'].section_heading}}
-			</h2>
-
-			<p>
-				{{site.data.homepage_modules['topics'].section_description}}
-			</p>
-
-			{% include homepage/topics.html %}
-		</div></div></div>
-
-  <div class="col">
-
-		<div class="card h-100 shadow-1 ">
-			<div class = "card-body">
-
-			<h2 class="card-title ">
-				{{site.data.homepage_modules['team'].section_heading}}
-			</h2>
-
-			{% include homepage/team.html %}
-		</div></div></div>
-
-  <div class="col">
-		<div class="card h-100 shadow-1 ">
-			<div class = "card-body">
-			<h2 class="card-title ">
-				{{site.data.homepage_modules['about'].section_heading}}
-			</h2>
-
-			<p>
-				{{site.data.homepage_modules['about'].section_description}} Lorem ipsum more words I'm just trying to fill out this section to show what a text box looks like with a call to action button underneath it.
-			</p>
-
-		</div></div></div>
-
-  <div class="col">
-
-		<div class="card h-100 shadow-1 ">
-			<div class = "card-body">
-			<h2 class="card-title ">
-				{{site.data.homepage_modules['trending_posts'].section_heading}}
-			</h2>
-
-			{% include homepage/trending_posts.html %}
-		</div></div></div>
+<div class = "row flex-center">
+{% for author in site.data.authors %}
+<div class = "col-2-lg col-6-md col-12-sm col-12-xs m-3">
+{% include cards/team-modal.html %}
+</div>	
+{% endfor %}
 
 </div>
 
+								</div>
+								</div>
+
+
+
+
+									<div class = "pt-5 pb-5"></div>
+
+<div class = "container">
+
+    <!--Section: Content-->
+    <section class="">
+			<h1 class="cubano  pt-5 pb-2   ">CONTACT US</h1>
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+
+<br>
+  <p class = " ">
+                We welcome comments, constructive criticisms, requests for collaboration, invitations to events, or just saying hi! A member of our team will try to respond within 48 hours. Note: If you're contacting Frida, she asks that you please run your message through
+                a translator such as
+
+                <a href="https://kittify.herokuapp.com/" target="_blank">this one</a> prior to sending.
+            </p>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <a href="https://twitter.com/freethedata_" target="_blank" title="twitter" class="">
+                            <span uk-icon="twitter"></span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://instagram.com/freethedataproject" target="_blank" title="instagram" class="">
+                            <span uk-icon="instagram"></span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/freethedataproject" target="_blank" title="github" class="">
+                            <span uk-icon="github"></span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="mailto:freethedataproject@gmail.com" target="_blank" title="email" class="">
+                            <span uk-icon="mail"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+                        <form action="https://formspree.io/f/moqppqkn" method="POST">
+
+          <!--Grid row-->
+          <div class="row">
+
+
+            <!--Grid column-->
+            <div class="col-md-6">
+
+              <!-- Material outline input -->
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="form-s-text" class="form-control">
+                <label for="form-last-name">Name</label>
+              </div>
+
+            </div>
+            <!--Grid column-->
+            <div class="col-md-6">
+
+          <div class="md-form md-outline mb-0">
+            <input type="email" id="form-email" class="form-control">
+            <label for="email">E-mail</label>
+          </div>
+              </div>
+
+          </div>
+          <!--Grid row-->
+
+          <!-- Material outline input -->
+
+          <!-- Material outline input -->
+          <div class="md-form md-outline">
+            <input type="text" id="form-subject" class="form-control">
+            <label for="subject">Subject</label>
+          </div>
+
+          <!--Material textarea-->
+          <div class="md-form md-outline mb-3">
+            <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i class="far fa-paper-plane ml-2"></i></button>
+                        </form>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+    <!--Section: Content-->
+
+
+										<div class = "pt-5 pb-5"></div>
+
+
 
 </div>
-

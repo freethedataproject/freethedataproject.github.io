@@ -1,77 +1,145 @@
-<img class="photofrida" src="{{site.data.team['frida'].image_path}}" />
+        <div class="p-4">
+          <div
+            class="avatar w-100 white d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="{{site.data.team['frida'].image_path}}"
+              class="img-fluid rounded-circle z-depth-1"
+            />
+          </div>
+          <div class="text-center mt-3">
+					<h3
+				type="button"
+				class="cubano"
+				data-toggle="modal"
+				data-target="#modal-target-frida"
+			> {{site.data.team['frida'].first_name}}</h3>
 
-<div class="biog">
-    <h1 class="cubano">
-        {{site.data.team['frida'].first_name}}
-    </h1>
-
-    <h6 class="biogtext biog1">
-        {{site.data.team['frida'].role}}
-    </h6>
-
-    <h6 class="biogtext biog2">
-        {{site.data.team['frida'].focus}}
-    </h6>
-
-    <!-- Button trigger modal -->
-
-    <button type="button" class="btn btn-sm btn-team" data-toggle="modal" data-target="#modal-target-frida">
-		Biography
-	</button>
-
-    <!-- Modal -->
-
-    <div class="modal fade" id="modal-target-frida" tabindex="-1" role="dialog" aria-labelledby="modal-target-fridaTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="cubano modal-title" id="exampleModalLongTitle">
-                        {{site.data.team['frida'].full_name}}
-                    </h1>
-<br>
-                </div>
-
-                <div class="modal-body">
-                    <h6 class="biogtext biog1 " id="exampleModalLongTitle">
-                        {{site.data.team['frida'].role}}
-                    </h6>
-                    <h6 class="biogtext biog2 " id="exampleModalLongTitle">
-                        {{site.data.team['frida'].focus}}
-                    </h6>
-<br>
-
-                    <img class="photofrida modal-img" src="{{site.data.team['frida'].image_path}}" />
-
-                    <div class="biog">
-                        <p class="modal-biog ">
-                            {{site.data.team['frida'].bio}}
-                        </p>
-                    </div>
-
-                    <div class="modal-footer">
-                        <a class="nav-link" href="{{site.data.team['frida'].website}}" target="blank_">
-                            <i class="fas fa-link"></i>
-                        </a>
-
-			<a class="nav-link" href="{{site.data.team['frida'].email}}" target="blank_">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-
-			<a class="nav-link" href="{{site.data.team['frida'].twitter}}" target="blank_">
-                            <i class="fab fa-twitter "></i>
-                        </a>
-
-			<a class="nav-link" href="{{site.data.team['frida'].scholar}}" target="blank_">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
+            <p class="text-muted">
+              <small
+                ><i
+                  >{{site.data.team['frida'].role}}.</i
+                ></small
+              >
+            </p>
 
 
-                        <button type="button" class="close btn btn-sm btn-modal" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">Close</span>
-						</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</div>
+
+	<!-- Modal -->
+
+	<div
+		class="modal fade"
+		id="modal-target-frida"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="modal-target-fridaTitle"
+		aria-hidden="true"
+	>
+		<div
+			class="modal-dialog modal-lg modal-dialog-centered"
+			role="document"
+		>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1
+						class="cubano modal-title"
+						id="exampleModalLongTitle"
+					>
+						{{site.data.team['frida'].full_name}}
+					</h1>
+
+					<button
+						type="button"
+						class="close btn btn-sm btn-modal"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">Close</span>
+					</button>
+
+
+
+				</div>
+
+				<div class="modal-body pt-3">
+
+					<h6
+						class="biogtext biog1"
+						id="exampleModalLongTitle"
+					>
+						{{site.data.team['frida'].role}}
+					</h6>
+
+					<h6
+						class="biogtext biog2"
+						id="exampleModalLongTitle"
+					>
+						{{site.data.team['frida'].focus}}
+		<br>
+		<br>
+
+					</h6>
+
+					<img
+						class="photofrida modal-img"
+						src="{{site.data.team['frida'].image_path}}"
+					>
+
+					<div class="biog">
+						<p class="modal-biog small">
+							{{site.data.team['frida'].bio}}
+						</p>
+		<br>
+
+				</div>
+
+				<div class="modal-footer">
+<div class="d-flex flex-row  ">
+						<a
+							class="nav-link"
+							href="{{site.data.team['frida'].website}}"
+							target="blank_"
+						>
+							<i class="fas fa-link"></i>
+						</a>
+
+						<a
+							class="nav-link"
+							href="{{site.data.team['frida'].email}}"
+							target="blank_"
+						>
+							<i class="fas fa-envelope"></i>
+						</a>
+
+						<a
+							class="nav-link"
+							href="{{site.data.team['frida'].twitter}}"
+							target="blank_"
+						>
+							<i class="fab fa-twitter"></i>
+						</a>
+
+						<a
+							class="nav-link"
+							href="{{site.data.team['frida'].scholar}}"
+							target="blank_"
+						>
+							<i class="fas fa-graduation-cap"></i>
+						</a>
+
+
+					</div>
+					<button
+						type="button"
+						class="close btn btn-sm btn-modal"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">Close</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>

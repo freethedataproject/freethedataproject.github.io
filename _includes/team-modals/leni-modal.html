@@ -1,77 +1,216 @@
-<img class="photoleni" src="{{site.data.team['leni'].image_path}}" />
-
-<div class="biog">
-    <h1 class="cubano">
-        {{site.data.team['leni'].first_name}}
-    </h1>
-
-    <h6 class="biogtext biog1">
-        {{site.data.team['leni'].role}}
-    </h6>
-
-    <h6 class="biogtext biog2">
-        {{site.data.team['leni'].focus}}
-    </h6>
-
-    <!-- Button trigger modal -->
-
-    <button type="button" class="btn btn-sm btn-team" data-toggle="modal" data-target="#modal-target-leni">
-		Biography
-	</button>
-
-    <!-- Modal -->
-
-    <div class="modal fade" id="modal-target-leni" tabindex="-1" role="dialog" aria-labelledby="modal-target-leniTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="cubano modal-title" id="exampleModalLongTitle">
-                        {{site.data.team['leni'].full_name}}
-                    </h1>
-<br>
-                </div>
-
-                <div class="modal-body">
-                    <h6 class="biogtext biog1 " id="exampleModalLongTitle">
-                        {{site.data.team['leni'].role}}
-                    </h6>
-                    <h6 class="biogtext biog2 " id="exampleModalLongTitle">
-                        {{site.data.team['leni'].focus}}
-                    </h6>
-<br>
-
-                    <img class="photoleni modal-img" src="{{site.data.team['leni'].image_path}}" />
-
-                    <div class="biog">
-                        <p class="modal-biog ">
-                            {{site.data.team['leni'].bio}}
-                        </p>
-                    </div>
-
-                    <div class="modal-footer">
-                        <a class="nav-link" href="{{site.data.team['leni'].website}}" target="blank_">
-                            <i class="fas fa-link"></i>
-                        </a>
-
-			<a class="nav-link" href="{{site.data.team['leni'].email}}" target="blank_">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-
-			<a class="nav-link" href="{{site.data.team['leni'].twitter}}" target="blank_">
-                            <i class="fab fa-twitter "></i>
-                        </a>
-
-			<a class="nav-link" href="{{site.data.team['leni'].scholar}}" target="blank_">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
+        <div class="p-4">
+          <div
+            class="avatar w-100 white d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="{{site.data.team['leni'].image_path}}"
+              class="img-fluid rounded-circle z-depth-1"
+            />
+          </div>
+          <div class="text-center mt-3">
+								<h3
+				type="button"
+				class="cubano"
+				data-toggle="modal"
+				data-target="#modal-target-leni"
+			> {{site.data.team['leni'].first_name}}</h3>
 
 
-                        <button type="button" class="close btn btn-sm btn-modal" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">Close</span>
-						</button>
-                    </div>
-                </div>
-            </div>
+            <p class="text-muted">
+              <small
+                ><i
+                  >{{site.data.team['leni'].role}}.</i
+                ></small
+              >
+            </p>
+
+
+          </div>
         </div>
-    </div>
-</div>
+
+	<!-- Modal -->
+
+	<div
+		class="modal fade"
+		id="modal-target-leni"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="modal-target-leniTitle"
+		aria-hidden="true"
+	>
+		<div
+			class="modal-dialog modal-lg modal-dialog-centered"
+			role="document"
+		>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1
+						class="cubano modal-title"
+						id="exampleModalLongTitle"
+					>
+						{{site.data.team['leni'].full_name}}
+					</h1>
+
+					<button
+						type="button"
+						class="close btn btn-sm btn-modal"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">Close</span>
+					</button>
+
+
+
+				</div>
+
+				<div class="modal-body pt-3">
+
+					<h6
+						class="biogtext biog1"
+						id="exampleModalLongTitle"
+					>
+						{{site.data.team['leni'].role}}
+					</h6>
+
+					<h6
+						class="biogtext biog2"
+						id="exampleModalLongTitle"
+					>
+						{{site.data.team['leni'].focus}}
+		<br>
+		<br>
+
+					</h6>
+
+					<img
+						class="photoleni modal-img"
+						src="{{site.data.team['leni'].image_path}}"
+					>
+
+					<div class="biog">
+						<p class="modal-biog small">
+							{{site.data.team['leni'].bio}}
+						</p>
+		<br>
+						<hr>
+
+						<div class="container modal-recent pt-5">
+							<h5 class="cubano">Recent posts by leni</h5>
+
+							<!-- Small news -->
+
+							<div class="single-news mb-4">
+								<!-- Grid row -->
+
+								<div class="row mt-3">
+									{% assign posts = site.posts | where:"author","leni" %}
+						{% for post in posts %}
+
+									<!-- Grid column -->
+
+									<div class="col-md-2">
+										<!-- Image -->
+
+										<div class="view overlay rounded z-depth-1 mb-4">
+											<img
+												class="img-fluid"
+												src="{{post.image_path}}"
+											>
+
+											<a>
+												<div class="mask rgba-white-slight"></div>
+											</a>
+										</div>
+									</div>
+
+									<!-- Grid column -->
+									<!-- Grid column -->
+
+									<div class="col-md-9">
+										<!-- Excerpt -->
+
+										<p class="small">{{ post.date | date: "%b %-d, %Y" }}</p>
+
+										<div class="d-flex justify-content-between">
+											<div class="col-11 text-truncate pl-0 mb-3">
+												<h6>
+													<a
+														href="{{post.permalink}}"
+														class=""
+													>{{post.title}}</a>
+												</h6>
+
+												<p
+													href="{{post.permalink}}"
+													target="_blank"
+													class="small"
+												>{{post.subtitle}} ...</p>
+											</div>
+
+											<a>
+												<i class="fas fa-angle-double-right"></i>
+											</a>
+										</div>
+									</div>
+
+									<!-- Grid column -->
+									{% endfor %}
+								</div>
+
+								<!-- Grid row -->
+							</div>
+
+							<!-- Small news -->
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+<div class="d-flex flex-row  ">
+						<a
+							class="nav-link"
+							href="{{site.data.team['leni'].website}}"
+							target="blank_"
+						>
+							<i class="fas fa-link"></i>
+						</a>
+
+						<a
+							class="nav-link"
+							href="{{site.data.team['leni'].email}}"
+							target="blank_"
+						>
+							<i class="fas fa-envelope"></i>
+						</a>
+
+						<a
+							class="nav-link"
+							href="{{site.data.team['leni'].twitter}}"
+							target="blank_"
+						>
+							<i class="fab fa-twitter"></i>
+						</a>
+
+						<a
+							class="nav-link"
+							href="{{site.data.team['leni'].scholar}}"
+							target="blank_"
+						>
+							<i class="fas fa-graduation-cap"></i>
+						</a>
+
+
+					</div>
+					<button
+						type="button"
+						class="close btn btn-sm btn-modal"
+						data-dismiss="modal"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">Close</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>

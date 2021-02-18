@@ -1,0 +1,19 @@
+<div class = "  rounded-lg ftd-card align-content-center row my-0 mx-3 ">
+  <div class="media card-row  p-3    p-0" >
+    <div class = " d-flex align-self-center h-100 mr-3  p-0" style = "max-height: 100px; max-width: 100px;object-fit: cover!important; ">
+    <img class="img-fluid " src="{{post.image_path}}" alt="{{post.image_alt}}" style = "width:100%; object-fit: cover!important; ">
+  </div>
+
+    <div class="media-body">
+
+      <h5 class="m-0  "><a href = "{{post.permalink}}">{{post.title}}</a></h5>
+      <p class = "card-text m-0 p-0 small   ">{{post.subtitle}}</p>
+      <small class="text-muted small">
+        <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href = "{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp; |&nbsp;
+
+      <a class="" href="{{site.baseurl}}/{{post.category}}">{{post.category}}</a>
+      </small>
+
+    </div>
+  </div>
+</div>

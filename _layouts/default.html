@@ -16,7 +16,6 @@
 	<!-- neumorphism rules (CSS framework) & bootstrap customization  	<link type="text/css" href="{{site.baseurl}}/assets/css/neumorphism_mini.css" rel="stylesheet">
 -->
 
-
 	<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>
 	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/js/chartjs/chart.min.css">
   <!-- Bootstrap core CSS -->
@@ -24,17 +23,17 @@
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/mdb/css/mdb.min.css">
   <!-- Your custom styles (optional) -->
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme.css">
 
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
   rel="stylesheet"
 />
 
-
+<link rel="stylesheet" href=" {{ site.baseurl }}/assets/css/shadows.css">
 
 	<!-- ADOBE FONT IMPORT -->
 	<link rel="stylesheet" href="https://use.typekit.net/xrn3fzv.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme.css">
 
 </head>
 
@@ -45,13 +44,24 @@
 
 			<main>
 				<div class = "maincontent" style = "margin-bottom:100px!important; margin-top:100px!important;">
-					<!-- THIS IS WHERE SITE CONTENT WILL GO -->			
+					<!-- THIS IS WHERE SITE CONTENT WILL GO -->
 					{{content}}
 				</div>
 			</main>
 
 			<!-- IMPORT SITEWIDE SCRIPTS -->
-			{% include scripts.html %}
+
+			  <script type="text/javascript" src="{{ site.baseurl }}/assets/mdb/js/jquery.min.js"></script>
+			  <!-- Bootstrap tooltips -->
+
+			  <script type="text/javascript" src="{{ site.baseurl }}/assets/mdb/js/popper.min.js"></script>
+			  <!-- Bootstrap core JavaScript -->
+			  <script type="text/javascript" src="{{ site.baseurl }}/assets/mdb/js/bootstrap.min.js"></script>
+			  <!-- MDB core JavaScript -->
+			  <script type="text/javascript" src="{{ site.baseurl }}/assets/mdb/js/mdb.min.js"></script>
+
+				<script src=" {{ site.baseurl }}/assets/js/other/sticky.js"></script>
+				<script src=" {{ site.baseurl }}/assets/js/confetti/confetti.min.js"></script>
 
 			<!-- CONFETTI BUTTON JS -- NAVBAR -->
 			<script>
@@ -73,10 +83,7 @@
 	</body>
 
 	{% include footer.html %}
-<!-- MDB -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
-  rel="stylesheet"
-/>
+
+
 
 </html>

@@ -1,0 +1,21 @@
+
+
+      <div class="media card-row rounded-lg  p-2 card-horizontal ftd-card" >
+        <div class="view rounded-lg h-100 align-self-center  ml-2 ">
+            <div class=" rounded">
+              <img class="" src="{{post.image_path}}" alt="{{post.image_alt}}" style = "width:70px; height:70px; object-fit: cover; ">
+
+              <div class="mask near-moon-gradient
+ px-3 py-3 flex-center  ">
+
+ <i style = " color: #003e3f!important; font-size: 30px;" class = "fas {{post.icon_ref}}"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="media-body p-3 my-0 ml-2">
+          <h5 class=" mt-0 mb-1 py-0"><a href="{{site.baseurl}}{{post.permalink}}" target="_blank">{{post.title}}</a></h5>
+          <p class="card-text small">{{post.subtitle}}</p>
+        </div>
+      </div>

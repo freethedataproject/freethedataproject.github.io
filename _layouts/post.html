@@ -2,63 +2,48 @@
 layout: default
 ---
 
-<link
-	type="text/css"
-	href="{{site.baseurl}}/assets/css/post.css"
-	rel="stylesheet"
-></link>
+<link type="text/css" href="{{site.baseurl}}/assets/css/post.css" rel="stylesheet">
+</link>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<style>
+.idfk {
 
 
+	margin-bottom: 100px !important ;
 
-<div class="container  ">
-<div class = "row">
-
-<div class = "col featured-bg post-hero ">
-<div class = "post-image-overlay shadow-pressed">
-
+}
+.idfkborder {
+	border-top: 1px solid var(--tq-medium)  !important ;
+	border-left: 1px solid var(--tq-medium)  !important ;
 
 
-                        <h1 class="post-title cubano">
-                           {{page.title}}
-                        </h1>
-                        <small class="post-meta "  >Written by <a href = "#" >{{page.author}}</a> on {{page.date}}. Posted in <a href="#">{{page.category}}</a>.</small>
+}
+	</style>
+<div class="container idfk mb-5  py-5  ">
+	<div class="flex-center z-depth-0  row d-flex flex-wrap " >
+			<div class="col-md-4 col-xs-1 col-s-1  flex-center shadowdropv2" style = "border-bottom: 1px solid var(--tq-medium)  !important ;">
+				<img class="img-fluid rounded-left" src="{{page.image_path}}" alt="{{page.image_alt}}" style = " max-height: 25vh; object-fit: cover !important;">
+			</div>
 
-       <h6 class="post-subtitle ">
-                            {{page.subtitle}}
-                        </h6></div>
+			<div class="col-md-8 col-xs-11 col-s-11 p-5 idfkborder">
+
+				<h1 class="   cubano align-self-center font-normal"><a href="{{site.baseurl}}{{page.permalink}}" target="_blank">{{page.title}}</a></h1>
+				<p class="   align-self-center small mb-2">{{page.subtitle}}</p>
+				<hr>
+				<small class="  align-self-center text-muted small">
+					<a href="{{site.baseurl}}{{page.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{page.author}}">{{page.author}}</a></a> &nbsp; |&nbsp;
+
+					<a class="" href="{{site.baseurl}}/{{page.category}}">{{page.category}}</a>
+				</small>
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+<div class="container ">
+		{{content}}
 </div>
-<p class = "post-image-caption mb-3 ml-1 "><a href = "#" >{{page.image_caption}}</a></p>
-
-</div>
-</div>
-
-
-
-</div>
-
-<!-- ### FEATURED -->
-
-
-	
-
-
-<div class = "container post-container">
-
-
-
-                 
-
-                    <div class="post-content">
-
-
-
-
-				{{content}}
-                    </div>
-
-
-</div>
-
-
-           

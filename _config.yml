@@ -13,7 +13,12 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Syntax
+markdown: kramdown
+highlighter: rouge
 
+# Paginate
+paginate: 10
 
 
 # Exclude from processing.

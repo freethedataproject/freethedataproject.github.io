@@ -4,93 +4,157 @@ title: "About"
 permalink: "about/" 
 ---
 
+<style>
+@media only screen and (max-width: 800px) {
+  .card-image-div {
+	padding-top:290px!important;
+	padding-bottom:100px!important;
+
+  }
+.margintop {
+	margin-top:20px!important;
+
+}
+
+}
+
+@media only screen and (min-width: 801px) and (max-width:950px) {
+  .card-image-div {
+	padding-top:450px!important;
+  }
+.margintop {
+	margin-top:20px!important;
+}
+}
+
+#navz {
+  background: #00292b;
+  margin: 0;
+	
+  padding: 15px;
+  list-style: none;
+}
+
+#navz a {
+  display: block;
+  padding: 10px 10px;
+}
+
+.card-image-div {
+  margin:auto;
+border-bottom:5px solid!important;
+  position:relative; /*sets up for children to be abs pos*/
+
+}
+
+.card-image-anchored {
+  position:absolute;
+  bottom:0;  
+}
+
+</style>
+
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/teamstyle.css"></link>
 
-        <div class="container shadow-inside-soft   p-5 ">
-    <div class="d-flex justify-content-center">
-        <p class="hero_div_text d-flex justify-content-center">THE MISSION.</p>
-    </div>
+
+
+
+<ul id="navz" class = "list-unstyled">
+	<h3 class="mx-2 cubano d-flex text-white ">GO TO:</h3>
+
+  <li><a href="#section-1" class="js-anchor-link basicsans">The Mission</a></li>
+  <li><a href="#section-2" class="js-anchor-link basicsans">The Team</a></li>
+  <li><a href="#section-3" class="js-anchor-link basicsans">Contact</a></li>
+</ul>
+
+    <div id="section-1"  class=" section container my-5 py-5" style = "padding-top:80px!important;">
+          <h2 class="cubano mb-3 pb-5 margintop ">THE MISSION</h2>
+
+	<div class = "card-image-div  px-5">
+<div class = "row">
+<div class = "col-lg-6  col-xs-2">
+	<img class = "card-image-anchored" src = "{{site.baseurl}}/media/sitewide/svg/cyborg-9.svg" style = "margin-bottom:-3px!important;">
 </div>
 
-<div class="container resize_container" style="margin-top: 50px; margin-bottom:50px;">
-    <p class="">
-        Free the Data joins a growing movement that calls on academics, journalists, scientists, and anyone else interested in data justice to challenge what it means to work with data. As students and faculty in a STEM field, we've brushed against the limitations
-        of data-driven research and the inequities that are endemic to big tech and academia alike.
+<div class = "col-lg-6 col-xs-8">
 
-        <p class="">
-            We created Free the Data to say
-
-            <em>fuck you</em> to these limitations.
-        </p>
-
-        <p class="">
-            Our goal is not only to name the problems that we encounter at the intersection of data and society, but to explore how we can do our part to address these problems. We invite others to join us, to tell data stories in compelling, interactive, visual
-            ways, while also breaking stereotypes about who can do data analysis and what proper research topics look like.
-        </p>
-
-        <p class="">
-            Across the site you'll find articles and resources that engage with topics such as health and medicine, politics, pop culture, and social justice. Collectively, these projects center our agency as researchers; they reflect the diversity of our interests,
-            as well as our shared commitment to driving data in more ethical, engaging, and empowering directions.
-        </p>
-
-        <p class="">
-            If you're new to data justice, you might start by checking out our
-
-            <a href="#">Data Justice 101 article</a> . This primer covers some of the essential figures and concepts that have helped inspire this project.
-        </p>
+       <p class="" >
+        As students and faculty in a STEM field, we've brushed against the limitations
+        of data-driven research, including the inequities that are pervasive throughout big tech and academia.
     </p>
-</div>
 
-        <div class="container shadow-inside-soft   p-5 ">
-    <div class="d-flex justify-content-center">
-        <p class="d-flex justify-content-center">THE TEAM.</p>
-    </div>
-</div>
+        <p class="">
+            <b>We created Free the Data to say
 
-<div class="container" style="margin-top: 50px; margin-bottom:50px;">
-    <div class="row d-flex justify-content-center">
+            <em>fuck you</em> to these limitations.</b>
+        </p>
 
-        <div class="col p-5">
+        <p class="">
+            Our goal is to to tell stories that use data in compelling, interactive, and visual ways, while breaking stereotypes about who can do data analysis and what proper research topics look like. Collectively, the content that we showcase reflects the diversity of our interests and our shared commitment to driving data in more ethical, engaging, and empowering directions.
+        </p>
+
+        <p class="">
+            Free the Data joins a growing movement that calls on academics, journalists, scientists, and anyone else interested in data justice to challenge what it means to work with data. If you're new to data justice, you might start by checking out our <a href="#">Data 101 series</a>. This primer covers some of the essential concepts that have helped guide this project.
+        </p>
+
+        <p class="">
+            Otherwise, we invite you to explore our <a href="#">articles</a>, say hi to us on <a href="#">Twitter</a>, or <a href="#">reach out to us</a> about contributing to the project!
+        </p>
+
+</div></div></div>
+        </div>
+
+
+<div  id="section-2" class="section container  my-5 py-5" style="margin-top: 150px!important;" >
+          <h2 class="cubano d-flex pb-5 ">THE TEAM</h2>
+    <div class="row  d-flex justify-content-center">
             {% include team-modals/ania-modal.html %}
-        </div>
-
-        <div class="col p-5">
             {% include team-modals/sarah-modal.html %}
-
-        </div>
-
-    <div class="row  container">
-            <div class="col p-5">
-                {% include team-modals/leni-modal.html %}
-
-            </div>
-            <div class="col p-5">
-                {% include team-modals/jasmina-modal.html %}
-
-            </div>
-
+            {% include team-modals/leni-modal.html %}
+            {% include team-modals/jasmina-modal.html %}
+            {% include team-modals/frida-modal.html %}
         </div>
 
 
-    <div class="row d-flex justify-content-center">
-            <div class="col p-5">
-                {% include team-modals/frida-modal.html %}
+</div>
 
-            </div>
 
-            <div class="col p-5">
-            </div>
-        </div>
-        </div>
 
-        <div class="container shadow-inside-soft   p-5 ">
-            <div class="d-flex justify-content-center">
-                <p class="hero_div_text d-flex justify-content-center">CONTACT.</p>
-            </div>
-        </div>
 
-        <div class="container resize_container" style="margin-top: 50px; margin-bottom:50px;">
-            <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  id="section-3" class="section container my-5 py-5 " style="margin-top: 150px!important;" >
+
+
+    <!--Section: Content-->
+    <section class="">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+          <h2 class="cubano d-flex pb-3 ">CONTACT US</h2>
+
+<br>
+  <p class = " ">
                 We welcome comments, constructive criticisms, requests for collaboration, invitations to events, or just saying hi! A member of our team will try to respond within 48 hours. Note: If you're contacting Frida, she asks that you please run your message through
                 a translator such as
 
@@ -103,62 +167,104 @@ permalink: "about/"
             <div class="container">
                 <div class="d-flex justify-content-center">
                     <div>
-                        <a href="https://twitter.com/freethedata_" target="_blank" title="twitter" class="uk-button uk-button-text">
+                        <a href="https://twitter.com/freethedata_" target="_blank" title="twitter" class="">
                             <span uk-icon="twitter"></span>
                         </a>
                     </div>
 
                     <div>
-                        <a href="https://instagram.com/freethedataproject" target="_blank" title="instagram" class="uk-button uk-button-text">
+                        <a href="https://instagram.com/freethedataproject" target="_blank" title="instagram" class="">
                             <span uk-icon="instagram"></span>
                         </a>
                     </div>
 
                     <div>
-                        <a href="https://github.com/freethedataproject" target="_blank" title="github" class="uk-button uk-button-text">
+                        <a href="https://github.com/freethedataproject" target="_blank" title="github" class="">
                             <span uk-icon="github"></span>
                         </a>
                     </div>
 
                     <div>
-                        <a href="mailto:freethedataproject@gmail.com" target="_blank" title="email" class="uk-button uk-button-text">
+                        <a href="mailto:freethedataproject@gmail.com" target="_blank" title="email" class="">
                             <span uk-icon="mail"></span>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <div class="container accent-2 justify-content-center">
-                <div class="container">
-                    <div class="container">
-                        <form action="https://formspree.io/f/moqppqkn" method="POST">
-                            <div class="uk-margin">
-                                <label class="uk-form-label" for="name">Name</label>
-
-                                <input type="text" name="name" id="form-s-text" placeholder="Enter your name..." class="uk-input"></input>
-                            </div>
-
-                            <div class="uk-margin">
-                                <label class="uk-form-label" for="email">E-Mail</label>
-
-                                <input type="text" name="_replyto" id="form-s-text" placeholder="Enter your E-Mail address..." class="uk-input"></input>
-                            </div>
-
-                            <div class="uk-margin">
-                                <label class="uk-form-label" for="subject">Subject</label>
-
-                                <input type="text" name="subject" id="form-s-text" placeholder="Enter your subject..." class="uk-input"></input>
-                            </div>
-
-                            <div class="uk-margin">
-                                <label class="uk-form-label" for="message">Message</label>
-
-                                <textarea name="message" id="message" rows="5" placeholder="Enter your message..." class="uk-textarea"></textarea>
-                            </div>
-
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+                        <form action="https://formspree.io/f/moqppqkn" method="POST">
+
+          <!--Grid row-->
+          <div class="row">
+
+
+            <!--Grid column-->
+            <div class="col-md-6">
+
+              <!-- Material outline input -->
+              <div class="md-form md-outline mb-0">
+                <input type="text" id="form-s-text" class="form-control">
+                <label for="form-last-name">Name</label>
+              </div>
+
+            </div>
+            <!--Grid column-->
+            <div class="col-md-6">
+
+          <div class="md-form md-outline mb-0">
+            <input type="email" id="form-email" class="form-control">
+            <label for="email">E-mail</label>
+          </div>
+              </div>
+
+          </div>
+          <!--Grid row-->
+
+          <!-- Material outline input -->
+
+          <!-- Material outline input -->
+          <div class="md-form md-outline">
+            <input type="text" id="form-subject" class="form-control">
+            <label for="subject">Subject</label>
+          </div>
+
+          <!--Material textarea-->
+          <div class="md-form md-outline mb-3">
+            <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i class="far fa-paper-plane ml-2"></i></button>
+                        </form>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+
+<script>
+/*
+	Smooth scroll functionality for anchor links (animates the scroll
+	rather than a sudden jump in the page)
+*/
+$('.js-anchor-link').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+  }
+});
+</script>
