@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Here's a title."
+title: "Reflections on the Joy and Sorrow of Data Scraping."
 subtitle: "Here's a subtitle, AKA a brief & catchy sentence or two that go below the title."
 author: sarah
-category: [category2]
-tags: [article, tag3]
+category: [thestruggle]
+tags: [data scraping, education, moral dilemma]
 permalink: "/example-post-1"
 date: 12 December 2020
 image_path: 'https://images.unsplash.com/photo-1561383507-2777ad5d74a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
@@ -12,176 +12,17 @@ image_alt: 'Alt text for the image goes here.'
 icon_ref: fa-virus
 
 ---
+JASMINA ->
+<Subtitle> 
 
-# This is a level-1 heading.
-
-In the year 2020, a year marked by an unprecedented global health crisis, an all-time high in the number of people displaced by conflict, violence and disasters, the worst wildfire season in history, record hemispheric heat spelling an impending climate catastrophe, never-before-seen political and economic divisions, and countless upheavals against systemic racism, inequality, corruption, and oppression, we, women who write, read, interpret, and critique code, say, Enough with Big Tech!   
-
-<canvas id="bar-chart" class = "post-viz" width="700" height="350"></canvas>
-<script>
-// Bar chart
-new Chart(document.getElementById("bar-chart"), {
-    type: 'bar',
-    data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-      datasets: [
-        {
-          label: "Population (millions)",
-          backgroundColor: ["rgb(5, 148, 194)", "rgb(5, 148, 194)","rgb(5, 148, 194)","rgb(5, 148, 194)","rgb(5, 148, 194)"],
-          data: [2478,5267,734,784,433]
-        }
-      ]
-    },
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Predicted world population (millions) in 2050'
-      }
-    }
-});
-</script>
-## This is a level-2 heading.
-
-- Enough with its hijacking our freedom while parading as a savior amidst a global pandemic.
-- Enough with its incessant datafication of human life.
-- Enough with its shameless exploitation of our personal data.
-- Enough with its algorithms ceaselessly trying to determine our every decision – from where we buy groceries to who should be marked for “preventative” police surveillance.
-- Enough with its clandestine dealings with oppressive governments, jeopardizing the lives of dissenters and peaceful communities.
-- Enough with its covert military-style psychological operations seeking to understand and control the most intimate aspects of our humanity – our thoughts and emotions.
-- Enough with its “young boys’ club” mentality de facto discriminating against women, people of color and other minority groups both in the workplace and in the algorithms it unleashes onto society.
-
-### This is a level-3 heading.
-
-We recognize the recent efforts of government programs, university educators, community organizations, and even tech companies themselves to diversify STEM curricula and create spaces more inviting for women, people of color, members of the LGBTQ community and other marginalized groups, but we believe this is not enough. Much more is needed to ensure the information economy can meet the extraordinary challenges facing our society today in a just, equitable, and sustainable way.
-
-<canvas id="line-chart" class = "post-viz"  width="800" height="450"></canvas>
-<script>
-new Chart(document.getElementById("line-chart"), {
-  type: 'line',
-  data: {
-    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-    datasets: [{
-        data: [86,114,106,106,107,111,133,221,783,2478],
-        label: "Africa",
-        borderColor: "rgb(5, 148, 194)",
-        fill: false
-      }, {
-        data: [282,350,411,502,635,809,947,1402,3700,5267],
-        label: "Asia",
-        borderColor: "rgb(5, 148, 194)",
-        fill: false
-      }, {
-        data: [168,170,178,190,203,276,408,547,675,734],
-        label: "Europe",
-        borderColor: "rgb(5, 148, 194)",
-        fill: false
-      }, {
-        data: [40,20,10,16,24,38,74,167,508,784],
-        label: "Latin America",
-        borderColor: "rgb(5, 148, 194)",
-        fill: false
-      }, {
-        data: [6,3,2,2,7,26,82,172,312,433],
-        label: "North America",
-        borderColor: "rgb(5, 148, 194)",
-        fill: false
-      }
-    ]
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'World population per region (in millions)'
-    }
-  }
-});
-
-</script>
-
-#### This is a level-4 heading.
+Suggested tags:    
+Whenever someone asks what my PhD program was like, I am always overcome by an insidious sense of guilt. The reason for this, as far as I can tell, is that instead of recalling a warm and fuzzy memory of camaraderie or an instance of pride and accomplishment, my brain defaults to a very particular feeling, a feeling that was a constant presence in my life as a doctoral student and which still weighs heavily on me whenever I meet a person interested in research: a feeling of split personality.
+Imagine a business school graduate seminar on the topic of developing countries, but we won’t generally go into specifics; it’s better to focus on the task at hand, X. Regardless of the topic, the goal is always the same: to maximize profit at any cost and optimize the process in order to maximize profit. And sure, we can mention in passing how, in addition to strengthening the financial bottom line of a company, X can potentially help people in developing countries, and yet—lest you forget—the paramount task is to maximize profit. Decades of rigorous management research have shown that the best way to optimize any process and improve the bottom line is to coordinate the various entities involved in the process. In the case of a supply chain, for instance, that would mean increasing the flow of information between the various links in the system to reduce uncertainty. A constant stream of data exchanged in real time would be ideal. It’s just the cold logic of business. Apparently, data is now more valuable than oil, and the best part is that, unlike oil, data is virtually inexhaustible. It is both a resource and a currency, with a subtle twist: Data is generated by someone and literally carries that someone’s social identity DNA. But you won’t hear anything about that in the seminar on the topic of X, nor would anything even remotely related to justice or fairness ever be discussed. In these circles, data seems to be valued primarily for its pragmatic value as the fuel needed to optimize processes, improve prediction models, and ultimately maximize profit. Rather than focusing on its ontological properties, a seminar like that would be more interested in novel ways of obtaining data through web scraping, data mining, or some other fancy technique.
+And here is where my guilt sets in: I love all these unabashedly borderline-unethical monstrosities. The task of capturing the flashy elements of a web page, of making my Python script instruct Selenium to click on that “Next Page” button and watch the browser change, and then seeing the final result: data from thousands of web pages neatly nested in an Excel spreadsheet, ready to be fed into a statistical model… All this releases an exorbitant amount of dopamine in my brain. It’s like a puzzle I’m trying to solve, piece by piece of code, executing it line by line, feeling so powerful because whoever built that website and I are now speaking the same language and I understand, really understand, how their mind works. This is the Mr. Hyde side of me.
+The Dr. Jekyll side would secretly take philosophy classes that call machine learning models “weapons of math destruction,” that teach the work of Michel Foucault and Hannah Arendt and Kimberlé Crenshaw and Shoshana Zuboff to raise awareness about the perils of indiscriminately unleashing computing tools (like the ones my brain salivates over) to make more accurate predictions about what you’re likely to buy the next time you go to the store (but why wait until you get there? They can use micro-targeting directly on your mobile device to subtly nudge you to buy something with a single click!) or to “improve” a broken criminal justice system by, using the same logic, trying to proactively predict who will commit a crime instead of passively waiting for a crime to take place. This is one thing I forgot to mention about the business seminar on the topic of X: They would inevitably tell you that simply responding to changes in your environment won’t cut it in the digital economy—you need to anticipate everything, minimize uncertainty, make everything predictable, because uncertainty equals risk, which is not good for your financial bottom line; it requires extra resources to reel in and control. Long before Governor Cuomo started talking about “flattening the COVID curve,” operations management gurus were living by the mantra of flattening the curve of variability in purchase orders throughout the supply chain. “Flat” means no ups and downs, a steady course, a predictable road you don’t need a driver for—autopilot is enough—what’s known as “rationalization of resources.” (This logic may work for perishable goods inventory, but in what world did anyone think it can be applied to deciding the fate of human beings? And on top of that, calling higher education criminal justice programs subscribing to the idea of predictive policing “justice informatics”? Really, Drexel? Where is the justice in dooming an even greater number of people of color to a perpetual cycle of imprisonment, failed job prospects, and poverty? It’s more like a crime perpetrator parading as a crime stopper.) Yes, I’m fully on board with everything critical theory classes have to say about the deadly hubris surrounding machine learning algorithms, and yet the thought that I, due to my love of coding, am an active accomplice in this insanity makes me sick to my stomach. Hence the split personality. I’d join the chorus of philosophy students decrying GAFA’s crimes against humanity, and a few hours later I’d return to playing catch-and-release with Amazon’s bot detection to scrape a few thousand product reviews. It’s a struggle I continue facing today.
+Now it is my turn to stand before students and talk about data. Which side do I take? Do I need to pick a side? Data is beautiful, exciting, and valuable, but also sensitive, dangerous, and even deadly if it gets in the wrong hands. But that’s the thing: Are there “right hands” for this kind of responsibility? And who should be the judge? We know there are exabytes of data being generated every single day; that’s what we call “big data.” But how about the quantity of personal data being shared/scraped/appropriated every second of our digital existence? We are just beginning, through data literacy, and the work of brave critical data scientists and activists (I’d like to give here a big shout-out to the strong women, especially women of color and queer women, spearheading the movement towards collective conscientization, to borrow Freire’s term, in the context of big data and artificial intelligence; women like Joy Buolamwini, micha cárdenas, and Kendra Clarke) to understand where our data is potentially going and what it could possibly be used for. But this is just the beginning of a long and difficult journey. Maybe the “split personality” feeling is a good one, for it reassures me that I haven’t completely gone over to the Dark Side yet if I am troubled by my actions. But at the same time, it is profoundly dangerous that we live in a world where the thin film of moral accountability is the only thing which separates us from the abyss of unethical data practices. 
+The easy answer would be to put an end to my web scraping activities and get my adrenaline shot someplace else. But I keep thinking of the Amazon Alexa commercial that flooded cable TV in the summer of 2020, the one in which an opera singer is interrupted by a dude on a beach lounger who demands “something more… fun,” and the opera singer’s voice gradually morphs into Donna Summer’s “I Feel Love.” Every time I see this, I cringe and change the channel. There is not a single person of color in the ad, not a single hint that this is Donna Summer’s song, and the way Lounger Boy interacts with the woman singer is sheer misogyny. I keep wondering why no one has spoken against this stupidity, but now I know: The generation possessing a critical mass of the sensibility to see through these racist and sexist tropes is not the primary recipient of this social message—most of us can’t afford cable TV. It’s a question of exposure: We are not fighting this commercial because most of us don’t know it exists. What if the same happens if data mining, scraping, and all that jazz (perhaps Roxie Hart is a good feminist equivalent of the Dr. J/Mr. H dichotomy) cease altogether? Or maybe I am making excuses to continue indulging in my coding addiction?
+At any rate, no one can keep on dwelling in Mr. Hyde’s world forever. Justice always ultimately finds a way to prevail.
+   
 
 
-
-As a first step in this direction, the role of women, and especially women of color, in uncovering the gross violations of ethics (and sometimes the law) perpetrated by Big Tech ought to be acknowledged and firmly and decisively incorporated into the ethos, practice and training of coders and data scientists everywhere.
-
-From Barbara Smith’s Combahee River Collective and Donna Haraway’s “informatics of domination,” through Shoshana Zuboff’s “instrumentarian power” and Zeynep Tufekci’s “marketplace of ideas,” to micha cárdenas’ “android goddess,” Virginia Eubanks’ “digital poorhouse,” Cathy O’Neil’s “weapons of math destruction,” and Simone Browne’s “dark matters,” women in the last few decades have worked tirelessly to give us the vocabulary and critical tools to identify, describe, denounce, and resist what Ewa Plonowska Ziarek calls “the new forms of oppression” advances in technology, and Big Tech in particular, ostensibly unwittingly create.
-<img class = "" style = "max-height: 40vh;" src = "{{site.baseurl}}/media/sitewide/svg/cyborg-9.svg" >
-
-Women in academia have also spearheaded labs and thinktanks such as the AI Now Institute to critically examine the social implications of big science. Such liberatory projects have been undertaken by non-academic activists and grassroot organizations as well. Social movements such as #SayHerName and #BlackLivesMatter – both spearheaded by Black women who had had enough – effectively changed the racial justice discourse in the U.S. and around the world, and helped galvanize the racial reckoning following the murder of George Floyd. And let’s not forget the courageous women-whistleblowers! Just this past week, former Facebook data scientist Sophie Zhang posted a detailed memo replete with examples of how political leaders in Azerbaijan, Bolivia, Honduras and Ukraine use fake Facebook accounts to artificially boost social media engagement and sway public opinion, sparking oftentimes deadly protests and wholesale regime changes.
-
-##### This is a level-5 heading.
-
-Only by striking down the rigid vertical structures of patriarchy’s hegemony over science and knowledge, and replacing them with the intersubjective relational model of data justice these exceptional women have helped create inspired by their own analyses and the ideas of women, people of color, and enlightened men before them, can we hope to avoid the disruption Big Tech is about to cause; disruption commensurate with the devastation predicted by global warming activists.
-
-
-<canvas id="bubble-chart" class = "post-viz" width="800" height="450"></canvas>
-<script>
-new Chart(document.getElementById("bubble-chart"), {
-    type: 'bubble',
-    data: {
-      labels: "Africa",
-      datasets: [
-        {
-          label: ["China"],
-          backgroundColor: "rgba(5, 148, 194,0.2)",
-          borderColor: "rgba(5, 148, 194,1)",
-          data: [{
-            x: 21269017,
-            y: 5.245,
-            r: 15
-          }]
-        }, {
-          label: ["Denmark"],
-          backgroundColor: "rgba(5, 148, 194,0.2)",
-          borderColor: "rgba(5, 148, 194,1)",
-          data: [{
-            x: 258702,
-            y: 7.526,
-            r: 10
-          }]
-        }, {
-          label: ["Germany"],
-          backgroundColor: "rgba(5, 148, 194,0.2)",
-          borderColor: "rgb(5, 148, 194)",
-          data: [{
-            x: 3979083,
-            y: 6.994,
-            r: 15
-          }]
-        }, {
-          label: ["Japan"],
-          backgroundColor: "rgba(5, 148, 194,0.2)",
-          borderColor: "rgba(5, 148, 194,1)",
-          data: [{
-            x: 4931877,
-            y: 5.921,
-            r: 15
-          }]
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: true,
-        text: 'Predicted world population (millions) in 2050'
-      }, scales: {
-        yAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: "Happiness"
-          }
-        }],
-        xAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: "GDP (PPP)"
-          }
-        }]
-      }
-    }
-});
-</script>
-###### This is a level-6 heading.
-
-Only by striking down the rigid vertical structures of patriarchy’s hegemony over science and knowledge, and replacing them with the intersubjective relational model of data justice these exceptional women have helped create inspired by their own analyses and the ideas of women, people of color, and enlightened men before them, can we hope to avoid the disruption Big Tech is about to cause; disruption commensurate with the devastation predicted by global warming activists.
