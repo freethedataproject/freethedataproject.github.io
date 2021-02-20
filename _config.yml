@@ -5,13 +5,16 @@ logo: 'assets/images/logo.svg'
 favicon: 'assets/images/logo.svg'
 baseurl: ""
 
-include: ["_posts"]
+include: ["_pages"]
+
 permalink: /:title/
 
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
+
 
 # Syntax
 markdown: kramdown

@@ -1,8 +1,5 @@
 .modal-biog {
-
 font-size: 16px !important;}
-
-
 	.photoAnia, .photoSarah, .photoLeni, .photoJasmina, .photoFrida, .modal-img {
 		padding: 0!important;
 		margin: 0!important;
@@ -75,9 +72,6 @@ font-size: 16px !important;}
 	.modal-img {
 		padding-bottom: 20px!important;
 	}
-}
-
-.biogtext {
 }
 
 .modal-content {

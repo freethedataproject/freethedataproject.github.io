@@ -1,26 +1,25 @@
-<div class="d-flex row   rounded-lg ftd-card card-small shadowdrop h-100 m-3">
+<div class="d-flex row   rounded-lg ftd-card bgoffwhite card-small shadowdrop h-100 m-3">
   <div class="col-md-2  view  h-100">
 
     <div class="mask rgba-stylish-strong  ">
-      <div class=" flex-center  bg-dark p-2 "><span class="posticon rounded-circle" > <i class="fas {{post.icon_ref}} fa-lg " style = ""></i></span></div>
+      <div class=" flex-center  bg-dark p-2 "><span class="posticon rounded-circle"> <a
+            href="{{site.baseurl}}{{post.category}}" data-toggle="tooltip" title="{{post.category}} "><i
+              class="posticon fas fa-lg {{post.icon_ref}} mb-3 "></i> </a></span></div>
     </div>
   </div>
 
   <div class="col-md-10 my-0 align-self-center  card z-depth-0">
-    <div class = "card-body">
-    <h6 class="mb-4"><a class="  " href="{{site.baseurl}}{{post.permalink}}" target="_blank">{{post.title}}</a>
-      <h6>
+    <div class="card-body">
+      <h3 class="mb-4"><a class="  " href="{{site.baseurl}}{{post.permalink}}" target="_blank">{{post.title}}</a>
+        </h3>
 
-        <p class=" small">{{post.subtitle}}</p>
+          <p class=" small">{{post.subtitle}}</p>
 
-        <span class="small">
-          <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp;
-          | &nbsp;
-          {% for cat in post.category %}
-          <a class="     " href="{{site.baseurl}}/{{cat}}">{{cat}}</a></span>
-        {% endfor %}
-        </span>
+                <small class="text-muted small">
+                  <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp; |  &nbsp; {{post.date | date: "%d %b %y"}}
+                
+                </small>
+    </div>
   </div>
-</div>
 
 </div>

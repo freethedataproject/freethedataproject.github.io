@@ -1,0 +1,75 @@
+.asfalt {
+    
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png") !important;
+}
+
+.asfalt-light {
+
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png") !important;
+}
+.brokennoise {
+background-color: #007982 !important; 
+    background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png") !important;
+}
+
+.constructionpaper {
+
+    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png") !important;
+ 
+}
+
+.cardboard {
+background-image: url("https://www.transparenttextures.com/patterns/cardboard.png") !important;
+
+}
+
+
+
+.fridabg {
+    background-color: #e86166 !important;
+
+
+}
+
+
+.tealbg {
+    
+    background-color: #00b9bc !important;
+
+
+}
+
+
+.darktealbg {
+    
+    background-color: #009092 !important;
+
+
+}
+
+
+.shadowinset {
+    background: #fefefe !important;
+box-shadow: inset 5px 5px 8px #a4a4a4,
+            inset -5px -5px 8px #ffffff !important;
+
+}
+
+.shadowteal {
+box-shadow:  5px 5px 10px #155a5b,
+             -5px -5px 10px #219295 !important;
+
+}
+
+.bgoffwhite {
+    background: rgba(248, 249, 251, .95) !important;
+
+
+}
+
+.bgborder-teal {
+
+    border: 1px dashed #00b9bc !important;
+    box-shadow: 50px 50px #00b9bc !important;
+}
+

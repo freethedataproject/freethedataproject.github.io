@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
   --tq-extra-light: #ccf0f1;
@@ -6,19 +7,49 @@
   --tq-medium: #006465;
   --tq-dark: #00292b;
   --frida: #e86166;
-  --basicsans: 'basic-sans', sans-serif;
-  --inter: 'Inter', sans-serif;
+  --basicsans: 'Space Grotesk', sans-serif;
+  --inter: 'Space Grotesk', sans-serif;
   --cubano: 'cubano', sans-serif;
-  --offwhite: #fefefe;
+  --offwhite: #f8f9fb;
   --gradient1: rgba(179, 233, 235,0.3);
   --gradient2: rgba(179, 233, 235,0.2);
 }
 
 
 body {
+    background-color: #f8f9fb !important;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png") !important;
+  /* Set a specific height */
+  height: 100%;
 
-  background-color: #f7f7f7 !important;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
 }
+
+.nav-item a {
+
+  font-weight: 400 !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+
+.textoffwhite {
+  color: #f8f9fb!important;
+}
+
+
+.dropdown-menu a {
+
+  color: #00292b !important;
+}
+
+
 /* FONT FAMILIES */
 .basicsans, h1, h2, h3, h4, h5, h6 {
   font-family: var(--inter) !important;
@@ -38,6 +69,9 @@ p {
   letter-spacing: .5px!important;
 }
 
+.card-body p {
+}
+
 p {
   font-size: 1rem !important;
 }
@@ -53,7 +87,7 @@ a:hover {
   font-size: 1rem !important;
   font-family: var(--inter) !important;
   font-weight: 700 !important;
-  color: var(--tq-dark) !important;
+  color: var(--offwhite) !important;
 
 }
 
@@ -93,12 +127,6 @@ a {
 
 }
 
-.navbar-bg-color a {
-  color: var(--tq-extra-light) !important;
-  letter-spacing: .5px !important;
-
-}
-
 /* FONT HOVERS */
 a:hover {
   text-decoration: underline !important;
@@ -109,9 +137,6 @@ a:hover {
   background-color: var(--tq-dark) !important;
 }
 
-.navbar-bg-color {
-  background-color: var(--tq-dark) !important;
-}
 
 /* DEFAULT BUTTONS & BADGES */
 .btn, .btn-sm, .ftd-btn {
@@ -139,10 +164,6 @@ a:hover {
 }
 
 
-  .img-bitesized  {
-  }
-
-
 
 @media only screen and (max-width: 999px) {
   .card-modal-button {
@@ -153,20 +174,6 @@ a:hover {
 .card-modal-button-img {
   object-fit: cover;
 }
-
-
-/* DEFAULT CARD
-
-
-
-      .view:hover {
-        -webkit-filter: brightness(140%);
-        transition: all .4s ease-in-out;
-      }
-
-
-       */
-
 
 .card, .ftd-card {
   border: none!important;
@@ -233,14 +240,9 @@ border: 1px solid #e5e7e9!important;
 
 }
 
-.card-jumbo {
-}
-
 .card-default a, .card-small a, .card-horizontal a, .card-featured a {
   font-weight: 700 !important;
 
-}
-.card-default .mask a, .card-small .mask a {
 }
 
 .card p {
@@ -248,26 +250,16 @@ border: 1px solid #e5e7e9!important;
   font-size: .9rem!important;
 }
 
-.card-default {
-}
-.card-small, .card-horizontal, .category-button {
-}
 
 .card-featured {
   padding: 60px!important;
   background-color: var(--offwhite)!important;
 }
-.card-featured, .card-inset-lg {
-}
 .category-button {
 font-family: var(--inter)!important;
 letter-spacing: .5px;
 font-weight: 500;
-  color: var(--offwhite)!important;
-  background-color: var(--tq-dark)!important;
 }
-
-
 
 .category-button:hover {
   font-weight: 500;
@@ -281,22 +273,6 @@ font-weight: 500;
   background-color: var(--frida)!important;
 }
 
-.posticondiv {
-  background: var(--frida)!important;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35px!important;
-  height: 35px!important;
-  margin: 5px!important;
-  border-radius: 50%!important;
-  padding: 10px!important;
-  box-shadow: inset 2px 2px 2px #be5054,
-              inset -2px -2px 2px #ff7278 !important;
-
-
-}
 
 .posticon {
   color: var(--offwhite)!important;
@@ -311,3 +287,17 @@ font-weight: 500;
 .shadowdropv2 {
   box-shadow:  4px 4px 10px #cbcbcb !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

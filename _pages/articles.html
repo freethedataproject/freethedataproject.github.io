@@ -1,0 +1,46 @@
+---
+layout: default
+title: "Articles"
+permalink: "articles/"
+---
+
+
+<div class = "brokennoise" style = "padding-top: 100px!important; margin-top: -100px!important;">
+<div class = "container mb-5 pb-5 pt-2    card align-self-center z-depth-0">
+<div class = "card-body  p-5 shadowinset bgoffwhite">
+	<h1 class="cubano "> Articles </h1>
+	<p class = "" style = "font-size: 1rem !important;"> {{site.data.content-pages.articles}}
+	</p></div>
+</div>
+
+</div>
+
+
+<div class="container my-5 py-5">
+	<div class="container">
+		<h2 class=" d-flex">By Topic</h2>
+
+		<hr>
+		{% include topic.html %}
+	</div>
+</div>
+
+<div class="container py-5 my-5">
+	<h2 class=" d-flex">The Struggle</h2>
+	<p class = "" style = "font-size: 1rem !important;"> {{site.data.content-pages.thestruggle}}
+
+	<hr>
+	<br>
+
+	<div class="d-flex flex-wrap">
+		{% for post in site.tags.data101 %}
+
+		<div class="col-md-6 col-sm-12 col-xs-12 p-3  {{ post.category }}">
+			{% include cards/card-small.html %}
+		</div>
+
+		{% endfor %}
+	</div>
+</div>
+
+<div class="pt-5 pb-5"></div>

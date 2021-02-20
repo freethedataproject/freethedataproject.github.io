@@ -3,232 +3,133 @@ layout: default
 title: "Home"
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<link type="text/css" href="{{site.baseurl}}/assets/css/homepage.css" rel="stylesheet">
-</link>
-
 <style>
-@media only screen and (max-width: 800px) {
-  .card-image-div {
-	padding-top:290px!important;
-	padding-bottom:100px!important;
 
-  }
-.margintop {
-	margin-top:20px!important;
+@media only screen and (max-width: 600px) {
+.float-font {
+font-size: 2.5rem!important;
 
-}
-
-}
-
-@media only screen and (min-width: 801px) and (max-width:950px) {
-  .card-image-div {
-	padding-top:450px!important;
-  }
-.margintop {
-	margin-top:20px!important;
 }
 }
 
-
-
-#navz {
-  background: #00292b;
-  margin: 0;
-
-  padding: 15px;
-  list-style: none;
-}
-
-#navz a {
-  display: block;
-  padding: 10px 10px;
-}
-
-.card-image-div {
-  margin:auto;
-border-bottom:5px solid!important;
-  position:relative; /*sets up for children to be abs pos*/
+@media only screen and (min-width: 601px) {
+.float-font {
+font-size: 4rem!important;
 
 }
-
-.card-image-anchored {
-  position:absolute;
-  bottom:0;
 }
+@media only screen and (min-width: 1250px) {
+.float-font {
+font-size: 6rem!important;
 
-body {
-
-	background-color: #fefefe !important;
+}
 }
 
 
 </style>
 
-<link rel="stylesheet" href="{{site.baseurl}}/assets/css/teamstyle.css"></link>
 
 
-<div class = "view " style = "background-color: #eeeeee!important; margin-top: -100px!important;" >
-	<img class = "img-fluid" src = "{{site.baseurl}}/media/sitewide/hero.svg" style = "margin-bottom:-3px!important; width:100%; max-height: 100vh; object-fit: cover;" >
+
+
+
+
+
+
+
+<div class = "rela">
+
+<div class="view " style=" margin-top: -100px!important; ">
+  <img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
+    style=" width:100%; max-height: 100vh; object-fit: cover;">
+
+    <div class = "mask  d-none d-lg-inline-flex  container flex-center">
+        <div class = "row ">
+
+          <div class = "col-6 ">
+
+          </div>
+
+
+          <div class = "col-6 ">
+            <div class = "row ">
+                            <h1 class = "cubano mb-3" style = " color: #003e3f !important;" >Free the Data</h1>            
+     </div>
+            <div class = "row pr-5">
+
+                  <p>      {{site.data.index.themission}}
+</p>
+<button class = "btn btn-sm mt-4" ><a href = "{{site.baseurl}}/about">Learn more about the project →</a></button>
+     </div>
+
+
+          </div>
+
+        </div>
+
+
+    </div>
+
+</div>  
+</div>
+
+<div class = "pt-5 pb-5"></div>
+
+
+<section>
+
+<div class = "covers">
+<div class="container pb-5 mb-5">
+	<h2 class="cubano  d-flex">Featured</h2>
+
+	<hr>
+	<br>
+
+	<div class="container">
+		{% for post in site.tags.featured %}
+			{% include cards/featured-card.html %}
+		{% endfor %}
+	</div>
+</div>
+</section>
+
+<section>
+
+<div class="container my-5 py-5">
+	<div class="container">
+		<h2 class="cubano d-flex">By Topic</h2>
+
+		<hr>
+		{% include topic.html %}
+	</div>
+</div>
+</section>
+
+<section>
+
+<div class="container py-5 my-5">
+	<h2 class="cubano d-flex">Data 101</h2>
+
+	<p>
+		Breaking the black box, one post at a time.
+	</p>
+
+	<hr>
+	<br>
+
+	<div class="d-flex flex-wrap">
+		{% for post in site.tags.data101 %}
+
+		<div class="col-md-6 col-sm-12 col-xs-12 p-3  {{ post.category }}">
+			{% include cards/card-small.html %}
 		</div>
 
-
-<div class = "pt-5 pb-5"></div>
-
-<div class = "">
-<div class = "container  ">
-	<h1 class="cubano  pt-5 pb-2   ">THE MISSION</h1>
-        <p class="" style = "font-size: 1.2rem!important; line-height: 35px!important;">
-            Free the Data joins a growing movement that calls on academics, journalists, scientists, and anyone else interested in data justice to challenge what it means to work with data. Our goal is to to tell stories that use data in compelling, interactive, and visual ways, while breaking stereotypes about who can do data analysis and what proper research topics look like. Collectively, the content that we showcase reflects the diversity of our interests and our shared commitment to driving data in more ethical, engaging, and empowering directions.
-        </p>
-
-
-</div></div>
-
-<div class = "pt-5 pb-5"></div>
-
-
-
-
-
-<div class = " p-5 m-5 " style = "background-color: #c4eeef !important;" >
-	<div class = "container">
-<h1 class="cubano ">THE TEAM</h1>
-	<p class = "">Click on an image to view a team member's profile. </p>
-	<hr>
+		{% endfor %}
+	</div>
 </div>
-<div class = "pb-5"></div>
+</section>
 
-<div class = "row flex-center">
-{% for author in site.data.authors %}
-<div class = "col-2-lg col-6-md col-12-sm col-12-xs m-3">
-{% include cards/team-modal.html %}
-</div>	
-{% endfor %}
-
-</div>
-
-								</div>
-								</div>
-
-
-
-
-									<div class = "pt-5 pb-5"></div>
-
-<div class = "container">
-
-    <!--Section: Content-->
-    <section class="">
-			<h1 class="cubano  pt-5 pb-2   ">CONTACT US</h1>
-
-      <!--Grid row-->
-      <div class="row">
-
-        <!--Grid column-->
-        <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
-
-<br>
-  <p class = " ">
-                We welcome comments, constructive criticisms, requests for collaboration, invitations to events, or just saying hi! A member of our team will try to respond within 48 hours. Note: If you're contacting Frida, she asks that you please run your message through
-                a translator such as
-
-                <a href="https://kittify.herokuapp.com/" target="_blank">this one</a> prior to sending.
-            </p>
-
-            <br>
-            <br>
-
-            <div class="container">
-                <div class="d-flex justify-content-center">
-                    <div>
-                        <a href="https://twitter.com/freethedata_" target="_blank" title="twitter" class="">
-                            <span uk-icon="twitter"></span>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="https://instagram.com/freethedataproject" target="_blank" title="instagram" class="">
-                            <span uk-icon="instagram"></span>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="https://github.com/freethedataproject" target="_blank" title="github" class="">
-                            <span uk-icon="github"></span>
-                        </a>
-                    </div>
-
-                    <div>
-                        <a href="mailto:freethedataproject@gmail.com" target="_blank" title="email" class="">
-                            <span uk-icon="mail"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
-                        <form action="https://formspree.io/f/moqppqkn" method="POST">
-
-          <!--Grid row-->
-          <div class="row">
-
-
-            <!--Grid column-->
-            <div class="col-md-6">
-
-              <!-- Material outline input -->
-              <div class="md-form md-outline mb-0">
-                <input type="text" id="form-s-text" class="form-control">
-                <label for="form-last-name">Name</label>
-              </div>
-
-            </div>
-            <!--Grid column-->
-            <div class="col-md-6">
-
-          <div class="md-form md-outline mb-0">
-            <input type="email" id="form-email" class="form-control">
-            <label for="email">E-mail</label>
-          </div>
-              </div>
-
-          </div>
-          <!--Grid row-->
-
-          <!-- Material outline input -->
-
-          <!-- Material outline input -->
-          <div class="md-form md-outline">
-            <input type="text" id="form-subject" class="form-control">
-            <label for="subject">Subject</label>
-          </div>
-
-          <!--Material textarea-->
-          <div class="md-form md-outline mb-3">
-            <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
-            <label for="message">Message</label>
-          </div>
-
-          <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i class="far fa-paper-plane ml-2"></i></button>
-                        </form>
-
-        </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-    </section>
-    <!--Section: Content-->
-
-
-										<div class = "pt-5 pb-5"></div>
-
+<div class="pt-5 pb-5"></div>
 
 
 </div>

@@ -7,16 +7,16 @@
       <div class="mask rgba-stylish-strong flex-left p-5">
   </div>
 
-    <div class="mask  flex-center">
-      <div class = "m-5 p-4 rounded-lg card-featured">
+    <div class="mask  flex-center ">
+      <div class = "m-5 p-4 rounded-lg card-featured ">
+        <a href="{{site.baseurl}}{{post.category}}" data-toggle="tooltip" title="{{post.category}} "><i  style = " color: #003e3f!important; font-size: 30px;" class = "posticon fas {{post.icon_ref}} mb-3 "></i> </a>
       <h1 class=" font-normal"><a href="{{site.baseurl}}{{post.permalink}}" target="_blank">{{post.title}}</a></h1>
       <p class=" small mb-2">{{post.subtitle}}</p>
       <hr>
-      <small class="text-muted small">
-        <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href = "{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp; |&nbsp;
-
-      <a class="" href="{{site.baseurl}}/{{post.category}}">{{post.category}}</a>
-      </small>
+                <small class="text-muted small">
+                  <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp; |  &nbsp; {{post.date | date: "%d %b %y"}}
+                
+                </small>
     </div></div>
 </div>
   </a>

@@ -1,32 +1,36 @@
 
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light grey lighten-3 d-block">
+<nav class="navbar brokennoise fixed-top navbar-expand-lg  p-0 d-block z-depth-0 "">
 
   <div class="container">
 
     <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse mb-1" id="basicExampleNav">
 
       <!-- Links -->
-      <ul class="navbar-nav mr-auto text-uppercase font-weight-normal">
+      <ul class="navbar-nav mr-auto  font-weight-normal  navbar-expand-sm">
         <li class="nav-item">
-    			<a class="nav-link basicsans" href="/about">About</a>
+      <a class="navbar-brand cubano  d-none d-md-flex textoffwhite" style = "letter-spacing:0.5px!important;" href="/index/">Free the Data</a>
     		</li>
 
-    		<li class="nav-item">
-    			<a class="nav-link basicsans " href="{{site.baseurl}}/articles">Articles</a>
+    		<li class="nav-item  d-none d-md-flex">
+      			<a class="nav-link basicsans" href="/about">About</a>
     		</li>
+
+
+           <li class="nav-item dropdown">
+        <a class="nav-link basicsans dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+    			<a class="nav-link basicsans dropdown-item" href="{{site.baseurl}}/articles">Articles</a>
+              <a class="nav-link basicsans dropdown-item" href="{{site.baseurl}}/visual-stories">Visual Stories</a>
+    			<a class="nav-link basicsans dropdown-item" href="{{site.baseurl}}/data101">Data 101</a>
+          <a class="nav-link basicsans d-lg-none d-md-none d-xl-none dropdown-item" href="{{site.baseurl}}/About">About Free the Data</a>
+        </div>
+      </li>
+
       </ul>
-      <!-- Links -->
-      <a class="navbar-brand cubano p-0 " style = "letter-spacing:0.5px!important;" href="https://freethedataproject.com/">Free the Data</a>
 
-      <ul class="navbar-nav ml-auto nav-flex-icons">
+      <ul class="navbar-nav ml-auto nav-flex-icons d-none d-lg-flex">
         <li class="nav-item">
           <a class="nav-link" href="https://twitter.com/freethedata_" target="blank_">
             <i class="fab fa-twitter nav_color"></i>
