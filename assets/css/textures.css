@@ -49,7 +49,6 @@ background-image: url("https://www.transparenttextures.com/patterns/cardboard.pn
 
 
 .shadowinset {
-    background: #fefefe !important;
 box-shadow: inset 5px 5px 8px #a4a4a4,
             inset -5px -5px 8px #ffffff !important;
 

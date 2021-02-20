@@ -16,7 +16,7 @@
 }
 
 
-body {
+body, .texturebg {
     background-color: #f8f9fb !important;
     background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png") !important;
   /* Set a specific height */
