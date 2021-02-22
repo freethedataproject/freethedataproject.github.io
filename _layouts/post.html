@@ -3,45 +3,54 @@ layout: default
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<style>
-.idfk {
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/posts.css">
 
 
-	margin-bottom: 100px !important ;
-
-}
-.idfkborder {
-	border-top: 1px solid var(--tq-medium)  !important ;
-	border-left: 1px solid var(--tq-medium)  !important ;
+<div class = "container mb-5 mt-5" >
 
 
-}
-	</style>
-<div class="container idfk mb-5  py-5  ">
-	<div class="flex-center z-depth-0  row d-flex flex-wrap " >
-			<div class="col-md-4 col-xs-1 col-s-1  flex-center shadowdropv2" style = "border-bottom: 1px solid var(--tq-medium)  !important ;">
-				<img class="img-fluid rounded-left" src="{{page.image_path}}" alt="{{page.image_alt}}" style = " max-height: 25vh; object-fit: cover !important;">
-			</div>
+<div class = "row p-0 z-depth-none  flex-center mb-5">
 
-			<div class="col-md-8 col-xs-11 col-s-11 p-5 idfkborder">
-
-				<h1 class="   cubano align-self-center font-normal"><a href="{{site.baseurl}}{{page.permalink}}" target="_blank">{{page.title}}</a></h1>
-				<p class="   align-self-center small mb-2">{{page.subtitle}}</p>
-				<hr>
-				<small class="  align-self-center text-muted small">
-					<a href="{{site.baseurl}}{{page.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{page.author}}">{{page.author}}</a></a> &nbsp; |&nbsp;
-
-					<a class="" href="{{site.baseurl}}/{{page.category}}">{{page.category}}</a>
-				</small>
-
-
-			</div>
-
+	<div class = "col-12-xs col-12-sm col-6-md ml-0 pl-0" style = "width:100%!important;">
+		<div class = "view card z-depth-2 ml-0 pl-0">
+	<img class="img-fluid " src="{{page.image_path}}" alt="{{page.image_alt}}"
+	style = "height: 300px !important;object-fit: cover!important;width:100%!important;"
+		>
+		<div class = "mask pattern-4 flex-center">
+				<p class="cubano text-white p-3 text-center " style="font-size: 3rem!important;">{{page.title}}</p>
+			
 		</div>
 
 	</div>
+	
 
-
-<div class="container ">
-		{{content}}
 </div>
+	<div class = "col-12-xs col-12-sm col-6-md">
+			<div class="card z-depth-0  p-5 rounded-0  flex-center m-0">
+				<p class="">{{page.subtitle}}</p>
+				<p class=" small mt-2">
+					<a href="{{site.baseurl}}{{page.permalink}}" class=""><a
+							href="{{site.baseurl}}/authors/{{page.author}}">{{page.author}}</a></a> &nbsp; |&nbsp;
+					<a class="" href="{{site.baseurl}}/explore/#{{page.category}}">{{page.category}}</a> &nbsp; |&nbsp; <i class = "fas fa-tag text-dark ml-1" ></i>&nbsp;&nbsp; <span>{% for tag in page.tags %}  <a href = "{{site.baseurl}}/explore/#tags">{{tag}} &nbsp;&nbsp;</a> {% endfor %}  </span> 
+				</p>
+			</div>
+
+	</div>
+</div>
+
+<hr> 
+
+<div class="container contentcontainer" style = "padding-top: 55px!important;">
+	<div class="row ">
+		<div class="float-left sticky-top ">
+			<p class = "cubano">Navigation:</p>
+			<nav id="toc" data-toggle="toc"></nav>
+		</div>
+
+		<div class="container mt-0 pt-0 navbody">
+
+
+			{{content}}
+		</div>
+	</div>
+</div></div>

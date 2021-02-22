@@ -1,0 +1,104 @@
+---
+layout: default
+title: "Data 101"
+permalink: "data101/"
+---
+
+<div class="brokennoise" style="padding-top: 100px!important; margin-top: -100px!important;">
+	<div class="container mb-5 pb-5 pt-2    card align-self-center z-depth-0">
+		<div class="card-body  p-5 shadowinset bgoffwhite">
+			<h1 class="cubano ">Explore</h1>
+			<p class="" style="font-size: 1rem !important;">
+			<p class="" style="  font-size: 1rem !important;">
+				{% for item in site.data.content_descriptions %}
+				{{item.explore}}
+				{% endfor %}
+			
+			</p>
+
+<span>
+			<button type="button" class="btn btn-primary">Jump to filters</button>
+						<button type="button" class="btn btn-primary">Jump to a collection</button>
+
+</span>
+
+		</div>
+	</div>
+</div>
+
+<div class="container my-5 py-5">
+	<div class="container">
+		<h2 class=" d-flex">By Topic</h2>
+
+		<hr />
+		{% include topic.html %}
+	</div>
+</div>
+
+<div class="container py-5 my-5">
+	<h2 class=" d-flex">The Struggle</h2>
+	<p class="" style="font-size: 1rem !important;">
+		{{site.data.content-pages.thestruggle}}
+	</p>
+
+	<hr />
+	<br />
+
+	<div class="d-flex flex-wrap">
+	</div>
+</div>
+
+<div class="pt-5 pb-5"></div>
+
+<div class = "container">
+		<h2 class=" d-flex">#TheStruggle</h2>
+
+        <!--First row-->
+        <div class="row">
+          
+          <!--First column-->
+          <div class="col-lg-3 col-md-12 mb-4">
+            <!--Featured image-->
+            <div class="view overlay zoom z-depth-2">
+              <img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid">
+            </div>
+            <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+              amet</p>
+          </div>
+          <!--First column-->
+          
+          <!--Second column-->
+          <div class="col-lg-3 col-md-12 mb-4">
+            <!--Featured image-->
+            <div class="view overlay zoom z-depth-2">
+              <img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid">
+            </div>
+            <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+              amet</p>
+          </div>
+          <!--Second column-->
+          
+          <!--Third column-->
+          <div class="col-lg-3 col-md-12 mb-4">
+            <!--Featured image-->
+            <div class="view overlay zoom z-depth-2">
+              <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid">
+            </div>
+            <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+              amet</p>
+          </div>
+          <!--Third column-->
+		            <!--Third column-->
+          <div class="col-lg-3 col-md-12 mb-4">
+            <!--Featured image-->
+            <div class="view overlay zoom z-depth-2">
+              <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid">
+            </div>
+            <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+              amet</p>
+          </div>
+          <!--Third column-->
+
+          
+        </div>
+        <!--First row--></div>

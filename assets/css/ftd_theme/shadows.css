@@ -1,0 +1,64 @@
+.drop-sm, .drop-md, .drop-lg, .inset-sm, .inset-md, .inset-lg {
+	border: none !important;
+}
+
+.btn, .btn-sm, .drop-sm, .btn-drop {
+box-shadow:  3px 3px 3px #d2dbe6,
+             -3px -3px 3px #fafafb !important;
+}
+
+.btn, .btn-drop {
+
+    border: 1px solid  var(--grayish)!important;
+    transition: .3s!important;
+    background-color: var(--offwhite)!important;
+
+
+}
+
+.btn:hover, .btn-drop:hover {
+
+    border: 1px solid var(--tq-dark)!important;
+    background-color: var(--tq-extra-light)!important;
+}
+
+ .btn-drop {
+box-shadow:   3px 3px 3px #d2dbe6,
+              -3px -3px 3px #fafafb !important;
+
+    border: 1px solid  var(--grayish)!important;
+    background-color: var(--offwhite)!important;
+}
+
+   .categorya-button:focus {
+box-shadow:  inset 3px 3px 3px #d2dbe6,
+             inset -3px -3px 3px #fafafb !important;
+
+    }
+
+
+.drop-md {
+box-shadow:  4px 4px 4px #d2dbe6,
+             -4px -4px 4px #fafafb !important;
+}
+
+.drop-lg {
+box-shadow:  5px 5px 5px #d2dbe6,
+             -5px -5px 5px #fafafb !important;
+}
+
+
+.inset-sm {
+box-shadow: inset 3px 3px 3px #d2dbe6,
+            inset -3px -3px 3px #fafafb !important;
+}
+
+.inset-md {
+box-shadow:  inset 4px 4px 4px #d2dbe6,
+             inset -4px -4px 4px #fafafb !important;
+}
+
+.inset-lg {
+box-shadow:  inset 5px 5px 5px #d2dbe6,
+             inset -5px -5px 5px #fafafb !important;
+}

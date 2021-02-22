@@ -16,6 +16,9 @@ plugins:
   - jekyll-feed
 
 
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
 # Syntax
 markdown: kramdown
 highlighter: rouge

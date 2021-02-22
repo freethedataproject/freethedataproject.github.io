@@ -1,0 +1,29 @@
+
+                <div class="card view  overlay rounded drop-sm" style = "width: 200px!important; height: 100px!important;">
+                  <img src="{{site.baseurl}}/media/kitchen/{{item.image_path}}" alt="{{item.alt_text}}"
+                    class="img-fluid"  style = "height: 100px!important; object-fit: cover!important; object-position: center!important;">
+                    <a class = "mask waves-effect waves-light rgba-white-slight flex-center" type="button" class="  text-white" data-toggle="modal" data-target="#exampleModalCenter{{item.id}}"> 
+                    </a>
+              </div>
+
+<div class="modal fade" id="exampleModalCenter{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered flex-center" role="document"  style = "min-width: 50vw !important; min-height: 50vh!important;">
+    <div class="modal-content modal-fluid">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{item.name}}</h5>
+        <button type="button" class=" btn btn-sm" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body " >
+                  <img src="{{site.baseurl}}/media/kitchen/{{item.image_path}}" alt="{{item.alt_text}}"
+                    class="img-fluid" style = "object-fit: cover;"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

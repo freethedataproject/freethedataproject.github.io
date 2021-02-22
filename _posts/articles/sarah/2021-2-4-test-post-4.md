@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Here's a title."
+title: "A Critical Autopsy of Eminem's Misogyny"
 subtitle: "Here's a subtitle, AKA a brief & catchy sentence or two that go below the title."
 author: sarah
-category: [category3]
-tags: [article, tag3]
-permalink: "/example-post-4"
+category: [media]
+tags: [article, critical autopsy, thestruggle, data101, kitchensink, hiddenhistories ]
+permalink: "/example-post-descriptive-link-sarah"
 date: 3 February 2021
-image_path: 'https://images.unsplash.com/photo-1592495989226-03f88104f8cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1386&q=80'
+image_path: 'https://images.unsplash.com/photo-1602578300917-d5213cf73fa2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1377&q=80'
 image_alt: 'Alt text for the image goes here.'
-icon_ref: fa-vote-yea
+icon_ref: fa-fire
 ---
 
 # This is a level-1 heading.

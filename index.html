@@ -23,295 +23,242 @@ title: "Home"
 	}
 </style>
 
-<div class="">
 
-	<div class="view " style=" margin-top: -100px!important; ">
-		<img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
-			style=" width:100%; max-height: 100vh; object-fit: cover;">
 
-		<div class="mask  d-none d-lg-inline-flex  container flex-center">
-			<div class="row ">
-				<div class="col-6 ">
-				</div>
-				<div class="col-6 ">
-					<div class="row ">
-						<h1 class="cubano mb-3" style=" color: #003e3f !important;">Free the Data</h1>
-					</div>
-					<div class="row pr-5">
-						<p> {{site.data.index.themission}}
-						</p>
-						<button class="btn btn-sm mt-4"><a href="{{site.baseurl}}/about">Learn more about the project
-								→</a></button>
-					</div>
-				</div>
+
+<div class="view " style=" margin-top: 0px!important; ">
+	<img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
+		style=" width:100%; max-height: 100vh; object-fit: cover;">
+	<div class="mask  d-none d-lg-inline-flex  container flex-center">
+		<div class="row ">
+			<div class="col-6 ">
 			</div>
-		</div>
-	</div>
-
-	<div class="brokennoise"
-		style="padding-top: 150px!important; margin-top: 0!important;padding-bottom: 40px!important;">
-		<div class="container mb-5 pb-5 pt-2    card align-self-center z-depth-0">
-			<div class="card-body texturebg p-5 shadowinset "
-				>
-				<div class="row">
-	<div class="container my-5  z-depth-0">
-		<h1 class="cubano  mb-2   "> Our approach</h1>
-		<h2 class = "mb-5"  style = "color: #1a595e !important;">
-			We advocate for data that is:
-		</h2>
-		<div class="row">
-			<div class="col-md-4 mb-4 align-self-center">
-				<div class="row align-self-center">
-					<img src="{{site.baseurl}}/media/sitewide/svg/6_BIRD.svg" class="img-fluid"
-						alt="Sample project image" style="height: 120px;  width: 100%; object-fit:contain;" />
-					<div class="mask rgba-white-slight"></div>
+			<div class="col-6 ">
+				<div class="row ">
+					<h1 class="cubano mb-3" style=" color: #003e3f !important;">Free the Data</h1>
 				</div>
-				<div class="row p-4">
-					<h2 class=" mb-3">ethical</h2>
-					<p class="" style="  font-size: 1rem !important;">
-						{{site.data.index.ethical}}</p>
-				</div>
-			</div>
-			<div class="col-md-4 mb-4 align-self-center">
-				<div class="row  align-self-center">
-					<img src="{{site.baseurl}}/media/sitewide/svg/4_SOCIAL MEDIA.svg" class="img-fluid"
-						alt="Sample project image" style="height: 120px;  width: 100%; object-fit:contain;" />
-				</div>
-				<div class="row p-4">
-					<h2 class=" mb-3">engaging</h2>
-					<p class="" style="  font-size: 1rem !important;">
-						{{site.data.index.engaging}} </p>
-				</div>
-			</div>
-			<div class="col-md-4 mb-4 align-self-center">
-				<div class="row  align-self-center">
-					<img src="{{site.baseurl}}/media/sitewide/svg/8_BLM_LAPTOP.svg" class="img-fluid"
-						alt="Sample project image" style="height: 120px; width: 100%; object-fit:contain;" />
-				</div>
-				<div class="row p-4">
-					<h2 class=" mb-3">empowering</h2>
-					<p class="" style="  font-size: 1rem !important;">
-						{{site.data.index.empowering}}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-					</div>
-			</div>
-		</div>
+				<div class="row pr-5">
+					<p>
+						{% for item in site.data.content_descriptions %}
+						{{item.themission}}
+						{% endfor %}
 
-	</div>
-
-
-
-	<div class="pt-5 pb-5"></div>
-
-	<div class="container     ">
-
-
-
-		<div class="container py-5 ">
-			<section class="p-md-3 mx-md-5">
-		<h1 class="cubano  mb-1   ">our content:</h1>
-
-								<button class="btn btn-sm"><a href="{{site.baseurl}}/explore">Click here to explore our content →</a></button>
-
-				<div class="row mb-5  py-3  ">
-
-
-					<div class="col-lg-6 col-md-6 h-100" >
-						<div class="card  z-depth-0 ">
-							<div class="card-body">
-								<h2 class=" mb-3" style="  font-size: 2rem !important;"> Articles</h2>
-
-								<p class="" style="  font-size: 1rem !important;">
-									{{site.data.content-pages.articles}}
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-6 " >
-						<div class="view overlay h-100 ">
-							<img src="{{site.baseurl}}/media/sitewide/svg/articles.svg" class="img-fluid"
-								alt="Sample project image"  />
-							<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="row  py-5 mt-2  mb-5 d-flex align-items-center justify-content-end">
-					<div class="col-md-6 col-lg-6 " >
-						<div class="view overlay ">
-							<img src="{{site.baseurl}}/media/sitewide/svg/visualstories.svg" class="img-fluid"
-								alt="Sample project image" />
-							<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-6 " >
-						<div class="card   z-depth-0">
-							<div class="card-body">
-																<h2 class=" mb-3" style="  font-size: 2rem !important;"> Visualizations</h2>
-
-								<p class="" style="  font-size: 1rem !important;">
-
-									{{site.data.content-pages.visualstories}}
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row py-5 mt-3 d-flex align-items-center">
-					<div class="col-md-6 col-lg-6" >
-						<div class="card   z-depth-0">
-							<div class="card-body">
-				<h2 class=" mb-3" style="  font-size: 2rem !important;"> Data 101</h2>
-
-
-								<p class="" style="  font-size: 1rem !important;">
-									{{site.data.content-pages.data101}}
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-6 " >
-						<div class="view overlay ">
-							<img src="{{site.baseurl}}/media/sitewide/svg/data101.svg" class="img-fluid"
-								alt="Sample project image" />
-							<div class="mask rgba-white-slight"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-
-	</div>
-
-
-
-	<div class="pt-5 pb-5"></div>
-
-	<div class="pt-5 pb-5"></div>
-
-	<div class="container  ">
-		<h1 class="cubano mb-3    ">THE TEAM</h1>
-		<p class=" ">Click or tap on a team member's card to see a preview of their profile. </p>
-
-		<hr>
-		<div class="   p-md-3  card-deck ">
-			{% for auth in site.data.authordata %}
-			{% include cards/card-team.html %}
-			{% endfor %}
-		</div>
-	</div>
-
-
-
-
-	<div class="pt-5 pb-5"></div>
-	<div class="pt-5 pb-5"></div>
-	<div class="pt-5 pb-5"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-	<div class="container  ">
-		<h1 class="cubano mb-3    ">CONTACT US</h1>
-
-
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-5 col-md-12 mb-0 mb-md-0">
-					<br>
-					<p class=" ">
-						We welcome comments, constructive criticisms, requests for collaboration, invitations to events,
-						or just
-						saying hi! A member of our team will try to respond within 48 hours. Note: If you're contacting
-						Frida, she
-						asks that you please run your message through
-						a translator such as
-						<a href="https://kittify.herokuapp.com/" target="_blank">this one</a> prior to sending.
 					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-					<br>
-					<br>
-
-					<div class="container">
-						<div class="d-flex justify-content-center">
-							<div>
-								<a href="https://twitter.com/freethedata_" target="_blank" title="twitter" class="">
-									<span uk-icon="twitter"></span>
-								</a>
+<div class="brokennoise"
+	style="padding-top: 150px!important; margin-top: -5px!important;padding-bottom: 40px!important;">
+	<div class="container mb-5 pb-5 pt-2    card align-self-center z-depth-0">
+		<div class="card-body texturebg p-5 shadowinset ">
+			<div class="row">
+				<div class="container my-5  z-depth-0">
+					<h1 class="cubano  mb-2   "> Our approach</h1>
+					<h2 class="mb-5" style="color: #1a595e !important;">
+						We advocate for data that is:
+					</h2>
+					<div class="row">
+						<div class="col-md-4 mb-4 align-self-center">
+							<div class="row align-self-center">
+								<img src="{{site.baseurl}}/media/sitewide/svg/6_BIRD.svg" class="img-fluid"
+									alt="Sample project image"
+									style="height: 120px;  width: 100%; object-fit:contain;" />
+								<div class="mask rgba-white-slight"></div>
 							</div>
+							<div class="row p-4">
+								<h2 class=" mb-3">ethical</h2>
+								<p class="" style="  font-size: 1rem !important;">
+									{% for item in site.data.content_descriptions %}
+									{{item.ethical}}
+									{% endfor %}
 
-							<div>
-								<a href="https://instagram.com/freethedataproject" target="_blank" title="instagram"
-									class="">
-									<span uk-icon="instagram"></span>
-								</a>
+								</p>
 							</div>
-
-							<div>
-								<a href="https://github.com/freethedataproject" target="_blank" title="github" class="">
-									<span uk-icon="github"></span>
-								</a>
+						</div>
+						<div class="col-md-4 mb-4 align-self-center">
+							<div class="row  align-self-center">
+								<img src="{{site.baseurl}}/media/sitewide/svg/4_SOCIAL MEDIA.svg" class="img-fluid"
+									alt="Sample project image"
+									style="height: 120px;  width: 100%; object-fit:contain;" />
 							</div>
+							<div class="row p-4">
+								<h2 class=" mb-3">engaging</h2>
+								<p class="" style="  font-size: 1rem !important;">
+									{% for item in site.data.content_descriptions %}
+									{{item.engaging}}
+									{% endfor %}
 
-							<div>
-								<a href="mailto:freethedataproject@gmail.com" target="_blank" title="email" class="">
-									<span uk-icon="mail"></span>
-								</a>
+
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4 align-self-center">
+							<div class="row  align-self-center">
+								<img src="{{site.baseurl}}/media/sitewide/svg/8_BLM_LAPTOP.svg" class="img-fluid"
+									alt="Sample project image"
+									style="height: 120px; width: 100%; object-fit:contain;" />
+							</div>
+							<div class="row p-4">
+								<h2 class=" mb-3">empowering</h2>
+								<p class="" style="  font-size: 1rem !important;">
+									{% for item in site.data.content_descriptions %}
+									{{item.empowering}}
+									{% endfor %}
+
+
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
 
-				<div class="col-lg-7 col-md-12 mb-4 mb-md-0">
-					<form action="https://formspree.io/f/moqppqkn" method="POST">
-						<div class="row">
+</div>
 
-							<div class="col-md-6">
-								<div class="md-form md-outline mb-0">
-									<input type="text" id="form-s-text" class="form-control">
-									<label for="form-last-name">Name</label>
-								</div>
-							</div>
 
-							<div class="col-md-6">
-								<div class="md-form md-outline mb-0">
-									<input type="email" id="form-email" class="form-control">
-									<label for="email">E-mail</label>
-								</div>
-							</div>
+
+
+
+
+<div class="pt-5 pb-5"></div>
+
+<div class="container     ">
+
+
+
+
+	<div class="container py-5 ">
+		<section class="p-md-3 mx-md-5">
+			<h1 class="cubano  mb-3   ">our content</h1>
+			<a href="{{site.baseurl}}/explore"><button class="btn btn-sm w-100 mb-5">Click here to explore our
+					content →</button></a>
+			<div class="row mb-5  py-3  ">
+
+
+				<div class="col-lg-6 col-md-6 h-100">
+					<div class="card  z-depth-0 ">
+						<div class="card-body">
+							<h2 class=" mb-3" style="  font-size: 2rem !important;"> Articles</h2>
+
+							<p class="" style="  font-size: 1rem !important;">
+
+								{% for item in site.data.content_descriptions %}
+								{{item.articles}}
+								{% endfor %}
+							</p>
 						</div>
-
-
-						<div class="md-form md-outline">
-							<input type="text" id="form-subject" class="form-control">
-							<label for="subject">Subject</label>
-						</div>
-
-						<div class="md-form md-outline mb-3">
-							<textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
-							<label for="message">Message</label>
-						</div>
-
-						<button type="submit" class="btn btn-sm ml-0">Submit<i
-								class="far fa-paper-plane ml-2"></i></button>
-					</form>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 ">
+					<div class="view overlay h-100 ">
+						<img src="{{site.baseurl}}/media/sitewide/svg/articles.svg" class="img-fluid"
+							alt="Sample project image" />
+						<div class="mask rgba-white-slight"></div>
+						</a>
+					</div>
 				</div>
 			</div>
+			<div class="row  py-5 mt-2  mb-5 d-flex align-items-center justify-content-end">
+				<div class="col-md-6 col-lg-6 ">
+					<div class="view overlay ">
+						<img src="{{site.baseurl}}/media/sitewide/svg/visualstories.svg" class="img-fluid"
+							alt="Sample project image" />
+						<div class="mask rgba-white-slight"></div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 ">
+					<div class="card   z-depth-0">
+						<div class="card-body">
+							<h2 class=" mb-3" style="  font-size: 2rem !important;"> Visualizations</h2>
 
-		</div>
+							<p class="" style="  font-size: 1rem !important;">
+								{% for item in site.data.content_descriptions %}
+								{{item.visualstories}}
+								{% endfor %}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row py-5 mt-3 d-flex align-items-center">
+				<div class="col-md-6 col-lg-6">
+					<div class="card   z-depth-0">
+						<div class="card-body">
+							<h2 class=" mb-3" style="  font-size: 2rem !important;"> Data 101</h2>
 
+
+							<p class="" style="  font-size: 1rem !important;">
+								{% for item in site.data.content_descriptions %}
+								{{item.data101}}
+								{% endfor %}
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 ">
+					<div class="view overlay ">
+						<img src="{{site.baseurl}}/media/sitewide/svg/data101.svg" class="img-fluid"
+							alt="Sample project image" />
+						<div class="mask rgba-white-slight"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
+
+</div>
+
+
+
+<div class="pt-5 pb-5"></div>
+
+<div class="pt-5 pb-5"></div>
+
+<div class="container  ">
+	<h1 class="cubano mb-3    ">THE TEAM</h1>
+	<p class=" ">Click or tap on a team member's card to see a preview of their profile. </p>
+
+	<hr>
+	<div class="   p-md-3  card-deck ">
+		{% for auth in site.data.team_bios %}
+		{% include cards/card-team.html %}
+		{% endfor %}
+	</div>
+</div>
+
+
+
+
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container  ">
+
+	<h1 class="cubano mb-3    ">CONTACT US</h1>
+	<hr>
+
+
+	<div class="typeform-widget drop-sm"  data-url="https://form.typeform.com/to/qIuzZv4Q?typeform-medium=embed-snippet"
+		style="width: 100%; height: 500px;"></div>
+	<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+</div>

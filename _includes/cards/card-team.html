@@ -1,30 +1,33 @@
-<div class=" card shadowdrop view overlay  w-100 flex-center z-depth-0 "
->
-	<div class = " card-header w-100 " style = "background-color: #{{auth.color}} !important; border: none !important;" >
-	<h2 class="cubano" style="color: #fefefe !important; ">{{auth.firstname}}</h2>
-</div>
+<div class=" card hero  drop-sm view overlay  w-100 flex-center">
+	<div class=" card-header hero  w-100 z-depth-0 border-0 " style="">
+		<h2 class="cubano"  style = "color: #{{auth.color}} !important;">
+			{{auth.firstname}}
+		</h2>
+	</div>
 
-<div class="card-body  w-100 cardboard p-0 m-0" style="background-color: #{{auth.color}} !important;min-height: 200px; min-width: 200px; max-height: 300px; background-image: url('{{site.baseurl}}/media/team/{{auth.headshot_path}}')!important;background-size: contain !important; background-repeat: no-repeat !important;">
-		</div>
+	<div class="card-body  w-100  p-0 m-0"
+		style="min-height: 200px; min-width: 200px; max-height: 300px; background-image: url('{{site.baseurl}}/media/team/{{auth.headshot_path}}')!important;background-size: contain !important; background-repeat: no-repeat !important;">
+	</div>
 
-	<div class="mask flex-center rgba-stylish-strong  " type="button" data-toggle="modal"
+	<div class="mask p-2 flex-center rgba-stylish-strong  " type="button" data-toggle="modal"
 		data-target="#modal-target{{auth.firstname}}idk">
-		<h2 class="cubano text-white" >open profile <i class="fas fa-angle-right"></i></h2>
-
-
-		
-</div>
+		<h2 class="cubano text-white">
+			open profile
+			<i class="fas fa-angle-right"></i>
+		</h2>
+	</div>
 </div>
 <div class="modal fade" id="modal-target{{auth.firstname}}idk" tabindex="-1" role="dialog"
 	aria-labelledby="modal-target{{auth.firstname}}idkTitle" aria-hidden="true">
 	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-
 		<div class="modal-content">
-
 			<div class="modal-header">
-				<h1 class="cubano modal-title" id="exampleModalLongTitle">{{auth.fullname}}</h1>
+				<h1 class="cubano modal-title" id="exampleModalLongTitle">
+					{{auth.fullname}}
+				</h1>
 
-				<button type="button" class="close btn btn-sm btn-modal" data-dismiss="modal" aria-label="Close">
+				<button type="button" class="close btn btn-sm btn-modal align-self-center" data-dismiss="modal"
+					aria-label="Close">
 					<span aria-hidden="true">Close</span>
 				</button>
 			</div>
@@ -35,15 +38,15 @@
 				<h6 class="biogtext biog2" id="">
 					{{auth.focus}}
 
-					<br>
-					<br>
+					<br />
+					<br />
 				</h6>
-				<img class="photo{{auth.firstname}} modal-img" src="{{site.baseurl}}/media/team/{{auth.image_path}}">
+				<img class="photo{{auth.firstname}} modal-img" src="{{site.baseurl}}/media/team/{{auth.image_path}}" />
 				<div class="biog">
 					<p class="modal-biog small">{{auth.bio}}</p>
 
-					<br>
-					<hr>
+					<br />
+					<hr />
 				</div>
 
 				<div class="small-news modal-recent pt-5">
@@ -51,17 +54,15 @@
 						Recent posts by {{auth.firstname}}
 					</h5>
 
-
 					<div class="row mt-3">
+						{% assign posts = site.posts | where:"author",{{auth.namedowncase}}
+						%}
+						<ul class="list-unstyled">
 
-						{% for post in site.posts %}
-						{% if post.auth == {{auth.firstname | downcase}} %}
+							{% for post in posts %} {% include cards/card-recent-posts.html %} {%
+							endfor %}
+						</ul>
 
-
-						{% include cards/card-default.html %}
-						{% endif %}
-
-						{% endfor %}
 					</div>
 				</div>
 			</div>

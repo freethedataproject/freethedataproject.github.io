@@ -1,16 +1,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
+<style>
+    .category-button:focus {
 
+        background-color: var(--tq-extra-light)!important;
+    }
+</style>
 <div class="filter filter-basic mt-5">
     <div class="filter-nav">
-        <button class="btn btn-sm  active category-button" data-filter="all">All</button>
+        <button class="btn btn-sm  active categorya-button" data-filter="all">All</button>
         {% for category in site.categories %}
-        <button class="btn btn-sm   category-button" data-filter="{{category[0]}}">{{category[0]}}</button>
+        <button class="btn btn-sm   categorya-button" data-filter="{{category[0]}}">{{category[0]}}</button>
         {%endfor%}
     </div>
     <div class="filter-gallery  mt-4 pt-4">
         <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 row-cols-xl-4">
-            {% for post in site.tags.article %}
+            {% for post in site.posts %}
             {% include cards/card-default.html %}
             {% endfor %}
         </div>
@@ -21,7 +26,7 @@
 
     $(document).ready(function () {
         // clicking button with class "category-button"
-        $(".category-button").click(function () {
+        $(".categorya-button").click(function () {
             // get the data-filter value of the button
             var filterValue = $(this).attr('data-filter');
 

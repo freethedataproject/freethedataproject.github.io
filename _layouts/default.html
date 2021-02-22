@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- THIS IS WHAT SHOWS UP ON THE BROWSER TAB -->
 	<title>{{ page.title }} | {{ site.name }}</title>
 	<!-- FAVICON -->
@@ -14,35 +14,49 @@
 	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/js/chartjs/chart.min.css">
 	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/mdb/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/mdb/css/mdb.min.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme.css">
-	<link type="text/css" href="{{site.baseurl}}/assets/css/homepage.css" rel="stylesheet" />
-	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/teamstyle.css"></link>
-	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/textures.css"></link>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://use.typekit.net/xrn3fzv.css">
 </head>
 
-<body>
-	
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/theme.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/typography.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/colors.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/shadows.css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/pages/teamstyle.css">
+</link>
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/ftd_theme/textures.css">
+</link>
+
+
+<body  data-spy="scroll" data-target="#toc">
+
 	{% include nav.html %}
 
 	<main>
-		<div class="maincontent" style="margin-bottom:210px!important; margin-top:100px!important;">
+		<div class="maincontent" style="margin-bottom:210px!important;">
 			<!-- THIS IS WHERE SITE CONTENT WILL GO -->
 			{{content}}
 		</div>
 	</main>
 
 	<!-- IMPORT SITEWIDE SCRIPTS -->
-	
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/mdb/js/mdb.min.js"></script>
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 	<script src=" {{ site.baseurl }}/assets/js/other/sticky.js"></script>
 	<script src=" {{ site.baseurl }}/assets/js/confetti/confetti.min.js"></script>
 	<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>
-
+ <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 	<!-- CONFETTI BUTTON JS -- NAVBAR -->
 	<script>
 		function myFunction() {
@@ -63,15 +77,13 @@
 
 	<script>
 		$(function () {
-$('[data-toggle="tooltip"]').tooltip()
-})
+			$('[data-toggle="tooltip"]').tooltip()
+		})
 
 	</script>
 
 </body>
 
 {% include footer.html %}
-
-
 
 </html>

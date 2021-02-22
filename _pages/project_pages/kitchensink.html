@@ -1,0 +1,99 @@
+---
+layout: default
+title: "Kitchen Sink"
+permalink: "kitchensink/"
+---
+
+
+<div class = "container">
+
+
+<h1 class = "cubano pt-5">Kitchen Sink</h1>
+                <p>    {% for item in site.data.content_descriptions %} {{item.kitchensink}}
+                    {% endfor %} </p>
+
+
+<p>Click on any image to see its full-size version and description.</p>
+
+<hr>
+<br>
+</div>
+
+<div class = "pt-4 pb-4"></div>
+
+
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Name</h1>
+    <div class = "card-deck  ">
+          {% for item in site.data.kitchensink %}
+          {% if item.category == "name" %}
+          {% include cards/card-gallery.html %}
+          {% endif%}
+          {% endfor %}
+       </div>
+</div>
+
+<div class = "pt-4 pb-4"></div>
+<div class = "pt-4 pb-4"></div>
+
+
+
+
+<div class="gallerysection container"> 
+  <h2 class="cubano pb-4 mb-0 ">Logo</h1>
+    <div class = "card-deck  ">
+          {% for item in site.data.kitchensink %}
+          {% if item.category == "logo" %}
+          {% include cards/card-gallery.html %}
+          {% endif%}
+          {% endfor %}
+       </div>
+   </div>
+
+<div class = "pt-4 pb-4"></div>
+<div class = "pt-4 pb-4"></div>
+
+
+
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Frida</h1>
+    <div class = "card-deck  ">
+          {% for item in site.data.kitchensink %}
+          {% if item.category == "frida" %}
+          {% include cards/card-gallery.html %}
+          {% endif%}
+          {% endfor %}
+       </div>
+</div>
+
+<div class = "pt-4 pb-4"></div>
+<div class = "pt-4 pb-4"></div>
+
+
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Landing Page</h1>
+    <div class = "card-deck  ">
+          {% for item in site.data.kitchensink %}
+          {% if item.category == "landing page" %}
+          {% include cards/card-gallery.html %}
+          {% endif%}
+          {% endfor %}
+       </div>
+</div>
+
+<div class = "pt-4 pb-4"></div>
+<div class = "pt-4 pb-4"></div>
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Brainstorming</h1>
+    <div class = "card-deck  ">
+          {% for item in site.data.kitchensink %}
+          {% if item.category == "brainstorming" %}
+          {% include cards/card-gallery.html %}
+          {% endif%}
+          {% endfor %}
+   </div>
+</div>
