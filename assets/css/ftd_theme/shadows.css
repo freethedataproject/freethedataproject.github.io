@@ -34,12 +34,12 @@ box-shadow:  inset 3px 3px 3px rgba(210, 219, 230, .6),
 
 
 .drop-md {
-box-shadow:  4px 4px 4px rgba(210, 219, 230, .6),
+box-shadow:  4px 4px 4px rgba(190, 198, 208, .8),
              -4px -4px 4px #fafafb !important;
 }
 
 .drop-lg {
-box-shadow:  5px 5px 5px rgba(210, 219, 230, .6),
+box-shadow:  5px 5px 5px rgba(190, 198, 208, .6),
              -5px -5px 5px #fafafb !important;
 }
 
@@ -50,8 +50,8 @@ box-shadow: inset 3px 3px 3px rgba(210, 219, 230, .6),
 }
 
 .inset-md {
-box-shadow:  inset 4px 4px 4px rgba(210, 219, 230, .6),
-             inset -4px -4px 4px #fafafb !important;
+box-shadow: inset 6px 6px 6px rgba(210, 219, 230, 1.0),
+            inset -6px -6px 6px #fafafb !important;
 }
 
 .inset-lg {

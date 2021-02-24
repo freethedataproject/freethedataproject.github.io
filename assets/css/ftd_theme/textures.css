@@ -15,7 +15,7 @@
 	background-image: var(--asfalt-light) !important;
 }
 .brokennoise {
-	background-color: var(--tq-medium) !important;
+	background-color: #00babd !important;
 	background-image: var(--brokennoise) !important;
 }
 
