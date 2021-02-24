@@ -23,31 +23,17 @@ html {
 .btn-sm,
 .ftd-btn {
 	box-shadow: none !important;
-	border: 1px solid var(--tq-dark) !important;
 	text-transform: none !important;
 }
-
-.ftd-card img {
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	filter: gray;
-	transition: 1s ease;
-}
-
-.ftd-card:hover img {
-	-webkit-filter: none;
-}
-
-
 
 /* small screens */
 @media (max-width: 1200px) {
  
-  #toc {
+  #toc, .float-left {
     display: none !important;
   }
+
+
 }
 
 @media (min-width: 1201px) {

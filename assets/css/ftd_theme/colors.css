@@ -126,21 +126,13 @@ a:hover,
 
 .hoverfrida:hover, .hoverfrida:hover .arrow {
 	color: var(--frida)!important;
-
 }
-
-
-
-
 
 #toc a {
 
 	color: var(--tq-dark) ;
 	font-weight: 400 !important;
 }
-
-
-
 
 #toc a:hover {
 
