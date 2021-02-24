@@ -3,28 +3,6 @@ layout: default
 title: "Home"
 ---
 
-<style>
-	@media only screen and (max-width: 600px) {
-		.float-font {
-			font-size: 2.5rem !important;
-		}
-	}
-
-	@media only screen and (min-width: 601px) {
-		.float-font {
-			font-size: 4rem !important;
-		}
-	}
-
-	@media only screen and (min-width: 1250px) {
-		.float-font {
-			font-size: 6rem !important;
-		}
-	}
-</style>
-
-
-
 
 <div class="view " style=" margin-top: 0px!important; ">
 	<img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
@@ -156,7 +134,7 @@ title: "Home"
 				</div>
 				<div class="col-md-6 col-lg-6 ">
 					<div class="view overlay h-100 ">
-						<img src="{{site.baseurl}}/media/sitewide/svg/articles.svg" class="img-fluid"
+						<img src="{{site.baseurl}}/media/sitewide/svg/articles.svg" class="img-fluid svg-animate"
 							alt="Sample project image" />
 						<div class="mask rgba-white-slight"></div>
 						</a>
@@ -166,7 +144,7 @@ title: "Home"
 			<div class="row  py-5 mt-2  mb-5 d-flex align-items-center justify-content-end">
 				<div class="col-md-6 col-lg-6 ">
 					<div class="view overlay ">
-						<img src="{{site.baseurl}}/media/sitewide/svg/visualstories.svg" class="img-fluid"
+						<img src="{{site.baseurl}}/media/sitewide/svg/visualstories.svg" class="img-fluid svg-animate"
 							alt="Sample project image" />
 						<div class="mask rgba-white-slight"></div>
 						</a>
@@ -204,7 +182,7 @@ title: "Home"
 				</div>
 				<div class="col-md-6 col-lg-6 ">
 					<div class="view overlay ">
-						<img src="{{site.baseurl}}/media/sitewide/svg/data101.svg" class="img-fluid"
+						<img src="{{site.baseurl}}/media/sitewide/svg/data101.svg" class="img-fluid svg-animate"
 							alt="Sample project image" />
 						<div class="mask rgba-white-slight"></div>
 						</a>
@@ -228,13 +206,42 @@ title: "Home"
 
 	<hr>
 	<div class="   p-md-3  card-deck ">
+
+
 		{% for auth in site.data.team_bios %}
+
+			{% if auth.namedowncase == "frida" %}
 		{% include cards/card-team.html %}
+			{% endif %}
 		{% endfor %}
+		{% for auth in site.data.team_bios %}
+
+			{% if auth.namedowncase == "sarah" %}
+		{% include cards/card-team.html %}
+			{% endif %}
+		{% endfor %}
+		{% for auth in site.data.team_bios %}
+
+						{% if auth.namedowncase == "ania" %}
+		{% include cards/card-team.html %}
+			{% endif %}
+		{% endfor %}
+		{% for auth in site.data.team_bios %}
+
+						{% if auth.namedowncase == "leni" %}
+		{% include cards/card-team.html %}
+			{% endif %}
+		{% endfor %}
+		{% for auth in site.data.team_bios %}
+
+						{% if auth.namedowncase == "jasmina" %}
+		{% include cards/card-team.html %}
+			{% endif %}
+		{% endfor %}
+
+
 	</div>
 </div>
-
-
 
 
 <div class="pt-5 pb-5"></div>
@@ -271,3 +278,10 @@ title: "Home"
 
 
 </div>
+
+
+
+
+<script>
+});
+</script>
