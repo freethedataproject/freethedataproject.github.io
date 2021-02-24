@@ -38,7 +38,7 @@
 }
 .photoFrida {
 	float: left;
-	shape-outside: url("/media/team/frida.png");
+	shape-outside: url("/media/team/frida1.png");
 	shape-image-threshold: 0.9;
 	shape-margin: 2%;
 }
