@@ -48,6 +48,7 @@
 }
 
 .text-white,
+.btn:hover a, .btn-sm:hover a, .btn:hover, .btn-sm:hover,
 .text-light {
 	color: var(--offwhite) !important;
 }
@@ -60,22 +61,21 @@ h3,
 h4,
 h5,
 h6,
-p,
-.btn a, .btn-sm a, .btn, .btn-sm  {
+p,a 
+ {
 	color: var(--tq-dark) !important;
 }
 
 /* LINKS & NAVS */
 
-a {
-	color: var(--tq-light) !important;
-}
 a:hover,
 .navbar-brand:hover a,
 .nav-item:hover a,
 .nav-link:hover a {
 	color: var(--frida) !important;
 }
+
+
 
 .nav-item,
 .nav-link,
