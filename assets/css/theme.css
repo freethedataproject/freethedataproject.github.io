@@ -352,18 +352,15 @@ small {
 
 .drop-lg {
 	box-shadow: 5px 5px 5px rgba(190, 198, 208, 0.6), -5px -5px 5px #fafafb !important;
-		border: 1px solid rgba(202, 198, 208, 1)!important;
 
 }
 
 .inset-sm {
 	box-shadow: 4px 4px 4px rgba(190, 198, 208, 0.6), -4px -4px 4px #fafafb !important;
-	border: 1px solid rgba(202, 198, 208, 1)!important;
 }
 
 .inset-md {
 	box-shadow: 4px 4px 4px rgba(190, 198, 208, 0.6), -4px -4px 4px #fafafb !important;
-		border: 1px solid rgba(202, 198, 208, 1)!important;
 
 }
 
