@@ -3,8 +3,8 @@ layout: post
 title: "COVID IS REALLY COMPLICATED."
 subtitle: "Medicine is really hard and let's be nice to scientists."
 author: ania
-category: [health]
-tags: [article, health, science, covid19, research, thestruggle, data101, kitchensink, hiddenhistories]
+category: [article]
+tags: [science, medicine, research]
 permalink: "/articles/example-post-descriptive-link-ania"
 image_path: 'https://images.unsplash.com/photo-1588775046415-869163bf70d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
 image_alt: 'Alt text for the image goes here.'

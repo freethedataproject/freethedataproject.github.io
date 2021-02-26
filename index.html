@@ -2,39 +2,23 @@
 layout: default
 title: "Home"
 ---
-<style>
-	.heroania {}
 
-
-	.herosarah {
-		background-image: url({{site.baseurl}}/media/sitewide/patterns/circles-png) !important;
-		background-repeat: repeat !important;
-	}
-
-	.heroleni {}
-
-	.herojasmina {}
-
-	.herofrida {}
-</style>
-
-
-<div class="view " style=" margin-top: 0px!important; ">
+<div class="view animated fadeIn " style=" margin-top: 0px!important; ">
 	<img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
-		style=" width:100%; max-height: 100vh; object-fit: cover;">
+		style=" width:100%; height: 80vh; object-fit: cover;">
 	<div class="mask  d-none d-lg-inline-flex  container flex-center">
 		<div class="row ">
 			<div class="col-6 ">
 			</div>
 			<div class="col-6 ">
 				<div class="row ">
-					<h1 class="cubano mb-3" style=" color: #003e3f !important;">Free the Data</h1>
+					<h1 class="cubano mb-3" style=" color: rgba(56, 48, 67, 1) !important;">Free the Data</h1>
 				</div>
 				<div class="row pr-5">
 					<p>
-						{% for item in site.data.content_descriptions %}
-						{{item.themission}}
-						{% endfor %}
+            Free the Data wants to smash the black boxes that make data inaccessible. We create articles, visual essays,
+            and infographics that use data in compelling, interactive, and visual ways, while breaking stereotypes about
+            who can do data analysis and what proper research topics look like.
 
 					</p>
 				</div>
@@ -43,270 +27,34 @@ title: "Home"
 	</div>
 </div>
 
-<div class="brokennoise"
-	style="padding-top: 150px!important; margin-top: -5px!important;padding-bottom: 40px!important;">
-	<div class="container mb-5 pb-5 pt-2    card align-self-center z-depth-0">
-		<div class="card-body texturebg p-5 shadowinset ">
-			<div class="row">
-				<div class="container my-5  z-depth-0">
-					<h1 class="cubano  mb-2   text-center "> Our approach</h1>
-					<h2 class="mb-5  text-center" style="color: #1a595e !important;">
-						We advocate for data that is:
-					</h2>
-					<div class="row">
-						<div class="col-md-4 mb-4 align-self-center">
-							<div class="row align-self-center">
-								<img src="{{site.baseurl}}/media/sitewide/svg/6_BIRD.svg" class="img-fluid"
-									alt="Sample project image"
-									style="height: 120px;  width: 100%; object-fit:contain;" />
-								<div class="mask rgba-white-slight"></div>
-							</div>
-							<div class="row p-4">
-								<h2 class=" mb-3">ethical</h2>
-								<p class="" style="  font-size: 1rem !important;">
-									{% for item in site.data.content_descriptions %}
-									{{item.ethical}}
-									{% endfor %}
-
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4 align-self-center">
-							<div class="row  align-self-center">
-								<img src="{{site.baseurl}}/media/sitewide/svg/4_SOCIAL MEDIA.svg" class="img-fluid"
-									alt="Sample project image"
-									style="height: 120px;  width: 100%; object-fit:contain;" />
-							</div>
-							<div class="row p-4">
-								<h2 class=" mb-3">engaging</h2>
-								<p class="" style="  font-size: 1rem !important;">
-									{% for item in site.data.content_descriptions %}
-									{{item.engaging}}
-									{% endfor %}
 
 
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4 align-self-center">
-							<div class="row  align-self-center">
-								<img src="{{site.baseurl}}/media/sitewide/svg/8_BLM_LAPTOP.svg" class="img-fluid"
-									alt="Sample project image"
-									style="height: 120px; width: 100%; object-fit:contain;" />
-							</div>
-							<div class="row p-4">
-								<h2 class=" mb-3">empowering</h2>
-								<p class="" style="  font-size: 1rem !important;">
-									{% for item in site.data.content_descriptions %}
-									{{item.empowering}}
-									{% endfor %}
 
+<div class = "pt-5 pb-5"></div>
+<div class = "pt-5 pb-5"></div>
 
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div 
+    >
+     {% include pages/landing/cube.html %}
 
 </div>
+<div class = "pt-5 pb-5"></div>
 
+    >
+{% include pages/landing/our_content.html %}
 
 
+{% include pages/landing/team.html %}
 
 
+{% include pages/landing/contact.html %}
 
-<div class="pt-5 pb-5"></div>
+<div class = "pt-5 pb-5"></div>
 
-<div class="container     ">
+<div class = "pt-5 pb-5"></div>
 
 
 
 
-	<div class="container py-5 ">
-		<div class="">
-			<h1 class="cubano  mb-3  text-center  ">our content</h1>
-			<div class="d-flex justify-content-center">
 
-				<button class="btn btn-sm w-50 flex-center mb-5"><a class="flex-center  "
-						href="{{site.baseurl}}/explore">Click here to explore our
-						content →</a></button>
-			</div>
-
-
-			<div class="row mb-5  py-3  ">
-				<div class="col-12 col-md-4">
-					<div class="view overlay  ">
-						<img src="{{site.baseurl}}/media/sitewide/svg/articles.svg" class="img-fluid svg-animate"
-							alt="Sample project image" />
-						<div class="mask "></div>
-						</a>
-					</div>
-				</div>
-				<div class="col-12 col-md-8  align-self-center">
-					<div class="card z-depth-0 ">
-						<div class="card-body">
-							<h2 class=" mb-3" style="font-size: 2rem !important;"> Articles</h2>
-							<p class="" style="font-size: 1rem !important;">
-								{% for item in site.data.content_descriptions %}
-								{{item.articles}}
-								{% endfor %}
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="row mb-5  py-3  ">
-				<div class="col-12 col-md-4">
-					<div class="view overlay  ">
-						<img src="{{site.baseurl}}/media/sitewide/svg/visualstories.svg" class="img-fluid svg-animate"
-							alt="Sample project image" />
-						<div class="mask "></div>
-						</a>
-					</div>
-				</div>
-				<div class="col-12 col-md-8 align-self-center">
-					<div class="card z-depth-0 ">
-						<div class="card-body">
-							<h2 class=" mb-3" style="font-size: 2rem !important;"> Visualizations</h2>
-							<p class="" style="font-size: 1rem !important;">
-								{% for item in site.data.content_descriptions %}
-								{{item.visualstories}}
-								{% endfor %}
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="row mb-5  py-3  ">
-				<div class="col-12 col-md-4">
-					<div class="view overlay  ">
-						<img src="{{site.baseurl}}/media/sitewide/svg/data101.svg" class="img-fluid svg-animate"
-							alt="Sample project image" />
-						<div class="mask "></div>
-						</a>
-					</div>
-				</div>
-				<div class="col-12 col-md-8 align-self-center">
-					<div class="card z-depth-0 ">
-						<div class="card-body">
-							<h2 class=" mb-3" style="font-size: 2rem !important;"> Data 101</h2>
-							<p class="" style="font-size: 1rem !important;">
-								{% for item in site.data.content_descriptions %}
-								{{item.data101}}
-								{% endfor %}
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
-</div>
-
-
-
-<div class="pt-5 pb-5"></div>
-
-<div class="pt-5 pb-5"></div>
-
-<div class="container  ">
-	<h1 class="cubano mb-3   text-center  ">THE TEAM</h1>
-	<p class=" text-center ">Click or tap on a team member's card to see a preview of their profile. </p>
-
-
-	<div class="   p-md-3  card-deck ">
-
-
-		{% for auth in site.data.team_bios %}
-
-		{% if auth.namedowncase == "frida" %}
-		{% include cards/card-team.html %}
-		{% endif %}
-		{% endfor %}
-		{% for auth in site.data.team_bios %}
-
-		{% if auth.namedowncase == "sarah" %}
-		{% include cards/card-team.html %}
-		{% endif %}
-		{% endfor %}
-		{% for auth in site.data.team_bios %}
-
-		{% if auth.namedowncase == "ania" %}
-		{% include cards/card-team.html %}
-		{% endif %}
-		{% endfor %}
-		{% for auth in site.data.team_bios %}
-
-		{% if auth.namedowncase == "leni" %}
-		{% include cards/card-team.html %}
-		{% endif %}
-		{% endfor %}
-		{% for auth in site.data.team_bios %}
-
-		{% if auth.namedowncase == "jasmina" %}
-		{% include cards/card-team.html %}
-		{% endif %}
-		{% endfor %}
-
-
-	</div>
-</div>
-
-
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container  ">
-
-	<h1 class="cubano mb-5   text-center ">CONTACT US</h1>
-
-	<div class="row">
-		<div class=" col-md-3">
-
-			<p>We welcome comments, constructive criticisms, requests for collaboration, invitations to events, or just
-				saying hi! A member of our team will try to respond within 48 hours. Note: If you're contacting Frida,
-				she asks that you please run your message through a translator such as <a
-					href="https://kittify.herokuapp.com/" target="_blank">this one</a> prior to sending.</p>
-
-		</div>
-
-		<div class="col-12 col-md-9 btn-drop typeform-widget"
-			data-url="https://form.typeform.com/to/qIuzZv4Q?typeform-medium=embed-snippet" data-hide-headers="true"
-			style="width: 100%; height: 500px"></div>
-		<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-
-
-
-	</div>
-
-
-</div>
-
-
-
-
-<script>
-});
-</script>
+<script src=" {{ site.baseurl }}/assets/js/sitewide/cube.js"></script>

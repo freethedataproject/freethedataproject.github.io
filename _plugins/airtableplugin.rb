@@ -4,8 +4,7 @@ require 'active_support/all'
 
 @client = Airtable::Client.new("keyUqnHp6DcReMiHW")
 
-
-items = ["resources", "kitchensink", "hiddenhistories", "team_bios", "content_descriptions"]
+items = ["ALLTHETHINGS", "project_landing_page", "kitchensink", "team_bios", "content_descriptions"]
 
 items.each do |item|
     @table = @client.table("appf4fOfsvjSoYWdz", item)

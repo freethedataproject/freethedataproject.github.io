@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=space:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+	--offwhite: #fff;
+	--frida: #e86166;
+	--space: "Space Grotesk", sans-serif;
+	--inter: "Inter", sans-serif;
+	--cubano: "cubano", sans-serif;
+	--muted: rgb(120, 121, 124);
+--baseA0: hsl(265, 18%, 17%);
+--baseA1: hsl(265, 17%, 22%);
+--baseA2: hsl(265, 16%, 35%);
+--baseA3: hsl(265, 15%, 40%);
+--baseA4: hsl(265, 14%, 45%);
+--baseA5: hsl(265, 13%, 53%);
+--baseA6: hsl(265, 12%, 61%);
+--baseA7: hsl(265, 11%, 69%);
+
+--baseB0: hsl(265,  75%, 61%);
+--baseB1: hsl(265,  80%, 66%);
+--baseB2: hsl(265,  87%, 71%);
+--baseB3: hsl(265,  97%, 76%);
+--baseB4: hsl(265,  97%, 81%);
+--baseB5: hsl(265,  97%, 86%);
+--baseB6: hsl(265,  97%, 91%);
+--baseB7: hsl(265,  100%, 96%);
+
+
+
+
+}
+
+
+
+
+
+
+.btn-secondary {
+
+	background-color: var(--baseA1)!important;
+}
+
+
+
+/* CARDS */
+
+
+.card {
+		background-color: #ffffff !important;
+background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png")!important;
+
+}
+
+/* QUCIKEDIT / BASE THEME */
+
+html {
+	scroll-behavior: smooth !important;
+}
+body {
+	background-color: #ffffff !important;
+		background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+
+background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png")!important;
+}
+/* DEFAULT arrowS & BADGES */
+.btn,
+.btn-sm,
+.ftd-btn {
+	text-transform: none !important;
+}
+
+/* small screens */
+@media (max-width: 1200px) {
+	#toc,
+	.float-left {
+		display: none !important;
+	}
+}
+
+@media (min-width: 1201px) {
+	.navbody {
+		margin-left: 300px !important;
+		margin-top: -70px !important;
+	}
+}
+
+/* COLOR */
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	color: var(--baseA1) !important;
+}
+
+.navbar,
+.nav,
+.page-footer,
+footer {
+	background-color: var(--baseA1) !important;
+}
+
+/* LINKS & NAVS */
+
+a:hover,
+.navbar-brand:hover a,
+.nav-item:hover a,
+.nav-link:hover a {
+	color: var(--frida) !important;
+}
+
+.text-muted {
+		color: #96919b!important;
+
+}
+
+.infotext, .infotext a, .infotext i{
+	color: rgba(121, 116, 129, .8)!important;
+	font-size: .84rem !important;
+}
+
+.nav-item,
+.nav-link,
+.posticon,
+.navbar-brand {
+	color: rgba(227, 226, 229, 1)!important;
+	font-weight: 400 !important;
+}
+
+.img-gradient {
+	position: relative;
+	display: inline-block;
+}
+.img-gradient:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background: -moz-linear-gradient(
+		top,
+		rgba(239, 241, 241, 0.3) 0%,
+		rgba(203, 214, 226, 0.3) 100%
+	); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0%, rgba(203, 214, 226, 0.3)),
+		color-stop(100%, rgba(239, 241, 241, 0.3))
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		top,
+		rgba(239, 241, 241, 0.3) 0%,
+		rgba(203, 214, 226, 0.3) 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		top,
+		rgba(239, 241, 241, 0.3) 0%,
+		rgba(203, 214, 226, 0.3) 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(
+		top,
+		rgba(239, 241, 241, 0.3) 0%,
+		rgba(203, 214, 226, 0.3) 100%
+	); /* IE10+ */
+	background: linear-gradient(
+		to bottom,
+		rgba(239, 241, 241, 0.3) 0%,
+		rgba(203, 214, 226, 0.3) 100%
+	); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.img-gradient img {
+	display: block;
+}
+
+#toc a {
+	color: var(--baseA1);
+	font-weight: 400 !important;
+}
+
+#toc a:hover {
+	color: var(--frida) !important;
+	font-weight: 600 !important;
+}
+
+.fill-white {
+	background-color: #fbf9f9 !important;
+}
+
+.text-light {
+	color: #fbf9f9 !important;
+}
+
+/* TYPOGRAPHY */
+
+.nav-item a {
+	font-weight: 400 !important;
+}
+
+/* FONT FAMILIES */
+
+h1 {
+	font-size: 2rem !important;
+	font-weight: 600;
+}
+h2 {
+	font-size: 1.8rem !important;
+	font-weight: 500;
+}
+h3 {
+	font-size: 1.5rem !important;
+	font-weight: 500;
+}
+h4 {
+	font-size: 1.2rem !important;
+	font-weight: 400;
+}
+h5 {
+	font-size: 1rem !important;
+	font-weight: 400;
+}
+
+.space,
+p,
+span,
+small,
+.small,
+.card-body,
+.badge,
+.card-badge,
+.btn,
+.btn-small,
+.grotesk,
+.basicsans,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+li a,
+ul,
+ul a {
+	font-family: var(--space) !important;
+}
+
+.cubano {
+	font-family: var(--cubano) !important;
+	font-weight: 400 !important;
+	letter-spacing: 0.5px !important;
+}
+
+p {
+	font-size: 1rem !important;
+	font-weight: 400;
+}
+
+.card-text,
+.subtitle,
+.card p,
+a {
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+.btn a,
+.btn-sm a,
+.btn,
+.btn-sm {
+	font-size: 1rem !important;
+}
+.small,
+
+small {
+	font-size: 0.87rem !important;
+	font-family:var(--space)!important;
+}
+
+/* TEXTURES */
+
+:root {
+	--brokennoise: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+	--asfalt: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+	--asfalt-light: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+	--constructionpaper: url("https://www.transparenttextures.com/patterns/black-paper.png");
+	--cardboard: url("https://www.transparenttextures.com/patterns/cardboard.png");
+	--otis-redding: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+}
+
+.asfalt {
+	background-image: var(--asfalt) !important;
+}
+
+.asfalt-light {
+	background-image: var(--asfalt-light) !important;
+}
+.brokennoise {
+	background-color: rgba(0, 144, 146) !important;
+	background-image: var(--cardboard) !important;
+}
+
+.constructionpaper {
+	background-image: var(--constructionpaper) !important;
+}
+
+.cardboard {
+	background-image: var(--cardboard) !important;
+}
+
+.parallax {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+}
+
+/* SHADOWS  */
+
+.drop-sm,
+.drop-md,
+.drop-lg,
+.inset-sm,
+.inset-md,
+.inset-lg {
+	border: none !important;
+}
+
+
+
+
+
+.drop-md {
+	box-shadow: 4px 4px 4px rgba(190, 198, 208, 0.6), -4px -4px 4px #fafafb !important;
+		border: 1px solid rgba(202, 198, 208, 1)!important;
+
+}
+
+.drop-mdL {
+	box-shadow: -4px 4px 4px rgba(190, 198, 208, 0.6), -4px -4px 4px #fafafb !important;
+}
+
+.drop-lg {
+	box-shadow: 5px 5px 5px rgba(190, 198, 208, 0.6), -5px -5px 5px #fafafb !important;
+		border: 1px solid rgba(202, 198, 208, 1)!important;
+
+}
+
+.inset-sm {
+	box-shadow: 4px 4px 4px rgba(190, 198, 208, 0.6), -4px -4px 4px #fafafb !important;
+	border: 1px solid rgba(202, 198, 208, 1)!important;
+}
+
+.inset-md {
+	box-shadow: 4px 4px 4px rgba(190, 198, 208, 0.6), -4px -4px 4px #fafafb !important;
+		border: 1px solid rgba(202, 198, 208, 1)!important;
+
+}
+
+.inset-lg {
+	box-shadow: inset 5px 5px 5px rgba(210, 219, 230, 0.6),
+		inset -5px -5px 5px #fafafb !important;
+}
+
+.cube_button {
+ 	text-decoration: none !important;
+	color: var(--baseA1) !important;
+transition: .1s ease-in !important;
+	font-size: 1rem!important;
+	font-weight: 500!important;
+	border-bottom: 1px solid var(--baseA6)!important;
+
+}
+
+.cube_button:focus {
+	background-color: #fff!important;
+	color: var(--baseA1) !important;
+	font-weight: 600!important;
+ 	text-decoration: none !important;
+
+border: 1px solid var(--baseA7)!important;
+box-shadow: inset 3px 3px 3px #d9d9d9,
+            inset -3px -3px 3px #fff !important;
+}
+.card-nav-link {
+
+		color: var(--baseA1) !important;
+
+}
+.bgnone, .bg-none {
+	background: transparent!important;
+}
+

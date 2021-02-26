@@ -3,12 +3,8 @@
     <div class="media-body">
       <h4 class="m-0  "><a href = "{{post.permalink}}">{{post.title}}</a></h4>
       <p class = "card-text m-0 p-0 small   ">{{post.subtitle}}</p>
-			<small class=" small " style = "">
-					<a href="{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a>
-				&nbsp; | &nbsp; {{post.date | date: "%d %b %y"}}  &nbsp; | &nbsp;  <i type="button" class="fas {{post.icon_ref}}" data-toggle="tooltip" data-placement="top"
-  title="{{post.category}}">
-</i>	
-			</small>
+        {% include cards/card-footer.html %}
+
 
     </div>
   </li>

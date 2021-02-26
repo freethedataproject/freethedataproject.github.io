@@ -1,125 +1,90 @@
-.hiddenhistories {
-    
-background-color: #eff1f1 !important;
-background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png") !important;
 
-}
-
-.navbar a, .textoffwhite {
-    color: #eff1f1 !important;
-}
-
-html {
-  scroll-behavior: smooth !important;
-}
-
-.textred {
-    color: #79061e !important;
-}
-
-.bgred, .navbar {
-    background-color: #79061e !important;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png") !important;
-
+body, html {
+    min-width: 600px;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 
-      .timeline {
-        position: relative;
-        list-style: none;
-        padding: 1rem 0;
-        margin: 0;
-      }
-
-      .timeline::before {
-        content: '';
-        position: absolute;
-        left: 50%;
+.timeline {
+position: absolute;
+        height: 100%;
+        left: 0;
         top: 0;
-        bottom: 0;
-        width: 2px;
-        margin-left: -1px;
-        background-color: #50a1ff;
-      }
+        margin-top: 200px!important;
 
-      .timeline-element {
-        position: relative;
-        width: 50%;
-        padding: 1rem 0;
-        padding-right: 2.5rem;
-        text-align: right;
-      }
+        }
 
-      .timeline-element::before {
-        content: '';
+.timeline canvas {
         position: absolute;
-        right: -8px;
-        top: 1.35rem;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        border: 2px solid #50a1ff;
-        background-color: #fff;
-      }
+        height: 100%;
 
-      .timeline-element:nth-child(even)::before {
-        right: auto;
-        left: -8px;
-      }
+        left: 0;
+        top: 0;
+    }
 
-      .timeline-element:nth-child(even) {
-        margin-left: 50%;
-        padding-left: 2.5rem;
-        padding-right: 0;
-        text-align: left;
-      }
+.timeline figcaption {
+        text-transform: uppercase;
+        -webkit-text-stroke: .25px;
+    }
 
-      @media (max-width: 767.98px) {
-        .timeline::before {
-          left: 8px;
+.timeline    h2 {
+        padding-bottom: 100px;
+        color: #b2cde9;
+    }
+
+.timeline    h6 {
+        color: #0090F5;
+    }
+       
+
+ .timeline   p, ol {
+        padding: 3px 0 20px 0;
+        color: #575757;
+        text-align: justify;
+        width: 70%;
+    } 
+
+ .timeline   ol {
+        list-style: disc;
+        margin-top: -20px;
+        padding-left: 40px;
+    }
+
+ .timeline   figure {
+        float: right;
+        width: 100%;
+    }
+
+  .timeline  article {
+        position: relative;
+        width: 38%;
+        overflow: hidden;
+        margin-bottom: 100px; }
+
+        .timeline article:first-of-type {
+            float: left;
+            text-align: right;}
+
+     .timeline article:first-of-type       p, .timeline article:first-of-type figure {
+                float: right;
+            }
+    
+    
+     .timeline article:last-of-type {
+            float: right;
+
         }
-      }
 
-      @media (max-width: 767.98px) {
-        .timeline-element {
-          width: 100%;
-          text-align: left;
-          padding-left: 2.5rem;
-          padding-right: 0;
-        }
-      }
 
-      @media (max-width: 767.98px) {
-        .timeline-element::before {
-          top: 1.25rem;
-          left: 1px;
-        }
-      }
+           .timeline article:last-of-type       h2 {
+                color: #c6e0aa;
+            }
 
-      @media (max-width: 767.98px) {
-        .timeline-element:nth-child(even) {
-          margin-left: 0rem;
-        }
-      }
+           .timeline article:last-of-type       h6,     .timeline article:last-of-type  a {
+                color: #40aa00;
+            }
 
-      @media (max-width: 767.98px) {
-        .timeline-element {
-          width: 100%;
-          text-align: left;
-          padding-left: 2.5rem;
-          padding-right: 0;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element:nth-child(even)::before {
-          left: 1px;
-        }
-      }
-
-      @media (max-width: 767.98px) {
-        .timeline-element::before {
-          top: 1.25rem;
-        }
-      }
+                .timeline article:last-of-type  a:hover {
+                color: #95D40D;
+            }

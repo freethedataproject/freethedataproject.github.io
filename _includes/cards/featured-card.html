@@ -13,10 +13,8 @@
       <h1 class=" font-normal"><a href="{{site.baseurl}}{{post.permalink}}" target="_blank">{{post.title}}</a></h1>
       <p class=" small mb-2">{{post.subtitle}}</p>
       <hr>
-                <small class="text-muted small">
-                  <a href="{{site.baseurl}}{{post.permalink}}" class=""><a href="{{site.baseurl}}/authors/{{post.author}}">{{post.author}}</a></a> &nbsp; |  &nbsp; {{post.date | date: "%d %b %y"}}
-                
-                </small>
+
+  {% include cards/card-footer.html %}
     </div></div>
 </div>
   </a>

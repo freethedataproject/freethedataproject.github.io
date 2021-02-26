@@ -3,54 +3,47 @@ layout: default
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/posts.css">
 
+<div class="container mb-5 mt-5">
 
-<div class = "container mb-5 mt-5" >
-
-
-<div class = "row p-0 z-depth-none  flex-center mb-5">
-
-	<div class = "col-12-xs col-12-sm col-6-md ml-0 pl-0" style = "width:100%!important;">
-		<div class = "view card z-depth-2 ml-0 pl-0">
-	<img class="img-fluid " src="{{page.image_path}}" alt="{{page.image_alt}}"
-	style = "height: 300px !important;object-fit: cover!important;width:100%!important;"
-		>
-		<div class = "mask pattern-4 flex-center">
-				<p class="cubano text-white p-3 text-center " style="font-size: 3rem!important;">{{page.title}}</p>
-			
+	<div class="row p-0  flex-center mb-5">
+		<div class="row z-depth-2" style="width:100%!important;">
+			<div class="view card z-depth-2 ml-0 pl-0">
+				<img class="img-fluid  " src="{{page.image_path}}" alt="{{page.image_alt}}"
+					style="height: 300px !important;object-fit: cover!important;width:100%!important;">
+				<div class="mask rgba-indigo-slight flex-center z-depth-2">
+					<p class="cubano text-white p-3 text-center " style="font-size: 3.5rem!important;">{{page.title}}
+					</p>
+				</div>
+			</div>
 		</div>
-
-	</div>
-	
-
-</div>
-	<div class = "col-12-xs col-12-sm col-6-md">
-			<div class="card z-depth-0  p-5 rounded-0  flex-center m-0">
+		<div class="mt-3 row ">
+			<div class="card rounded-0   p-5  flex-center m-0">
 				<p class="">{{page.subtitle}}</p>
 				<p class=" small mt-2">
 					<a href="{{site.baseurl}}{{page.permalink}}" class=""><a
 							href="{{site.baseurl}}/authors/{{page.author}}">{{page.author}}</a></a> &nbsp; |&nbsp;
-					<a class="" href="{{site.baseurl}}/explore/#{{page.category}}">{{page.category}}</a> &nbsp; |&nbsp; <i class = "fas fa-tag text-dark ml-1" ></i>&nbsp;&nbsp; <span>{% for tag in page.tags %}  <a href = "{{site.baseurl}}/explore/#tags">{{tag}} &nbsp;&nbsp;</a> {% endfor %}  </span> 
+					<a class="" href="{{site.baseurl}}/explore/#{{page.category}}">{{page.category}}</a> &nbsp; |&nbsp;
+					<i class="fas fa-tag text-dark ml-1"></i>&nbsp;&nbsp; <span>{% for tag in page.tags %} <a
+							href="{{site.baseurl}}/explore/#tags">{{tag}} &nbsp;&nbsp;</a> {% endfor %} </span>
 				</p>
 			</div>
+		</div>
+	</div>
 
+	<hr>
+
+	<div class="container contentcontainer" style="padding-top: 55px!important;" data-spy="scroll" data-target="#toc">
+		<div class="row ">
+			<div class="float-left sticky-top ">
+				<p class="cubano">Navigation:</p>
+				<nav id="toc" data-toggle="toc"></nav>
+			</div>
+			<div class="container mt-0 pt-0 navbody">
+				{{content}}
+			</div>
+		</div>
 	</div>
 </div>
-
-<hr> 
-
-<div class="container contentcontainer" style = "padding-top: 55px!important;">
-	<div class="row ">
-		<div class="float-left sticky-top ">
-			<p class = "cubano">Navigation:</p>
-			<nav id="toc" data-toggle="toc"></nav>
-		</div>
-
-		<div class="container mt-0 pt-0 navbody">
-
-
-			{{content}}
-		</div>
-	</div>
-</div></div>

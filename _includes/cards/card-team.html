@@ -1,16 +1,17 @@
-<div class=" card hero  drop-md view overlay mb-0 pb-0 w-100 flex-center"  style = "border: 1px solid rgba(210, 219, 230, 1) !important;">
-	<div class=" card-header hero  w-100 z-depth-0 border-0 " style="">
-		<h4 class="text-center font-weight-bolder"  style = "color: #{{auth.color}} !important;">
+<div class=" card bgwhite inset-sm view overlay  mx-3 mb-0 pb-0 w-100 h-100 flex-center"
+	style="background-color:#fff!important; background-image: none!important;">
+	<div class="   h-100 w-100 z-depth-0  border-0 " style="">
+		<h4 class="text-center cubano mt-2" style="color: #{{auth.color}} !important;">
 			{{auth.firstname}}
 		</h4>
 	</div>
 
-	<div class="card-body p-0 m-0 mb-0 pb-0"
-		style=" width: 100%; min-height: 200px;  
-		 background-image: url('{{site.baseurl}}/media/team/{{auth.headshot_path}}')!important;background-size: cover !important; background-repeat: no-repeat !important;">
+	<div class="card-body  p-0 m-0 mb-0 pb-0 flex-center ">
+		<img src="{{site.baseurl}}/media/team/{{auth.headshot_path}}" class="img-fluid" />
+
 	</div>
 
-	<div class="mask p-2 flex-center rgba-stylish-strong  p-0 m-0 mb-0 pb-0 " type="button" data-toggle="modal"
+	<div class=" mask p-2 flex-center rgba-stylish-strong  p-0 m-0 mb-0 pb-0 " type="button" data-toggle="modal"
 		data-target="#modal-target{{auth.firstname}}idk">
 		<h2 class="cubano text-white p-2 flex-center">
 			open profile
@@ -47,6 +48,7 @@
 					<p class="modal-biog small">{{auth.bio}}</p>
 
 					<br />
+
 					<hr />
 				</div>
 
@@ -70,15 +72,15 @@
 
 			<div class="modal-footer">
 				<div class="d-flex flex-row">
-					<a class="nav-link" href="{{auth.website}}" target="blank_">
+					<a class="nav-link card-nav-link" href="{{auth.website}}" target="blank_">
 						<i class="fas fa-link"></i>
 					</a>
 
-					<a class="nav-link" href="{{auth.email}}" target="blank_">
+					<a class="nav-link card-nav-link" href="{{auth.email}}" target="blank_">
 						<i class="fas fa-envelope"></i>
 					</a>
 
-					<a class="nav-link" href="{{auth.twitter}}" target="blank_">
+					<a class="nav-link card-nav-link" href="{{auth.twitter}}" target="blank_">
 						<i class="fab fa-twitter"></i>
 					</a>
 				</div>

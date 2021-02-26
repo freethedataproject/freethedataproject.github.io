@@ -1,0 +1,63 @@
+<div class="container z-depth-0 my-5 card rounded align-self-center">
+	<div class="card-body texturebg mt-5 mb-5  p-5">
+		<div class="row">
+			<div class="container my-5 z-depth-0">
+				<h1 class="cubano mb-2 text-center"> Our approach</h1>
+				<h4 class="mb-5  text-center" style="color: #1a595e !important;">
+					We advocate for data that is:
+				</h4>
+				<div class="row">
+					<div class="col-md-4 mb-4 align-self-center">
+						<div class="row align-self-center">
+							<img src="{{site.baseurl}}/media/sitewide/svg/6_BIRD.svg" class="img-fluid"
+								alt="" style="height: 120px;  width: 100%; object-fit:contain;" />
+							<div class="mask rgba-white-slight"></div>
+						</div>
+						<div class="row p-4">
+							<h3 class="font-weight-bold mb-3"></h3>
+							<p class="" style="  font-size: 1rem !important;">
+								{% for item in site.data.content_descriptions %}
+								{{item.ethical}}
+								{% endfor %}
+
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4 align-self-center">
+						<div class="row  align-self-center">
+							<img src="{{site.baseurl}}/media/sitewide/svg/4_SOCIAL MEDIA.svg" class="img-fluid"
+								alt="" style="height: 120px;  width: 100%; object-fit:contain;" />
+						</div>
+						<div class="row p-4">
+							<h3 class="font-weight-bold mb-3">engaging</h3>
+							<p class="" style="  font-size: 1rem !important;">
+								{% for item in site.data.content_descriptions %}
+								{{item.engaging}}
+								{% endfor %}
+
+
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4 align-self-center">
+						<div class="row  align-self-center">
+							<img src="{{site.baseurl}}/media/sitewide/svg/8_BLM_LAPTOP.svg" class="img-fluid"
+								alt="" style="height: 120px; width: 100%; object-fit:contain;" />
+						</div>
+						<div class="row p-4">
+							<h3 class="font-weight-bold mb-3">empowering</h3>
+							<p class="" style="  font-size: 1rem !important;">
+								{% for item in site.data.content_descriptions %}
+								{{item.empowering}}
+								{% endfor %}
+
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

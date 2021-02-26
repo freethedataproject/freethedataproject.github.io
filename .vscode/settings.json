@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "_plugins": true,
+        "Gemfile": true,
+        "CNAME": true,
+        ".gitignore": true,
+        "404.html": true,
+        "README.md": true,
+        "Gemfile.lock": true,
+        ".vscode": true,
+        ".jekyll-cache": true,
+        "_sass": true,
+        "assets/js/raphael": true,
+        "assets/js/confetti": true,
+        "assets/js/other": true,
+        "assets/js/scrollama": true,
+        "assets/js/chartjs": true,
+        "_internal": true
+    },
+    "workspace.isHidden": true
+}

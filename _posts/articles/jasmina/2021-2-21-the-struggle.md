@@ -3,9 +3,10 @@ layout: post
 title: "Reflections on the Joy and Sorrow of Data Scraping."
 subtitle: "Here's a subtitle, AKA a brief & catchy sentence or two that go below the title."
 author: jasmina
-category: [education]
-tags: [data scraping, education,  moral dilemma, thestruggle, data101, kitchensink, hiddenhistories]
-permalink: "/articles/thestruggle/"
+category: [thestruggle]
+collection: [project]
+tags: [data scraping, education,  philosophy]
+permalink: "/projects/thestruggle/jasmina/joy-and-sorrow-of-data-scraping"
 image_path: 'https://images.unsplash.com/photo-1591786409812-8260a746fd1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1217&q=80'
 image_alt: 'Photo of an old Commodoe monitor with a smiley, also a datasette and old insturctions.'
 icon_ref: fa-graduation-cap

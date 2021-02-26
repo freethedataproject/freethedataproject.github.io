@@ -15,6 +15,19 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  - projects
+  - internal
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  internal:
+    output: true
+    permalink: /internal/:path/
+
+
 
 sass:
   style: compact # possible values: nested expanded compact compressed
@@ -25,7 +38,6 @@ highlighter: rouge
 
 # Paginate
 paginate: 10
-
 
 # Exclude from processing.
 
