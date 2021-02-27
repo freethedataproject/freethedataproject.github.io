@@ -6,55 +6,20 @@ subtitle: "Articles, visualizations, guides, resources – Free the Data offers 
 ---
 
 
-<div class="view animated fadeIn">
-	<img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
-		style=" width:100%; height: 90vh; object-fit: cover; margin-top: 45px!important; object-fit: cover!important;">
-	<div class="mask  d-none d-lg-inline-flex  container flex-center">
-		<div class="row ">
-			<div class="col-6 ">
-			</div>
-			<div class="col-6 ">
-				<div class="row ">
-					<h1 class="cubano mb-3 text-frida">Free the Data</h1>
-				</div>
-				<div class="row pr-5">
-					<p>
-						Free the Data wants to smash the black boxes that make data inaccessible. We create articles,
-						visual essays,
-						and infographics that use data in compelling, interactive, and visual ways, while breaking
-						stereotypes about
-						who can do data analysis and what proper research topics look like.
-					</p>
-				</div>
-			</div>
-		</div>
+<div class="container my-5 py-5">
+	<div class="container ">
+			<h1 class=" d-flex cubano">Topic Filters</h1>
+		<hr />
+		{% include pages/topic.html %}
 	</div>
 </div>
 
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-
-<div>
-	{% include pages/landing/cube.html %}
+<div class="container my-5 py-5 mb-5 pb-5">
+		<h1 class=" cubano d-flex">Collections</h1>
+		<hr />
+        <div class="row my-5 row-cols-1 row-cols-md-2 row-cols-md-2 ">
+		{% for project in site.data.project_landing_page %}
+			{% include cards/card-project.html %}
+		{% endfor %}
+	</div>
 </div>
-
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-
-{% include pages/landing/our_content.html %}
-
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-
-{% include pages/landing/team.html %}
-
-<div class="pt-5 pb-5"></div>
-
-{% include pages/landing/contact.html %}
-
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-
-<script src=" {{ site.baseurl }}/assets/js/sitewide/cube.js"></script>
