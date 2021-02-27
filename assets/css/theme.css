@@ -23,6 +23,9 @@
 --baseB7: hsl(265,  100%, 96%);
 }
 
+#toc, .container ul{background-color:#fff!important;}
+
+
 .btn-secondary {
 	background-color: var(--baseA0)!important;
 }

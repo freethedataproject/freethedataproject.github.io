@@ -60,7 +60,7 @@
 <div class="container  card z-depth-0" >
                 <div>
 
-                                      <div>  <h1 class="cubano mission"> We envision data that's...</h1>  
+                                      <div>  <h1 class="cubano mission "> We envision data that's...</h1>  
                     </div>   
      
              <div>  <h1 class="cubano ethical"> We envision data that's <span class = "text-frida">ethical</span></h1>  
@@ -71,7 +71,7 @@
                     </div>   
 
 
-                    <div class = "float-right">{% assign item = site.data.cube %} {% include viz/about_this_viz.html %}</div>
+                    <div class = "d-flex justify-content-end">{% assign item = site.data.cube %} {% include viz/about_this_viz.html %}</div>
 
                 <hr >
 
@@ -81,34 +81,7 @@
 
         <div class="pt-5 pb-5 col-12 col-md-6 z-depth-0  ">
             
-            <ul class="list-unstyled row d-lg-inline-flex d-sm-block ">
-                <li class="nav-item mr-1 ml-5  align-self-center">
-                    <button onclick="rotate1(); show_mission();frida_confetti();"
-                        class="frida_confetti btn btn-sm z-depth-0   px-1   ">
-                        <img src="{{ site.baseurl }}/media/sitewide/logo.svg"
-                            alt="Image of Frida Data Cat, our team mascot." class=""
-                            style="height: 25px!important; width:25px!important; border:none!important; background-color: none!important;" />
-                    </button>
-                </li>
-                <li class="nav-item mr-1 ">
-                    <button onclick="rotate2(); show_ethical();"
-                        class="btn  btn-sm z-depth-0  px-1  cube_button ">
-                        Ethical
-                    </button>
-                </li>
-                <li class="nav-item mr-1 ">
-                    <button onclick="rotate3(); show_engaging();"
-                        class="btn  btn-sm z-depth-0  px-1  cube_button ">
-                        Engaging
-                    </button>
-                </li>
-                <li class="nav-item mr-1 ">
-                    <button onclick="rotate4(); show_empowering();"
-                        class="btn  btn-sm z-depth-0  px-1  cube_button ">
-                        Empowering
-                    </button>
-                </li>
-            </ul>
+            
             <div class="row z-depth-0">
                 <div class="containerz">
                     <div class="cube ">
@@ -129,8 +102,8 @@
 
 
             <div class="mission  ">
-                <p class="small text-muted  pt-3 " style="font-size: .8rem!important;">
-                    Tap the cube or click a heading to learn what we're all about.
+                <p class="small text-muted mt-5 pt-5 " style="font-size: .8rem!important;">
+                    Tap or click the cube to learn what we're all about.
                     <img class = "d-none d-md-block d-lg-block d-xl-block" src = "{{ site.baseurl }}/assets/svg/arrow.svg">
                 </p>
 
