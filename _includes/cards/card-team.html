@@ -1,17 +1,12 @@
-<div class=" card bgwhite inset-sm view overlay  mx-3 mb-0 pb-0 w-100 h-100 flex-center"
-	style="background-color:#fff!important; background-image: none!important;">
-	<div class="   h-100 w-100 z-depth-0  border-0 " style="">
-		<h4 class="text-center cubano mt-2" style="color: #{{auth.color}} !important;">
+<div class="card view animated   overlay" style = "max-width:300px!important;">
+		<h4 class="text-center cubano mt-2">
 			{{auth.firstname}}
 		</h4>
+	<div class="card-body  p-0 m-0 mb-0 pb-0  ">
+		<img src="{{site.baseurl}}/media/team/{{auth.headshot_path}}" class="card-img-top" style = "max-width:300px!important;"/>
 	</div>
 
-	<div class="card-body  p-0 m-0 mb-0 pb-0 flex-center ">
-		<img src="{{site.baseurl}}/media/team/{{auth.headshot_path}}" class="img-fluid" />
-
-	</div>
-
-	<div class=" mask p-2 flex-center rgba-stylish-strong  p-0 m-0 mb-0 pb-0 " type="button" data-toggle="modal"
+	<div class=" mask flex-center rgba-stylish-strong  p-0 m-0 mb-0 pb-0 " type="button" data-toggle="modal"
 		data-target="#modal-target{{auth.firstname}}idk">
 		<h2 class="cubano text-white p-2 flex-center">
 			open profile
@@ -91,4 +86,6 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div>	
+
+

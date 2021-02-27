@@ -1,40 +1,29 @@
 
-<div class="container z-depth-0 my-5 card rounded   align-self-center ">
+<div class="container  z-depth-0 my-5 card rounded   align-self-center ">
 	<div class="card-body ">
 		<div class="row">
 			<div class="container my-5  z-depth-0">
 				<h1 class="cubano mb-3  animated fadeIn text-center  ">THE TEAM</h1>
-				<p class=" text-center animated fadeIn ">Click or tap on a team member's card to see a preview of their profile. </p>
+				<p class="mb-5  text-center animated fadeIn ">Click or tap on a team member's card to see a preview of their profile. </p>
 
 
-				<div class="   p-md-5  card-deck ">
-
-
+	<div class="card-group">
 					{% for auth in site.data.team_bios %}
 
 					{% if auth.namedowncase == "frida" %}
 					{% include cards/card-team.html %}
 					{% endif %}
-					{% endfor %}
-					{% for auth in site.data.team_bios %}
-
 					{% if auth.namedowncase == "sarah" %}
 					{% include cards/card-team.html %}
 					{% endif %}
-					{% endfor %}
-					{% for auth in site.data.team_bios %}
 
 					{% if auth.namedowncase == "ania" %}
 					{% include cards/card-team.html %}
 					{% endif %}
-					{% endfor %}
-					{% for auth in site.data.team_bios %}
 
 					{% if auth.namedowncase == "leni" %}
 					{% include cards/card-team.html %}
 					{% endif %}
-					{% endfor %}
-					{% for auth in site.data.team_bios %}
 
 					{% if auth.namedowncase == "jasmina" %}
 					{% include cards/card-team.html %}

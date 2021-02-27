@@ -1,19 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=space:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
 :root {
 	--offwhite: #fff;
 	--frida: #e86166;
-	--space: "Space Grotesk", sans-serif;
-	--inter: "Inter", sans-serif;
+	--space: "Rubik", sans-serif;
+	--inter: "Rubik", sans-serif;
 	--cubano: "cubano", sans-serif;
 	--muted: rgb(120, 121, 124);
---baseA0: rgb(36, 31, 44);
---baseA2: hsl(265, 16%, 35%);
---baseA3: hsl(265, 15%, 40%);
---baseA4: hsl(265, 14%, 45%);
---baseA5: hsl(265, 13%, 53%);
---baseA6: hsl(265, 12%, 61%);
---baseA7: hsl(265, 11%, 69%);
+--baseA0: #262525;
+--baseA3: #A6A6A6;
+--baseA7: #F2F2F2;
 
 --baseB0: hsl(265,  75%, 61%);
 --baseB1: hsl(265,  80%, 66%);
@@ -27,6 +25,14 @@
 
 .btn-secondary {
 	background-color: var(--baseA0)!important;
+}
+
+.text-frida {
+		color: var(--frida)!important;
+			font-family: var(--cubano) !important;
+	font-weight: 400 !important;
+
+
 }
 html {
 	scroll-behavior: smooth !important;
@@ -73,11 +79,8 @@ a:hover,
 }
 
 
-.nav-item,
-.nav-link,
-.navbar-brand {
+.text-white {
 	color: #fff!important;
-	font-weight: 400 !important;
 }
 
 .img-gradient {
@@ -163,4 +166,9 @@ small {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
+}
+
+
+.card, .container, .navbar, footer, .btn {
+	box-shadow: none;
 }

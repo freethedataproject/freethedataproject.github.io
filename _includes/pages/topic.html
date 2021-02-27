@@ -1,8 +1,8 @@
 <div class="filter filter-basic mt-5">
     <div class="filter-nav">
-        <button class="btn  btn-sm z-depth-0  px-1  cube_button  active categorybutton" data-filter="all">All</button>
+        <button class="px-1  button button--wapasha button--round-s  active categorybutton" data-filter="all">All</button>
         {% for category in site.categories %}
-        <button class="btn  btn-sm z-depth-0  px-1  cube_button  categorybutton  " data-filter="{{category[0]}}">{{category[0]}}</button>
+        <button class="px-1  button button--wapasha button--round-s  categorybutton  " data-filter="{{category[0]}}">{{category[0]}}</button>
         {%endfor%}
     </div>
     <div class="filter-gallery  mt-4 pt-4">

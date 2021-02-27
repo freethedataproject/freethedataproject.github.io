@@ -57,12 +57,27 @@
 </style>
 
 <div >
-<div class=" container p-5    z-depth-0" >
+<div class="container  card z-depth-0" >
                 <div>
-                <h1 class=" cubano "> We envision data that's:</h1>
+
+                                      <div>  <h1 class="cubano mission"> We envision data that's...</h1>  
+                    </div>   
+     
+             <div>  <h1 class="cubano ethical"> We envision data that's <span class = "text-frida">ethical</span></h1>  
+                    </div>   
+ <div>  <h1 class="cubano engaging"> We envision data that's <span class = "text-frida">Engaging</span></h1>  
+                    </div>   
+ <div>  <h1 class="cubano empowering"> We envision data that's <span class = "text-frida">Empowering</span></h1>  
+                    </div>   
+
+
+                    <div class = "float-right">{% assign item = site.data.cube %} {% include viz/about_this_viz.html %}</div>
+
+                <hr >
+
             </div>
 
-    <div class="row   bg-white inset-md  rounded-lg px-5 ">
+    <div class="row rounded-lg px-5 ">
 
         <div class="pt-5 pb-5 col-12 col-md-6 z-depth-0  ">
             
@@ -77,19 +92,19 @@
                 </li>
                 <li class="nav-item mr-1 ">
                     <button onclick="rotate2(); show_ethical();"
-                        class="btn btnethical btn-sm z-depth-0  px-1  cube_button ">
+                        class="btn  btn-sm z-depth-0  px-1  cube_button ">
                         Ethical
                     </button>
                 </li>
                 <li class="nav-item mr-1 ">
                     <button onclick="rotate3(); show_engaging();"
-                        class="btn btnengaging btn-sm z-depth-0  px-1  cube_button ">
+                        class="btn  btn-sm z-depth-0  px-1  cube_button ">
                         Engaging
                     </button>
                 </li>
                 <li class="nav-item mr-1 ">
                     <button onclick="rotate4(); show_empowering();"
-                        class="btn btnempowering btn-sm z-depth-0  px-1  cube_button ">
+                        class="btn  btn-sm z-depth-0  px-1  cube_button ">
                         Empowering
                     </button>
                 </li>
@@ -113,10 +128,10 @@
         <div class="pt-5 pb-5 col-12 col-md-4 z-depth-0  ">
 
 
-            <div class="mission pt-5  mt-5 ">
-                <p class="small text-muted mt-5 pt-5 " style="font-size: .8rem!important;">
+            <div class="mission  ">
+                <p class="small text-muted  pt-3 " style="font-size: .8rem!important;">
                     Tap the cube or click a heading to learn what we're all about.
-                    
+                    <img class = "d-none d-md-block d-lg-block d-xl-block" src = "{{ site.baseurl }}/assets/svg/arrow.svg">
                 </p>
 
             </div>
@@ -124,7 +139,6 @@
 
 
             <div class="ethical">
-                                <h2 class = "cubano pt-1">ethical.</h2>
 
                 <p class="" style=" font-size: 1rem !important;">
                     {% for item in site.data.content_descriptions %}
@@ -133,7 +147,6 @@
                 </p>
             </div>
             <div class="engaging">
-                                <h2 class = "cubano pt-1">engaging.</h2>
 
                 <p class="" style=" font-size: 1rem !important;">
                     {% for item in site.data.content_descriptions %}
@@ -142,7 +155,6 @@
                 </p>
             </div>
             <div class="empowering">
-                                <h2 class = "cubano pt-1">empowering.</h2>
 
                 <p class="" style=" font-size: 1rem !important;">
                     {% for item in site.data.content_descriptions %}
@@ -153,7 +165,6 @@
         </div>
 
     </div>
-                    {% assign item = site.data.cube %} {% include viz/about_this_viz.html %}
 
 </div>
 

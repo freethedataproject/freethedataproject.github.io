@@ -5,6 +5,28 @@ layout: default
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ftd_theme/posts.css">
 
+<nav class="  py-2 navbar-expand-sm  p-0 pb-0 mb-0 d-block z-depth-0 "  aria-label="breadcrumb" >
+  <div class="container pb-0 mb-0" style = "">
+      <ol class="navbar-nav  breadcrumb mr-auto py-1 my-1  font-weight-normal   ">
+         {% if num_parts == "0" or num_parts == "-1" %}
+    <li class="breadcrumb-item text-muted"><a href="https://freethedataproject.com/" class = ' text-grey small'>home</a></li>
+ {% else %}
+     <li class="breadcrumb-item text-muted"><a href="https://freethedataproject.com/" class = ' text-grey small'>home</a></li>
+
+  {% for unused in page.content limit:num_parts %}
+   {% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+   {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+    <li class="breadcrumb-item text-muted"><a href="{{previous}}" class = ' text-grey small'>{{ first_word }}</a> </li>
+
+
+   {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+  {% endfor %}
+ {% endif %}
+
+    <li class="breadcrumb-item text-muted text-grey small" style = "font-style:italic!important;">{{page.title}}</li>
+  </ol>
+ </div>
+</nav>
 <div class="container mb-5 mt-5">
 
 	<div class="row p-0  flex-center mb-5">
