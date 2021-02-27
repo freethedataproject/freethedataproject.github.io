@@ -9,18 +9,14 @@ subtitle: "Articles, visualizations, guides, resources – Free the Data offers 
 
 <div class="container my-5 py-5">
 	<div class="container ">
-		<a class="nostyle" id="tags">
 			<h1 class=" d-flex cubano">Topic Filters</h1>
-		</a>
 		<hr />
 		{% include pages/topic.html %}
 	</div>
 </div>
 
 <div class="container my-5 py-5 mb-5 pb-5">
-	<a class="nostyle" id="collections">
 		<h1 class=" cubano d-flex">Collections</h1>
-	</a>
 		<hr />
         <div class="row my-5 row-cols-1 row-cols-md-2 row-cols-md-2 ">
 		{% for project in site.data.project_landing_page %}
