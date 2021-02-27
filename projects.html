@@ -9,27 +9,14 @@ permalink: "projects/"
 		<div class="card-body row flex-center text-center ">
 			<div class="col-8  p-5 flex-center">
 				<div class="row pr-5 flex-center">
-					<h1 class="cubano mb-3 text-center">Projects</h1>
+					<h1 class="cubano mb-3 text-center" style = "font-size: 5rem!important;">Projects</h1>
 
 					<p>
 						{% for item in site.data.content_descriptions %} {% for item in
 						site.data.content_descriptions %} {{item.explore}} {% endfor %} {%
 						endfor %}
 					</p>
-					<span>
-
-						
-						<a href="#tags" class="nostyle">
-							<button type="button" class="button button--wapasha button--round-s">
-								filters
-							</button>
-						</a>
-						<a href="#collections " class="nostyle">
-							<button type="button" class="button button--wapasha button--round-s">
-								collections
-							</button>
-						</a>
-					</span>
+				
 				</div>
 			</div>
 		</div>
