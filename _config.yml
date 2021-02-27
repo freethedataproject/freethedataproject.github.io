@@ -9,23 +9,18 @@ include: ["_pages"]
 
 permalink: /:title/
 
-# Build settings
-theme: minima
 
 plugins:
   - jekyll-feed
 
 collections:
   - projects
-  - internal
+
 
 collections:
   projects:
     output: true
     permalink: /projects/:path/
-  internal:
-    output: true
-    permalink: /internal/:path/
 
 
 
