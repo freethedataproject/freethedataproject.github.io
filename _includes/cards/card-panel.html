@@ -1,0 +1,43 @@
+{% assign dir = "/assets/icons/" %}
+
+<div class="col-12 col-md-6  my-2 all {{row.category}}" 
+
+value = "{{row.category}}"
+for = "{{row.category}}"
+id = "{{row.category}} all" >
+<div class = "card mx-3 h-100 p-2  rounded-lg"
+
+>
+	<div class="card-body  p-0   "
+	
+	>
+		<div class="row h-100 rounded-lg "  style = "border:1px solid #c5c7ca!important; ">
+
+            
+			<div
+				class="col-4 view  z-depth-1-half rounded" 
+				style="background-image: url('{{ row.image_path }}') !important; background-size: cover!important; background-repeat:no-repeat!important; background-position: center!important; " >
+                <div class = "mask rgba-stylish-light"></div>
+
+            </div>
+			<div class="col-8 panelborder rounded-lg">
+
+				<div class="row h-100 rounded-lg"  style = "margin-left: 5px!important;">
+				          
+						  <div class = "p-2 ">
+						    <img type="button" class=" float-right" data-toggle="tooltip" data-placement="top" title="{{row.category}}" src = "{{dir}}{{row.category}}.svg" style = "width: 35px; height: 35px;"/>
+
+                    		<a href="{{row.url}}" target="_blank">
+			<h4 class=" font-weight-bolder">{{ row.name }}</h4>
+		</a>
+
+
+					<p class="" style="font-size: .8rem!important;">{{ row.desc }}</p>
+				</div></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div> 
+	<hr />

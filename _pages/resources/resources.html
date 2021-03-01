@@ -1,0 +1,151 @@
+---
+layout: default
+title: "Resources"
+permalink: "resources/"
+---
+
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+<style>
+  
+</style>
+
+<div class = "container  px-5 ">
+  		<h1 class="cubano text-center" style = "font-size: 4rem!important;">All the Things</h1>
+		<p
+			class="small  pb-2 text-center  mx-5 px-5"
+
+		>
+			Resources. We're talking about resources. All of them. Whether you're
+			interested in data science, viz, art, justice, journalism, or feminism,
+			there's probably something here for you. We're always adding to the list and working to develop new filters, so check back for updates! 
+		</p>
+
+</div>
+<div class = 'container p-0'>
+  <div class = "row">
+
+    <div class = "col-3  mt-5">
+
+  
+<div class="filter filter-basic sticky-top pt-5 mt-5">
+  <h6 class = "font-weight-bold text-uppercase text-center   mt-4 pt-4" >filter</h6>
+  <hr>
+	<ul class="filter-nav ">
+		<li
+			class="btn  btn-sm z-depth-0  px-1  active catbtn"
+			data-filter="all"
+		>
+			All
+		</li>
+			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="news"
+		>
+			News
+		</li>
+    			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="tutorial"
+		>
+			Tutorials
+		</li>
+    			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="inspiration"
+		>
+			Inspiration
+		</li>
+
+    			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="design"
+		>
+			Design
+		</li>
+
+        			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="assets"
+		>
+			Assets
+		</li>
+
+
+
+    			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="dataset"
+		>
+			Dataset
+		</li>
+
+    			<li
+			class="btn  btn-sm z-depth-0  px-1 catbtn  "
+			data-filter="package"
+		>
+			Package
+		</li>
+
+
+	</ul>
+</div>
+
+
+
+    </div>
+
+
+  <div class = "col-9">
+	<div class="filter-gallery  mt-4 pt-4" style = "padding-left: 30px!important;">
+	<div class="row" id="panelfilter">
+		{% for row in site.data.allthethings %} {% include cards/card-panel.html %}
+		{% endfor %}
+	</div>
+</div>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+<script>
+	$(document).ready(function() {
+
+    
+
+		$(".catbtn").click(function() {
+
+			var filterValue = $(this).attr("data-filter");
+			// show all items
+			if (filterValue == "all") {
+				$(".all").show("fast");
+			} else {
+				// hide all items
+				$(".all")
+					.not("." + filterValue)
+					.hide("fast");
+				// and then, show only items with selected data-filter value
+				$(".all")
+					.filter("." + filterValue)
+					.show("fast");
+        
+			}
+		});
+	});
+</script>
+
+</div>
+
+
+<div class = "pt-5 pb-5"></div>
+<div class = "pt-5 pb-5"></div><div class = "pt-5 pb-5"></div>
+
+<div style="position:fixed;top:calc(50% - 250px);right:0;transition:width 300ms ease-out;width:0;" data-qa="side_panel"> <a class="typeform-share button" href="https://form.typeform.com/to/ofc1UhrM?typeform-medium=embed-snippet" data-mode="side_panel" style="box-sizing:border-box;position:absolute;top:250px;width:300px;height:48px;padding:0 20px;margin:0;cursor:pointer;background:#3A3A3A;border-radius:4px 4px 0px 0px;box-shadow:0px 2px 12px rgba(0, 0, 0, 0.06), 0px 2px 4px rgba(0, 0, 0, 0.08);display:flex;align-items:center;justify-content:flex-start;transform:rotate(-90deg);transform-origin:bottom left;color:white;text-decoration:none;z-index:9999;" data-hide-headers="true" data-hide-footer="true" data-width="320" data-height="500" target="_blank"> <span class="icon" style="width:32px;position:relative;text-align:center;transform:rotate(90deg) scale(0.85);left:-8px;"> <img alt="" src="https://images.typeform.com/images/hgbXmtirf9s7" style="max-width:24px;max-height:24px;margin-top:10px;" /> </span> <span style="text-decoration:none; font-family: var(--sans)!important; color:#fff!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"> Submit a resource</span> </a> </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+

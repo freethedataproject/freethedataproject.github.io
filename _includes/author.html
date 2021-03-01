@@ -1,0 +1,45 @@
+<div class="card px-5 my-4">
+	<div class="card-body  ">
+		<div class="row">
+			<div class="col-3 align-self-center">
+				<img
+					class="card-img-top"
+					src="{{site.baseurl}}/media/team/{{auth.headshot_path}}"
+				/>
+			</div>
+			<div class="col-9 align-self-center">
+				<h4 class="accentfont " >
+					{{auth.fullname}}
+				</h4>
+				<h6 class=" fraunces  font-weight-bold text-" id="">{{auth.role}}</h6>
+				<p class=" modal-biog small">{{auth.bio}}</p>
+
+				<div class="d-flex flex-row">
+					<a
+						class="nav-link card-nav-link"
+						href="{{auth.website}}"
+						target="blank_"
+					>
+						<i class="fas fa-link"></i>
+					</a>
+
+					<a
+						class="nav-link card-nav-link"
+						href="{{auth.email}}"
+						target="blank_"
+					>
+						<i class="fas fa-envelope"></i>
+					</a>
+
+					<a
+						class="nav-link card-nav-link"
+						href="{{auth.twitter}}"
+						target="blank_"
+					>
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

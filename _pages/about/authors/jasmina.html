@@ -1,0 +1,10 @@
+---
+layout: default
+permalink: "authors/jasmina/"
+---
+{% for auth in site.data.team_bios %}
+  {% if auth.namedowncase == 'jasmina' %}
+      {% include authorpage.html %}
+{% endif  %}
+{% endfor %}
+

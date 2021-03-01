@@ -3,48 +3,118 @@ layout: default
 title: "Home"
 ---
 
+<style>
+	.color-block {
+		width: 200px !important;
+		padding: 20px !important;
+	}
+
+	.paper {
 
 
-<div class="view animated fadeIn">
-	<img class="img-fluid" src="{{site.baseurl}}/media/sitewide/hero.svg"
-		style=" width:100%; height: 90vh; object-fit: cover; margin-top: 45px!important; object-fit: cover!important;">
-	<div class="mask  d-none d-lg-inline-flex  container flex-center">
+		background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+	}
+</style>
+
+
+<section class="paper z-depth-0 text-left jumbotron p-3">
+	<div class="container my-3 py-3">
+		<div class="container ">
+			<h1 class="" style="color: var(--frida)!important; font-size: 3.5rem!important;font-weight: 700;"> Free the
+				Data wants to smash the black boxes that make data
+				inaccessible. </h1>
+			<p class="mb-3 " style="font-size: 1.3rem !important;">
+				We create articles, visual essays, and infographics
+				that use data in compelling, interactive, and visual ways, while
+				breaking stereotypes about who can do data analysis and what proper
+				research topics look like.
+				</h1>
+		</div>
+		<a class="btn btn-elegant text-white" href="/mission"> Learn more about us → </a>
+	</div>
+	</div>
+</section>
+
+
+
+<section>
+	<div class="container mt-5 pt-5 align-self-center">
+		<h1 class=" cubano d-flex">The Latest</h1>
+		<hr />
 		<div class="row ">
-			<div class="col-6 ">
+			<div class="col-md-6 ">
+				<div class="card ">
+					<div class="view">
+						<img src="https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+							alt="" class="card-img-top" />
+						<div class="mask rgba-stylish-light card-body">
+							<h1 class="card-title ">Manifesto</h1>
+							<p class="small">
+								In the year 2020, a year marked by an unprecedented global
+								health crisis, an all-time high in the number of people
+								displaced by conflict, violence and disasters, the worst
+								wildfire season in history, record hemispheric heat spelling an
+								impending climate catastrophe, never-before-seen political and
+								economic divisions, and countless upheavals against systemic
+								racism, inequality, corruption, and oppression, we, women who
+								write, read, interpret, and critique code, say, Enough with Big
+								Tech!
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-6 ">
-				<div class="row ">
-					<h1 class="cubano mb-3 text-frida">Free the Data</h1>
-				</div>
-				<div class="row pr-5">
-					<p>
-						Free the Data wants to smash the black boxes that make data inaccessible. We create articles,
-						visual essays,
-						and infographics that use data in compelling, interactive, and visual ways, while breaking
-						stereotypes about
-						who can do data analysis and what proper research topics look like.
-					</p>
-				</div>
+
+			<div class="col-md-6 card align-self-center mt-4">
+				{% for post in site.posts limit:3 %} {% include
+				cards/card-small-news.html %} {% endfor %}
 			</div>
 		</div>
 	</div>
-</div>
+</section>
+
+<section class="">
+	<div class="container my-5 py-5">
+		<div class="container ">
+			<h1 class=" d-flex cubano">Explore</h1>
+			<hr />
+		</div>
+
+		<div class=" card-deck">
+			<div class="card">
+				<h5 class="mb-0 font-weight-bold  flex-center ">Projects</h5>
+				<p class="small">
+					Infographics, dashboards, graphs and #DataArt: If we can find a way to visualize something, we will.
+					If it works, we'll share it here. (And if it doesn't, we'll probably share it here anyway. F*CK
+					perfectionism.)
+				</p>
+
+			</div>
+			<div class="card">
+				<h5 class="mb-0 font-weight-bold  flex-center ">Resources</h5>
+				<p class="small">
+					We believe in smashing black boxes that make it hard to access, analyze, or afford data. We strive
+					to help make data science more empowering by providing resources on data science and data justice.
+				</p>
+			</div>
+			<div class="card">
+				<h5 class="mb-0 font-weight-bold  flex-center ">Data 101</h5>
+				<p class="small">
+					In our Data 101 series, we share what
+					we've learned about the process of writing scripts, breaking things,
+					identifying problems, and experiencing the joy of fixing them.
+				</p>
+			</div>
 
 
-<div class="container my-5 py-5">
-	<div class="container ">
-			<h1 class=" d-flex cubano">Topic Filters</h1>
-		<hr />
-		{% include pages/topic.html %}
+
+		</div>
+
 	</div>
-</div>
-
-<div class="container my-5 py-5 mb-5 pb-5">
-		<h1 class=" cubano d-flex">Collections</h1>
-		<hr />
-        <div class="row my-5 row-cols-1 row-cols-md-2 row-cols-md-2 ">
-		{% for project in site.data.project_landing_page %}
-			{% include cards/card-project.html %}
-		{% endfor %}
-	</div>
-</div>
+</section>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>

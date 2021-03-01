@@ -1,0 +1,58 @@
+---
+layout: default
+title: "team"
+permalink: "team/"
+---
+
+
+<div class="container  z-depth-0 my-5    align-self-center ">
+				<h1 class="cubano mb-3  animated fadeIn text-center  " style = "font-size: 5rem!important;">THE TEAM</h1>
+
+<hr>
+	<div class="row d-flex flex-wrap px-5">
+
+					{% for auth in site.data.team %}
+					{% if auth.namedowncase == "frida" %}
+					{% include author.html %}
+					{% endif %}
+					{% endfor %}
+
+					{% for auth in site.data.team %}
+					{% if auth.namedowncase == "sarah" %}
+					{% include author.html %}
+					{% endif %}
+					{% endfor %}
+
+					{% for auth in site.data.team %}
+					{% if auth.namedowncase == "ania" %}
+					{% include author.html %}
+					{% endif %}
+					{% endfor %}
+
+					{% for auth in site.data.team %}
+					{% if auth.namedowncase == "leni" %}
+					{% include author.html %}
+					{% endif %}
+					{% endfor %}
+					
+					{% for auth in site.data.team %}
+					{% if auth.namedowncase == "jasmina" %}
+					{% include author.html %}
+					{% endif %}
+					{% endfor %}
+					
+
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>

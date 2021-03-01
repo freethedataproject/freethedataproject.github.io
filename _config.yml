@@ -9,20 +9,8 @@ include: ["_pages"]
 
 permalink: /:title/
 
-
 plugins:
   - jekyll-feed
-
-collections:
-  - projects
-
-
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-
 
 sass:
   style: compact # possible values: nested expanded compact compressed

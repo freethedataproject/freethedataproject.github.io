@@ -1,0 +1,36 @@
+<div class="single-news">
+	<div class="row mb-3">
+		<div class="col-md-3">
+			<div class="view z-depth-1 mb-3">
+				<img
+					src="{{post.image_path}}"
+					class="img-fluid rounded-0"
+					alt="{{post.image_alt}}"
+				/>
+				<div class="mask rgba-stylish-light waves-effect waves-light"></div>
+			</div>
+		</div>
+		<div class="col-md-9 mb-0 pb-0">
+			<a href="{{site.baseurl}}{{post.permalink}}">
+				<h5 class="font-weight-bolder">
+					<i
+						type="button"
+						class="fas {{post.icon_ref}} mt-1"
+						data-toggle="tooltip"
+						data-placement="top"
+						title="{{post.category}}"
+					></i>
+					{{post.title}}
+				</h5>
+			</a>
+
+			<p class="small text-muted">
+
+								<a  href="{{site.baseurl}}/authors/{{post.author}}">
+					{{post.author}}
+				</a>
+ &nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+			</p>
+		</div>
+	</div>
+</div>

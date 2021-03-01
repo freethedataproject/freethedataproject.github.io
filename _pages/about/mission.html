@@ -1,0 +1,45 @@
+---
+layout: default
+title: "mission"
+permalink: "mission/"
+---
+
+<section class="container">
+	<p class="mb-3 ">
+		Free the Data wants to smash the black boxes that make data inaccessible. We
+		create articles, visual essays, and infographics that use data in
+		compelling, interactive, and visual ways, while breaking stereotypes about
+		who can do data analysis and what proper research topics look like.
+	</p>
+
+	<div class="container pt-5 mt-5 ">
+		<div class="mission">
+			<h1 class="cubano ">
+				We envision data that's:
+			</h1>
+		</div>
+
+		<div class="row align-self-center ">
+			{% for i in site.data.cube %}
+			<div class="col-3 {{ i.ref }}">
+				<h1 class="cubano ">
+					<span class="text-frida">{{ i.title }}</span>
+				</h1>
+				<div class="{{ i.ref }}">
+					<p class="" style=" font-size: 1rem !important;">
+						{{ i.text }}
+					</p>
+				</div>
+			</div>
+
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>

@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<!-- IDK WHAT ALL THIS META STUFF DOES BUT IM SCARED TO REMOVE IT -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- THIS IS WHAT SHOWS UP ON THE BROWSER TAB -->
+		<title>{{ page.title }} | {{ site.name }}</title>
+		<!-- FAVICON -->
+		<link
+			href="{{site.baseurl}}/assets/brand/frida.svg"
+			rel="shortcut icon"
+			type="image/svg+xml"
+		/>
+		<link
+			rel="stylesheet"
+			href=" {{ site.baseurl }}/assets/mdb/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ site.baseurl }}/assets/mdb/css/mdb.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+		/>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">		
 
-<head>
-	<!-- IDK WHAT ALL THIS META STUFF DOES BUT IM SCARED TO REMOVE IT -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- THIS IS WHAT SHOWS UP ON THE BROWSER TAB -->
-	<title>{{ page.title }} | {{ site.name }}</title>
-	<!-- FAVICON -->
-	<link href="{{site.baseurl}}/media/sitewide/logo.svg" rel="shortcut icon" type="image/svg+xml"/>
-	<link rel="stylesheet" href=" {{ site.baseurl }}/assets/mdb/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/mdb/css/mdb.min.css"/>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://use.typekit.net/xrn3fzv.css"/>
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css"/>
-		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/pages/teamstyle.css"/>
+		<link rel="stylesheet" href="https://use.typekit.net/xrn3fzv.css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{{ site.baseurl }}/assets/css/normalize.css"
+		/>
+	</head>
 
+	<body>
+		{% include nav.html %}
+		<main>
+			<div class="maincontent fadeIn animated">
+				<!-- THIS IS WHERE SITE CONTENT WILL GO -->
+				{{content}}
+			</div>
+		</main>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script src="{{site.baseurl}}/assets/mdb/js/popper.min.js"></script>
+		<script src="{{site.baseurl}}/assets/mdb/js/bootstrap.min.js"></script>
+		<script src="{{site.baseurl}}/assets/mdb/js/mdb.min.js"></script>
+		<script src=" {{ site.baseurl }}/assets/js/confetti/confetti.min.js"></script>
+		<script src=" {{ site.baseurl }}/assets/js/sitewide/frida.js"></script>
+		<script src=" {{ site.baseurl }}/assets/js/sitewide/tooltip.js"></script>
+		<script src=" {{ site.baseurl }}/assets/js/sitewide/typeform.js"></script>
+		<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>
+		<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
-				<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/vicons-font.css" />
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/buttons.css" />
+	</body>
 
-</head>
-
-<body>
-	{% include nav.html %}
-	<main>
-		<div class="maincontent " >
-			<!-- THIS IS WHERE SITE CONTENT WILL GO -->
-			{{content}}
-		</div>
-	</main>
-	<!-- 	
-	<script src=" {{ site.baseurl }}/assets/js/raphael/raphael.min.js"></script>
-	 -->
-	<script src="{{site.baseurl}}/assets/mdb/js/jquery.min.js"></script>
-	<script src="{{site.baseurl}}/assets/mdb/js/popper.min.js"></script>
-	<script src="{{site.baseurl}}/assets/mdb/js/bootstrap.min.js"></script>
-	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
-
-	<script src="{{site.baseurl}}/assets/mdb/js/mdb.min.js"></script>
-	<script src=" {{ site.baseurl }}/assets/js/confetti/confetti.min.js"></script>
-	<script src=" {{ site.baseurl }}/assets/js/sitewide/frida.js"></script>
-	<script src=" {{ site.baseurl }}/assets/js/sitewide/tooltip.js"></script>
-	<script src=" {{ site.baseurl }}/assets/js/sitewide/typeform.js"></script>
-
-
-</body>
-
-{% include footer.html %}
-
+	{% include footer.html %}
 </html>
