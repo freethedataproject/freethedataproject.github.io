@@ -187,7 +187,9 @@ html {
 /* TYPOGRAPHY */
 
 
-
+.textfrida {
+	color: var(--frida)!important;
+}
 
 .cubano {
 	font-family: var(--cubano) !important;
