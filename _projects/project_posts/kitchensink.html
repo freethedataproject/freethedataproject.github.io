@@ -1,0 +1,91 @@
+---
+layout: project
+title: "Kitchen Sink"
+permalink: "/projects/kitchensink"
+project_landing_page: "yes"
+image_path: "/media/projects/kitchensink.jpg"
+subtitle: "Iteration. Iteration. Iteration. Explore the development of Free the Data from the initial ideas that we began with in 2020 to the current site you're on right now."
+---
+
+<div class="container">
+  <h1 class="cubano pt-5">Kitchen Sink</h1>
+  <p> {{page.subtitle}} </p>
+  <p>Click on any image to see its full-size version and description.</p>
+  <hr>
+  <br>
+</div>
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Name</h1>
+    <div class="card-deck">
+      {% for row in site.data.kitchensink %}
+      {% if row.category == "name" %}
+      {% include rows/image-modal.html %}
+      {% endif%}
+      {% endfor %}
+    </div>
+</div>
+
+<div class="pt-4 pb-4"></div>
+<div class="pt-4 pb-4"></div>
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Logo</h1>
+    <div class="card-deck">
+      {% for item in site.data.kitchensink %}
+      {% if item.category == "logo" %}
+      {% include rows/image-modal.html %}
+      {% endif%}
+      {% endfor %}
+    </div>
+</div>
+
+<div class="pt-4 pb-4"></div>
+<div class="pt-4 pb-4"></div>
+
+
+
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Frida</h1>
+    <div class="card-deck  ">
+      {% for item in site.data.kitchensink %}
+      {% if item.category == "frida" %}
+      {% include rows/image-modal.html %}
+      {% endif%}
+      {% endfor %}
+    </div>
+</div>
+
+<div class="pt-4 pb-4"></div>
+<div class="pt-4 pb-4"></div>
+
+
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Landing Page</h1>
+    <div class="card-deck  ">
+      {% for item in site.data.kitchensink %}
+      {% if item.category == "landing page" %}
+      {% include rows/image-modal.html %}
+      {% endif%}
+      {% endfor %}
+    </div>
+</div>
+
+<div class="pt-4 pb-4"></div>
+<div class="pt-4 pb-4"></div>
+
+<div class="gallerysection container">
+  <h2 class="cubano pb-4 mb-0 ">Brainstorming</h1>
+    <div class="card-deck  ">
+      {% for item in site.data.kitchensink %}
+      {% if item.category == "brainstorming" %}
+      {% include rows/image-modal.html %}
+      {% endif%}
+      {% endfor %}
+    </div>
+</div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>

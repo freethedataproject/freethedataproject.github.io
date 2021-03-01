@@ -4,7 +4,7 @@
 			<div class="col-3 align-self-center">
 				<img
 					class="card-img-top"
-					src="{{site.baseurl}}/media/team/{{auth.headshot_path}}"
+					src="{{site.baseurl}}/media/team/{{auth.image_path}}" alt = "{{auth.image_alt}}"
 				/>
 			</div>
 			<div class="col-9 align-self-center">
@@ -14,6 +14,7 @@
 				<h6 class=" fraunces  font-weight-bold text-" id="">{{auth.role}}</h6>
 				<p class=" modal-biog small">{{auth.bio}}</p>
 
+						<a class = "btn btn-sm btn-elegant" href = "{{site.baseurl}}/authors/{{auth.namedowncase}}">Recent posts by {{auth.namedowncase}} →</a>
 				<div class="d-flex flex-row">
 					<a
 						class="nav-link card-nav-link"
@@ -25,12 +26,11 @@
 
 					<a
 						class="nav-link card-nav-link"
-						href="{{auth.email}}"
+						href="mailto:{{auth.email}}"
 						target="blank_"
 					>
 						<i class="fas fa-envelope"></i>
 					</a>
-
 					<a
 						class="nav-link card-nav-link"
 						href="{{auth.twitter}}"

@@ -1,0 +1,30 @@
+<figure class=" m-2 figure" type="button" class="" data-toggle="modal" data-target="#centralModalSm{{row.xid}}">
+            <img src="{{site.baseurl}}/media/projects/kitchen-sink/{{row.image_path}}" class="figure-img img-fluid z-depth-1"
+              alt="{{row.image_alt}}" style = "height: 10rem!important; width: 25rem!important; object-fit:cover!important; object-position:center!important;"/>
+  <figcaption class="figure-caption text-right small fraunces">A caption for the above image.</figcaption>
+
+              </figure>
+
+
+<div class="modal fade" id="centralModalSm{{row.xid}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel{{row.xid}}"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <img src="{{site.baseurl}}/media/projects/kitchen-sink/{{row.image_path}}" class=" img-fluid "
+              alt="{{row.image_alt}}" />
+
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-elegant text-white btn-sm" data-dismiss="modal">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+

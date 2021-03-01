@@ -242,6 +242,10 @@ small {
 
 .fraunces {
 	font-family: var(--fraunces)!important;
-		color: #062e5d!important;
 
+}
+
+.accentcolor {
+		color: #062e5d!important;
+	
 }

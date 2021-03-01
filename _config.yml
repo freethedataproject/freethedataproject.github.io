@@ -19,6 +19,15 @@ sass:
 markdown: kramdown
 highlighter: rouge
 
+
+collections:
+  data101:
+    output: true
+  resources:
+    output: true
+  projects:
+    output: true 
+
 # Paginate
 paginate: 10
 

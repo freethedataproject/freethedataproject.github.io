@@ -1,0 +1,39 @@
+---
+layout: default
+title: "Projects"
+permalink: "projects/"
+subtitle: "Articles, visualizations, guides, resources – Free the Data offers a little bit of everything. Below, you can use filters to find what you're looking for, or you can dive into one of our curated collections."
+project_landing_page: "no"
+---
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+
+<div class = "container  px-5 ">
+  		<h1 class="cubano text-center" style = "font-size: 4rem!important;">Projects</h1>
+		<p
+			class="small  pb-2 text-center  mx-5 px-5"
+		>
+		{{page.subtitle}}
+		</p>
+</div>
+
+
+<div class="container mt-5">
+  <section class="row text-center">
+
+		  {% for project in site.projects %}
+		  		  {% if project.project_landing_page == "yes" %}
+					      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
+
+				{% include cards/card-cascade.html %}
+      </div>
+
+
+	  						{% endif %}
+		{% endfor %}
+
+  </section>
+            </div>

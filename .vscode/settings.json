@@ -15,7 +15,8 @@
         "assets/js/other": true,
         "assets/js/scrollama": true,
         "assets/js/chartjs": true,
-        "_internal": true
+        "_internal": true,
+        "_data/about_this.csv": true
     },
     "workspace.isHidden": true
 }
