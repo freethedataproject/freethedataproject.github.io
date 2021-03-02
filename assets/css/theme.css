@@ -141,7 +141,7 @@ h6 {
 }
 
 #toc,
-main .container ul {
+main {
 	background-color: var(--offwhite) !important;
 }
 
@@ -170,11 +170,6 @@ html {
 
 .text-white {
 	color: var(--offwhite) !important;
-}
-
-.img-gradient {
-	position: relative;
-	display: inline-block;
 }
 
 #toc a {
@@ -272,10 +267,7 @@ footer,
 
 }
 .breadcrumb a {font-size: .8rem!important;}
-.alert-secondary {
-	background-color: var(--offwhite) !important;
-	border: 1px solid var(--muted) !important;
-}
+
 main a {
 	color: var(--frida) !important;
 }
@@ -291,9 +283,6 @@ h3 {
 	font-weight: 700 !important;
 }
 
-.cubano {
-	color: var(--baseA0) !important;
-}
 .btn-sm,
 .btn-sm a {
 	font-size: 0.8rem !important;
@@ -324,14 +313,6 @@ transition: .1s !important;
 
 	color: var(--frida)!important;
 }
-
-.inset {
-box-shadow: inset 5px 5px 9px #d3c5d2,
-            inset -5px -5px 9px rgba(243, 242, 244, 1) !important;
-			border-radius: 10px;
-
-}
-
 
 .breadcrumb-item, .breadcrumb-item a, .breadcrumb li, .breadcrumb a {color: var(--muted)!important;}
 .breadcrumb-item:hover, .breadcrumb-item a:hover, .breadcrumb li:hover, .breadcrumb a:hover {color: var(--frida)!important;}
