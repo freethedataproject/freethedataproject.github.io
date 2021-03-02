@@ -1,7 +1,18 @@
   <li class="media my-3">
     <img class="d-flex mr-3" style = "height: 64px; width: 64px; object-fit: cover !important;" src="{{post.image_path}}" alt="{{post.image_alt}}">
     <div class="media-body">
-      <h4 class="m-0  "><a href = "{{post.permalink}}">{{post.title}}</a></h4>
+			<a href="{{site.baseurl}}{{post.permalink}}">
+				<h6 class="font-weight-bolder">
+					<i
+						type="button"
+						class="fas {{post.icon_ref}} mt-1"
+						data-toggle="tooltip"
+						data-placement="top"
+						title="{{post.category}}"
+					></i>
+					{{post.title}}
+				</h6>
+			</a>
       <p class = "card-text m-0 p-0 small   ">{{post.subtitle}}</p>
 
 			<p class="small text-muted">

@@ -50,8 +50,8 @@
 
 
   <div class="container  pt-5 mt-5">
-    <h2 class="cubano">Recent posts by {{ auth.namedowncase | capitalize }} </h2>
-    <div class="single-news mb-4">
+    <h4 class="cubano">Recent posts by {{ auth.namedowncase | capitalize }} </h4>
+    <div class="single-news ml-3 pl-1 mb-4">
       <div class="row mt-3">
         {% include cards/card-recent-posts.html %}
       </div>
