@@ -6,67 +6,70 @@ umbrella: "Projects"
 image_path: "/media/projects/kitchensink.jpg"
 subtitle: "Iteration. Iteration. Iteration. Explore the development of Free the Data from the initial ideas that we began with in 2020 to the current site you're on right now. Click or tap on any image to open a full-size version."
 ---
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
 
-<div class="container">
 
-<div class="gallerysection container">
-  <h2 class="cubano pb-4 mb-0 ">Name</h1>
-    <div class="card-deck">
-      {% for row in site.data.kitchensink %}
-      {% if row.category == "name" %}
-      {% include rows/image-modal.html %}
-      {% endif%}
-      {% endfor %}
-    </div>
-</div>
+<div class="container z-depth-0 ">
+	<section>
+		<div class="filter filter-basic mt-5">
+			<div class="filter-nav">
+				<p class = "fraunces font-weight-bold">Filters:</p>
+        <button
+					class="btn  btn-sm z-depth-0  px-3    active categorybutton"
+					data-filter="all"
+				>
+					All
+				</button>
+        <button class="btn  btn-sm z-depth-0  px-3  categorybutton  "
+					data-filter="name"> Name </button>
+        <button class="btn  btn-sm z-depth-0  px-3  categorybutton  "
+					data-filter="logo"> Logo </button>
+                  <button class="btn  btn-sm z-depth-0  px-3  categorybutton  "
+					data-filter="frida"> Frida </button>
+        <button class="btn  btn-sm z-depth-0  px-3  categorybutton  "
+					data-filter="landing"> Landing Page </button>
+                  <button class="btn  btn-sm z-depth-0  px-3  categorybutton  "
+					data-filter="tinkering"> Tinkering </button>
+        <button class="btn  btn-sm z-depth-0  px-3  categorybutton  "
+					data-filter="random"> Assorted </button>
+			</div>
+			<ol class="filter-gallery list-unstyled mt-4 pt-4">
+		<div class="row row-cols-1 row-cols-md-2 row-cols-md-3 row-cols-lg-3">
+				{% for row in site.data.kitchensink %}
+					{% include rows/image-modal.html %}
+				{% endfor %}
+			</div>
 
-<div class="pt-4 pb-4"></div>
-<div class="pt-4 pb-4"></div>
+			</ol>
+		</div>
 
-<div class="gallerysection container">
-  <h2 class="cubano pb-4 mb-0 ">Logo</h1>
-    <div class="card-deck">
-      {% for item in site.data.kitchensink %}
-      {% if item.category == "logo" %}
-      {% include rows/image-modal.html %}
-      {% endif%}
-      {% endfor %}
-    </div>
-</div>
-<div class="pt-4 pb-4"></div>
-<div class="pt-4 pb-4"></div>
-<div class="gallerysection container">
-  <h2 class="cubano pb-4 mb-0 ">Frida</h1>
-    <div class="row d-flex flex-wrap  ">
-      {% for item in site.data.kitchensink %}
-      {% if item.category == "frida" %}
-      {% include rows/image-modal.html %}
-      {% endif%}
-      {% endfor %}
-    </div>
-</div>
-<div class="pt-4 pb-4"></div>
-<div class="pt-4 pb-4"></div>
-<div class="gallerysection container">
-  <h2 class="cubano pb-4 mb-0 ">Landing Page</h1>
-    <div class="card-deck  ">
-      {% for item in site.data.kitchensink %}
-      {% if item.category == "landing page" %}
-      {% include rows/image-modal.html %}
-      {% endif%}
-      {% endfor %}
-    </div>
-</div>
-<div class="pt-4 pb-4"></div>
-<div class="pt-4 pb-4"></div>
-<div class="gallerysection container">
-  <h2 class="cubano pb-4 mb-0 ">Brainstorming</h1>
-    <div class="card-deck  ">
-      {% for item in site.data.kitchensink %}
-      {% if item.category == "brainstorming" %}
-      {% include rows/image-modal.html %}
-      {% endif%}
-      {% endfor %}
-    </div>
-</div>
+		<script>
+			$(document).ready(function() {
+				$(".categorybutton").click(function() {
+					var filterValue = $(this).attr("data-filter");
+
+					// show all items
+					if (filterValue == "all") {
+						$(".all").show("fast");
+					} else {
+						// hide all items
+						$(".all")
+							.not("." + filterValue)
+							.hide("fast");
+						// and then, show only items with selected data-filter value
+						$(".all")
+							.filter("." + filterValue)
+							.show("fast");
+					}
+				});
+			});
+		</script>
+
+
+	</section>
+	<!-- Section -->
 </div>
