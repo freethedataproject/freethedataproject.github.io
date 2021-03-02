@@ -28,8 +28,6 @@ title: "Home"
 	}
 </style>
 
-
-
 <!--  
 				<h1 class="" style="font-weight: 600!important;color: var(--baseA0)!important; font-size: 1.5rem!important;font-weight: 700;"> Free the
 				Data wants to smash the black boxes that make data
@@ -39,81 +37,82 @@ title: "Home"
 
 <section class="px-5">
 	<div class="container px-5 py-5  z-depth-0   p-4 ">
-			<div
-		class=" py-3 container p-md-5  z-depth-0  alert  "
-		role="alert"
-	>
-		<h1 class="cubano text-center ">
-			<i
-				class="las la-exclamation-triangle"
-				style="color: var(--frida)!important;"
-			></i>
-			This site is under construction.
-		</h1>
-		<p class=" small px-5 mx-5">
-			Welcome to Free the Data! We're still getting settled in – feel free to
-			explore what's here, but please note that you may encounter the occasional
-			404 page or stock photo. We hope to officially launch by March/April 2021
-			– you can follow us on
-			<a href="https://twitter.com/freethedata_" target="_blank">Twitter</a>
-			for updates. We can't wait for you to see the completed site!
-			<i class="las la-heart textfrida"></i>
-		</p>
-	</div>
-	</div>
-	</section>
-
-	<section class="px-5">
-	<div class = "pt-5 pb-5"></div>
-
-		<div class="container p-md-5 py-3">
-			<div class="row px-5 align-self-center ">
-
-				<div class = "d-inline px-3"><h3 class = "cubano pt-5 mb-1">Free the Data wants to smash the black boxes that make data inaccessible.</h3>
-				<p class = " mt-1 mb-5">
-					We create articles, visual essays, and infographics that use data in compelling, interactive, and visual ways, while breaking stereotypes about who can do data analysis and what proper research topics look like. We envision data that's:
-
-
-				</p></div>
-				{% for i in site.data.siteinfo %} {% if i.ref == "ethical" %}
-				<div class="col-4 ">
-					<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
-
-					<div class="">
-						<p class="" style=" ">
-							{{ i.desc }}
-						</p>
-					</div>
-				</div>
-				{% endif %} {% if i.ref == "engaging" %}
-				<div class="col-4 ">
-					<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
-					<div class="">
-						<p class="" style=" ">
-							{{ i.desc }}
-						</p>
-					</div>
-				</div>
-				{% endif %} {% if i.ref == "empowering" %}
-				<div class="col-4 ">
-					<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
-					<div class="">
-						<p class="" style=" ">
-							{{ i.desc }}
-						</p>
-					</div>
-				</div>
-				{% endif %} {% endfor %}
-			</div>
-			<div class="text-center">
-				<a class="btn btn-sm   mt-3" href="/mission">Learn more about us →</a>
-			</div>
+		<div class=" py-3 container p-md-5  z-depth-0  alert  " role="alert">
+			<h1 class="cubano text-center ">
+				<i
+					class="las la-exclamation-triangle"
+					style="color: var(--frida)!important;"
+				></i>
+				This site is under construction.
+			</h1>
+			<p class=" small px-5 mx-5">
+				Welcome to Free the Data! We're still getting settled in – feel free to
+				explore what's here, but please note that you may encounter the
+				occasional 404 page or stock photo. We hope to officially launch by
+				March/April 2021 – you can follow us on
+				<a href="https://twitter.com/freethedata_" target="_blank">Twitter</a>
+				for updates. We can't wait for you to see the completed site!
+				<i class="las la-heart textfrida"></i>
+			</p>
 		</div>
-			</section>
-	<section class="px-5">
+	</div>
+</section>
 
-		<div class = "pt-5 pb-5"></div>
-<div class = "container">
+<section class="px-5">
+	<div class="pt-5 pb-5"></div>
+
+	<div class="container p-md-5 py-3">
+		<div class="row px-5 align-self-center ">
+			<div class="d-inline px-3">
+				<h3 class="cubano pt-5 mb-1">
+					Free the Data wants to smash the black boxes that make data
+					inaccessible.
+				</h3>
+				<p class=" mt-1 mb-5">
+					We create articles, visual essays, and infographics that use data in
+					compelling, interactive, and visual ways, while breaking stereotypes
+					about who can do data analysis and what proper research topics look
+					like. We envision data that's:
+				</p>
+			</div>
+			{% for i in site.data.siteinfo %} {% if i.ref == "ethical" %}
+			<div class="col-4 ">
+				<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
+
+				<div class="">
+					<p class="" style=" ">
+						{{ i.desc }}
+					</p>
+				</div>
+			</div>
+			{% endif %} {% if i.ref == "engaging" %}
+			<div class="col-4 ">
+				<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
+				<div class="">
+					<p class="" style=" ">
+						{{ i.desc }}
+					</p>
+				</div>
+			</div>
+			{% endif %} {% if i.ref == "empowering" %}
+			<div class="col-4 ">
+				<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
+				<div class="">
+					<p class="" style=" ">
+						{{ i.desc }}
+					</p>
+				</div>
+			</div>
+			{% endif %} {% endfor %}
+		</div>
+		<div class="text-center">
+			<a class="btn btn-sm   mt-3" href="/mission">Learn more about us →</a>
+		</div>
+	</div>
+</section>
+<section class="px-5">
+	<div class="pt-5 pb-5"></div>
+	<div class="container">
 		<h1 class=" cubano ">The Latest</h1>
 		<div class="row p-md-5 px-3">
 			<div class="col-md-6 ">
@@ -166,9 +165,10 @@ title: "Home"
 				{% for post in site.posts limit:5 %} {% include
 				cards/card-small-news.html %} {% endfor %}
 			</div>
-		</div></div>
+		</div>
+	</div>
 </section>
-<div class = "pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
 
 <section class="">
 	<div class="container z-depth-0   p-4">
@@ -210,7 +210,7 @@ title: "Home"
 		</div>
 	</div>
 </section>
-<div class = "pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
 <section class="">
 	<div class="container z-depth-0  p-4">
 		<div class="container p-md-5 ">
@@ -224,6 +224,42 @@ title: "Home"
 				following causes (or another data justice-related cause of your
 				choosing!):
 			</p>
+
+
+<!-- Grid row -->
+<div class="row">
+
+    <div class="col-md-3 mb-4">
+      <div class="purple-gradient color-block mb-3 mx-auto rounded-circle mediumcircle z-depth-1"></div>
+      <h5 class="mb-0">purple-gradient</h5>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-4">
+      <div class="blue-gradient color-block mb-3 mx-auto rounded-circle mediumcircle z-depth-1"></div>
+      <h5 class="mb-0">blue-gradient</h5>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-4">
+      <div class="aqua-gradient color-block mb-3 mx-auto rounded-circle mediumcircle z-depth-1"></div>
+      <h5 class="mb-0">aqua-gradient</h5>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-4">
+      <div class="peach-gradient color-block mb-3 mx-auto rounded-circle mediumcircle z-depth-1"></div>
+      <h5 class="mb-0">peach-gradient</h5>
+    </div>
+    <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+
 		</div>
 	</div>
 </section>

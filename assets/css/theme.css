@@ -280,13 +280,25 @@ footer,
 	color: var(--baseA1) !important;
 	background-color: var(--offwhite) !important;
 	border: 1px solid var(--baseA1) !important;
+	transition: .2s !important;
+	box-shadow:none!important;
 }
+.btn-primary:hover,
+.btn-sm:hover,
+.btn:hover {
+	background-color: var(--frida7) !important;
+	border: 1px solid var(--frida) !important;
+	box-shadow: 2px 2px 2px var(--frida)!important;
+}
+
 
 .btn-primary:focus,
 .btn-primary:active {
 	background-color: #fff !important;
-}
+		box-shadow: 2px 2px 2px var(--frida)!important;
 
+}
+.breadcrumb a {font-size: .8rem!important;}
 .alert-secondary {
 	background-color: #fff !important;
 	border: 1px solid var(--muted) !important;
