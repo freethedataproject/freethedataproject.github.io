@@ -3,8 +3,14 @@
     <div class="media-body">
       <h4 class="m-0  "><a href = "{{post.permalink}}">{{post.title}}</a></h4>
       <p class = "card-text m-0 p-0 small   ">{{post.subtitle}}</p>
-        {% include cards/card-footer.html %}
 
+			<p class="small text-muted">
+
+								<a  href="{{site.baseurl}}/authors/{{post.author}}">
+					{{post.author | capitalize}}
+				</a>
+ &nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+			</p>
 
     </div>
   </li>

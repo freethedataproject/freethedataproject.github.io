@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
+
+:root {
+	--gaegu: "Gaegu", cursive;
+}
+
+section {
+	max-width: 950px !important;
+}
+
+.roomforaside {padding-right:130px!important;}
+
+
+p {padding-top:5px!important;padding-bottom:6px!important;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--gaegu) !important;
+	font-weight: 700 !important;
+}
+.gaegu {
+    	font-family: var(--gaegu) !important;
+	font-weight: 700 !important;
+
+}
+
+.textcallout{
+    padding:15px!important;
+    background-color: var(--frida7)!important;
+}
+
+.textcallout .textlg, .textcallout a, b{
+	font-weight: 600 !important;
+
+}
+
+
+
+
+.nav-item a,
+.nav-link,
+.nav-link a{
+	font-family: var(--gaegu) !important;
+	font-weight: 700 !important;
+    font-size: 1.1rem !important;
+}
+
+.navbar-brand, .navbar-brand a, .freethedata, .freethedata a {
+    font-family: var(--cubano)!important;
+    font-weight: 400!important;
+}
+
+
+
+
+
+
+
+
+
+

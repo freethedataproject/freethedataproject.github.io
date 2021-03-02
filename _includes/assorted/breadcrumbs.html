@@ -1,0 +1,21 @@
+<div class = "container  p-0">
+    <nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+
+<li class = "breadcrumb-item"><a class = "fraunces font-weight-bold" href='{{ site.baseurl }}'>Home</a></li>
+{% assign crumbs = page.url | split: '/' %}
+{% for crumb in crumbs offset: 1 %}
+  {% if forloop.last %}
+  <span>&nbsp; / &nbsp;</span>
+    <a class = "fraunces font-weight-bold" >{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
+  {% else %}
+  <span>&nbsp; / &nbsp;</span>
+    <a class = "fraunces font-weight-bold" href="{% assign crumb_limit = forloop.index | plus: 1 %}{{site.baseurl}}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
+  {% endif %}
+{% endfor %}
+
+</ol>
+</nav>
+
+</div>
+

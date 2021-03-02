@@ -16,7 +16,10 @@
         "assets/js/scrollama": true,
         "assets/js/chartjs": true,
         "_internal": true,
-        "_data/about_this.csv": true
+        "_data/about_this.csv": true,
+        "_includes/projects/rapgod/cover.html": true,
+        "_site": true,
+        "_config.yml": true
     },
     "workspace.isHidden": true
 }

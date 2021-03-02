@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=sans:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
 	--offwhite: #fff;
@@ -10,15 +9,24 @@
 	--frida7: #fce6e7;
 	--sans: "Rubik", sans-serif;
 	--cubano: "cubano", sans-serif;
-		--fraunces: "Fraunces", serif;
+	--fraunces: "Fraunces", serif;
 
-	--muted: rgb(120, 121, 124);
---baseA0: #3a3a3a;
---baseA3: #eaeaea;
---baseA7: #F2F2F2;
-
+	--muted: #898989;
+	--baseA0: #333333;
+	--baseA1: #333333;
+	--baseA3: #eaeaea;
+	--baseA7: #f2f2f2;
 }
 
+.text-dark {
+	color: var(--baseA0!important;);
+}
+p {
+	color: var(--baseA0);
+}
+.text-muted {
+	color: var(--muted) !important;
+}
 /* 
 
 @media (min-width: 800px) {
@@ -32,59 +40,70 @@ footer {
 
  */
 
-
+.bgmuted {
+	background-color: var(--offwhite) !important;
+}
 
 a {
-		color: var(--baseA0) !important;
-
-}
- a:hover,
-.navbar-brand:hover a > .dropdown,
-.nav-item:hover a > .dropdown,
-.nav-link:hover a > .dropdown 
-a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6, a:hover .navbar-brand  
-
-
-{
-
-	background-color: var(--frida7)!important;
-		color: var(--frida) !important;
-
-
-}
-
- a:hover,
-.navbar-brand:hover a ,
-.nav-item:hover a > .dropdown,
-.nav-link:hover a > .dropdown, .dropdown a:hover
-
-
-
- {
-
 	color: var(--frida) !important;
-		 		 font-weight: 400!important;
-
-
-
-}
-.dropdown, .dropdown a, .dropdown .nav-item {
-	 		 font-weight: 400!important;
-		 font-family: var(--sans) !important;
-
-
-
 }
 
- .footerbg {
-	 background-color: var(--offwhite)!important;
-	 width: 100%!important;
- }
+.navbar a,
+.nav-item a,
+.nav-link a {
+	font-weight: 500 !important;
+	color: var(--baseA1) !important;
+}
+.textxl {
+	font-size: 2.7rem !important;
+}
+.navbar a:hover,
+a:hover h1,
+a:hover h2,
+a:hover h3,
+a:hover h4,
+a:hover h5,
+a:hover h6 {
+	background-color: var(--frida7) !important;
+	color: var(--frida) !important;
+}
 
-  .footerbg  a {  
-	color: var(--baseA0) !important;
-	 font-family: var(--sans);
- }
+.navbar-brand,
+.freethedata {
+	font-family: var(--cubano) !important;
+}
+a:hover,
+.navbar-brand:hover a,
+.nav-item:hover a > .dropdown,
+.nav-link:hover a > .dropdown,
+.dropdown a:hover,
+.navbar-brand:hover,
+.freethedata:hover {
+	color: var(--frida) !important;
+}
+.nav-item {
+	font-family: var(--sans) !important;
+}
+.dropdown,
+.dropdown a,
+.dropdown-item {
+	font-family: var(--sans) !important;
+}
+
+.navbar,
+footer,
+.page-footer,
+.dropdown-menu {
+	background-color: var(--offwhite) !important;
+}
+.footerbg {
+	width: 100% !important;
+}
+
+.footerbg a,
+.navbar a {
+	font-family: var(--sans);
+}
 
 .sans,
 p,
@@ -98,16 +117,24 @@ small,
 li,
 li a,
 ul,
-ul a, .row p,
-a, section p, section a, section ul, section ol, section li, section .card p, section .card a {
-
-
-	
+ul a,
+.row p,
+a,
+section p,
+section a,
+section ul,
+section ol,
+section li,
+section .card p,
+section .card a {
 	font-family: var(--sans) !important;
 }
-a, p, li p, ul p, ol p {
-		font-weight: 400;
-
+a,
+p,
+li p,
+ul p,
+ol p {
+	font-weight: 400;
 }
 
 .sans,
@@ -115,9 +142,8 @@ p,
 .small,
 .card-body,
 .badge,
-.card-badge
-{
-color: var(--baseA0);
+.card-badge {
+	color: var(--baseA0);
 }
 
 h1,
@@ -125,29 +151,29 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-	font-family: var(--fraunces)!important;
-color: var(--baseA0);
+h6 {
+	font-family: var(--fraunces) !important;
+	color: var(--baseA1);
 }
-
 
 .font-weight-bold {
-	font-weight: 500!important;
+	font-weight: 500 !important;
 }
-.nav-link, .nav-item {
-	text-transform: none!important;
-	font-weight: 400!important;
+.nav-link,
+.nav-item {
+	text-transform: none !important;
+	font-weight: 400 !important;
 }
 
-#toc, main .container ul{background-color:#fff!important;}
+#toc,
+main .container ul {
+	background-color: #fff !important;
+}
 
 .text-frida {
-	color: var(--frida)!important;
+	color: var(--frida) !important;
 	font-family: var(--cubano) !important;
 	font-weight: 400 !important;
-
-
 }
 
 html {
@@ -164,14 +190,13 @@ html {
 
 @media (min-width: 1201px) {
 	.navbody {
-		margin-left: 300px !important;
+		margin-left: 150px !important;
 		margin-top: -70px !important;
 	}
 }
 
-
 .text-white {
-	color: #fff!important;
+	color: #fff !important;
 }
 
 .img-gradient {
@@ -180,15 +205,14 @@ html {
 }
 
 #toc a {
-	color: var(--baseA0);
+	color: var(--baseA1);
 	font-weight: 400 !important;
 }
 
 /* TYPOGRAPHY */
 
-
-.textfrida, a {
-	color: var(--frida)!important;
+.textfrida {
+	color: var(--frida) !important;
 }
 
 .cubano {
@@ -197,7 +221,7 @@ html {
 }
 
 p {
-	font-size: 1rem !important;
+	font-size: 0.9rem !important;
 	font-weight: 400;
 }
 
@@ -217,10 +241,9 @@ a {
 }
 .small,
 small {
-	font-size: 0.87rem !important;
-	font-family:var(--sans)!important;
+	font-size: 0.9rem !important;
+	font-family: var(--sans) !important;
 }
-
 
 .parallax {
 	height: 100%;
@@ -229,25 +252,93 @@ small {
 	background-repeat: repeat;
 }
 
-
-.card, .container, .navbar, footer, .btn {
+.card,
+.container,
+.navbar,
+footer,
+.btn {
 	box-shadow: none;
 }
 
-
 .accentfont {
-
 	font-family: var(--fraunces) !important;
-	color: #062e5d!important;
-	font-weight: 600!important;
+	color: var(--baseA1) !important;
+	font-weight: 600 !important;
 }
 
 .fraunces {
-	font-family: var(--fraunces)!important;
-
+	font-family: var(--fraunces) !important;
 }
 
 .accentcolor {
-		color: #062e5d!important;
-	
+	color: var(--baseA1) !important;
+}
+.btn-primary,
+.btn-sm,
+.btn {
+	text-transform: none !important;
+	color: var(--baseA1) !important;
+	background-color: var(--offwhite) !important;
+	border: 1px solid var(--baseA1) !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: #fff !important;
+}
+
+.alert-secondary {
+	background-color: #fff !important;
+	border: 1px solid var(--muted) !important;
+}
+main a {
+	color: var(--frida) !important;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+}
+
+.bgaccent {
+	background-color: #bfddf5 !important;
+}
+
+.font-weight-bolder {
+	font-weight: 700 !important;
+}
+
+.cubano {
+	color: var(--baseA1) !important;
+}
+.btn-sm,
+.btn-sm a {
+	font-size: 0.8rem !important;
+}
+
+.btn-sm:focus,
+.btn:focus,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-sm:active,
+.btn:active {
+	background-color: var(--frida7) !important;
+}
+
+
+
+.border_container .border_hover {
+transition: .1s !important;
+}
+
+.border_container:hover .border_hover {
+
+	border-top: 3px solid var(--frida)!important;
+}
+
+
+.border_container:hover a, .border_container:hover h3, .border_container:hover i {
+
+	color: var(--frida)!important;
 }

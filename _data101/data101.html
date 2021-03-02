@@ -1,19 +1,27 @@
 ---
-layout: default
+layout: project
 title: "Data 101"
 permalink: "data101/"
+umbrella: "index"
 subtitle: "In our Data 101 series, we share what we've learned about the process of writing scripts, breaking things, identifying problems, and experiencing the joy of fixing them. We'll do our best to break things down so you can follow each and every step!"
+image_path: "https://images.unsplash.com/photo-1573496358349-d97974b2339b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80"
 ---
 
-<div class = "container  px-5 ">
-  		<h1 class="cubano text-center" style = "font-size: 4rem!important;">Data 101</h1>
-		<p
-			class="small  pb-2 text-center  mx-5 px-5"
 
-		> {{page.subtitle}}
-		</p>
+<div class="container z-depth-0 my-5 p-5">
+  <section>
+    <div class="row d-flex justify-content-center">
 
+		{% for post in site.data101 %}
+         {% if post.umbrella ==
+		"data101" %}
+        {% include cards/card-no_image.html %}
+{% endif %}
+{% endfor %}
 </div>
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
+
+
+
+
+  </section>
+</div>

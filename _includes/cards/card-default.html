@@ -17,7 +17,7 @@
 
 			<a href="{{site.baseurl}}{{post.permalink}}">
 				<div
-					class="mask  rgba-stylish-light align-self-center"
+					class="mask   rgba-stylish-light align-self-center"
 				></div>
 			</a>
 		</div>
@@ -30,7 +30,13 @@
 			</a>
 
 			<p class="m-0 mt-0 pt-0 pb-3 mb-5 small">{{post.subtitle}}</p>
-  {% include cards/card-footer.html %}
+			<p class="small text-muted">
+
+								<a  href="{{site.baseurl}}/authors/{{post.author}}">
+					{{post.author | capitalize}}
+				</a>
+ &nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+			</p>
 			</div>
 		</div>
 	</div>
