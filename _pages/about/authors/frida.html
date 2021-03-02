@@ -3,8 +3,8 @@ layout: default
 permalink: "authors/frida/"
 ---
 
-{% for auth in site.data.team_bios %}
+{% for auth in site.data.team %}
   {% if auth.namedowncase == 'frida' %}
-      {% include authorpage.html %}
+      {% include assorted/authorpage.html %}
 {% endif  %}
 {% endfor %}

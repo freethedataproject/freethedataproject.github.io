@@ -4,8 +4,8 @@ permalink: "authors/ania/"
 ---
 
 
-{% for auth in site.data.team_bios %}
+{% for auth in site.data.team %}
   {% if auth.namedowncase == 'ania' %}
-      {% include authorpage.html %}
+      {% include assorted/authorpage.html %}
 {% endif  %}
 {% endfor %}

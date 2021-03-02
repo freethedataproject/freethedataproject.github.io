@@ -2,9 +2,9 @@
 layout: default
 permalink: "authors/leni/"
 ---
-{% for auth in site.data.team_bios %}
+{% for auth in site.data.team %}
   {% if auth.namedowncase == 'leni' %}
-      {% include authorpage.html %}
+      {% include assorted/authorpage.html %}
 {% endif  %}
 {% endfor %}
 

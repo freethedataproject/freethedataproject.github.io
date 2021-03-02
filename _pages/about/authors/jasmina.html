@@ -2,9 +2,9 @@
 layout: default
 permalink: "authors/jasmina/"
 ---
-{% for auth in site.data.team_bios %}
+{% for auth in site.data.team %}
   {% if auth.namedowncase == 'jasmina' %}
-      {% include authorpage.html %}
+      {% include assorted/authorpage.html %}
 {% endif  %}
 {% endfor %}
 
