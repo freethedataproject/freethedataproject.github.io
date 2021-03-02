@@ -9,17 +9,19 @@ layout: default
 	.module {
 		position: relative;
 	}
+
 	.module::before {
 		content: "";
 		position: absolute;
 		top: 0;
-		left: 0;
-		width: 100%;
+		right: 0;
+		width: 97%;
 		height: 100%;
 		background-image: url({{page.image_path}});
 		background-size: cover;
 		background-position: center;
 	}
+
 	.module-inside {
 		/* This will make it stack on top of the ::before */
 		position: relative;
@@ -27,67 +29,36 @@ layout: default
 		padding-bottom: 100px;
 	}
 </style>
-<div class="container module">
-	<div class=" module-inside rounded-lg  px-0  z-depth-1-half ">
-		<div class="container    px-0 ">
-			<div class="row flex-center  ">
-				<div
-					class="text-lg-center p-lg-5 p-xs-2 p-sm-3 p-md-4 bg-white rounded-lg  col-md-8 col-sm-12 col-xs-12  text-left"
-					style="margin-left: -3px!important;"
-				>
-					<div
-						class="fraunces text-lg-center"
-						style="font-weight: 700 !important; font-size: 2.5rem!important;"
-					>
-						{{page.title}}
-					</div>
 
-					<p class="">{{page.subtitle}}</p>
-					<p class=" text-muted small  mt-2">
-						<a
-							class="text-muted small "
-							href="{{site.baseurl}}/authors/{{page.author}}"
-						>
-							{{page.author | capitalize}}
-						</a>
-
-						&nbsp;~&nbsp; {{page.date | date: "%d %b %y"}} &nbsp; ~ &nbsp;
-					<i class="fas fa-tag  ml-1"></i> &nbsp;&nbsp;
-
-						<span class="text-muted small ">
-							{% for tag in page.tags %}
-							<p
-								class="text-muted small "
-							>
-								{{tag | capitalize}} &nbsp;&nbsp;
-							</p>
-							{% endfor %}
-						</span>
-					</p>
-				</div>
-				<div class=" col-6 text-center"></div>
+<div class="container py-5 ">
+	<div class="row align-self-center mx-auto p-5">
+		<div class="module col-md-6 rounded-lg rounded">
+			<div class=" module-inside rounded-lg   rounded px-0  ">
 			</div>
+		</div>
+
+		<div class="col-md-6">
+					<div class="bg-white  rounded-lg pl-md-4" >
+						<div class="fraunces " style="font-weight: 700 !important; font-size: 2.5rem!important;">
+							{{page.title}}
+						</div>
+						<p class="">{{page.subtitle}}</p>
+						<p class=" text-muted small  mt-2">
+							<a class="text-muted small " href="{{site.baseurl}}/authors/{{page.author}}">
+								{{page.author | capitalize}}
+							</a>
+							&nbsp;~&nbsp; {{page.date | date: "%d %b %y"}}
+						</p>
+					</div>
 		</div>
 	</div>
 </div>
 
-<div
-	class="container contentcontainer"
-	style="padding-top: 55px!important;"
-	data-spy="scroll"
-	data-target="#toc"
->
+<div class="container contentcontainer" style="padding-top: 55px!important;" data-spy="scroll" data-target="#toc">
 	<div class="row ">
-		<div
-			class="float-left bgwhite, bg-white sticky-top "
-			style="background-color: #fff!important;"
-		>
+		<div class="float-left bgwhite, bg-white sticky-top " style="background-color: #fff!important;">
 			<p class="cubano">Navigation:</p>
-			<nav
-				id="toc"
-				data-toggle="toc"
-				style="background-color: #fff!important;"
-			></nav>
+			<nav id="toc" data-toggle="toc" style="background-color: #fff!important;"></nav>
 		</div>
 		<div class="container mt-0 pt-0 navbody">
 			{{content}}

@@ -61,23 +61,16 @@ title: "Home"
 <section class="px-5">
 	<div class="pt-5 pb-5"></div>
 
-	<div class="container p-md-5 py-3">
-		<div class="row px-5 align-self-center ">
-			<div class="d-inline px-3">
-				<h3 class="cubano pt-5 mb-1">
-					Free the Data wants to smash the black boxes that make data
-					inaccessible.
-				</h3>
-				<p class=" mt-1 mb-5">
-					We create articles, visual essays, and infographics that use data in
-					compelling, interactive, and visual ways, while breaking stereotypes
-					about who can do data analysis and what proper research topics look
-					like. We envision data that's:
-				</p>
+	<div class="container p-md-3" > 
+					<div class="px-lg-5 pb-4 px-xs-2">
+				<h1 class=" text-center cubano" style = " font-size: 1.8rem!important;"> Free the Data envisions data that's:<br>
+				</h1>
 			</div>
+
+		<div class="row px-5 ">
 			{% for i in site.data.siteinfo %} {% if i.ref == "ethical" %}
-			<div class="col-4 ">
-				<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
+			<div class="col-4 mb-2 ">
+				<h6 class="mb-0 font-weight-bold  sans mb-3 text-center ">{{ i.title }}</h6>
 
 				<div class="">
 					<p class="" style=" ">
@@ -86,8 +79,8 @@ title: "Home"
 				</div>
 			</div>
 			{% endif %} {% if i.ref == "engaging" %}
-			<div class="col-4 ">
-				<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
+			<div class="col-4 mb-2 ">
+				<h6 class="mb-0 font-weight-bold text-center  mb-3 sans ">{{ i.title }}</h6>
 				<div class="">
 					<p class="" style=" ">
 						{{ i.desc }}
@@ -95,8 +88,8 @@ title: "Home"
 				</div>
 			</div>
 			{% endif %} {% if i.ref == "empowering" %}
-			<div class="col-4 ">
-				<h5 class="mb-0 font-weight-bolder   ">{{ i.title }}</h5>
+			<div class="col-4 mb-2 ">
+				<h6 class="mb-0 font-weight-bold  sans text-center mb-3  ">{{ i.title }}</h6>
 				<div class="">
 					<p class="" style=" ">
 						{{ i.desc }}
@@ -112,9 +105,9 @@ title: "Home"
 </section>
 <section class="px-5">
 	<div class="pt-5 pb-5"></div>
-	<div class="container  p-md-5  ">
-		<h1 class=" cubano py-3 ">The Latest</h1>
-		<div class="row p-md-5 px-3">
+	<div class="container  p-md-3   ">
+		<h3 class=" cubano py-3 pl-1  mb-4 ">The Latest</h3>
+		<div class="row p-md-3  px-3">
 			<div class="col-md-6 ">
 				<div class="card ">
 					<div class="view p-0 rounded-lg">
@@ -172,8 +165,8 @@ title: "Home"
 
 <section class="">
 	<div class="container z-depth-0   p-4">
-		<div class="container  p-md-5 ">
-			<h1 class="  cubano">Explore</h1>
+		<div class="container  p-md-3  ">
+			<h3 class="    mb-4 cubano">Explore</h3>
 			<div class=" card-deck">
 				<div class="card">
 					<a href="{{site.baseurl}}/projects">
@@ -213,8 +206,8 @@ title: "Home"
 <div class="pt-5 pb-5"></div>
 <section class="">
 	<div class="container z-depth-0  p-4">
-		<div class="container p-md-5 ">
-			<h1 class="  cubano">Support the cause</h1>
+		<div class="container p-md-3  ">
+			<h3 class="    mb-4 cubano">Support the cause</h3>
 			<p>
 				Free the Data is, y'know, free. This means that we'll never place our
 				content behind a paywall, we won't collect or sell your data, and we'll
