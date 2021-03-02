@@ -40,6 +40,17 @@ footer {
 
  */
 
+a{transition:.1s!important;}
+a:hover {
+		background-color: var(--frida7) !important;
+
+}
+
+
+
+
+
+
 .bgmuted {
 	background-color: var(--offwhite) !important;
 }
