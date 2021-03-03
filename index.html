@@ -36,7 +36,7 @@ title: "Home"
 </section>
 <section class="container px-5  pb-5">
 	<div class="container pt-5 pb-5 flex-center">
-		<img src="{{site.baseurl}}/assets/brand/logo.png" class="img-fluid" />
+		<img src="{{ site.baseurl }}/assets/brand/logo.png" class="img-fluid" />
 	</div>
 	<div class="container pb-5  p-md-3">
 		<div class="row px-5 pt-5">
@@ -97,13 +97,13 @@ title: "Home"
 							class="card-img-top"
 							style="max-height:14rem!important;object-fit:cover!important;"
 						/>
-						<a href="{{site.baseurl}}/mission/#enough">
+						<a href="{{ site.baseurl }}/mission/#enough">
 							<div class="mask rgba-grey-slight "></div>
 						</a>
 					</div>
 					<div class="card-body p-2 rounded-lg ">
 						<h1 class="card-title font-weight-bolder"></h1>
-						<a href="{{site.baseurl}}/mission/#enough">
+						<a href="{{ site.baseurl }}/mission/#enough">
 							<h1 class="font-weight-bolder">
 								<i
 									type="button"
@@ -127,7 +127,7 @@ title: "Home"
 							and critique code, say, Enough with Big Tech!
 						</p>
 						<p class="text-muted small ">
-							<a href="{{site.baseurl}}/authors/frida">
+							<a href="{{ site.baseurl }}/authors/frida">
 								Free the Data
 							</a>
 							&nbsp;~&nbsp; 01 Mar 2021
@@ -157,7 +157,7 @@ title: "Home"
 
 						<div class=" card-deck mt-4">
 							<div class="card">
-								<a href="{{site.baseurl}}/projects">
+								<a href="{{ site.baseurl }}/projects">
 									<h5 class="mb-0 font-weight-bolder ">Projects →</h5>
 								</a>
 								<p class="small">
@@ -168,7 +168,7 @@ title: "Home"
 								</p>
 							</div>
 							<div class="card">
-								<a href="{{site.baseurl}}/resources">
+								<a href="{{ site.baseurl }}/resources">
 									<h5 class="mb-0 font-weight-bolder ">Resources →</h5>
 								</a>
 								<p class="small">
@@ -179,7 +179,7 @@ title: "Home"
 								</p>
 							</div>
 							<div class="card">
-								<a href="{{site.baseurl}}/data101">
+								<a href="{{ site.baseurl }}/data101">
 									<h5 class="mb-0 font-weight-bolder ">Data 101 →</h5>
 								</a>
 								<p class="small">
@@ -208,6 +208,7 @@ title: "Home"
 							consider donating to any of the following causes (or another data
 							justice-related cause of your choosing!):
 						</p>
+						{% include assorted/support.html %}
 					</div>
 				</div>
 			</section>

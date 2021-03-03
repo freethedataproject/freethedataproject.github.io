@@ -4,32 +4,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-	--offwhite: var(--offwhite);
-	--frida: #e86166;
-	--frida7: #fce6e7;
 	--sans: "Rubik", sans-serif;
 	--cubano: "cubano", sans-serif;
 	--fraunces: "Fraunces", serif;
-	--muted: #898989;
-	--baseA0: #31364c;
-	--baseA3: #e3e5f4;
-	--baseA7: #e3e5f4;
-		--frida: #E86166;
 	--dark: #31364c;
+	--baseA0: #31364c;
+	--muted: #9b9eb0;
 	--light: #fff;
-	--beige: #c48077 ;
-	--pink: #ff003d ;
-	--orange: #ff5600 ;
-	--red: #cd3b1a;
-	--green: #034d1e ;
-	--blue: #096c80 ;
-	--peri: #e3e5f4;
+	--offwhite: #fff;
+	--frida: #e86166;
+	--green: #034d1e;
+	--blue: #096c80;
+	--orange: #ff5600;
 	--yellow: #f6e049;
+	--frida7: #fce6e7;
+	--peri: #e3e5f4;
+
 }
 
-.highlight, .bgyellow mark {background-color: var(--yellow)!important;}
-.text-dark, .cubano {
-	color: var(--baseA0)!important;
+.highlight,
+.bgyellow mark {
+	background-color: var(--yellow) !important;
+}
+.text-dark,
+.cubano {
+	color: var(--baseA0) !important;
 }
 
 p {
@@ -40,7 +39,9 @@ p {
 	color: var(--muted) !important;
 }
 
-a{transition:.1s!important;}
+a {
+	transition: 0.1s !important;
+}
 
 .navbar a,
 .nav-item a,
@@ -66,7 +67,8 @@ a:hover h6 {
 .freethedata {
 	font-family: var(--cubano) !important;
 }
-a, a:hover,
+a,
+a:hover,
 .navbar-brand:hover a,
 .nav-item:hover a > .dropdown,
 .nav-link:hover a > .dropdown,
@@ -91,7 +93,8 @@ footer,
 .sans,
 p,
 span,
-small,.nav-item,
+small,
+.nav-item,
 .small,
 .btn,
 .btn-small,
@@ -102,7 +105,14 @@ small,.nav-item,
 .dropdown-item,
 li,
 li a,
-ul, ol, ol p, ul p, li p, ul a, ol a, li a, 
+ul,
+ol,
+ol p,
+ul p,
+li p,
+ul a,
+ol a,
+li a,
 ul a,
 .row p,
 a,
@@ -259,25 +269,25 @@ footer,
 	color: var(--baseA0) !important;
 	background-color: var(--offwhite) !important;
 	border: 1px solid var(--baseA0) !important;
-	transition: .2s !important;
-	box-shadow:none!important;
+	transition: 0.2s !important;
+	box-shadow: none !important;
 }
 .btn-primary:hover,
 .btn-sm:hover,
 .btn:hover {
 	background-color: var(--frida7) !important;
 	border: 1px solid var(--frida) !important;
-	box-shadow: 2px 2px 2px var(--frida)!important;
+	box-shadow: 2px 2px 2px var(--frida) !important;
 }
-
 
 .btn-primary:focus,
 .btn-primary:active {
 	background-color: var(--offwhite) !important;
-		box-shadow: 2px 2px 2px var(--frida)!important;
-
+	box-shadow: 2px 2px 2px var(--frida) !important;
 }
-.breadcrumb a {font-size: .8rem!important;}
+.breadcrumb a {
+	font-size: 0.8rem !important;
+}
 
 main a {
 	color: var(--frida) !important;
@@ -288,7 +298,6 @@ h2,
 h3 {
 	font-weight: 700;
 }
-
 
 .font-weight-bolder {
 	font-weight: 700 !important;
@@ -308,22 +317,29 @@ h3 {
 	background-color: var(--frida7) !important;
 }
 
-
-
 .border_container .border_hover {
-transition: .1s !important;
+	transition: 0.1s !important;
 }
 
 .border_container:hover .border_hover {
-
-	border-top: 3px solid var(--frida)!important;
+	border-top: 3px solid var(--frida) !important;
 }
 
-
-.border_container:hover a, .border_container:hover h3, .border_container:hover i {
-
-	color: var(--frida)!important;
+.border_container:hover a,
+.border_container:hover h3,
+.border_container:hover i {
+	color: var(--frida) !important;
 }
 
-.breadcrumb-item, .breadcrumb-item a, .breadcrumb li, .breadcrumb a {color: var(--muted)!important;}
-.breadcrumb-item:hover, .breadcrumb-item a:hover, .breadcrumb li:hover, .breadcrumb a:hover {color: var(--frida)!important;}
+.breadcrumb-item,
+.breadcrumb-item a,
+.breadcrumb li,
+.breadcrumb a {
+	color: var(--muted) !important;
+}
+.breadcrumb-item:hover,
+.breadcrumb-item a:hover,
+.breadcrumb li:hover,
+.breadcrumb a:hover {
+	color: var(--frida) !important;
+}
