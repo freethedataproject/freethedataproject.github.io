@@ -3,12 +3,12 @@ layout: post
 title: "Data Justice 101"
 permalink: /projects/data101/data-justice-101/
 tags: data-justice article
-image_path: "{{site.baseurl}}/media/posts/datajustice_hero.jpg"
-image_alt: ""
+image_path: "https://images.unsplash.com/photo-1507008597831-58f0590c635d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)"
+image_alt: "Photograph of a mural. The mural has red and green shapes arranged to look kind of like flowers. One set of shapes has a message symbol in the center, while the other has an arrow."
 author: frida
 umbrella: "datajustice"
 category: [data101]
-subtitle: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+subtitle: "Data justice involves a commitment to researching and analyzing data in ways that are equitable, morally righteous, and ethical; understanding how marginalized groups are helped or harmed by data-driven practices; and identifying and resolving structural inequities that surface in data-driven research."
 ---
 
 # What is data justice?
@@ -23,7 +23,7 @@ JUSTICE
 
 DATA JUSTICE
 
-- A commitment to researching and analyzing data in ways that are equitable, morally righteous, and ethical; understanding how marginalized groups are helped or harmed by data-driven practices; identifying and resolving structural inequities that surface in data-driven research.
+- A commitment to researching and analyzing data in ways that are equitable, morally righteous, and ethical; understanding how marginalized groups are helped or harmed by data-driven practices; and identifying and resolving structural inequities that surface in data-driven research.
 
 Broadly, the concept of data justice has emerged in response to two interrelated problems that occur in data-driven research. 
 
