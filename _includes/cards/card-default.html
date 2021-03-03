@@ -19,12 +19,20 @@
 		</div>
 
 		<div class="card-body pb-0" style="background-color: #fff!important;">
-			<a href="{{post.url}}">
+		<div class = "d-inline-flex">
+
+			<a href="{{site.baseurl}}{{cat}}">
 				<h4 class="font-weight-bolder">
 					{% for cat in post.category %} {% include icons/cats.html %} {%
-					endfor %} {{post.title}}&nbsp;
+					endfor %}
 				</h4>
 			</a>
+			<a href="{{post.url}}">
+				<h4 class="font-weight-bolder">
+				{{post.title}}
+				</h4>
+			</a>
+</div>
 
 			<p class="m-0 mt-0 pt-0 pb-3 mb-5 small">{{post.subtitle}}</p>
 			<p class="small text-muted">

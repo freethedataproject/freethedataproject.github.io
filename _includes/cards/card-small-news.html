@@ -11,15 +11,20 @@
 			</div>
 		</div>
 		<div class="col-md-9 mb-0 pb-0">
-			<a href="{{post.url}}">
-				<h6 class="font-weight-bolder">
-				
+		<div class = "d-inline-flex">
 
-				{% for cat in post.category %} {% include icons/cats.html %} {%
+			<a href="{{site.baseurl}}/projects/{{post.category}}">
+				<h6 class="font-weight-bolder">
+					{% for cat in post.category %} {% include icons/cats.html %} {%
 					endfor %}
-					{{post.title}} 
 				</h6>
 			</a>
+			<a href="{{post.url}}">
+				<h6 class="font-weight-bolder">
+				{{post.title}}
+				</h6>
+			</a>
+</div>
 
 			<p class="small text-muted">
 

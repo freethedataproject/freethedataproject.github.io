@@ -1,0 +1,46 @@
+<section class="container text-center">
+	<img src="{{ site.baseurl }}/assets/brand/logo.png" class="img-fluid" />
+	<div class = "pt-2 pb-2"></div>
+
+	<div class="row mt-5">
+		{% for i in site.data.siteinfo %} {% if i.ref == "ethical" %}
+		<div class="col-4 mb-2 ">
+			<h6 class="mb-0 font-weight-bold sans mb-3 text-center ">
+				{{ i.title }}
+			</h6>
+			<div>
+				<p class="text-left">
+					{{ i.desc }}
+				</p>
+			</div>
+		</div>
+		{% endif %} {% if i.ref == "engaging" %}
+		<div class="col-4 mb-2 ">
+			<h6 class="mb-0 font-weight-bold text-center mb-3 sans ">
+				{{ i.title }}
+			</h6>
+			<div>
+				<p class="text-left">
+					{{ i.desc }}
+				</p>
+			</div>
+		</div>
+		{% endif %} {% if i.ref == "empowering" %}
+		<div class="col-4 mb-2 ">
+			<h6 class="mb-0 font-weight-bold sans text-center mb-3 ">
+				{{ i.title }}
+			</h6>
+			<div>
+				<p class="text-left">
+					{{ i.desc }}
+				</p>
+			</div>
+		</div>
+		{% endif %} {% endfor %}
+	</div>
+	<div class="text-center">
+			<div class = "pt-2 pb-2"></div>
+
+		<a class="btn btn-sm mt-3" href="/mission">Learn more about us →</a>
+	</div>
+</section>

@@ -1,12 +1,20 @@
 <div class="col-md-6 col-lg-5  col-xl-4 border_container">
 	<div class="border-top border-light  border_hover pt-4"></div>
 
-	{% for cat in page.category %} {% include icons/cats.html %} {% endfor %}
+		<div class = "d-inline-flex">
+
+			<a href="{{site.baseurl}}{{cat}}">
+				<h3 class="font-weight-bolder">
+					{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}
+				</h3>
+			</a>
 	<a class="" href="{{page.url}}">
 		<h3 class="font-weight-bolder   mb-4" style="font-size:1.4rem!important;">
 			{{page.title}} →
 		</h3>
 	</a>
+</div>
 
 	<p class=" mb-5 pb-2">{{page.subtitle}}</p>
 </div>

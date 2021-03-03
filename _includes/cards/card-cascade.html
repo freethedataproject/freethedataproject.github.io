@@ -7,12 +7,22 @@
             </a>
           </div>
           <div class="card-body card-body-cascade text-center pb-0">
-          <a href="{{post.permalink}}" class = "fraunces">    <h4 class="fraunces">
-              <strong>
-             {% for cat in project.category %} {% include icons/cats.html %} {%
-					endfor %} {{project.title}}
-              </strong>
-            </h4></a>
+
+            		<div class = "d-inline-flex">
+
+            			<a href="{{site.baseurl}}/projects/{{project.category}}">
+				<h6 class="font-weight-bolder">
+					{% for cat in project.category %} {% include icons/cats.html %} {%
+					endfor %}
+				</h6>
+			</a>
+			<a href="{{project.url}}">
+				<h4 class="font-weight-bolder">
+				{{project.title}}
+				</h4>
+			</a>
+          </div>
+
             <p class="card-text">{{project.subtitle}}</p>
 
           </div>

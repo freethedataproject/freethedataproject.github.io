@@ -1,0 +1,60 @@
+<section class="container">
+	<div class="">
+		<h3 class=" cubano py-3 pl-1 ">The Latest</h3>
+		<hr />
+		<div class="row p-md-3 px-3 mt-4">
+			<div class="col-md-6 ">
+				<div class="card ">
+					<div class="view p-0 rounded-lg">
+						<img
+							src="https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+							alt=""
+							class="card-img-top"
+							style="max-height:14rem!important;object-fit:cover!important;"
+						/>
+						<a href="{{ site.baseurl }}/mission/#enough">
+							<div class="mask rgba-grey-slight "></div>
+						</a>
+					</div>
+					<div class="card-body p-2 rounded-lg ">
+						<h1 class="card-title font-weight-bolder"></h1>
+						<a href="{{ site.baseurl }}/mission/#enough">
+							<h1 class="font-weight-bolder">
+								<i
+									type="button"
+									class="las la-fist-raised mt-1"
+									data-toggle="tooltip"
+									data-placement="top"
+									title="Data Justice"
+								></i>
+								Manifesto
+							</h1>
+						</a>
+
+						<p class="small ">
+							In the year 2020, a year marked by an unprecedented global health
+							crisis, an all-time high in the number of people displaced by
+							conflict, violence and disasters, the worst wildfire season in
+							history, record hemispheric heat spelling an impending climate
+							catastrophe, never-before-seen political and economic divisions,
+							and countless upheavals against systemic racism, inequality,
+							corruption, and oppression, we, women who write, read, interpret,
+							and critique code, say, Enough with Big Tech!
+						</p>
+						<p class="text-muted small ">
+							<a href="{{ site.baseurl }}/authors/frida">
+								Free the Data
+							</a>
+							&nbsp;~&nbsp; 01 Mar 2021
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 card mt-0">
+				{% for post in site.posts limit:5 %} {% include
+				cards/card-small-news.html %} {% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

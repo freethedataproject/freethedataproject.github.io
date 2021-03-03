@@ -1,0 +1,44 @@
+<li class="media w-100 my-2">
+	<div class="d-flex mr-3">
+		<div class="view " style="height: 64px!important; width: 64px!important; object-fit: cover!important; object-position: left !important;"
+>
+			<img
+				style="height: 64px!important; width: 64px!important; object-fit: cover!important; object-position: left !important;"
+				class=""
+				src="{{post.image_path}}"
+				alt="{{post.image_alt}}"
+			/>
+			<a href="{{post.url}}">
+				<div class="mask rgba-white-light"></div>
+			</a>
+		</div>
+	</div>
+    <div class = "ml-4">
+        <div class = "row ">
+		<div class = "d-inline-flex">
+
+			<a href="{{site.baseurl}}{{cat}}">
+				<h6 class="font-weight-bolder">
+					{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}
+				</h6>
+			</a>
+			<a href="{{post.url}}">
+				<h6 class="font-weight-bolder">
+				{{post.title}}
+				</h6>
+			</a>
+</div>
+                </div>
+        <div class = "row ">
+
+		<p class="small text-muted">
+			<a href="{{site.baseurl}}/authors/{{post.author}}">
+				{{post.author | capitalize}}
+			</a>
+			&nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+		</p>
+        </div>
+                </div>
+
+</li>

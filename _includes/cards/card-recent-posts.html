@@ -1,12 +1,20 @@
   <li class="media my-3">
     <img class="d-flex mr-3" style = "height: 64px; width: 64px; object-fit: cover !important;" src="{{post.image_path}}" alt="{{post.image_alt}}">
     <div class="media-body">
-			<a href="{{post.url}}">
+		<div class = "d-inline-flex">
+
+			<a href="{{site.baseurl}}{{cat}}">
 				<h6 class="font-weight-bolder">
-{% for cat in post.category %} {% include icons/cats.html %} {%
-					endfor %}					{{post.title}}
+					{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}
 				</h6>
 			</a>
+			<a href="{{post.url}}">
+				<h6 class="font-weight-bolder">
+				{{post.title}}
+				</h6>
+			</a>
+</div>
       <p class = "card-text m-0 p-0 small   ">{{post.subtitle}}</p>
 
 			<p class="small text-muted">

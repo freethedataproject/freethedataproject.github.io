@@ -5,17 +5,24 @@
 		alt="{{post.image_alt}}"
 	/>
 	<a href="{{post.url}}">
-		<div class="mask  rgba-cyan-strong flex-center">
-		{% for cat in post.category %} {% include icons/cats.html %} {%
-					endfor %}	
-					
-											<a href="{{post.url}}">
-				<h1 class="p-2 p-md-4">
-					{{post.title}}&nbsp;
+		<div class="mask  rgba-cyan-strong">
+			<div class = "d-inline-flex  flex-center p-3">
+			<a href="{{site.baseurl}}{{cat}}">
+				<h1 class="font-weight-bolder">
+					{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}
 				</h1>
 			</a>
+			<a href="{{post.url}}">
+				<h1 class="font-weight-bolder">
+				{{post.title}}
+				</h1>
+		</a>
 
+			
+</div>
 
 		</div>
+
 	</a>
 </div>

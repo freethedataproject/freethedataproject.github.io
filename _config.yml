@@ -27,7 +27,7 @@ collections:
     output: true 
 
 # Paginate
-paginate: 10
+paginate: 6
 
 # Exclude from processing.
 
