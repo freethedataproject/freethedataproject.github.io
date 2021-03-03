@@ -31,20 +31,13 @@
 								style="width: 35px; height: 35px;"
 							/>
 
+							<a href="{{row.url}}" target="_blank">
+								<h4 class=" font-weight-bolder">
+									{% for cat in row.category %} {% include icons/cats.html %} {%
+									endfor %} {{ row.name }}
+								</h4>
+							</a>
 
-<div class = "d-inline-flex">
-			<a href="{{site.baseurl}}{{cat}}">
-				<h4 class="font-weight-bolder">
-					{% for cat in post.category %} {% include icons/cats.html %} {%
-					endfor %}
-				</h4>
-			</a>
-			<a href="{{row.url}}">
-				<h4 class="font-weight-bolder pl-2">
-				{{post.name}}
-				</h4>
-			</a>
-</div>
 							<p class="" style="font-size: .8rem!important;">{{ row.desc }}</p>
 						</div>
 					</div>
