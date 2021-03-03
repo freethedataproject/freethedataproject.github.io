@@ -91,7 +91,10 @@ padding-left: 110px!important;
 <div class="bgsplash ">
 	<div class="container px-5 py-5 varlight-container">
 		<p style = "font-size: 3rem !important;" class="title fraunces font-weight-bold text-center pt-3  px-md-5   accentfont">
-			{% for cat in page.category %} {% include icons/cats.html %} {% endfor %}
+										<a href="{{site.baseurl}}/projects/{{post.category}}">
+
+								{% for cat in post.category %} {% include icons/cats.html %} {%
+								endfor %}</a>
 			{{ page.title }}
 		</p>
 		<p class = "text-uppercase font-weight-medium text-center"><a class=" small " href="{{site.baseurl}}/authors/{{page.author}}">

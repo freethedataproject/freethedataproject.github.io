@@ -1,0 +1,46 @@
+<section class="mx-md-5 text-center text-lg-left">
+	<div class="row d-flex justify-content-center">
+		<div class="col-md-12">
+			<div class="row p-5">
+				<div class="col-lg-8 d-flex flex-column justify-content-between">
+					<div class="d-inline-flex">
+			<a href="{{site.baseurl}}/projects/{{post.category}}">
+							<h4 class="font-weight-bolder">
+								{% for cat in post.category %} {% include icons/cats.html %} {%
+								endfor %}
+							</h4>
+						</a>
+						<a href="{{post.url}}">
+							<h4 class="font-weight-bolder pl-2">
+								{{post.title}}
+							</h4>
+						</a>
+					</div>
+					<div>
+						<p class="m-0 mt-0 pt-0 pb-3 small text-muted">{{post.subtitle}}</p>
+
+						<p class=" mb-2">
+							<strong>
+								<a href="{{site.baseurl}}/authors/{{post.author}}">
+									{{post.author | capitalize}}
+								</a>
+							</strong>
+							&nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex mb-2 align-items-center">
+					<div
+						class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center"
+					>
+						<img
+							src="{{post.image_path}}"
+							class="rounded-circle img-fluid z-depth-1"
+							alt="{{post.image_alt}}"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

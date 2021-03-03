@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="col-md-9 mb-0 pb-0">
-		<div class = "d-inline-flex">
+		<div class = "d-inline-flex mb-0 pb-0">
 
 			<a href="{{site.baseurl}}/projects/{{post.category}}">
 				<h6 class="font-weight-bolder">
@@ -20,15 +20,15 @@
 				</h6>
 			</a>
 			<a href="{{post.url}}">
-				<h6 class="font-weight-bolder">
+				<h6 class="font-weight-bolder pl-1">
 				{{post.title}}
 				</h6>
 			</a>
 </div>
 
-			<p class="small text-muted">
+			<p class="text-muted mt-0 pt-0" style = "font-size: .84rem!important;">
 
-								<a  href="{{site.baseurl}}/authors/{{post.author}}">
+								<a class = "pl-4"   style = "font-size: .84rem!important;" href="{{site.baseurl}}/authors/{{post.author}}">
 					{{post.author | capitalize}}
 				</a>
  &nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}

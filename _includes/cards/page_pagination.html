@@ -17,14 +17,14 @@
         <div class = "row ">
 		<div class = "d-inline-flex">
 
-			<a href="{{site.baseurl}}{{cat}}">
+			<a href="{{site.baseurl}}/projects/{{post.category}}">
 				<h6 class="font-weight-bolder">
 					{% for cat in post.category %} {% include icons/cats.html %} {%
 					endfor %}
 				</h6>
 			</a>
 			<a href="{{post.url}}">
-				<h6 class="font-weight-bolder">
+				<h6 class="font-weight-bolder pl-2">
 				{{post.title}}
 				</h6>
 			</a>
