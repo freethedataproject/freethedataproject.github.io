@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Reflections on the Joy and Sorrow of Data Scraping."
-subtitle: "Now it is my turn to stand before students and talk about data. Which side do I take? Do I need to pick a side? Data is beautiful, exciting, and valuable, but also sensitive, dangerous, and even deadly if it gets in the wrong hands."
-author: "jasmina"
+author: jasmina
+title: Reflections on the Joy and Sorrow of Data Scraping.
+subtitle: Now it is my turn to stand before students and talk about data. Which side do I take? Do I need to pick a side? Data is beautiful, exciting, and valuable, but also sensitive, dangerous, and even deadly if it gets in the wrong hands.
 category: [thestruggle]
-author: "jasmina"
-tags: [data scraping, education,  philosophy]
-permalink: "/projects/thestruggle/jasmina/joy-and-sorrow-of-data-scraping"
-image_path: "https://images.unsplash.com/photo-1591786409812-8260a746fd1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1217&q=80"
-image_alt: "Photo of an old Commodoe monitor with a smiley, also a datasette and old instructions."
-icon_ref: "fa-graduation-cap"
-umbrella: "thestruggle"
+tags: data-scraping education philosophy
+permalink: /projects/thestruggle/joy-and-sorrow-of-data-scraping
+image_path: https://images.unsplash.com/photo-1591786409812-8260a746fd1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1217&q=80
+image_alt: Photo of an old Commodoe monitor with a smiley, also a datasette and old instructions.
 ---
 
 Whenever someone asks what my PhD program was like, I am always overcome by an insidious sense of guilt. The reason for this, as far as I can tell, is that instead of recalling a warm and fuzzy memory of camaraderie or an instance of pride and accomplishment, my brain defaults to a very particular feeling, a feeling that was a constant presence in my life as a doctoral student and which still weighs heavily on me whenever I meet a person interested in research: a feeling of split personality.

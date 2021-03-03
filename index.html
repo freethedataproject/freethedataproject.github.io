@@ -3,44 +3,48 @@ layout: default
 title: "Home"
 ---
 
-
 <!-- 
 				<h1 class="" style="font-weight: 600!important;color: var(--baseA0)!important; font-size: 1.5rem!important;font-weight: 700;"> Free the
 				Data wants to smash the black boxes that make data
 				inaccessible. </h1>
 
 -->
-<section class="z-depth-1" style = "background-color: var(--frida7)!important;">
-				<div class=" container px-lg-5  alert  " role="alert"   style = "background-color: var(--frida7)!important;">
-			<h1 class="cubano text-center ">
-				<i
-					class="las la-exclamation-triangle"
-					style="color: var(--frida)!important;"
-				></i>
-				This site is under construction.
-			</h1>
-			<p class=" small ">
-				Welcome to Free the Data! We're still getting settled in – feel free to
-				explore what's here, but please note that you may encounter the
-				occasional 404 page or stock photo. We hope to officially launch by
-				March/April 2021 – you can follow us on
-				<a href="https://twitter.com/freethedata_" target="_blank">Twitter</a>
-				for updates. We can't wait for you to see the completed site!
-				<i class="las la-heart textfrida"></i>
-			</p>
-		</div>
 
+<section class="z-depth-1" style="background-color: var(--frida7)!important;">
+	<div
+		class=" container px-lg-5  alert  "
+		role="alert"
+		style="background-color: var(--frida7)!important;"
+	>
+		<h1 class="cubano text-center ">
+			<i
+				class="las la-exclamation-triangle"
+				style="color: var(--frida)!important;"
+			></i>
+			This site is under construction.
+		</h1>
+		<p class=" small ">
+			Welcome to Free the Data! We're still getting settled in – feel free to
+			explore what's here, but please note that you may encounter the occasional
+			404 page or stock photo. We hope to officially launch by March/April 2021
+			– you can follow us on
+			<a href="https://twitter.com/freethedata_" target="_blank">Twitter</a>
+			for updates. We can't wait for you to see the completed site!
+			<i class="las la-heart textfrida"></i>
+		</p>
+	</div>
 </section>
 <section class="container px-5  pb-5">
-
-<div class = "container pt-5 pb-5 flex-center">
-	<img src = "{{site.baseurl}}/assets/brand/logo.png" class = "img-fluid" />
-</div>
-	<div class="container pb-5  p-md-3" > 
+	<div class="container pt-5 pb-5 flex-center">
+		<img src="{{site.baseurl}}/assets/brand/logo.png" class="img-fluid" />
+	</div>
+	<div class="container pb-5  p-md-3">
 		<div class="row px-5 pt-5">
 			{% for i in site.data.siteinfo %} {% if i.ref == "ethical" %}
 			<div class="col-4 mb-2 ">
-				<h6 class="mb-0 font-weight-bold sans mb-3 text-center ">{{ i.title }}</h6>
+				<h6 class="mb-0 font-weight-bold sans mb-3 text-center ">
+					{{ i.title }}
+				</h6>
 
 				<div class="">
 					<p class="" style=" ">
@@ -50,7 +54,9 @@ title: "Home"
 			</div>
 			{% endif %} {% if i.ref == "engaging" %}
 			<div class="col-4 mb-2 ">
-				<h6 class="mb-0 font-weight-bold text-center mb-3 sans ">{{ i.title }}</h6>
+				<h6 class="mb-0 font-weight-bold text-center mb-3 sans ">
+					{{ i.title }}
+				</h6>
 				<div class="">
 					<p class="" style=" ">
 						{{ i.desc }}
@@ -59,7 +65,9 @@ title: "Home"
 			</div>
 			{% endif %} {% if i.ref == "empowering" %}
 			<div class="col-4 mb-2 ">
-				<h6 class="mb-0 font-weight-bold sans text-center mb-3 ">{{ i.title }}</h6>
+				<h6 class="mb-0 font-weight-bold sans text-center mb-3 ">
+					{{ i.title }}
+				</h6>
 				<div class="">
 					<p class="" style=" ">
 						{{ i.desc }}
@@ -74,12 +82,11 @@ title: "Home"
 	</div>
 </section>
 
-
 <section class="px-5">
 	<div class="pt-5 pb-5"></div>
 	<div class="container p-md-3 ">
 		<h3 class=" cubano py-3 pl-1 ">The Latest</h3>
-		<hr>
+		<hr />
 		<div class="row p-md-3 px-3 mt-4">
 			<div class="col-md-6 ">
 				<div class="card ">
@@ -90,7 +97,9 @@ title: "Home"
 							class="card-img-top"
 							style="max-height:14rem!important;object-fit:cover!important;"
 						/>
-						<a href = "{{site.baseurl}}/mission/#enough"><div class="mask rgba-stylish-light "></div></a>
+						<a href="{{site.baseurl}}/mission/#enough">
+							<div class="mask rgba-grey-slight "></div>
+						</a>
 					</div>
 					<div class="card-body p-2 rounded-lg ">
 						<h1 class="card-title font-weight-bolder"></h1>
@@ -134,69 +143,85 @@ title: "Home"
 		</div>
 	</div>
 </section>
-<div class="pt-5 pb-5"></div>
 
-<section class="">
-	<div class="container z-depth-0 p-4">
-		<div class="container p-md-3 ">
-			<h3 class="cubano">Explore</h3>
-					<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="pt-5 pb-5"></div>
 
-			<div class=" card-deck mt-4">
-				<div class="card">
-					<a href="{{site.baseurl}}/projects">
-						<h5 class="mb-0 font-weight-bolder ">Projects →</h5>
-					</a>
-					<p class="small">
-						Infographics, dashboards, graphs and #DataArt: If we can find a way
-						to visualize something, we will. If it works, we'll share it here.
-						(And if it doesn't, we'll probably share it here anyway. F*CK
-						perfectionism.)
-					</p>
+			<section class="">
+				<div class="container z-depth-0 p-4">
+					<div class="container p-md-3 ">
+						<h3 class="cubano">Explore</h3>
+						<hr />
+
+						<div class=" card-deck mt-4">
+							<div class="card">
+								<a href="{{site.baseurl}}/projects">
+									<h5 class="mb-0 font-weight-bolder ">Projects →</h5>
+								</a>
+								<p class="small">
+									Infographics, dashboards, graphs and #DataArt: If we can find
+									a way to visualize something, we will. If it works, we'll
+									share it here. (And if it doesn't, we'll probably share it
+									here anyway. F*CK perfectionism.)
+								</p>
+							</div>
+							<div class="card">
+								<a href="{{site.baseurl}}/resources">
+									<h5 class="mb-0 font-weight-bolder ">Resources →</h5>
+								</a>
+								<p class="small">
+									We believe in smashing black boxes that make it hard to
+									access, analyze, or afford data. We strive to help make data
+									science more empowering by providing resources on data science
+									and data justice.
+								</p>
+							</div>
+							<div class="card">
+								<a href="{{site.baseurl}}/data101">
+									<h5 class="mb-0 font-weight-bolder ">Data 101 →</h5>
+								</a>
+								<p class="small">
+									In our Data 101 series, we share what we've learned about the
+									process of writing scripts, breaking things, identifying
+									problems, and experiencing the joy of fixing them.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="card">
-					<a href="{{site.baseurl}}/resources">
-						<h5 class="mb-0 font-weight-bolder ">Resources →</h5>
-					</a>
-					<p class="small">
-						We believe in smashing black boxes that make it hard to access,
-						analyze, or afford data. We strive to help make data science more
-						empowering by providing resources on data science and data justice.
-					</p>
+			</section>
+			<div class="pt-5 pb-5"></div>
+			<section class="">
+				<div class="container z-depth-0 p-4">
+					<div class="container p-md-3 ">
+						<h3 class="cubano">Support the cause</h3>
+						<hr />
+
+						<p class="mt-4">
+							Free the Data is, y'know, free. This means that we'll never place
+							our content behind a paywall, we won't collect or sell your data,
+							and we'll always make available any of our datsets that we're
+							legally allowed to share. If you're interested in financially
+							supporting the kind of work that we do here, we encourage you to
+							consider donating to any of the following causes (or another data
+							justice-related cause of your choosing!):
+						</p>
+					</div>
 				</div>
-				<div class="card">
-					<a href="{{site.baseurl}}/data101">
-						<h5 class="mb-0 font-weight-bolder ">Data 101 →</h5>
-					</a>
-					<p class="small">
-						In our Data 101 series, we share what we've learned about the
-						process of writing scripts, breaking things, identifying problems,
-						and experiencing the joy of fixing them.
-					</p>
+			</section>
+		</div>
+
+		<div class="col-md-4">
+			<div class="pt-md-5 mt-md-5"></div>
+			<div class="container z-depth-0 py-4">
+				<div class="container pl-md-3 py-md-3 ">
+					<div class="jekyll-twitter-plugin" align="center">
+						{% twitter https://twitter.com/freethedata_ maxwidth=350 limit=3 %}
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
-<div class="pt-5 pb-5"></div>
-<section class="">
-	<div class="container z-depth-0 p-4">
-		<div class="container p-md-3 ">
-			<h3 class="cubano">Support the cause</h3>
-					<hr>
-
-			<p class="mt-4">
-				Free the Data is, y'know, free. This means that we'll never place our
-				content behind a paywall, we won't collect or sell your data, and we'll
-				always make available any of our datsets that we're legally allowed to
-				share. If you're interested in financially supporting the kind of work
-				that we do here, we encourage you to consider donating to any of the
-				following causes (or another data justice-related cause of your
-				choosing!):
-			</p>
-
-
-
-		</div>
-	</div>
-</section>
+</div>

@@ -1,0 +1,21 @@
+<div class="mb-3 pics view">
+	<img
+		class="img-fluid z-depth-1 rounded"
+		src="{{post.image_path}}"
+		alt="{{post.image_alt}}"
+	/>
+	<a href="{{site.baseurl}}{{post.permalink}}">
+		<div class="mask  rgba-cyan-strong flex-center">
+		{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}	
+					
+											<a href="{{site.baseurl}}{{post.permalink}}">
+				<h1 class="p-2 p-md-4">
+					{{post.title}}&nbsp;
+				</h1>
+			</a>
+
+
+		</div>
+	</a>
+</div>

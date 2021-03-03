@@ -10,15 +10,26 @@
 	--sans: "Rubik", sans-serif;
 	--cubano: "cubano", sans-serif;
 	--fraunces: "Fraunces", serif;
-
 	--muted: #898989;
-	--baseA0: #25363f;
-	--baseA3: #eaeaea;
-	--baseA7: #f2f2f2;
+	--baseA0: #31364c;
+	--baseA3: #e3e5f4;
+	--baseA7: #e3e5f4;
+		--frida: #E86166;
+	--dark: #31364c;
+	--light: #fff;
+	--beige: #c48077 ;
+	--pink: #ff003d ;
+	--orange: #ff5600 ;
+	--red: #cd3b1a;
+	--green: #034d1e ;
+	--blue: #096c80 ;
+	--peri: #e3e5f4;
+	--yellow: #f6e049;
 }
 
+.highlight, .bgyellow mark {background-color: var(--yellow)!important;}
 .text-dark, .cubano {
-	color: var(--baseA0)!important;);
+	color: var(--baseA0)!important;
 }
 
 p {
@@ -91,7 +102,7 @@ small,.nav-item,
 .dropdown-item,
 li,
 li a,
-ul,
+ul, ol, ol p, ul p, li p, ul a, ol a, li a, 
 ul a,
 .row p,
 a,
@@ -189,7 +200,7 @@ html {
 }
 
 p {
-	font-size: 0.9rem !important;
+	font-size: 1rem !important;
 	font-weight: 400;
 }
 
@@ -197,7 +208,7 @@ p {
 .subtitle,
 .card p,
 a {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-weight: 400;
 }
 
@@ -209,7 +220,7 @@ a {
 }
 .small,
 small {
-	font-size: 0.9rem !important;
+	font-size: 1rem !important;
 	font-family: var(--sans) !important;
 }
 

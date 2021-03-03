@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Resources"
+umbrella: "index"
+permalink: "resources/"
+---
+
+{% include assorted/breadcrumbs.html %}
+
+<section>
+  <div class="container z-depth-0 my-5 p-5">
+    <div class="row d-flex justify-content-center">
+      {% for page in site.pages %}
+        {% if page.umbrella == "resources" %}
+          {% include cards/row-no-img.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

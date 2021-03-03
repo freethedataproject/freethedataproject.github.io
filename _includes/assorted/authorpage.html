@@ -41,7 +41,7 @@
 				</div>
 
 				{% for post in site.posts %} {% if post.author == {{auth.namedowncase}}
-				%} {% if post.author != "frida" %}
+				%} 
 
 				<div class="container mx-0 px-0 pt-5 ">
 					<h3 class=" mx-0 px-0">
@@ -54,7 +54,7 @@
 					</div>
 				</div>
 			</div>
-			{% endif %} {% endif %} {% endfor %}
+			{% endif %} {% endfor %}
 		</div>
 	</div>
 </div>

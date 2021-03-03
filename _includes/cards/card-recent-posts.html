@@ -3,14 +3,8 @@
     <div class="media-body">
 			<a href="{{site.baseurl}}{{post.permalink}}">
 				<h6 class="font-weight-bolder">
-					<i
-						type="button"
-						class="fas {{post.icon_ref}} mt-1"
-						data-toggle="tooltip"
-						data-placement="top"
-						title="{{post.category}}"
-					></i>
-					{{post.title}}
+{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}					{{post.title}}
 				</h6>
 			</a>
       <p class = "card-text m-0 p-0 small   ">{{post.subtitle}}</p>

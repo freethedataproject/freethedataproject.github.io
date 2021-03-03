@@ -1,10 +1,12 @@
 <div class="col-md-6 col-lg-5  col-xl-4 border_container">
 	<div class="border-top border-light  border_hover pt-4"></div>
-	<a class="" href="{{post.permalink}}">
+
+	{% for cat in page.category %} {% include icons/cats.html %} {% endfor %}
+	<a class="" href="{{page.url}}">
 		<h3 class="font-weight-bolder   mb-4" style="font-size:1.4rem!important;">
-{% for cat in row.category %} {% include icons/cats.html %} {%
-					endfor %}			{{post.title}} →
+			{{page.title}} →
 		</h3>
 	</a>
-	<p class=" mb-5 pb-2">{{post.subtitle}}</p>
+
+	<p class=" mb-5 pb-2">{{page.subtitle}}</p>
 </div>

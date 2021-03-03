@@ -3,13 +3,14 @@
             <img src="{{project.image_path}}" class="card-img-top"
               alt="{{project.image_alt}}" style = "height: 13rem!important;object-fit:cover!important;"/>
             <a href = "{{site.baseurl}}{{project.permalink}}">
-              <div class="mask rgba-white-slight"></div>
+              <div class="mask rgba-grey-slight"></div>
             </a>
           </div>
           <div class="card-body card-body-cascade text-center pb-0">
-          <a href="{{site.baseurl}}{{project.permalink}}" class = "fraunces">    <h4 class="fraunces">
+          <a href="{{post.permalink}}" class = "fraunces">    <h4 class="fraunces">
               <strong>
-              {{project.title}}
+             {% for cat in project.category %} {% include icons/cats.html %} {%
+					endfor %} {{project.title}}
               </strong>
             </h4></a>
             <p class="card-text">{{project.subtitle}}</p>

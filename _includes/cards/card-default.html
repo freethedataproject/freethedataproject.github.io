@@ -1,7 +1,5 @@
 <div class="col mb-4 item all {{ post.category }} item-content ">
-	<div
-		class="card p-0 bg-white  bgwhite drop-md  h-100  mb-2    "
-	>
+	<div class="card p-0 bg-white  bgwhite drop-md  h-100  mb-2    ">
 		<div
 			class="view "
 			style="height: 9rem!important; object-fit: cover!important; object-position: center !important;"
@@ -16,28 +14,25 @@
 			</div>
 
 			<a href="{{site.baseurl}}{{post.permalink}}">
-				<div
-					class="mask   rgba-white-light align-self-center"
-				></div>
+				<div class="mask rgba-white-light align-self-center"></div>
 			</a>
 		</div>
 
-		<div class="card-body pb-0  " style = "background-color: #fff!important;">
+		<div class="card-body pb-0" style="background-color: #fff!important;">
 			<a href="{{site.baseurl}}{{post.permalink}}">
 				<h4 class="font-weight-bolder">
-					{{post.title}}&nbsp;
+					{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %} {{post.title}}&nbsp;
 				</h4>
 			</a>
 
 			<p class="m-0 mt-0 pt-0 pb-3 mb-5 small">{{post.subtitle}}</p>
 			<p class="small text-muted">
-
-								<a  href="{{site.baseurl}}/authors/{{post.author}}">
+				<a href="{{site.baseurl}}/authors/{{post.author}}">
 					{{post.author | capitalize}}
 				</a>
- &nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+				&nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
 			</p>
-			</div>
 		</div>
 	</div>
 </div>

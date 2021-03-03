@@ -1,0 +1,47 @@
+---
+layout: project
+title: "FCK IT"
+author: frida
+permalink: "/projects/fckit"
+image_path: "https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+umbrella: "Projects"
+category: [project]
+subtitle: "If you love the possibilities that data has to offer, but feel restricted by the oppression and gatekeeping that surrounds it, you're not alone. In #TheStruggle, we reflect on the kinds of challenges, frustrations, and aspirations that we developed Free the Data to tackle."
+---
+
+<style>
+    
+      .gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%; 
+      }
+
+      @media (max-width: 450px) {
+        .gallery {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+          -webkit-column-width: 100%;
+          -moz-column-width: 100%;
+          column-width: 100%;
+        }
+      }
+
+    </style>
+<div class="container mb-5">
+
+    <div class="gallery mb-5" id="gallery">
+
+		{% for post in site.categories.fckit %}
+            {% include cards/card-gallery.html %}
+        {% endfor %}
+
+</div>
+
+
+</div>
+

@@ -28,7 +28,8 @@ id = "{{row.category}} all" >
 						    <img type="button" class=" float-right" data-toggle="tooltip" data-placement="top" title="{{row.category}}" src = "{{dir}}{{row.category}}.svg" style = "width: 35px; height: 35px;"/>
 
                     		<a href="{{row.url}}" target="_blank">
-			<h4 class=" font-weight-bolder">{{ row.name }}</h4>
+			<h4 class=" font-weight-bolder">{% for cat in row.category %} {% include icons/cats.html %} {%
+					endfor %} {{ row.name }}</h4>
 		</a>
 
 

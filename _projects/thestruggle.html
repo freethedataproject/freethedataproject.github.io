@@ -3,17 +3,15 @@ layout: project
 title: "The Struggle"
 permalink: "/projects/thestruggle"
 image_path: "https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+author: frida
 umbrella: "Projects"
+category: [project]
 subtitle: "If you love the possibilities that data has to offer, but feel restricted by the oppression and gatekeeping that surrounds it, you're not alone. In #TheStruggle, we reflect on the kinds of challenges, frustrations, and aspirations that we developed Free the Data to tackle."
 ---
 
 <div class="container mb-5">
-		{% for post in site.posts %}
-         {% if post.umbrella ==
-		"thestruggle" %}
-        {% include cards/card-default.html %}
-{% endif %}
-{% endfor %}
-
+		{% for post in site.categories.thestruggle %}
+            {% include cards/card-default.html %}
+        {% endfor %}
 </div>
 

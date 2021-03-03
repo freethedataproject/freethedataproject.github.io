@@ -7,19 +7,16 @@
 					class="img-fluid rounded-0"
 					alt="{{post.image_alt}}"
 				/>
-			<a href = "{{site.baseurl}}{{post.permalink}}">	<div class="mask rgba-stylish-light waves-effect waves-light"></div></a>
+			<a href = "{{site.baseurl}}{{post.permalink}}">	<div class="mask rgba-grey-slight waves-effect waves-light"></div></a>
 			</div>
 		</div>
 		<div class="col-md-9 mb-0 pb-0">
 			<a href="{{site.baseurl}}{{post.permalink}}">
 				<h6 class="font-weight-bolder">
-					<i
-						type="button"
-						class="fas {{post.icon_ref}} mt-1"
-						data-toggle="tooltip"
-						data-placement="top"
-						title="{{post.category}}"
-					></i>
+				
+
+				{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}
 					{{post.title}} 
 				</h6>
 			</a>
