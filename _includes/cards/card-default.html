@@ -13,13 +13,13 @@
 				/>
 			</div>
 
-			<a href="{{site.baseurl}}{{post.permalink}}">
+			<a href="{{post.url}}">
 				<div class="mask rgba-white-light align-self-center"></div>
 			</a>
 		</div>
 
 		<div class="card-body pb-0" style="background-color: #fff!important;">
-			<a href="{{site.baseurl}}{{post.permalink}}">
+			<a href="{{post.url}}">
 				<h4 class="font-weight-bolder">
 					{% for cat in post.category %} {% include icons/cats.html %} {%
 					endfor %} {{post.title}}&nbsp;

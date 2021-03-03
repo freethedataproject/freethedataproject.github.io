@@ -4,12 +4,12 @@
 		src="{{post.image_path}}"
 		alt="{{post.image_alt}}"
 	/>
-	<a href="{{site.baseurl}}{{post.permalink}}">
+	<a href="{{post.url}}">
 		<div class="mask  rgba-cyan-strong flex-center">
 		{% for cat in post.category %} {% include icons/cats.html %} {%
 					endfor %}	
 					
-											<a href="{{site.baseurl}}{{post.permalink}}">
+											<a href="{{post.url}}">
 				<h1 class="p-2 p-md-4">
 					{{post.title}}&nbsp;
 				</h1>
