@@ -47,9 +47,9 @@ Example2
 Example3 
 Example4 
 
-Data justice advocates draw attention to problems like these, study the outcomes of such inequities, strategize to develop solutions, and demand accountability and transparency from institutions that rely on data-driven practices. 
+Data justice advocates draw attention to problems like these, study the outcomes of such inequities, strategize to develop solutions, and demand accountability and transparency from institutions that rely on data-driven practices. In short, data justice matters because people matter. It matters that we use data to reduce, rather than reproduce, inequity, oppression, and marginalization. 
 
-In short, data justice matters because people matter. It matters that we use data to reduce, rather than reproduce, inequity, oppression, and marginalization. Any data-driven practice that contributes to inequity, oppression, and marginalization is a pressing concern. That said, many of the concerns that data justice advocates have raised target the following areas: 
+Any data-driven practice that contributes to inequity, oppression, and marginalization is a pressing concern. That said, many of the concerns that data justice advocates have raised target the following areas: 
 
 - Artificial intelligence
 - Policies 
