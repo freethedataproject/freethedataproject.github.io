@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_toc
 title: "Data Justice 101"
 permalink: /projects/data-101/data-justice-101/
 tags: data-justice article

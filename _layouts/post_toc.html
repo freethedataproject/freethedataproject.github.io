@@ -4,6 +4,112 @@ layout: default
 
 {% include assorted/breadcrumbs.html %}
 
+
+<style>
+	.highlight {
+		background-color: var(--yellow) !important;
+	}
+
+	hr {
+		margin-bottom: 50px !important;
+	}
+
+	.bgaccent {
+		padding-right: 100px !important;
+		padding-left: 100px !important;
+	}
+
+	.callout {
+		font-family: "Fraunces", serif !important;
+		border: 1px dotted var(--dark);
+		padding: 60px;
+	}
+
+	.gridimage {
+		height: 200px !important;
+		padding-top: 20px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.accentfont {
+		font-family: "Fraunces", serif !important;
+	}
+
+	.hero_text {
+		font-size: 1rem;
+	}
+ol, li, ol p, li p, ol a, li a, ul, ul a, ul p, ul li, ol li {
+		font-family: var(--sans) !important;
+		font-weight: 500 !important;
+
+}
+	.varlight {
+		color: var(--dark);
+		font-family: var(--sans) !important;
+	}
+
+	.varlight-container {
+		font-family: var(--sans) !important;
+		color: var(--dark);
+		background-color: rgba(255, 255, 255);
+	}
+
+	.bgsplash {
+		background-image: url("{{page.image_path}}");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 75px;
+	}
+
+	.bgsplash {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+@media (min-width: 1201px) {
+	.navbody {
+padding-left: 110px!important;
+margin-top: -200px !important;
+	}
+
+	.sticky-top {margin-left: -100px!important;}
+	
+}
+	.sticky-top {padding-top: 50px!important;}
+
+
+
+</style>
+
+<div class="bgsplash ">
+	<div class="container px-5 py-5 varlight-container">
+		<p style = "font-size: 3rem !important;" class="title fraunces font-weight-bold text-center pt-3  px-md-5   accentfont">
+										<a href="{{site.baseurl}}/projects/{{post.category}}">
+
+								{% for cat in post.category %} {% include icons/cats.html %} {%
+								endfor %}</a>
+			{{ page.title }}
+		</p>
+		<p class = "text-uppercase font-weight-medium text-center"><a class=" small " href="{{site.baseurl}}/authors/{{page.author}}">
+			{{page.author | capitalize}}
+		</a>
+		&nbsp;~&nbsp; {{page.date | date: "%d %b %y"}}</p>
+
+
+<div class = "px-md-5">
+		<div class="varlight mb-5 herop px-md-5">
+			<p class="text-md-center px-md-5">{{page.subtitle}}</p>
+		</div>
+	</div>
+</div>
+</div>
+
+
 <div
 	class="container contentcontainer"
 	style="padding-top: 55px!important;"
@@ -15,7 +121,8 @@ layout: default
 			<nav
 				id="toc"
 				data-toggle="toc"
-				style="background: none !important; margin-left: -25px!important;"
+				class = "d-none d-md-block"
+				style="background: none !important; margin-left: -185px!important;"
 			></nav>
 		</div>
 		<div class="container pl-md-5 mt-0 pt-0 navbody" style = "">
