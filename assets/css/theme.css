@@ -189,6 +189,11 @@ html {
 	}
 }
 
+.breadcrumb-item, .breadcrumb-item a, .breadcrumb-uppercase {
+	text-transform: uppercase !important;
+	font-size: .7rem !important;
+}
+
 .text-white {
 	color: var(--offwhite) ;
 }

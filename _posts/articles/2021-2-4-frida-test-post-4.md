@@ -3,7 +3,7 @@ layout: post
 title: Unbridled Optimism
 subtitle: Here's a subtitle, AKA a brief & catchy sentence or two that go below the title.
 author: frida
-category: [fckit]
+category: [fck-it]
 tags: article pop-culture misogyny textual analysis
 permalink: /example-post-descriptive-link-sarah
 image_path: https://images.unsplash.com/photo-1602578300917-d5213cf73fa2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1377&q=80

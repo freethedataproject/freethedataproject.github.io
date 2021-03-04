@@ -3,9 +3,9 @@ layout: post
 author: jasmina
 title: Reflections on the Joy and Sorrow of Data Scraping.
 subtitle: Now it is my turn to stand before students and talk about data. Which side do I take? Do I need to pick a side? Data is beautiful, exciting, and valuable, but also sensitive, dangerous, and even deadly if it gets in the wrong hands.
-category: [thestruggle]
+category: [the-struggle]
 tags: data-scraping education philosophy
-permalink: /projects/thestruggle/joy-and-sorrow-of-data-scraping
+permalink: /projects/the-struggle/joy-and-sorrow-of-data-scraping
 image_path: https://images.unsplash.com/photo-1591786409812-8260a746fd1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1217&q=80
 image_alt: Photo of an old Commodoe monitor with a smiley, also a datasette and old instructions.
 ---

@@ -1,0 +1,30 @@
+<div class = "col-md-6 col-sm-3 col-xs-2 pt-3"    >
+
+<div class = "view ">
+
+        <img src = "{{post.image_path}}" alt = "{{post.image_alt}}" class = "img-fluid" />
+
+<a href="{{post.url}}"><div class = "mask pattern-5"></div></a>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-sm-9 col-xs-10 align-self-center">
+	<div class = "d-inline-flex">
+
+			<a href="{{site.baseurl}}{{cat}}">
+				<h1 class="font-weight-bolder">
+					{% for cat in post.category %} {% include icons/cats.html %} {%
+					endfor %}
+				</h1>
+			</a>
+			<a href="{{post.url}}">
+				<h1 class="font-weight-bolder pl-2">
+				{{post.title}}
+				</h1>
+			</a>
+	</div>
+
+	<p class=" mb-5 pb-2">{{post.subtitle}}</p>
+</div>

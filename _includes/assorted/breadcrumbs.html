@@ -1,21 +1,22 @@
-<div class = "container  p-0" >
-    <nav aria-label="breadcrumb" class = "p-0" style="margin-top:-50px!important;">
-<ol class="breadcrumb p-1 px-2 mx-3" style = background-color:#fff!important;>
+<div class="container  p-0">
+  <nav aria-label="breadcrumb" class="p-0" style="margin-top:-50px!important;">
+    <ol class="breadcrumb  p-1 px-2 mx-3" style=background-color:#fff!important;>
 
-<li class = "breadcrumb-item"><a class = " " href='/index.html'>Home</a></li>
-{% assign crumbs = page.url | split: '/' %}
-{% for crumb in crumbs offset: 1 %}
-  {% if forloop.last %}
-  <span>&nbsp; / &nbsp;</span>
-    <a class = " " >{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
-  {% else %}
-  <span>&nbsp; / &nbsp;</span>
-    <a class = " " href="{% assign crumb_limit = forloop.index | plus: 1 %}{{site.baseurl}}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
-  {% endif %}
-{% endfor %}
+      <li class="breadcrumb-item text-uppercase breadcrumb-uppercase"><a class=" breadcrumb-item text-uppercase breadcrumb-uppercase" href='/index.html'>Home</a></li>
+      {% assign crumbs = page.url | split: '/' %}
+      {% for crumb in crumbs offset: 1 %}
+      {% if forloop.last %}
+      <span>&nbsp; / &nbsp;</span>
+      <a class=" breadcrumb-item text-uppercase breadcrumb-uppercase">{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
+      {% else %}
+      <span>&nbsp; / &nbsp;</span>
+      <a class=" breadcrumb-item text-uppercase breadcrumb-uppercase"
+        href="{% assign crumb_limit = forloop.index | plus: 1 %}{{site.baseurl}}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{
+        crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
+      {% endif %}
+      {% endfor %}
 
-</ol>
-</nav>
+    </ol>
+  </nav>
 
 </div>
-

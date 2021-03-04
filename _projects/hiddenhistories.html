@@ -1,21 +1,25 @@
 ---
 layout: project
 title: "Hidden Histories"
-permalink: "/projects/hiddenhistories"
+permalink: "/projects/hidden-histories"
 category: [project]
 author: frida
 umbrella: "Projects"
 image_path: "/media/projects/hiddenhistories.png"
-subtitle: "Here, we use infographic timelines to explore the stories that are(n't) told with data and about data."
+subtitle: "Using infographic timelines, we review the stories that are told with data and about data. Along the way, we try to uncover and make visible the stories aren't being told."
 ---
 
 <section>
   <div class="container z-depth-0 my-5 p-5">
-    <div class="row d-flex justify-content-center">
-      {% for post in site.categories.hiddenhistories %}
-          {% include cards/card-no_image.html %}
-      {% endfor %}
+        
+      {% for post in site.categories.hidden-histories %}
+<div class = "border_container">
+    <div class="row  border-top border-light  border_hover justify-content-center">
+      
+          {% include cards/card-project-history.html %}
     </div>
+</div>
+      {% endfor %}
   </div>
 </section>
 

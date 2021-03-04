@@ -1,5 +1,5 @@
 
-<li class = "breadcrumb-item"><a class = " font-weight-bold" href="{{ site.baseurl }}/">Home</a></li>
+<li class = "breadcrumb-item text-uppercase breadcrumb-uppercase"><a class = "breadcrumb-uppercase font-weight-bold" href="{{ site.baseurl }}/">Home</a></li>
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
 {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
@@ -10,9 +10,9 @@
     {% for breadcrumb_page in site.pages %}
         {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
         {% assign j = forLoopMaxInt | plus: 0 %}
-            <li class = "breadcrumb-item"  {% if i == j %}class="active"{% endif %}>
+            <li class = "breadcrumb-item text-uppercase breadcrumb-uppercase breadcrumb-uppercase"  {% if i == j %}class="active breadcrumb-item text-uppercase breadcrumb-uppercase breadcrumb-uppercase"{% endif %}>
                 {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
-                <a class = "fraunces font-weight-bold"  href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>
+                <a class = "fraunces breadcrumb-item text-uppercase breadcrumb-uppercase breadcrumb-uppercase font-weight-bold"  href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.breadcrumb}}</a>
             </li>
         {% endif %}
     {% endfor %}

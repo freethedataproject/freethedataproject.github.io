@@ -4,10 +4,10 @@ title: Publishing to the site via RMarkdown????
 subtitle: Maybe! Who freaking knows."
 author: frida
 tags: rmarkdown r
-umbrella: "data101"
-permalink: /projects/data101/rmarkdowntest
+umbrella: "data-101"
+permalink: /projects/data-101/rmarkdowntest
 image_path: https://images.unsplash.com/photo-1591786409812-8260a746fd1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1217&q=80
-category: [data101]
+category: [data-101]
 image_alt: Photo of an old Commodoe monitor with a smiley, also a datasette and old instructions.
 output: jekyllthat::jekylldown
 ---
