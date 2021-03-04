@@ -163,7 +163,7 @@ h6 {
 
 #toc,
 main {
-	background-color: var(--offwhite) !important;
+	background-color: var(--offwhite) ;
 }
 
 .text-frida {
@@ -190,7 +190,7 @@ html {
 }
 
 .text-white {
-	color: var(--offwhite) !important;
+	color: var(--offwhite) ;
 }
 
 #toc a {
