@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post_toc
 title: Publishing to the site via RMarkdown????
 subtitle: Maybe! Who freaking knows."
 author: frida

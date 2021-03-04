@@ -9,89 +9,13 @@ image_path: "/media/projects/hiddenhistories.png"
 subtitle: "Here, we use infographic timelines to explore the stories that are(n't) told with data and about data."
 ---
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-
-<style>
-    .xl_selected .item_hidden {
-        display: block ;
-    }
-    .sm_selected .item_hidden {
-        display: none ;
-    }
-    .comparison_section,
-    .single_section {
-        transition: 0.4s ease-in !important;
-    }
-</style>
-
-
-
-<section class="">
-    <div class="container size_toggle pb-5">
-        <h6 class="sans font-weight-bold text-muted">Card size:</h6>
-                <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked />
-            <label class="form-check-label sans text-muted" for="exampleRadios2">
-                Hidden
-            </label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                 />
-            <label class="form-check-label sans text-muted   " for="exampleRadios1">
-                Revealed
-            </label>
-        </div>
+<section>
+  <div class="container z-depth-0 my-5 p-5">
+    <div class="row d-flex justify-content-center">
+      {% for post in site.categories.hiddenhistories %}
+          {% include cards/card-no_image.html %}
+      {% endfor %}
     </div>
-    <div class=" timeline-container"
-        style="background-image: url({{site.baseurl}}/assets/svg/assorted/time_line.svg)!important; object-fit: cover !important; height: 100%!important; width: auto; background-position: center !important;">
-        {% for row in site.data.historytest %}
-        <div class="  row ">
-           {% include projects/timeline-comparison.html %}
-        </div>
-
-        {% endfor %}
-    </div>
+  </div>
 </section>
 
-<script>
-    $(document).ready(function () {
-
-                $(".single_section").addClass("sm_selected");
-                $(".comparison_section").addClass("sm_selected");
-                $(".single_section").removeClass("xl_selected");
-                $(".comparison_section").removeClass("xl_selected");
-
-
-        $("#exampleRadios1").change(function () {
-            if ($(this).prop("checked") == true) {
-                $(".single_section").addClass("xl_selected");
-                $(".comparison_section").addClass("xl_selected");
-                $(".single_section").removeClass("sm_selected");
-                $(".comparison_section").removeClass("sm_selected");
-            } else {
-                $(".single_section").addClass("sm_selected");
-                $(".comparison_section").addClass("sm_selected");
-                $(".single_section").removeClass("xl_selected");
-                $(".comparison_section").removeClass("xl_selected");
-            }
-        });
-
-        $("#exampleRadios2").change(function () {
-            if ($(this).prop("checked") == true) {
-                $(".single_section").addClass("sm_selected");
-                $(".comparison_section").addClass("sm_selected");
-                $(".single_section").removeClass("xl_selected");
-                $(".comparison_section").removeClass("xl_selected");
-            } else {
-                $(".single_section").addClass("xl_selected");
-                $(".comparison_section").addClass("xl_selected");
-                $(".single_section").removeClass("sm_selected");
-                $(".comparison_section").removeClass("sm_selected");
-            }
-        });
-    });
-</script>

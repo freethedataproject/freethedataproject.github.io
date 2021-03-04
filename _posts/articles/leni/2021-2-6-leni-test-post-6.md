@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_toc
 title: "Algorithms Are Not Gods, FFS."
 subtitle: "Rule-based systems as god-like figures & fetish. Why is it way more complicated and why researchers are complicit to this language, too.."
 author: leni
@@ -7,7 +7,7 @@ category: [fckit]
 tags: article technochauvinism silicon-valley researchers-lenses
 permalink: /projects/fckit/algorithms-are-not-gods
 image_path: https://images.unsplash.com/photo-1529612700005-e35377bf1415?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
-image_alt: Alt text for the image goes here.
+image_alt: Alt text for the image goes here
 ---
 
 # This is a level-1 heading.

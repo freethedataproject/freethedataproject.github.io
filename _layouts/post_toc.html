@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include assorted/breadcrumbs.html %}
+
+<div
+	class="container contentcontainer"
+	style="padding-top: 55px!important;"
+	data-spy="scroll"
+	data-target="#toc"
+>
+	<div class="row ">
+		<div class="float-left, sticky-top " style="background: none !important; ">
+			<nav
+				id="toc"
+				data-toggle="toc"
+				style="background: none !important; margin-left: -25px!important;"
+			></nav>
+		</div>
+		<div class="container pl-md-5 mt-0 pt-0 navbody" style = "">
+			{{content}}
+		</div>
+	</div>
+</div>
