@@ -1,37 +1,42 @@
-<div class="single-news">
+<div class="single-news my-2 border-bottom" >
 	<div class="row mb-1">
-		<div class="col-md-3 ">
+		<div class="col-md-4 ">
 			<div class="view z-depth-0 mb-3">
 				<img
 					src="{{post.image_path}}"
-					class="img-fluid rounded-0"
+					class="img-fluid rounded-0 rounded-lg"
 					alt="{{post.image_alt}}"
+					style = "object-fit: cover !important;"
 				/>
-			<a href = "{{post.url}}">	<div class="mask rgba-grey-slight waves-effect waves-light"></div></a>
+				<a href="{{post.url}}">
+					<div class="mask rgba-grey-slight waves-effect waves-light  rounded-lg"></div>
+				</a>
 			</div>
 		</div>
-		<div class="col-md-9 mb-0 pb-0">
-		<div class = "d-inline-flex mb-0 pb-0">
+		<div class="col-md-8 mb-0 pb-0" style = "margin-left: -14px!important; padding-top:1px!important;">
+			<div class="d-inline-flex mb-0 pb-0">
+				<a href="{{site.baseurl}}/projects/{{post.category}}">
+					<h6 class="font-weight-bolder">
+						{% for cat in post.category %} {% include icons/cats.html %} {%
+						endfor %}
+					</h6>
+				</a>
+				<a href="{{post.url}}">
+					<h6 class="font-weight-bolder pl-1">
+						{{post.title}}
+					</h6>
+				</a>
+			</div>
 
-			<a href="{{site.baseurl}}/projects/{{post.category}}">
-				<h6 class="font-weight-bolder">
-					{% for cat in post.category %} {% include icons/cats.html %} {%
-					endfor %}
-				</h6>
-			</a>
-			<a href="{{post.url}}">
-				<h6 class="font-weight-bolder pl-1">
-				{{post.title}}
-				</h6>
-			</a>
-</div>
-
-			<p class="text-muted mt-0 pt-0" style = "font-size: .84rem!important;">
-
-								<a class = "pl-4"   style = "font-size: .84rem!important;" href="{{site.baseurl}}/authors/{{post.author}}">
+			<p class="text-muted mt-0 pt-0" style="font-size: .84rem!important;">
+				<a
+					class="pl-4"
+					style="font-size: .84rem!important;"
+					href="{{site.baseurl}}/authors/{{post.author}}"
+				>
 					{{post.author | capitalize}}
 				</a>
- &nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
+				&nbsp;~&nbsp; {{post.date | date: "%d %b %y"}}
 			</p>
 		</div>
 	</div>
