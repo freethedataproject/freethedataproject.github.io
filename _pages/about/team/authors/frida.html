@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: "authors/frida/"
+---
+
+{% for auth in site.data.pageinfo.team %}
+  {% if auth.namedowncase == 'frida' %}
+{% include_relative /authorpage.html %}{% endif  %}
+{% endfor %}

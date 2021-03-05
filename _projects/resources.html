@@ -11,7 +11,7 @@ permalink: "resources/"
     <div class="row d-flex justify-content-center">
       {% for page in site.pages %}
         {% if page.umbrella == "resources" %}
-          {% include cards/row-no-img.html %}
+          {% include_relative /cards/resources-card.html %}
         {% endif %}
       {% endfor %}
     </div>

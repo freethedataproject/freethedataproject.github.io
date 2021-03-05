@@ -40,11 +40,22 @@ layout: default
 	.hero_text {
 		font-size: 1rem;
 	}
-ol, li, ol p, li p, ol a, li a, ul, ul a, ul p, ul li, ol li {
+
+	ol,
+	li,
+	ol p,
+	li p,
+	ol a,
+	li a,
+	ul,
+	ul a,
+	ul p,
+	ul li,
+	ol li {
 		font-family: var(--sans) !important;
 		font-weight: 500 !important;
+	}
 
-}
 	.varlight {
 		color: var(--dark);
 		font-family: var(--sans) !important;
@@ -70,43 +81,49 @@ ol, li, ol p, li p, ol a, li a, ul, ul a, ul p, ul li, ol li {
 		align-items: center;
 		justify-content: center;
 	}
-@media (min-width: 1201px) {
-	.navbody {
-padding-left: 110px!important;
+
+	@media (min-width: 1201px) {
+		.navbody {
+			padding-left: 110px !important;
+		}
+
+		.sticky-top {
+			margin-left: -100px !important;
+		}
 	}
 
-	.sticky-top {margin-left: -100px!important;}
-	
-}
-	.sticky-top {padding-top: 50px!important;}
-
-
-
+	.sticky-top {
+		padding-top: 50px !important;
+	}
 </style>
 
 <div class="bgsplash ">
 	<div class="container px-5 py-5 varlight-container">
-		<p style = "font-size: 3rem !important;" class="title fraunces font-weight-bold text-center pt-3  px-md-5   accentfont">
-										<a href="{{site.baseurl}}/projects/{{post.category}}">
-
-								{% for cat in post.category %} {% include icons/cats.html %} {%
-								endfor %}</a>
+		<p
+			style="font-size: 3rem !important;"
+			class="title fraunces font-weight-bold text-center pt-3  px-md-5   accentfont"
+		>
+			<a href="{{site.baseurl}}/projects/{{post.category}}">
+				{% for cat in post.category %} {% include icons/cats.html %} {% endfor
+				%}
+			</a>
 			{{ page.title }}
 		</p>
-		<p class = "text-uppercase font-weight-medium text-center"><a class=" small " href="{{site.baseurl}}/authors/{{page.author}}">
-			{{page.author | capitalize}}
-		</a>
-		&nbsp;~&nbsp; {{page.date | date: "%d %b %y"}}</p>
+		<p class="text-uppercase font-weight-medium text-center">
+			<a class=" small " href="{{site.baseurl}}/authors/{{page.author}}">
+				{{page.author | capitalize}}
+			</a>
+			&nbsp;~&nbsp; {{page.date | date: "%d %b %y"}}
+		</p>
 
-
-<div class = "px-md-5">
-		<div class="varlight mb-5 herop px-md-5">
-			<p class="text-md-center px-md-5">{{page.subtitle}}</p>
+		<div class="px-md-5">
+			<div class="varlight mb-5 herop px-md-5">
+				<p class="text-md-center px-md-5">{{page.subtitle}}</p>
+			</div>
 		</div>
 	</div>
 </div>
-</div>
 
-<div class = "container contentcontainer" 	style="padding-top: 55px!important;">
-			{{content}}
+<div class="container pt-5" style="max-width:900px!important;">
+	{{content}}
 </div>

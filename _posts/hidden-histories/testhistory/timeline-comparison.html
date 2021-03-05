@@ -1,0 +1,39 @@
+<div class = "col-12 comparison_section h-100 ">
+<div class = "row flex-center ">
+    <div class = "col-5 card historycard h-100">
+            <div class = "card-body">
+                    <p class = "text-muted">{{row.left_date}}</p>
+                    <h1 class = "  timeline_heading">
+                        {{row.left_title}}
+                    </h1>
+                    <p class = "timeline_desc ">
+                        {{row.left_desc}}
+                    </p>
+            </div>
+    </div>
+
+<div class = "col-2">
+<img src = "{{site.baseurl}}/assets/svg/ink/circle-filled.svg" class = "img-fluid" style   = "object-fit: contain !important; object-position: center!important; " />
+</div>
+
+
+
+    <div class = "  col-5 card historycard h-100" >
+
+            <div class = "card-body  item_hidden  h-100 " >
+                    <p class = "text-muted  ">{{row.right_date}}</p>
+                    <h1 class = "  timeline_heading  ">
+                        {{row.right_title}}
+                    </h1>
+                    <p class = "timeline_desc   ">
+                        {{row.right_desc}}
+                    </p>
+            </div>
+
+    </div>
+
+</div>
+<!--  style = "background-image: url({{row.left_image_path}})!important; background-size: cover !important;" -->
+
+</div>
+

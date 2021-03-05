@@ -18,7 +18,7 @@ project_landing_page: no
 
 	{% for project in site.projects %} {% if project.umbrella == "Projects" %}
 	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
-		{% include cards/card-cascade.html %}
+		{% include_relative /cards/project-card.html %}
 	</div>
 	{% endif %} {% endfor %}
 	</section>

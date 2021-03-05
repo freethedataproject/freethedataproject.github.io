@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Test Timeline"
+image_path: "https://images.unsplash.com/photo-1577895865930-c4c6f8dc7e91?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80"
+image_alt: "Painted wall depicting famous feminist rebel characters - near to the Picasso Museum, La Rambla, Barcelona"
+tags: data-collection article
+umbrella: "hidden-histories"
+permalink: /projects/hidden-histories/test-timeline
+category: [hidden-histories]
+subtitle: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"
+---
+
+<style>
+    .xl_selected .item_hidden {
+        display: block ;
+    }
+    .sm_selected .item_hidden {
+        display: none ;
+    }
+    .comparison_section,
+    .single_section {
+        transition: 0.4s ease-in !important;
+    }
+
+
+        .historycard {border: 1px dashed var(--baseA0)!important;}
+
+</style>
+<section class="">
+    <div class="container size_toggle pb-5">
+        <h6 class="sans font-weight-bold text-muted">Card size:</h6>
+                <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked />
+            <label class="form-check-label sans text-muted" for="exampleRadios2">
+                Hidden
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                 />
+            <label class="form-check-label sans text-muted   " for="exampleRadios1">
+                Revealed
+            </label>
+        </div>
+    </div>
+    <div class=" timeline-container"
+        style="background-image: url({{site.baseurl}}/assets/svg/assorted/time_line.svg)!important; object-fit: cover !important; height: 100%!important; width: auto; background-position: center !important;">
+        {% for row in site.data.historytest %}
+        <div class="  row my-3 my-lg-5">
+           {% include_relative /timeline-comparison.html %}
+        </div>
+
+        {% endfor %}
+    </div>
+</section>
+
+<script src = "{{site.baseurl}}/assets/js/projects/timeline_reveal.js"></script>

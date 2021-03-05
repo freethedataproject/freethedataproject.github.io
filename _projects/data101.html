@@ -14,7 +14,7 @@ image_alt: "Photograph of a woman sitting at a table, reading a book. On the tab
   <div class="container z-depth-0 my-5 p-5">
     <div class="row d-flex justify-content-center">
       {% for post in site.categories.data-101 %}
-          {% include cards/card-no_image.html %}
+          {% include_relative /cards/data101-card.html %}
       {% endfor %}
     </div>
   </div>

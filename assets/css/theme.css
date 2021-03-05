@@ -6,7 +6,7 @@
 :root {
 	--sans: "Rubik", sans-serif;
 	--cubano: "cubano", sans-serif;
-	--fraunces: "Fraunces", serif;
+	--fraunces: "Rubik", sans-serif;
 	--dark: #31364c;
 	--baseA0: #31364c;
 	--muted: #9b9eb0;
@@ -142,6 +142,8 @@ p,
 	color: var(--baseA0);
 }
 
+article h1 {font-size: 3rem !important; padding-bottom: 35px!important;}
+
 h1,
 h2,
 h3,
@@ -200,6 +202,7 @@ html {
 
 #toc a {
 	color: var(--baseA0);
+		font-size: .7rem !important;
 	font-weight: 400 !important;
 }
 

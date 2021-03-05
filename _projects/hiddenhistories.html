@@ -15,8 +15,7 @@ subtitle: "Using infographic timelines, we review the stories that are told with
       {% for post in site.categories.hidden-histories %}
 <div class = "border_container">
     <div class="row  border-top border-light  border_hover justify-content-center">
-      
-          {% include cards/card-project-history.html %}
+          {% include_relative /cards/history-card.html %}
     </div>
 </div>
       {% endfor %}
