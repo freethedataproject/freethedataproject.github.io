@@ -6,30 +6,68 @@
 :root {
 	--sans: "Rubik", sans-serif;
 	--cubano: "cubano", sans-serif;
-	--fraunces: "Rubik", sans-serif;
-	--dark: #31364c;
-	--baseA0: #31364c;
-	--muted: #9b9eb0;
+	--fraunces: "Space Grotesk", serif;
+	--space: "Space Grotesk", serif;
+	--dark: #2c3837;
+	--baseA0: #2c3837;
+	--muted: #b1b1b1;
 	--light: #fff;
-	--offwhite: #fff;
+	--accent-color: #2c3837;
 	--frida: #e86166;
-	--green: #034d1e;
-	--blue: #096c80;
-	--orange: #ff5600;
-	--yellow: #f6e049;
-	--frida7: #fce6e7;
-	--peri: #e3e5f4;
-
+	--frida-light: #fae1e2;
+	--turq-dark: #173847 ;
+	--turq-medium: #0b6974 ;
+	--turq-bright: #10d6d6 ;
+	--turq-light: #eafffb ;
+	--highlight: #c4ff55;
 }
+
+
+.text-frida {
+	color: var(--frida) !important;
+}
+.text-fridal {
+	color: var(--frida-light) !important;
+}
+.text-tqd {
+	color: var(--turq-dark) !important;
+}
+
+.text-tqm {
+	color: var(--turq-medium) !important;
+}
+
+.text-tqb {
+	color: var(--turq-bright) !important;
+}
+.text-tql {
+	color: var(--turq-light) !important;
+}
+
+.bg-frida {
+	background-color: var(--frida) !important;
+}
+.bg-fridal {
+	background-color: var(--frida-light) !important;
+}
+.bg-tqd {background-color: var(--turq-dark)!important;}
+
+.bg-tqm {
+	background-color: var(--turq-medium) !important;
+}
+.bg-tqb {background-color: var(--turq-bright)!important;}
+
+.bg-tql {
+	background-color: var(--turq-light) !important;
+}
+
+
 
 .highlight,
 .bgyellow mark {
-	background-color: var(--yellow) !important;
+	background-color: var(--highlight) !important;
 }
-.text-dark,
-.cubano {
-	color: var(--baseA0) !important;
-}
+
 
 p {
 	color: var(--baseA0);
@@ -46,7 +84,7 @@ a {
 .navbar a,
 .nav-item a,
 .nav-link a {
-	font-weight: 500 !important;
+	font-weight: 400 !important;
 	color: var(--baseA0) !important;
 }
 .textxl {
@@ -59,7 +97,7 @@ a:hover h3,
 a:hover h4,
 a:hover h5,
 a:hover h6 {
-	background-color: var(--frida7) !important;
+	background-color: var(--frida-light) !important;
 	color: var(--frida) !important;
 }
 
@@ -78,11 +116,14 @@ a:hover,
 	color: var(--frida) !important;
 }
 
+
+h2, h3, h4, h5, h6 {color: var(--accent-color)!important;}
+
 .navbar,
 footer,
 .page-footer,
 .dropdown-menu {
-	background-color: var(--offwhite) !important;
+	background-color: var(--light) !important;
 }
 .footerbg {
 	width: 100% !important;
@@ -150,7 +191,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--fraunces) !important;
+	font-family: var(--space) !important;
 	color: var(--baseA0);
 }
 
@@ -165,12 +206,9 @@ h6 {
 
 #toc,
 main {
-	background-color: var(--offwhite) ;
+	background-color: var(--light) ;
 }
 
-.text-frida {
-	color: var(--frida) !important;
-}
 
 html {
 	scroll-behavior: smooth !important;
@@ -197,7 +235,7 @@ html {
 }
 
 .text-white {
-	color: var(--offwhite) ;
+	color: var(--light) ;
 }
 
 #toc a {
@@ -206,14 +244,10 @@ html {
 	font-weight: 400 !important;
 }
 
-/* TYPOGRAPHY */
-
-.textfrida {
-	color: var(--frida) !important;
-}
 
 .cubano {
-	font-family: var(--cubano) !important;
+	font-family: var(--space) !important;
+	letter-spacing: .8px !important;
 	font-weight: 400 !important;
 }
 
@@ -258,13 +292,13 @@ footer,
 }
 
 .accentfont {
-	font-family: var(--fraunces) !important;
+	font-family: var(--space) !important;
 	color: var(--baseA0) !important;
 	font-weight: 600 !important;
 }
 
 .fraunces {
-	font-family: var(--fraunces) !important;
+	font-family: var(--space) !important;
 }
 
 .accentcolor {
@@ -275,7 +309,7 @@ footer,
 .btn {
 	text-transform: none !important;
 	color: var(--baseA0) !important;
-	background-color: var(--offwhite) !important;
+	background-color: var(--light) !important;
 	border: 1px solid var(--baseA0) !important;
 	transition: 0.2s !important;
 	box-shadow: none !important;
@@ -283,14 +317,14 @@ footer,
 .btn-primary:hover,
 .btn-sm:hover,
 .btn:hover {
-	background-color: var(--frida7) !important;
+	background-color: var(--frida-light) !important;
 	border: 1px solid var(--frida) !important;
 	box-shadow: 2px 2px 2px var(--frida) !important;
 }
 
 .btn-primary:focus,
 .btn-primary:active {
-	background-color: var(--offwhite) !important;
+	background-color: var(--light) !important;
 	box-shadow: 2px 2px 2px var(--frida) !important;
 }
 .breadcrumb a {
@@ -304,8 +338,11 @@ main a {
 h1,
 h2,
 h3 {
-	font-weight: 700;
+	font-weight: 700 !important;
 }
+h4 {font-weight: 500 !important;}
+
+h6 {font-weight: 400 !important;}
 
 .font-weight-bolder {
 	font-weight: 700 !important;
@@ -322,7 +359,7 @@ h3 {
 .btn-primary:active,
 .btn-sm:active,
 .btn:active {
-	background-color: var(--frida7) !important;
+	background-color: var(--frida-light) !important;
 }
 
 .border_container .border_hover {
@@ -344,6 +381,7 @@ h3 {
 .breadcrumb li,
 .breadcrumb a {
 	color: var(--muted) !important;
+	font-weight: 400 !important;
 }
 .breadcrumb-item:hover,
 .breadcrumb-item a:hover,

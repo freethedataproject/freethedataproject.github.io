@@ -26,7 +26,7 @@ subtitle: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cons
         .historycard {border: 1px dashed var(--baseA0)!important;}
 
 </style>
-<section class="">
+<section class="p-5">
     <div class="container size_toggle pb-5">
         <h6 class="sans font-weight-bold text-muted">Card size:</h6>
                 <div class="form-check">
@@ -46,7 +46,7 @@ subtitle: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cons
     </div>
     <div class=" timeline-container"
         style="background-image: url({{site.baseurl}}/assets/svg/assorted/time_line.svg)!important; object-fit: cover !important; height: 100%!important; width: auto; background-position: center !important;">
-        {% for row in site.data.historytest %}
+        {% for row in site.data.hidden-histories.historytest %}
         <div class="  row my-3 my-lg-5">
            {% include_relative /timeline-comparison.html %}
         </div>

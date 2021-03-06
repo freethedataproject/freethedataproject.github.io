@@ -1,11 +1,13 @@
 ---
 layout: default
 title: "ALL THE THINGS"
-umbrella: "resources"
 author: frida
 permalink: "resources/allthethings"
+category: [resources]
 subtitle: "We're talking about resources. All of them. Whether you're interested in data science, viz, art, justice,
 journalism, or feminism, there's probably something here for you."
+image_path: "/assets/brand/allthethings.svg"
+image_alt: "Site mascot, Frida, in the style of Hyperbole and a Half."
 ---
 
 <script
@@ -16,17 +18,17 @@ journalism, or feminism, there's probably something here for you."
 
 {% include assorted/breadcrumbs.html %}
 
-<div class="container" style="max-height: 40vh!important;">
+<div class="container" style="max-height: 30vh!important;">
 	<div class="view">
 		<img
 			src="{{site.baseurl}}/assets/brand/allthethings.svg"
 			alt=""
 			class="img-fluid"
-			style="max-height: 40vh !important; object-fit: cover !important;"
+			style="max-height: 30vh !important; object-fit: cover !important;"
 		/>
 		<div class="mask flex-start">
-			<div class=" col-6">
-				<h1 class="cubano text-center" style="font-size: 4rem!important;">
+			<div class=" col-6 pt-5">
+				<h1 class="cubano text-center" style="font-size: 3rem!important;">
 					{{page.title}}
 				</h1>
 				<p class="d-none d-md-block">{{page.subtitle}}</p>
@@ -85,8 +87,8 @@ journalism, or feminism, there's probably something here for you."
 				style="padding-left: 30px!important;"
 			>
 				<div class="row" id="panelfilter">
-					{% for row in site.data.allthethings %} {% include
-					cards/card-panel.html %} {% endfor %}
+					{% for row in site.data.resources.allthethings %} {% include_relative
+					/resources-item.html %} {% endfor %}
 				</div>
 			</div>
 		</div>

@@ -9,10 +9,8 @@ permalink: "resources/"
 <section>
   <div class="container z-depth-0 my-5 p-5">
     <div class="row d-flex justify-content-center">
-      {% for page in site.pages %}
-        {% if page.umbrella == "resources" %}
+      {% for page in site.categories.resources %}
           {% include_relative /cards/resources-card.html %}
-        {% endif %}
       {% endfor %}
     </div>
   </div>

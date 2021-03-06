@@ -3,19 +3,192 @@ layout: default
 title: "Home"
 ---
 
-{% include assorted/index/construction.html %}
 <div class="pt-5 pb-5"></div>
 
-{% include assorted/index/hero.html %}
+<section class=" align-self-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <img src="{{ site.baseurl }}/assets/brand/logo-colors/logo-dark-turq.svg" class="img-fluid" style="
+						max-height: 30vh !important;
+						object-fit: contain !important;
+						width: auto;
+					" />
+            </div>
+
+            <div class="col-md-6 pt-md-5 mt-md-3  align-self-center">
+                <div class="container align-self-center z-depth-0 alert" role="alert">
+                    <h1 class=" font-weight-bolder  ">
+                        <i class="las la-exclamation-triangle" style="color: var(--frida)!important;"></i>
+                        This site is under construction.
+                    </h1>
+                    <p class=" small ">
+                        Welcome to Free the Data! We're still getting settled in – feel free to
+                        explore what's here, but please note that you may encounter the occasional
+                        404 page or stock photo. We hope to officially launch by March/April 2021
+                        – you can follow us on
+                        <a href="https://twitter.com/freethedata_" target="_blank">Twitter</a>
+                        for updates. We can't wait for you to see the completed site!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<section class="container ">
+    <h1 class="font-weight-bolder">Explore</h1>
+    <hr />
+    <div class=" card-deck mt-4">
+        <div class="card">
+            <a href="{{ site.baseurl }}/projects">
+                <h5 class="font-weight-bold text-uppercase  my-2 ">Projects →</h5>
+            </a>
+            <p class="small">
+                Infographics, dashboards, graphs and #DataArt: If we can find a way to
+                visualize something, we will. If it works, we'll share it here. (And if
+                it doesn't, we'll probably share it here anyway. F*CK perfectionism.)
+            </p>
+        </div>
+        <div class="card">
+            <a href="{{ site.baseurl }}/resources">
+                <h5 class="font-weight-bold  text-uppercase my-2 ">Resources →</h5>
+            </a>
+            <p class="small">
+                We believe in smashing black boxes that make it hard to access, analyze,
+                or afford data. We strive to help make data science more empowering by
+                providing resources on data science and data justice.
+            </p>
+        </div>
+        <div class="card">
+            <a href="{{ site.baseurl }}/data101">
+                <h5 class="font-weight-bold  text-uppercase my-2 ">Data 101 →</h5>
+            </a>
+            <p class="small">
+                In our Data 101 series, we share what we've learned about the process of
+                writing scripts, breaking things, identifying problems, and experiencing
+                the joy of fixing them.
+            </p>
+        </div>
+    </div>
+</section>
 <div class="pt-5 pb-5"></div>
 <div class="pt-5 pb-5"></div>
 
-{% include assorted/index/latest.html %}
+<section class="container">
+    <div class="">
+        <h1 class=" font-weight-bolder py-3 pl-1 ">The Latest</h1>
+        <hr />
+        <div class="row p-md-3 px-3 mt-4">
+            <div class="col-md-8  ">
+                <div class="card pr-5">
+                    <div class="view p-0 rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="" class="card-img-top"
+                            style="max-height:14rem!important;object-fit:cover!important;" />
+                        <a href="{{ site.baseurl }}/mission/#enough">
+                            <div class="mask rgba-grey-slight "></div>
+                        </a>
+                    </div>
+                    <div class="card-body p-2 rounded-lg ">
+                        <a href="{{ site.baseurl }}/mission/#enough">
+                            <h3 class="font-weight-bold">
+                                <i type="button" class="las la-fist-raised mt-1" data-toggle="tooltip"
+                                    data-placement="top" title="Data Justice"></i>
+                                Manifesto
+                            </h3>
+                        </a>
+
+                        <p class="small ">
+                            In the year 2020, a year marked by an unprecedented global health
+                            crisis, an all-time high in the number of people displaced by
+                            conflict, violence and disasters, the worst wildfire season in
+                            history, record hemispheric heat spelling an impending climate
+                            catastrophe, never-before-seen political and economic divisions,
+                            and countless upheavals against systemic racism, inequality,
+                            corruption, and oppression, we, women who write, read, interpret,
+                            and critique code, say, Enough with Big Tech!
+                        </p>
+                        <p class="text-muted small ">
+                            <a href="{{ site.baseurl }}/authors/frida">
+                                Free the Data
+                            </a>
+                            &nbsp;~&nbsp; 01 Mar 2021
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 card mt-0">
+                {% for post in site.posts limit:5 %}
+
+                <div class="single-news my-2 border-bottom">
+                    <div class="row mb-1">
+                        <div class="col-md-4 ">
+                            <div class="view z-depth-0 mb-3">
+                                <img src="{{post.image_path}}" class="img-fluid rounded-0 rounded-lg"
+                                    alt="{{post.image_alt}}" style="object-fit: cover !important;" />
+                                <a href="{{post.url}}">
+                                    <div class="mask rgba-grey-slight waves-effect waves-light  rounded-lg"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-0 pb-0"
+                            style="margin-left: -14px!important; padding-top:1px!important;">
+
+                                <a href="{{post.url}}">
+                                    <h6 class="font-weight-bold fraunces pl-1">
+                                        {{post.title}}
+                                    </h6>
+                                </a>
+                            <div class="d-inline-flex mb-0 pb-0">
+                                <a href="{{site.baseurl}}/projects/{{post.category}}">
+                                    <h6 class="font-weight-bold">
+                                        {% for cat in post.category %} {% include icons/cats.html %} {%
+                                        endfor %}
+                                    </h6>
+                                </a> 
+
+                            <p class="text-muted mt-0 pt-0" style="font-size: .84rem!important;">
+                             &nbsp;~&nbsp;   {{post.date | date: "%d %b %y"}} &nbsp;~&nbsp;
+
+                                <a style="font-size: .84rem!important;" href="{{site.baseurl}}/authors/{{post.author}}">
+                                    {{post.author | capitalize}}
+                                </a>
+                            </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
 <div class="pt-5 pb-5"></div>
 <div class="pt-5 pb-5"></div>
 
-{% include assorted/index/explore.html %}
-<div class="pt-5 pb-5"></div>
-<div class="pt-5 pb-5"></div>
 
-{% include assorted/index/support.html %}
+<section class="container">
+    <h1 class="font-weight-bolder">Support the cause</h1>
+    <hr />
+    <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
+
+    <p class="mt-4">
+        Free the Data is, y'know, free. This means that we'll never place our
+        content behind a paywall, we won't collect or sell your data, and we'll
+        always make available any of our datsets that we're legally allowed to
+        share. If you're interested in financially supporting the kind of work
+        that we do here, we encourage you to consider donating to any of the
+        following causes (or another data justice-related cause of your
+        choosing!):
+    </p>
+
+    <div class="col-md-8 mx-auto">
+
+    </div>
+</section>

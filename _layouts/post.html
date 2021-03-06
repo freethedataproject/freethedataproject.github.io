@@ -3,6 +3,8 @@ layout: default
 ---
 
 {% include assorted/breadcrumbs.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/js/chartjs/chart.min.css" />
+
 
 <style>
 	.highlight {
@@ -19,7 +21,7 @@ layout: default
 	}
 
 	.callout {
-		font-family: "Fraunces", serif !important;
+		font-family: "Space Grotesk", sans-serif;
 		border: 1px dotted var(--dark);
 		padding: 60px;
 	}
@@ -34,7 +36,7 @@ layout: default
 	}
 
 	.accentfont {
-		font-family: "Fraunces", serif !important;
+		font-family: "Space Grotesk", sans-serif !important;
 	}
 
 	.hero_text {
@@ -127,3 +129,4 @@ layout: default
 <div class="container pt-5" style="max-width:900px!important;">
 	{{content}}
 </div>
+<script src=" {{ site.baseurl }}/assets/js/chartjs/chart.min.js"></script>

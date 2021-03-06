@@ -4,7 +4,11 @@ _site
 .jekyll-metadata
 .env
 .vscode
-.r
+.Rhistory
+.RData
+.sass-cache/
+.rmd
+.Rproj
 .Rproj.user
 .drafts_and_unpublished
 vendor
