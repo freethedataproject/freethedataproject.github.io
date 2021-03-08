@@ -1,11 +1,12 @@
 <div class = "row my-4" style = "border-top: 1px dashed var(--muted)!important;">
-    <div class = "col-9" style = "width: 800px!important;">
-        <canvas id="bar-chart{{row.xid}}" width="{{row.width}}" height="100" style = "color: #fae1e2; background-color: #fae1e2;"></canvas>
-    </div>
 
-    <div class = "col-3">
+    <div class = "col-3 w-100">
         <h2 class = "font-weight-bolder">{{row.title}}</h2>
         <p style = "font-size: .86rem!important">{{row.desc}}</p>
     </div>
+        <div class = "col-9" style = "width: 800px!important;">
+        <canvas id="bar-chart{{row.xid}}" width="{{row.width}}" height="100" style = "color: #fae1e2; background-color: #fae1e2;"></canvas>
+    </div>
+
 </div>
 
