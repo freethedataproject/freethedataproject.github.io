@@ -39,31 +39,34 @@ image_alt: "Site mascot, Frida, in the style of Hyperbole and a Half."
 }
 
 
-.category_button {
-	font-family: var(--space)!important;
-	padding: 3px !important;
-	color: var(--baseA0)!important;
-	transition: all .35s ease !important;
-}
-
-.selected {
-	background-color: var(--frida-light)!important;
-	text-transform: uppercase !important;
-	text-decoration: underline!important;
-	color: var(--frida)!important;
-	transition: all .35s ease !important;
-}
 
 
-.category_button:hover, .selected:hover {
-		color: var(--frida)!important;
-		background-color: var(--frida-light)!important;
-		text-transform: uppercase !important;
-}
+
 
 main {
 	max-width: 96vw !important;
 }
+
+	.category_button {
+		font-family: var(--space) !important;
+		font-weight: 400 !important;
+		font-size: .85rem !important;
+		transition: all .35s ease !important;
+		padding: 4px !important;
+		border: 1px solid var(--frida) !important;
+	}
+
+	.category_button:hover, .selected:hover {
+		text-decoration: underline !important;
+		background-color: var(--offwhite)!important;
+		border: 1px solid var(--frida) !important;
+	}
+
+	.selected {
+		color: var(--frida) !important;
+		background-color: var(--frida-light)!important;
+		border: 1px solid var(--frida) !important;
+	}
 
 </style>
 
@@ -93,41 +96,41 @@ main {
 <div class=" p-0">
 	<div class="row">
 		<div class="col-sm-12 col-xs-12 col-md-2 mt-5 text-right">
-			<div class="filter filter-basic sticky-top pt-5 mt-5 text-right">
-				<h6 class="font-weight-bold text-uppercase  text-right mt-4 pt-4">
+			<div class="filter filter-basic sticky-top pt-5 mt-5 text-left">
+				<h6 class="font-weight-bold text-uppercase  text-left mt-4 pt-4">
 					filter
 				</h6>
-				<hr />
-				<ul class="filter-nav list-unstyled d-md-block d-sm-inline-flex  text-md-right">
-					<li class="z-depth-0 px-1 active selected catbtn category_button   " data-filter="all">
+				<hr class = "w-75"/>
+				<ul class="filter-nav list-unstyled d-md-block d-sm-inline-flex  text-left">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 active selected catbtn category_button   " type = "button" data-filter="all">
 						All
 					</li>
-					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="news">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  " type = "button" data-filter="news">
 						News
 					</li>
-					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="tutorial">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  " type = "button" data-filter="tutorial">
 						Tutorials
 					</li>
 					<li
-						class="z-depth-0 px-1 catbtn category_button  "
-						data-filter="inspiration"
+						class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  "
+						type = "button" data-filter="inspiration"
 					>
 						Inspiration
 					</li>
 
-					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="design">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  " type = "button" data-filter="design">
 						Design
 					</li>
 
-					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="assets">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  " type = "button" data-filter="assets">
 						Assets
 					</li>
 
-					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="dataset">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  " type = "button" data-filter="dataset">
 						Dataset
 					</li>
 
-					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="package">
+					<li class="z-depth-0 px-1 w-75 text-md-right my-2 catbtn category_button  " type = "button" data-filter="package">
 						Package
 					</li>
 				</ul>
