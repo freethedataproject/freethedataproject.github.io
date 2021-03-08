@@ -1,0 +1,63 @@
+---
+layout: default
+title: Projects
+permalink: projects/
+subtitle: "Articles, visualizations, guides, resources — Free the Data offers a little bit of everything. Below, you can use filters to find what you're looking for, or you can dive into one of our curated collections."
+---
+
+<script
+	src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"
+></script>
+
+<style>
+
+	@media only screen and (max-width: 899px) {
+	main {
+		padding-left: 40px !important;
+		padding-right: 40px!important;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	main {
+		padding-left: 100px !important;
+		padding-right: 100px!important;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	main {
+		padding-left: 250px !important;
+		padding-right: 250px!important;
+	}
+}
+</style>
+
+<div class="container text-center" style="max-height: 30vh!important;">
+				<h1 class="font-weight-bolder " style="font-size: 3rem!important;">
+					PROJECTS
+				</h1>
+				<p class="d-none d-md-block">
+
+Articles, visualizations, guides, resources — Free the Data offers a little bit of everything. Below, you can use filters to find what you're looking for, or you can dive into one of our curated collections.
+
+				</p>
+	</div>
+
+
+<div class=" mb-5 ">
+
+
+
+
+		<section class="row text-center mt-5">
+
+	{% for project in site.projects %} {% if project.umbrella == "index" %}
+	<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
+		{% include_relative /assets/cards/project-card.html %}
+	</div>
+	{% endif %} {% endfor %}
+	</section>
+</div>

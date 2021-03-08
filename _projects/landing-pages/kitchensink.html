@@ -1,0 +1,119 @@
+---
+layout: project
+title: "Kitchen Sink"
+permalink: "/projects/kitchen-sink"
+author: frida
+umbrella: "index"
+image_path: "/media/projects/kitchen-sink/11-23-2020__frida.png"
+image_alt: "Screenshot of a Slack conversation. The message says, 'also, @Ania astutely pointed out that Frida(?) is
+LITERALLY MADE OF CODE!!!! [exploding-head emoji]' The message includes side-by-side screenshots of Frida. In one, she
+appears as she usually does. In the other, her SVG code is shown."
+subtitle: "Iteration. Iteration. Iteration. Explore the development of Free the Data from the initial ideas that we
+began with in 2020 to the current site you're on right now. Click or tap on any image to open a full-size version."
+---
+
+<style>
+	.labelbutton {
+		font-family: var(--space) !important;
+		font-weight: 400 !important;
+		font-size: .85rem !important;
+		transition: all .35s ease !important;
+		padding: 4px !important;
+		border: 1px solid var(--frida) !important;
+	}
+
+	.labelbutton:hover, .labelbutton label:hover {
+		text-decoration: underline !important;
+		background-color: var(--offwhite)!important;
+		border: 1px solid var(--frida) !important;
+	}
+
+	.selected {
+		color: var(--frida) !important;
+		background-color: var(--frida-light)!important;
+		border: 1px solid var(--frida) !important;
+	}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+
+	<section class="mt-5">
+		<div class="row">
+			<div class="col-md-3 col-lg-2 col-sm-12 col-xs-12">
+				<div class="filter-nav  navbar sticky-top">
+					<div class="list-unstyled d-md-block d-inline d-sm-inline d-xs-inline ">
+						<label class="flex-center mt-2">
+							<span class=" pt-2  text-center font-weight-bold text-muted text-uppercase">Filters:</span>
+						</label>
+						<label class="selected active labelbutton categorybutton w-100" type="radio"
+							data-filter="all">
+							All
+						</label>
+						<label class="categorybutton labelbutton w-100" type="radio" data-filter="name">
+							Name
+						</label>
+						<label class="categorybutton labelbutton w-100" type="radio" data-filter="logo">
+							Logo
+						</label>
+						<label class="categorybutton labelbutton w-100" type="radio" data-filter="frida">
+							Frida
+						</label>
+						<label class="categorybutton labelbutton w-100" type="radio" data-filter="landing">
+							Landing Page
+						</label>
+						<label class="categorybutton labelbutton w-100" type="radio"
+							data-filter="tinkering">
+							Tinkering
+						</label>
+						<label class="categorybutton labelbutton w-100" type="radio" data-filter="random">
+							Assorted
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-9 col-lg-10 col-sm-12 col-xs-12">
+
+
+				<ol class="filter-gallery list-unstyled ">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-md-3 row-cols-lg-3">
+						{% for row in site.data.kitchen-sink.kitchensink %} {%
+						include_relative /assets/cards/kitchensink-image-modal.html %} {%
+						endfor %}
+					</div>
+				</ol>
+			</div>
+
+		</div>
+		<script>
+			$(document).ready(function () {
+				$(".categorybutton").click(function () {
+					var filterValue = $(this).attr("data-filter");
+
+					// show all items
+					if (filterValue == "all") {
+						$(".all").show("slow");
+					} else {
+						// hide all items
+						$(".all")
+							.not("." + filterValue)
+							.hide("slow");
+						// and then, show only items with selected data-filter value
+						$(".all")
+							.filter("." + filterValue)
+							.show("slow");
+					}
+				});
+
+
+				$('.labelbutton').on('click', function () {
+					$('.labelbutton').removeClass('selected');
+					$(this).addClass('selected');
+				});
+
+			});
+		</script>
+	</section>

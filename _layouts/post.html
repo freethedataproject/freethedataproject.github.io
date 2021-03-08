@@ -101,16 +101,16 @@ layout: default
 
 <div class="bgsplash ">
 	<div class="container px-5 py-5 varlight-container">
-		<p
-			style="font-size: 3rem !important;"
-			class="title fraunces font-weight-bold text-center pt-3  px-md-5   accentfont"
+		<h1
+			style="font-size: 4rem !important;"
+			class="font-weight-bolder font-weight-bold text-center pt-3  px-md-5"
 		>
 			<a href="{{site.baseurl}}/projects/{{post.category}}">
 				{% for cat in post.category %} {% include icons/cats.html %} {% endfor
 				%}
 			</a>
 			{{ page.title }}
-		</p>
+		</h1>
 		<p class="text-uppercase font-weight-medium text-center">
 			<a class=" small " href="{{site.baseurl}}/authors/{{page.author}}">
 				{{page.author | capitalize}}

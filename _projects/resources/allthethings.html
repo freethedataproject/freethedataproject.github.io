@@ -1,0 +1,184 @@
+---
+layout: default
+title: "ALL THE THINGS"
+author: frida
+permalink: "resources/allthethings"
+umbrella: "resources"
+subtitle: "We're talking about resources. All of them. Whether you're interested in data science, viz, art, justice,
+journalism, or feminism, there's probably something here for you."
+image_path: "/assets/brand/allthethings.svg"
+image_alt: "Site mascot, Frida, in the style of Hyperbole and a Half."
+---
+
+<script
+	src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"
+></script>
+
+
+
+<style>
+.card p {font-size: .87rem !important;}
+
+.category_button {
+
+}
+@media only screen and (max-width: 899px) {
+	main {
+		padding-left: 40px !important;
+		padding-right: 40px!important;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	main {
+		padding-left: 100px !important;
+		padding-right: 100px!important;
+	}
+}
+
+
+.category_button {
+	font-family: var(--space)!important;
+	padding: 3px !important;
+	color: var(--baseA0)!important;
+	transition: all .35s ease !important;
+}
+
+.selected {
+	background-color: var(--frida-light)!important;
+	text-transform: uppercase !important;
+	text-decoration: underline!important;
+	color: var(--frida)!important;
+	transition: all .35s ease !important;
+}
+
+
+.category_button:hover, .selected:hover {
+		color: var(--frida)!important;
+		background-color: var(--frida-light)!important;
+		text-transform: uppercase !important;
+}
+
+main {
+	max-width: 96vw !important;
+}
+
+</style>
+
+
+
+{% include assorted/breadcrumbs.html %}
+
+<div class="container" style="max-height: 30vh!important;">
+	<div class="view">
+		<img
+			src="{{site.baseurl}}/assets/brand/allthethings.svg"
+			alt=""
+			class="img-fluid"
+			style="max-height: 30vh !important; object-fit: cover !important;"
+		/>
+		<div class="mask flex-start">
+			<div class=" col-6 pt-5">
+				<h1 class="cubano text-center" style="font-size: 3rem!important;">
+					{{page.title}}
+				</h1>
+				<p class="d-none d-md-block">{{page.subtitle}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class=" p-0">
+	<div class="row">
+		<div class="col-sm-12 col-xs-12 col-md-2 mt-5 text-right">
+			<div class="filter filter-basic sticky-top pt-5 mt-5 text-right">
+				<h6 class="font-weight-bold text-uppercase  text-right mt-4 pt-4">
+					filter
+				</h6>
+				<hr />
+				<ul class="filter-nav list-unstyled d-md-block d-sm-inline-flex  text-md-right">
+					<li class="z-depth-0 px-1 active selected catbtn category_button   " data-filter="all">
+						All
+					</li>
+					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="news">
+						News
+					</li>
+					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="tutorial">
+						Tutorials
+					</li>
+					<li
+						class="z-depth-0 px-1 catbtn category_button  "
+						data-filter="inspiration"
+					>
+						Inspiration
+					</li>
+
+					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="design">
+						Design
+					</li>
+
+					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="assets">
+						Assets
+					</li>
+
+					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="dataset">
+						Dataset
+					</li>
+
+					<li class="z-depth-0 px-1 catbtn category_button  " data-filter="package">
+						Package
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-xs-12 col-md-10">
+			<div
+				class="filter-gallery mt-4 pt-4"
+				style="padding-left: 30px!important;"
+			>
+					<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+					{% for row in site.data.resources.allthethings %} {% include_relative
+					/assets/resources-item.html %} {% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$(".catbtn").click(function() {
+			var filterValue = $(this).attr("data-filter");
+			// show all items
+			if (filterValue == "all") {
+				$(".all").show("fast");
+			} else {
+				// hide all items
+				$(".all")
+					.not("." + filterValue)
+					.hide("fast");
+				// and then, show only items with selected data-filter value
+				$(".all")
+					.filter("." + filterValue)
+					.show("fast");
+			}
+		});
+
+		$(".category_button").click(function() {
+        if ($('.category_button').hasClass('selected')) {
+                $('.category_button').removeClass('selected');
+                $(this).addClass('selected');
+            }
+    });
+
+	});
+</script>
+
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+<div class="pt-5 pb-5"></div>
+
+{% include assorted/resources-submission.html %}

@@ -1,0 +1,19 @@
+---
+layout: project
+title: "Resources"
+permalink: "resources/"
+---
+
+
+<section>
+  <div class="container z-depth-0 my-5 p-5">
+    <div class="row d-flex justify-content-center">
+            {% for page in site.projects %}
+        {% if page.umbrella == "resources" %}
+          {% include_relative /assets/cards/resources-card.html %}
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

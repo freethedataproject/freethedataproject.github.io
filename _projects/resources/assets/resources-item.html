@@ -1,0 +1,38 @@
+<div class="card p-md-2 p-2 all {{row.category}}" style="max-width:440px;  ">
+	<div class="row row-cols-1  rounded-lg  row-cols-md-2 h-100  m-md-2 m-1 " style = "border: 1px dashed var(--baseA0)!important;">
+		<div class="view rounded-lg p-0 m-0 d-none d-md-block col-md-6 col-lg-4 h-100">
+			<img src="{{row.image_path}}" alt="{{row.image_alt}}" class="img-fluid card-img " style="height: 100%!important; width: 100%; object-fit: cover!important;">
+			<a href="{{row.url}}" target="_blank">
+				<div class="mask rgba-grey-light"></div>
+			</a>
+		</div>
+
+		<div class="card  rounded-lg col-sm-12 col-xs-12 col-md-6 col-lg-8 h-100 p-md-2 p-2" style = "">
+	<div class = "card-body p-2">
+						<div class="p-3" style = "position: absolute !important; top: 0 !important; right: 0 !important;">
+
+				<img style="width: 30px!important; height: 30px!important;"
+					src="{{site.baseurl}}/assets/icons/{{row.category}}.svg" alt="{{row.category}}"
+					data-toggle="tooltip" 
+					data-placement="top" 
+					title="{{row.category}}" />
+				</img>
+			</div>
+
+				<a href="{{row.url}}" target="_blank">
+					<h5 class="font-weight-bold fraunces mb-3 mt-5">{{row.name}}</h5>
+				</a>
+				<p class="card-text" style = "font-size: .86rem!important;">
+					{{row.desc}}
+				</p>
+				<p class = "float-bottom text-muted">Tagged as: {{row.tags}}</p>
+
+</div>
+
+		</div>
+
+		
+
+
+	</div>
+</div>

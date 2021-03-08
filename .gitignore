@@ -8,6 +8,7 @@ _site
 .RData
 .sass-cache/
 .rmd
+_drafts
 .Rproj
 .Rproj.user
 .drafts_and_unpublished

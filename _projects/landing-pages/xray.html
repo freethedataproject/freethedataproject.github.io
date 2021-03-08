@@ -1,0 +1,25 @@
+---
+layout: project
+title: "X-Ray"
+permalink: "/projects/x-ray/"
+author: frida
+umbrella: "index"
+image_path: "/media/projects/xray.jpg"
+subtitle: "This is just proof of concept right now."
+excerpt: "This is just proof of concept right now."
+---
+
+
+  <div class="container z-depth-0 my-5 p-5">
+      {% for post in site.projects %}
+        {% if post.umbrella == "x-ray" %}
+        <div class = "border_container">
+    <div class="row my-4 border-top border-light  border_hover justify-content-center">
+
+            {% include_relative /assets/cards/history-card.html %}
+                </div>
+</div>
+
+        {% endif %}
+      {% endfor %}
+  </div>

@@ -44,10 +44,13 @@
 	color: var(--turq-light) !important;
 }
 
+
+
+
 .bg-frida {
 	background-color: var(--frida) !important;
 }
-.bg-fridal {
+.bg-fridal, .bg-fl {
 	background-color: var(--frida-light) !important;
 }
 .bg-tqd {background-color: var(--turq-dark)!important;}
@@ -60,6 +63,18 @@
 .bg-tql {
 	background-color: var(--turq-light) !important;
 }
+
+.bg-tq1  {
+	background-color: #e9fbfa !important;
+}
+
+
+
+
+
+
+
+
 
 
 
