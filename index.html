@@ -127,9 +127,9 @@ title: "Home"
                     <div class="row mb-1">
                         <div class="col-md-4 ">
                             <div class="view z-depth-0 mb-3">
-                                <img src="{{post.image_path}}" class="img-fluid rounded-0 rounded-lg"
-                                    alt="{{post.image_alt}}" style="object-fit: cover !important;" />
-                                <a href="{{post.url}}">
+                                <img src="{{project.image_path}}" class="img-fluid rounded-0 rounded-lg"
+                                    alt="{{project.image_alt}}" style="object-fit: cover !important;" />
+                                <a href="{{project.url}}">
                                     <div class="mask rgba-grey-slight waves-effect waves-light  rounded-lg"></div>
                                 </a>
                             </div>
@@ -137,24 +137,24 @@ title: "Home"
                         <div class="col-md-8 mb-0 pb-0"
                             style="margin-left: -14px!important; padding-top:1px!important;">
 
-                                <a href="{{post.url}}">
+                                <a href="{{project.url}}">
                                     <h6 class="font-weight-bold fraunces pl-1">
-                                        {{post.title}}
+                                        {{project.title}}
                                     </h6>
                                 </a>
                             <div class="d-inline-flex mb-0 pb-0">
-                                <a href="{{site.baseurl}}/projects/{{post.category}}">
+                                <a href="{{site.baseurl}}/projects/{{project.category}}">
                                     <h6 class="font-weight-bold">
-                                        {% for cat in post.category %} {% include icons/cats.html %} {%
+                                        {% for cat in project.category %} {% include icons/cats.html %} {%
                                         endfor %}
                                     </h6>
                                 </a> 
 
                             <p class="text-muted mt-0 pt-0" style="font-size: .84rem!important;">
-                             &nbsp;~&nbsp;   {{post.date | date: "%d %b %y"}} &nbsp;~&nbsp;
+                             &nbsp;~&nbsp;   {{project.date | date: "%d %b %y"}} &nbsp;~&nbsp;
 
                                 <a style="font-size: .84rem!important;" href="{{site.baseurl}}/authors/{{post.author}}">
-                                    {{post.author | capitalize}}
+                                    {{project.author | capitalize}}
                                 </a>
                             </p>
                             </div>

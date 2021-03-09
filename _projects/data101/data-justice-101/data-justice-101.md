@@ -13,6 +13,11 @@ subtitle: "Data justice involves a commitment to researching and analyzing data 
 
 [some kind of intro paragraph here]
 
+{% include_relative /assets/section1.html %}
+{% include_relative /assets/section2.html %}
+{% include_relative /assets/section3.html %}
+{% include_relative /assets/section4.html %}
+
 # What is data justice?
 
 Data: A collection of information and/or facts, typically used for research and analysis.  
