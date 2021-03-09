@@ -10,12 +10,10 @@
 
             		<div class = "d-inline-flex">
 
-            			<a href="{{site.baseurl}}/projects/{{project.category}}">
 				<h6 class="font-weight-bolder">
-					{% for cat in project.category %} {% include icons/cats.html %} {%
+					{% for cat in project.umbrella %} {% include icons/cats.html %} {%
 					endfor %}
 				</h6>
-			</a>
 			<a href="{{project.url}}">
 				<h4 class="font-weight-bolder pl-2">
 				{{project.title}}
