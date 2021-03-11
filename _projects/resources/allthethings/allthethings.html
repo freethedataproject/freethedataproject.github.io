@@ -1,0 +1,114 @@
+---
+layout: default
+title: "ALL THE THINGS"
+author: frida
+permalink: "resources/allthethings"
+umbrella: "resources"
+subtitle: "We're talking about resources. All of them. Whether you're interested in data science, viz, art, justice,
+journalism, or feminism, there's probably something here for you."
+image_path: "/assets/brand/allthethings.svg"
+image_alt: "Site mascot, Frida, in the style of Hyperbole and a Half."
+---
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+{% include_relative /assets/style.html %}
+
+
+<style>
+
+  label {
+    font-family: var(--space)!important;
+    font-weight: 400!important;
+    font-size: .84rem!important;
+  }
+
+</style>
+
+{% include assorted/breadcrumbs.html %}
+{% include assorted/mobile-alert.html %}
+
+<div class="container" style="max-height: 30vh!important;">
+  <div class="view">
+    <img src="{{site.baseurl}}/assets/brand/allthethings.svg" alt="" class="img-fluid"
+      style="max-height: 30vh !important; object-fit: cover !important;" />
+    <div class="mask flex-start">
+      <div class=" col-6 pt-5">
+        <h1 class="font-weight-bolder text-left" style="font-size: 3rem!important;">
+          {{page.title}}
+        </h1>
+        <p class="d-none d-md-block">{{page.subtitle}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row align-self-center sticky-top col-2 mt-4">
+  <div class="d-none d-md-block p-lg-4 p-2 bg-white rounded-lg"
+    style="border: 1px solid var(--muted)!important;">
+    <div class="filter filter-basic  h-100 text-left">
+      <h3 class="font-weight-bolder">Filters</h3>
+
+      <p class="small text-muted text-left mt-1">
+        All items are displayed by default. You can select from the options below to narrow the results that are
+        displayed.
+      </p>
+
+      <hr>
+      <div id='filters' class='sections'>
+
+        {% assign cats = site.data.resources.allthethings | map: 'category' | uniq %}
+        {% assign code = site.data.resources.allthethings | map: 'code' | uniq %}
+
+        <div class='filter-attributes'>
+          <h6 class="font-weight-bolder">Category</h6>
+          <ul class="list-unstyled list-group-flush">
+            {% for item in cats %}
+            <li class="custom-control custom-checkbox my-1">
+              <input type="checkbox" class="custom-control-input" name='cats' id='{{ item }}' value='{{ item }}'>
+              <label class="custom-control-label" for='{{ item }}'>
+                {{ item }}
+              </label>
+            </li>
+
+            {% endfor %}
+          </ul>
+        </div>
+        <div class='filter-attributes'>
+          <h6 class="font-weight-bolder">Code</h6>
+          <ul class="list-unstyled list-group-flush">
+            {% for item in code %}
+            <li class="custom-control custom-checkbox my-1">
+              <input type="checkbox" class="custom-control-input" name='code' id='{{ item }}' value='{{ item }}'>
+              <label class="custom-control-label" for='{{ item }}'>
+                {{ item }}
+              </label>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div>
+          <input type='button' class="small" id='clearall' value='Clear all'></input>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row cardcontainer">
+  <div class="col-sm-12 col-md-2">
+  </div>
+  <div class="col-sm-12 col-xs-12 col-md-10">
+    <div class="filter-gallery">
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3">
+        {% for row in site.data.resources.allthethings %} {% include_relative
+        /assets/resources-item.html %} {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{site.baseurl}}/assets/js/sitewide/jquery-multifilter.js"></script>
+{% include assorted/resources-submission.html %}

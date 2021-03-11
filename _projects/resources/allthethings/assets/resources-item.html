@@ -1,0 +1,41 @@
+<div class="card-deck p-4 grid-products" data-cats="{{row.category}}" data-code="{{row.code}}">
+	<div class="card h-100" style="width: 400px; border: 1px solid var(--muted)!important;">
+
+		<div class="row no-gutters h-100">
+			<div class="col-sm-4 bg-dark h-100">
+				<div class="view h-100">
+					<img src="{{row.image_path}}" alt="{{row.image_alt}}" class="card-img h-100"
+						style="object-fit:cover;" />
+					<a href="{{row.url}}" target="_blank">
+						<div class="mask rgba-grey-light h-100"></div>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-7">
+				<div class="card-body py-0 px-3  m-0">
+					<div class="card p-0 m-0">
+						<div class="card-body p-0 mx-0 mb-4">
+							<a href="{{row.url}}" target="_blank">
+								<h6 class="mt-2 card-title font-weight-bolder fraunces mb-2">
+									{{row.name}}
+								</h6>
+							</a>
+
+							<p class="card-text pb-4 mb-4" style="font-size: 0.86rem !important;">
+								{{row.desc}}
+							</p>
+
+						</div>
+					</div>
+
+				</div>
+		<div class = "card-footer bg-white p-2 m-0" style = "position: absolute!important; bottom: 0!important;">
+															<p  class = "text-muted p-0 m-0" style="font-family:var(--space)!important;  font-size: 0.8rem !important; "><i class="las la-tags"></i> &nbsp; {{row.tags}}</p>
+
+
+		</div>
+
+			</div>
+		</div>
+	</div>
+</div>

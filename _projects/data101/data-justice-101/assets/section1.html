@@ -3,143 +3,6 @@
 
     article {max-width: 900px!important;
     
-    
-    }
-    /* Steps */
-    .step {
-        list-style: none;
-        margin: 0;
-    }
-
-    .step-element {
-        display: flex;
-        padding: 1rem 0;
-    }
-
-    .step-number {
-        position: relative;
-        width: 7rem;
-        flex-shrink: 0;
-        text-align: center;
-    }
-
-    .step-number .number {
-        color: #bfc5ca;
-        background-color: #eaeff4;
-        font-size: 1.5rem;
-    }
-
-    .step-number .number {
-        width: 48px;
-        height: 48px;
-        line-height: 48px;
-    }
-
-    .number {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 38px;
-        border-radius: 10rem;
-    }
-
-    .step-number::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 48px;
-        bottom: -2rem;
-        margin-left: -1px;
-        border-left: 2px dashed #eaeff4;
-    }
-
-    .step .step-element:last-child .step-number::before {
-        bottom: 1rem;
-    }
-
-
-    .aside p {
-        font-size: .8rem !important;
-    }
-
-
-    .dash_full {
-        border: 1px dashed var(--baseA0) !important;
-    }
-
-    .dashR {
-        border-right: 1px dashed var(--baseA0) !important;
-    }
-
-    .dashL {
-        border-left: 1px dashed var(--baseA0) !important;
-    }
-
-    .dashT {
-        border-top: 1px dashed var(--baseA0) !important;
-    }
-
-    .dashB {
-        border-bottom: 1px dashed var(--baseA0) !important;
-    }
-
-    @media only screen and (min-width: 1000px) {
-        .dash_full {
-            border: 1px dashed var(--baseA0) !important;
-        }
-        .dashR {
-            border-right: 1px dashed var(--baseA0) !important;
-        }
-        .dashL {
-            border-left: 1px dashed var(--baseA0) !important;
-        }
-        .dashT {
-            border-top: 1px dashed var(--baseA0) !important;
-        }
-        .dashB {
-            border-bottom: 1px dashed var(--baseA0) !important;
-        }
-    }
-
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-:root {
-	--sans: "Rubik", sans-serif;
-	--cubano: "cubano", sans-serif;
-	--fraunces: "Fraunces", serif;
-	--dark: #31364c;
-	--baseA0: #31364c;
-	--muted: #9b9eb0;
-	--light: #fff;
-	--offwhite: #fff;
-	--frida: #e86166;
-	--green: #034d1e;
-	--blue: #096c80;
-	--orange: #ff5600;
-	--yellow: #f6e049;
-
-}
-
-.highlight,
-.bgyellow mark {
-	background-color: var(--yellow) !important;
-}
-.text-dark,
-.cubano {
-	color: var(--baseA0) !important;
-}
-
-p {
-	color: var(--baseA0);
-}
-
-.text-muted {
-	color: var(--muted) !important;
-}
-
         .termxs, .termxl {text-transform: uppercase !important;}
 
         .defxs {font-size: .8rem!important;}
@@ -152,10 +15,21 @@ p {
 </style>
 
 <h1>What is data justice?</h1>
-<div class="row px-3">
-    <div class="col-md-3">
+
+<div class="row px-3 my-4">
+    <div class="col-md-9 px-md-5 align-self-center">
+        <span class="termxl mb-0 pb-0">Data Justice</span>
+
+        <p>
+            A commitment to researching and analyzing data in ways that are equitable, morally righteous, and ethical; understanding how marginalized groups are helped or harmed by data-driven practices; and identifying and resolving structural inequities that surface in data-driven research.
+        </p>
+
+
+    </div>
+
+        <div class="col-md-3">
         <div class="row">
-            <p class="termxs mb-0 pb-0">Data</p>
+            <p class="termxs mb-0 pb-0 mr-sm-3">Data</p>
             <p class="defxs">
                 A collection of information and/or facts, typically used for research and analysis.
             </p>
@@ -168,15 +42,7 @@ p {
             </p>
         </div>
     </div>
-    <div class="col-md-9 px-md-5 align-self-center">
-        <span class="termxl mb-0 pb-0">Data Justice</span>
 
-        <p>
-            A commitment to researching and analyzing data in ways that are equitable, morally righteous, and ethical; understanding how marginalized groups are helped or harmed by data-driven practices; and identifying and resolving structural inequities that surface in data-driven research.
-        </p>
-
-
-    </div>
 </div>
 
 

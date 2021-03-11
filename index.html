@@ -42,7 +42,7 @@ title: "Home"
     <h1 class="font-weight-bolder">Explore</h1>
     <hr />
     <div class=" card-deck mt-4">
-        <div class="card">
+        <div class="card bg-offwhite">
             <a href="{{ site.baseurl }}/projects">
                 <h5 class="font-weight-bold text-uppercase  my-2 ">Projects →</h5>
             </a>
@@ -52,7 +52,7 @@ title: "Home"
                 it doesn't, we'll probably share it here anyway. F*CK perfectionism.)
             </p>
         </div>
-        <div class="card">
+        <div class="card bg-offwhite">
             <a href="{{ site.baseurl }}/resources">
                 <h5 class="font-weight-bold  text-uppercase my-2 ">Resources →</h5>
             </a>
@@ -62,7 +62,7 @@ title: "Home"
                 providing resources on data science and data justice.
             </p>
         </div>
-        <div class="card">
+        <div class="card bg-offwhite">
             <a href="{{ site.baseurl }}/projects/data-101">
                 <h5 class="font-weight-bold  text-uppercase my-2 ">Data 101 →</h5>
             </a>
@@ -83,9 +83,9 @@ title: "Home"
         <hr />
         <div class="row p-md-3 px-3 mt-4">
             <div class="col-md-8  ">
-                <div class="card pr-5">
+                <div class="card pr-5 bg-offwhite">
                     <div class="view p-0 rounded-lg">
-                        <img src="https://images.unsplash.com/photo-1523274620588-4c03146581a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        <img src="{{site.baseurl}}/assets/brand/bigtech.svg""
                             alt="" class="card-img-top"
                             style="max-height:14rem!important;object-fit:cover!important;" />
                         <a href="/manifesto">
@@ -120,12 +120,12 @@ title: "Home"
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 card mt-0">
+            <div class="col-md-4 card mt-0 bg-offwhite">
                 {% for project in site.projects limit:5 %}
                 {% if project.umbrella != "index" %}
-                <div class="single-news my-2 border-bottom">
-                    <div class="row mb-1">
-                        <div class="col-md-4 ">
+                <div class="single-news my-2 border-bottom bg-offwhite">
+                    <div class="row mb-1 bg-offwhite">
+                        <div class="col-md-4 bg-offwhite ">
                             <div class="view z-depth-0 mb-3">
                                 <img src="{{project.image_path}}" class="img-fluid rounded-0 rounded-lg"
                                     alt="{{project.image_alt}}" style="object-fit: cover !important;" />
@@ -134,7 +134,7 @@ title: "Home"
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-8 mb-0 pb-0"
+                        <div class="col-md-8 mb-0 pb-0 bg-offwhite"
                             style="margin-left: -14px!important; padding-top:1px!important;">
 
                                 <a href="{{project.url}}">
@@ -142,7 +142,7 @@ title: "Home"
                                         {{project.title}}
                                     </h6>
                                 </a>
-                            <div class="d-inline-flex mb-0 pb-0">
+                            <div class="d-inline-flex mb-0 pb-0 bg-offwhite">
                                 <a href="{{site.baseurl}}/projects/{{project.category}}">
                                     <h6 class="font-weight-bold">
                                         {% for cat in project.umbrella %} {% include icons/cats.html %} {%
@@ -189,7 +189,34 @@ title: "Home"
         choosing!):
     </p>
 
-    <div class="col-md-8 mx-auto">
+    <div class="d-inline-flex">
+<!-- Linkedin -->
+<a class="btn btn-primary" style="background-color: #0082ca!important;" href="#!" role="button"
+  >
+  <i class="las la-microscope"></i>
+  </a>
+
+<!-- Pinterest -->
+<a class="btn btn-primary" style="background-color: #c61118!important;" href="#!" role="button"
+  >
+  <i class="las la-robot"></i>
+  </a>
+
+<!-- Vkontakte -->
+<a class="btn btn-primary" style="background-color: #4c75a3!important;" href="#!" role="button"
+  ><i class="las la-globe"></i></a>
+
+<!-- Stack overflow -->
+<a class="btn btn-primary" style="background-color: #ffac44!important;" href="#!" role="button"
+  ><i class="las la-palette"></i></a>
+
+<!-- Youtube -->
+<a class="btn btn-primary" style="background-color: #ed302f!important;" href="#!" role="button"
+  ><i class="las la-cog"></i></a>
+
+<!-- Slack -->
+<a class="btn btn-primary" style="background-color: #481449!important;" href="#!" role="button"
+  ><i class="las la-umbrella"></i></a>
 
     </div>
 </section>

@@ -1,0 +1,109 @@
+
+.text-frida {
+	color: var(--frida) !important;
+}
+
+.text-fridal {
+	color: var(--frida-light) !important;
+}
+
+.text-tqd {
+	color: var(--turq-dark) !important;
+}
+
+.text-tqm {
+	color: var(--turq-medium) !important;
+}
+
+.text-tqb {
+	color: var(--turq-bright) !important;
+}
+
+.text-tql {
+	color: var(--turq-light) !important;
+}
+
+.bg-frida {
+	background-color: var(--frida) !important;
+}
+
+.bg-fridal, .bg-fl {
+	background-color: var(--frida-light) !important;
+}
+
+.bg-tqd {
+	background-color: var(--turq-dark) !important;
+}
+
+.bg-tqm {
+	background-color: var(--turq-medium) !important;
+}
+
+.bg-tqb {
+	background-color: var(--turq-bright) !important;
+}
+
+.bg-tql {
+	background-color: var(--turq-light) !important;
+}
+
+.bg-tq1 {
+	background-color: #e9fbfa !important;
+}
+
+.bg-offwhite {
+    background-color: var(--light)!important;
+}
+
+.text-muted {
+	color: var(--muted) !important;
+}
+
+.textxl {
+	font-size: 2.7rem !important;
+}
+
+.font-weight-bold {
+	font-weight: 500 !important;
+}
+
+.text-white {
+	color: var(--light);
+}
+.cubano {
+	font-family: var(--space) !important;
+	letter-spacing: 0.8px !important;
+	font-weight: 400 !important;
+}
+
+.accentfont {
+	font-family: var(--space) !important;
+	color: var(--baseA0) !important;
+	font-weight: 600 !important;
+}
+
+.fraunces {
+	font-family: var(--space) !important;
+}
+
+.font-weight-bolder {
+	font-weight: 700 !important;
+}
+
+.border_container .border_hover {
+	transition: 0.1s !important;
+}
+
+.border_container:hover .border_hover {
+	border-top: 3px solid var(--frida) !important;
+}
+
+.border_container:hover a, .border_container:hover h3, .border_container:hover i {
+	color: var(--frida) !important;
+}
+
+
+.greyscale{
+  filter: grayscale(1) !important;
+    -webkit-filter: grayscale(1)!important;    
+}

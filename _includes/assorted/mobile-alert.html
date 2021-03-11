@@ -1,0 +1,31 @@
+<style>
+    
+.mobile_alert {display: none;}
+
+  @media only screen and (min-width: 768px) {
+    .cardcontainer {
+      margin-top: -640px !important;
+    }
+  }
+
+    @media only screen and (max-width: 799px) {
+.mobile_alert {display: block !important;}
+  }
+</style>
+
+<section class = "mobile_alert my-3 bg-fridal p-4">
+<div class = " bg-white p-5">
+  <div class = "container ">
+    <h1 class=" font-weight-bolder text-frida ">
+                        <i class="las la-exclamation-triangle" style="color: var(--frida)!important;"></i>
+                        HEADS UP
+    </h1>
+
+    <p>It looks like you're accessing this page from a mobile device. <b>You may experience formatting issues and/or limited filtering tools on mobile devices.</b></p>
+    
+    <p> We recommend switching to a device with a screen width of at least <b>800px</b> to read the content on this page. We apologize for any inconvenience—we hope to improve the site's mobile experience as soon as we can.</p>
+    <br>
+    <a href = "/index.html" class = "font-weight-bolder" style = "color: var(--frida)!important; font-family: var(--space)!important;">Return to homepage →</a>
+  </div>
+</div>
+</section>
