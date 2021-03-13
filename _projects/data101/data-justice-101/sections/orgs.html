@@ -1,0 +1,17 @@
+<div class="row mt-2 mb-5">
+	{% for row in site.data.data101.datajustice %} {% if row.section == "orgs"
+	%}
+	<div class="col-md-4 col-lg-3">
+		<div class="view m-3 z-depth-1">
+			<img
+				class="img-fluid mx-auto"
+				src="{{row.image_path}}"
+				alt="{{row.title}}"
+			/>
+			<a href="{{row.url}}" target="_blank">
+				<div class="mask rgba-white-slight"></div>
+			</a>
+		</div>
+	</div>
+	{% endif %} {% endfor %}
+</div>

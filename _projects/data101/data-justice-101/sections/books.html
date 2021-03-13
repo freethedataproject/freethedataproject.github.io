@@ -1,0 +1,20 @@
+<div class="container my-5 px-0 mx-0">
+	<div class="row d-flex justify-content-center px-0 mx-0">
+		{% for row in site.data.data101.datajustice %} {% if row.section ==
+		"bookshelf" %}
+		<div class="col-md-3 col-lg-2 mb-3 mx-0 py-3 px-3">
+			<div class="view h-100 z-depth-1">
+				<img
+					src="{{site.baseurl}}/media/projects/data101/datajustice/{{row.image_path}}"
+					class="img-fluid"
+					alt="{{row.image_alt}}"
+                    style = " object-fit: cover!important; height: 100%!important; width: 100%; "
+				/>
+				<a href="{{row.url}}" target="_blank">
+					<div class="mask h-100"></div>
+				</a>
+			</div>
+		</div>
+		{% endif %} {% endfor %}
+	</div>
+</div>

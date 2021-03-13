@@ -1,0 +1,60 @@
+<div class="container mt-3 mb-3">
+	<div class="row pt-3">
+		{% for row in site.data.data101.datajustice %} {% if row.section == "sowhat"
+		%}
+
+		<div class="col-12 col-md-6 ">
+			<!-- Large modal -->
+			<div class="view">
+				<img
+					src="{{site.baseurl}}/media/projects/data101/datajustice/{{row.image_path}}"
+					alt="{{row.image_alt}}"
+					class="img-fluid"
+					style="height: 175px!important; width: 100%!important; object-fit: cover !important"
+				/>
+				<a
+					type="button"
+					class=""
+					data-toggle="modal"
+					data-target=".bd-example-modal-lg{{row.xid}}"
+				>
+					<div class="mask waves-effect waves-light rgba-white-slight  "></div>
+				</a>
+			</div>
+
+
+			<div
+				class="modal fade bd-example-modal-lg{{row.xid}}"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="myLargeModalLabel{{row.xid}}"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content">
+						<div class="card bg-offwhite">
+							<img
+								src="{{site.baseurl}}/media/projects/data101/datajustice/{{row.image_path}}"
+								alt="{{row.image_alt}}"
+								class="card-img-top"
+								style="object-fit: cover !important"
+							/>
+
+							<div class="card-body bg-offwhite">
+								<a href="{{row.url}}" target="_blank">
+									<h6 class="font-weight-bolder pt-2">{{row.title}}</h6>
+								</a>
+                                    <h6 class = "font-weight-bold" style = "font-size: .86rem!important;">{{row.subtitle}}</h6>
+
+                                    <p class = "text-muted" style = "font-size: .86rem!important;">{{row.text}}</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% endif %} {% endfor %}
+	</div>
+</div>
